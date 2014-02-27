@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="7f24b31d-c48f-4768-9835-07ccf6ef8585" name="UMLUseCaseRegisterUser" linkedPackageId="491c130b-c9cc-4033-851b-f174ef1b7aaa" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="85f9f54a-1b5a-483b-8ec6-0253a9b2bc8c">
+      <profileInstance Id="b522b24a-3c48-4000-843c-d2f135086277" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="1f7888a8-005d-42ef-ac3f-db1dce3d9f94">
+      <profileInstance Id="760d48c1-9e69-44b0-b42c-d7b485a1bda3" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="de3dafb1-2e8e-4e7f-ab29-40f2b50ef50b" name="User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="22d1618c-9beb-4b1c-b559-e217da04008b" />
+        <targetEnds>
+          <association Id="b5509bff-41b1-4e44-b546-2b9d2cc6722a" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Register" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e5b46b50-812a-4324-b2f1-3d0679420851" LastKnownName="Register" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e196eb31-4421-4258-b2b2-f5452d12840c" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="098baab7-69f5-4342-b982-7c3eacb1f0e0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="80dede7a-e90c-47ab-b13c-223894b7291a" name="Register" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="452c7d19-fcb3-48cc-b987-a4edd9ae7cd1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e393d657-ed6c-4a0d-ac97-77ad7cf812d2" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e5b46b50-812a-4324-b2f1-3d0679420851" name="Register" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7eba5564-a92c-4a87-b31f-896865feb5bc" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="68d4dbbc-f7d1-440d-8d24-2bce273501cd" name="Choose user name" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9f5e7d53-634a-4415-9d02-da9cc9faab92" />
+        <additions>
+          <include Id="a095919d-f6f9-4e70-a20c-a0cce1bf33ad">
+            <useCaseMoniker Id="e5b46b50-812a-4324-b2f1-3d0679420851" LastKnownName="Register" />
+            <elementDefinition Id="3400a829-0233-4dcf-be60-8ca556260af3" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="586548a2-ec7b-4019-92c8-468073c97f2b" name="Provide e-mail adress" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5d34fd48-826b-43d3-bc41-d6d57616096a" />
+        <additions>
+          <include Id="4f553401-9d5c-4250-b900-8f5fa53e567e">
+            <useCaseMoniker Id="e5b46b50-812a-4324-b2f1-3d0679420851" LastKnownName="Register" />
+            <elementDefinition Id="3f2c2934-133d-4047-89d3-c860f5a82ada" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="29ecf25b-e22c-4cac-81e0-2ff3dd182202" name="Provide password" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e72523e8-0ea5-47fa-b455-92a3ca4051ad" />
+        <additions>
+          <include Id="1a7bfd5e-c246-4c79-9a5b-53f31fab737a">
+            <useCaseMoniker Id="e5b46b50-812a-4324-b2f1-3d0679420851" LastKnownName="Register" />
+            <elementDefinition Id="eb43d633-bd8c-4f7d-99c7-5d63d2191952" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d458c8b1-e6be-457d-86b0-d8695e4a60ce" name="Choose to be lecturer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5aa5a0cf-8e82-422f-b3a3-93c2e8361ba9" />
+        <extendedCases>
+          <extend Id="10669d4c-5f2e-4488-89f1-dbec36ae977d">
+            <useCaseMoniker Id="e5b46b50-812a-4324-b2f1-3d0679420851" LastKnownName="Register" />
+            <elementDefinition Id="f402f79a-9d5d-401f-9733-27c3d9086381" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="491c130b-c9cc-4033-851b-f174ef1b7aaa" name="Laboras22Model">
+    <elementDefinition Id="c536aa51-794c-4276-85bd-a9b858d12991" />
+  </package>
+</useCaseModelRoot>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
   dslVersion="1.0.0.0"
   Id="c536aa51-794c-4276-85bd-a9b858d12991"
   name="Laboras22Model" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -17,28 +17,279 @@
         name="StandardProfileL3" />
     </packageHasProfileInstances>
   </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="22d1618c-9beb-4b1c-b559-e217da04008b"
+        name="User"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="e393d657-ed6c-4a0d-ac97-77ad7cf812d2"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Register"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="7eba5564-a92c-4a87-b31f-896865feb5bc"
+              LastKnownName="Register"
+              LastKnownLocation="Laboras22Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="098baab7-69f5-4342-b982-7c3eacb1f0e0"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="452c7d19-fcb3-48cc-b987-a4edd9ae7cd1"
+                  name="Register"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="b60cb519-34dc-450d-8527-335665f3dfff"
+        name="Subsystem1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7eba5564-a92c-4a87-b31f-896865feb5bc"
+        name="Register"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9f5e7d53-634a-4415-9d02-da9cc9faab92"
+        name="Choose user name"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="3400a829-0233-4dcf-be60-8ca556260af3">
+            <useCaseMoniker
+              Id="7eba5564-a92c-4a87-b31f-896865feb5bc"
+              LastKnownName="Register"
+              LastKnownLocation="Laboras22Model.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5d34fd48-826b-43d3-bc41-d6d57616096a"
+        name="Provide e-mail adress"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="3f2c2934-133d-4047-89d3-c860f5a82ada">
+            <useCaseMoniker
+              Id="7eba5564-a92c-4a87-b31f-896865feb5bc"
+              LastKnownName="Register"
+              LastKnownLocation="Laboras22Model.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e72523e8-0ea5-47fa-b455-92a3ca4051ad"
+        name="Provide password"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="eb43d633-bd8c-4f7d-99c7-5d63d2191952">
+            <useCaseMoniker
+              Id="7eba5564-a92c-4a87-b31f-896865feb5bc"
+              LastKnownName="Register"
+              LastKnownLocation="Laboras22Model.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="804198c3-fe33-4ddc-8e59-0002dbb71a01"
+        name="Choose user type"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="4d79e691-dbdf-4892-8e74-5703e57802a4">
+            <useCaseMoniker
+              Id="7eba5564-a92c-4a87-b31f-896865feb5bc"
+              LastKnownName="Register"
+              LastKnownLocation="Laboras22Model.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5aa5a0cf-8e82-422f-b3a3-93c2e8361ba9"
+        name="Choose to be lecturer"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="f402f79a-9d5d-401f-9733-27c3d9086381">
+            <useCaseMoniker
+              Id="7eba5564-a92c-4a87-b31f-896865feb5bc"
+              LastKnownName="Register"
+              LastKnownLocation="Laboras22Model.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e384ff4f-b81e-4520-afb6-70fde4b30a13"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="6e61c14a-c51c-4440-80bc-c6ab07beccbc"
+        name="Subsystem2"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="32198953-e923-4c10-9a61-ba87383c4b08"
+        name="Actor1"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="3f40ed32-fa65-422c-b6a8-8cf7299ab44f"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="Log in"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="e7031aaa-5a11-4a55-b0ab-f7e7196ae49f"
+              LastKnownName="Log in"
+              LastKnownLocation="Laboras22Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b8a6fb5f-f870-4371-ba25-65fd4b830435"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c5ca6495-7bf7-4ca6-b4fd-da7594303801"
+                  name="Log in"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e7031aaa-5a11-4a55-b0ab-f7e7196ae49f"
+        name="Log in"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f0a5a0e9-20fb-4662-b18e-6f1c29f11f0c"
+        name="Write password"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="210aa1a9-4626-4f5b-baf8-b4c6971eb306">
+            <useCaseMoniker
+              Id="e7031aaa-5a11-4a55-b0ab-f7e7196ae49f"
+              LastKnownName="Log in"
+              LastKnownLocation="Laboras22Model.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="17d5d949-9953-4882-a0a0-640152d0a92a"
+        name="Write user name"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="182b8dd7-f4ef-44b3-b8c4-696687216e51">
+            <useCaseMoniker
+              Id="e7031aaa-5a11-4a55-b0ab-f7e7196ae49f"
+              LastKnownName="Log in"
+              LastKnownLocation="Laboras22Model.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
     name="Integer"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
   <primitiveType
     Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
     name="Boolean"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
   <primitiveType
     Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
     name="String"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
   <primitiveType
     Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
     name="UnlimitedNatural"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
 </modelStoreModel>
