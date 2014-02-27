@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
   dslVersion="1.0.0.0"
   Id="c536aa51-794c-4276-85bd-a9b858d12991"
   name="Laboras22Model" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -17,28 +17,351 @@
         name="StandardProfileL3" />
     </packageHasProfileInstances>
   </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="f5b918e6-0a5c-4913-bd7a-23da9c46a7c6"
+        name="Lecturer"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="abdbc3ed-3e2d-4639-b74b-bb477f1032e4"
+            isDerived="false"
+            sourceEndRoleName="Lecturer"
+            targetEndRoleName="Manage own assignments"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="595f46f3-4c8f-496f-b7cf-a7532c6eef6b"
+              LastKnownName="Manage own assignments"
+              LastKnownLocation="Laboras22Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0b5eebe3-5b77-40b1-aad8-617b0315f59d"
+                  name="Lecturer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f15ab04a-5c42-4f55-8018-959b274935d2"
+                  name="Manage own assignments"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="8ed606ca-e97e-4074-84ae-bfb94fb9bf45"
+            isDerived="false"
+            sourceEndRoleName="Lecturer"
+            targetEndRoleName="View assignments"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="d957ec74-87b7-42ae-900e-5fee63caa264"
+              LastKnownName="View assignments"
+              LastKnownLocation="Laboras22Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="02ff427d-c4be-459f-a345-a6790a85a059"
+                  name="Lecturer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bbbbe6bf-bbb4-4a14-8ab2-9a5f5c5f391c"
+                  name="View assignments"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="8a5daddb-63a8-4dd7-b5bb-3c59cac484f2"
+        name="Student"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="b81f0022-0156-4d24-b15b-4296922cc56b"
+            isDerived="false"
+            sourceEndRoleName="Student"
+            targetEndRoleName="View assignments"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="d957ec74-87b7-42ae-900e-5fee63caa264"
+              LastKnownName="View assignments"
+              LastKnownLocation="Laboras22Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e7da4f74-f512-4dec-80e5-72f9bfd3d434"
+                  name="Student"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1b92e2e8-6a95-42c2-99eb-4b430a7c769f"
+                  name="View assignments"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="2f93e4ee-1a18-4370-b8ca-2116449d36c6"
+        name="Administrator"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="3f93a9a7-7967-4c9d-bf5e-9c28c826afc6"
+            isDerived="false"
+            sourceEndRoleName="Administrator"
+            targetEndRoleName="Manage all assignments"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1b391a8b-b15f-4c69-8db5-d9603469db97"
+              LastKnownName="Manage all assignments"
+              LastKnownLocation="Laboras22Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6dbfa74e-c3e4-4877-b4f2-58f9f0240138"
+                  name="Administrator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4bcc1bbe-6cab-499a-91ec-da204c945a5a"
+                  name="Manage all assignments"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="ea8b3f44-a09a-4adc-85f7-978f9279a81f"
+            isDerived="false"
+            sourceEndRoleName="Administrator"
+            targetEndRoleName="View assignments"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="d957ec74-87b7-42ae-900e-5fee63caa264"
+              LastKnownName="View assignments"
+              LastKnownLocation="Laboras22Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="12a34369-a5c0-4e17-9829-b4003c47f077"
+                  name="Administrator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b3cfdaad-5123-44a7-8ecc-948c3f7055c7"
+                  name="View assignments"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="595f46f3-4c8f-496f-b7cf-a7532c6eef6b"
+        name="Manage own assignments"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f63bb58a-ea71-477d-81f7-9ca704b594c6"
+        name="View existing assignments and projects"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="acaf681a-be70-4ad7-b838-f62aca0571d5"
+        name="Create assignment"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="67d49615-70f4-4534-829b-5f04c87579c7">
+            <useCaseMoniker
+              Id="595f46f3-4c8f-496f-b7cf-a7532c6eef6b"
+              LastKnownName="Manage own assignments"
+              LastKnownLocation="Laboras22Model.uml" />
+          </extend>
+          <extend
+            Id="bcf98150-4cd8-4e6f-b5fa-c69d9f6c5c0d">
+            <useCaseMoniker
+              Id="1b391a8b-b15f-4c69-8db5-d9603469db97"
+              LastKnownName="Manage all assignments"
+              LastKnownLocation="Laboras22Model.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="fcd7ba58-a81f-49dd-9223-af34e315d622"
+        name="Delete assignment"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="1a916625-4734-46da-aec6-1a9d5569dd11">
+            <useCaseMoniker
+              Id="595f46f3-4c8f-496f-b7cf-a7532c6eef6b"
+              LastKnownName="Manage own assignments"
+              LastKnownLocation="Laboras22Model.uml" />
+          </extend>
+          <extend
+            Id="c1dd1b8e-acc9-4351-a13a-ee45dce89d17">
+            <useCaseMoniker
+              Id="1b391a8b-b15f-4c69-8db5-d9603469db97"
+              LastKnownName="Manage all assignments"
+              LastKnownLocation="Laboras22Model.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d957ec74-87b7-42ae-900e-5fee63caa264"
+        name="View assignments"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1b391a8b-b15f-4c69-8db5-d9603469db97"
+        name="Manage all assignments"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1336bc55-ca2b-4099-b56f-4cfa602f04b9"
+        name="View assignment statistics"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="a143c1ed-189c-4343-8dde-2e3638309e17">
+            <useCaseMoniker
+              Id="595f46f3-4c8f-496f-b7cf-a7532c6eef6b"
+              LastKnownName="Manage own assignments"
+              LastKnownLocation="Laboras22Model.uml" />
+          </extend>
+          <extend
+            Id="101ef859-4534-4e90-81f4-31b3c780b1d3">
+            <useCaseMoniker
+              Id="1b391a8b-b15f-4c69-8db5-d9603469db97"
+              LastKnownName="Manage all assignments"
+              LastKnownLocation="Laboras22Model.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
     name="Integer"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
   <primitiveType
     Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
     name="Boolean"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
   <primitiveType
     Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
     name="String"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
   <primitiveType
     Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
     name="UnlimitedNatural"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
 </modelStoreModel>

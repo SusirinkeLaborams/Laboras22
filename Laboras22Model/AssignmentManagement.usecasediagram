@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="c611a5dd-5d10-4915-95cc-6f544c48fd30" name="AssignmentManagement" linkedPackageId="07aeb87f-ca37-4c40-aade-63297d1641f7" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="efbe6b3e-352e-4dde-ae45-f997820c4f6e">
+      <profileInstance Id="6bb07028-0287-4170-844b-e1d8c61d7bc9" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="9fcc1268-ad6f-41ad-a968-6b1504332fc2">
+      <profileInstance Id="c350e697-3163-4d4f-acd6-6b8668056cf9" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="24d45e09-8ad4-4998-9bf2-cc1089050b42" name="Lecturer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f5b918e6-0a5c-4913-bd7a-23da9c46a7c6" />
+        <targetEnds>
+          <association Id="b4a27dd3-7b59-4d94-862b-c3df113b4bea" isDerived="false" sourceEndRoleName="Lecturer" targetEndRoleName="Manage own assignments" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="a5cae05a-5d42-4da9-aaea-d6aab895d04b" LastKnownName="Manage own assignments" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c9695eaa-a529-4e6e-b1cd-f47540804392" name="Lecturer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0b5eebe3-5b77-40b1-aad8-617b0315f59d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="80fb08ee-b288-4ec4-8710-660a7975062e" name="Manage own assignments" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f15ab04a-5c42-4f55-8018-959b274935d2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="abdbc3ed-3e2d-4639-b74b-bb477f1032e4" />
+          </association>
+          <association Id="153e431c-9ff2-46dd-bb51-aeae2340ff5c" isDerived="false" sourceEndRoleName="Lecturer" targetEndRoleName="View assignments" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="9b0fc41f-2bad-4e88-a994-a7785bd342ea" LastKnownName="View assignments" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="22958aa4-088c-4ceb-bec8-2af0ef24eb54" name="Lecturer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="02ff427d-c4be-459f-a345-a6790a85a059" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e45ed920-0100-4474-b3a5-0d1cae67b681" name="View assignments" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="bbbbe6bf-bbb4-4a14-8ab2-9a5f5c5f391c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8ed606ca-e97e-4074-84ae-bfb94fb9bf45" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="869a033f-32c0-40d1-869c-fde12aef29ec" name="Student" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8a5daddb-63a8-4dd7-b5bb-3c59cac484f2" />
+        <targetEnds>
+          <association Id="f60be796-f5c5-4a95-8596-ec25d28e9d4d" isDerived="false" sourceEndRoleName="Student" targetEndRoleName="View assignments" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="9b0fc41f-2bad-4e88-a994-a7785bd342ea" LastKnownName="View assignments" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b0af7b83-5581-4111-9b78-8b5c1487a61c" name="Student" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e7da4f74-f512-4dec-80e5-72f9bfd3d434" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="69d9a3aa-8353-4fbb-ac6e-d8cf271e3fc2" name="View assignments" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1b92e2e8-6a95-42c2-99eb-4b430a7c769f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b81f0022-0156-4d24-b15b-4296922cc56b" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="1a0ee7bd-e76c-4a70-9b6b-5fa2ce1a6c2e" name="Administrator" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2f93e4ee-1a18-4370-b8ca-2116449d36c6" />
+        <targetEnds>
+          <association Id="9f712194-d9f6-4420-b547-08d47c304b2d" isDerived="false" sourceEndRoleName="Administrator" targetEndRoleName="Manage all assignments" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c84eba1d-6c97-4a7b-9c56-71d708de52dc" LastKnownName="Manage all assignments" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="17c743e7-f5cb-4250-9036-3bb7c0ce6c3f" name="Administrator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6dbfa74e-c3e4-4877-b4f2-58f9f0240138" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4d9a8573-d6bb-4fc7-b1f0-e833fa831052" name="Manage all assignments" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4bcc1bbe-6cab-499a-91ec-da204c945a5a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3f93a9a7-7967-4c9d-bf5e-9c28c826afc6" />
+          </association>
+          <association Id="d7e97df7-4a23-463f-ae5b-cfc9bfb1f426" isDerived="false" sourceEndRoleName="Administrator" targetEndRoleName="View assignments" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="9b0fc41f-2bad-4e88-a994-a7785bd342ea" LastKnownName="View assignments" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="998862e3-330c-4970-a5c9-ea73f7697d02" name="Administrator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="12a34369-a5c0-4e17-9829-b4003c47f077" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ed3ed428-fc05-438b-ad50-395e64211279" name="View assignments" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b3cfdaad-5123-44a7-8ecc-948c3f7055c7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ea8b3f44-a09a-4adc-85f7-978f9279a81f" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a5cae05a-5d42-4da9-aaea-d6aab895d04b" name="Manage own assignments" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="595f46f3-4c8f-496f-b7cf-a7532c6eef6b" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="bc701383-5611-4225-a713-2f77fa874d01" name="Create assignment" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="acaf681a-be70-4ad7-b838-f62aca0571d5" />
+        <extendedCases>
+          <extend Id="66964d2d-28fe-433e-a1f7-3f7b3f6f1c2d">
+            <useCaseMoniker Id="a5cae05a-5d42-4da9-aaea-d6aab895d04b" LastKnownName="Manage own assignments" />
+            <elementDefinition Id="67d49615-70f4-4534-829b-5f04c87579c7" />
+          </extend>
+          <extend Id="0a1e4783-cac8-4f76-a834-b4f4c2e9ae48">
+            <useCaseMoniker Id="c84eba1d-6c97-4a7b-9c56-71d708de52dc" LastKnownName="Manage all assignments" />
+            <elementDefinition Id="bcf98150-4cd8-4e6f-b5fa-c69d9f6c5c0d" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6922f55d-22ce-4c49-bff7-4438c3ce7146" name="Delete assignment" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fcd7ba58-a81f-49dd-9223-af34e315d622" />
+        <extendedCases>
+          <extend Id="21b09dd3-08ba-4b7d-9f85-01b8f47e7b2c">
+            <useCaseMoniker Id="a5cae05a-5d42-4da9-aaea-d6aab895d04b" LastKnownName="Manage own assignments" />
+            <elementDefinition Id="1a916625-4734-46da-aec6-1a9d5569dd11" />
+          </extend>
+          <extend Id="7fcc9349-974c-4ddf-817d-5f9043cd4c55">
+            <useCaseMoniker Id="c84eba1d-6c97-4a7b-9c56-71d708de52dc" LastKnownName="Manage all assignments" />
+            <elementDefinition Id="c1dd1b8e-acc9-4351-a13a-ee45dce89d17" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9b0fc41f-2bad-4e88-a994-a7785bd342ea" name="View assignments" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d957ec74-87b7-42ae-900e-5fee63caa264" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c84eba1d-6c97-4a7b-9c56-71d708de52dc" name="Manage all assignments" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1b391a8b-b15f-4c69-8db5-d9603469db97" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="08ef7ec5-ffd3-4194-b523-ca0f972b5365" name="View assignment statistics" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1336bc55-ca2b-4099-b56f-4cfa602f04b9" />
+        <extendedCases>
+          <extend Id="b040076d-bc6c-4d59-ae9a-a4821db69862">
+            <useCaseMoniker Id="a5cae05a-5d42-4da9-aaea-d6aab895d04b" LastKnownName="Manage own assignments" />
+            <elementDefinition Id="a143c1ed-189c-4343-8dde-2e3638309e17" />
+          </extend>
+          <extend Id="7fb8769d-7826-458a-ac11-b9c8b5018c56">
+            <useCaseMoniker Id="c84eba1d-6c97-4a7b-9c56-71d708de52dc" LastKnownName="Manage all assignments" />
+            <elementDefinition Id="101ef859-4534-4e90-81f4-31b3c780b1d3" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="07aeb87f-ca37-4c40-aade-63297d1641f7" name="Laboras22Model">
+    <elementDefinition Id="c536aa51-794c-4276-85bd-a9b858d12991" />
+  </package>
+</useCaseModelRoot>
