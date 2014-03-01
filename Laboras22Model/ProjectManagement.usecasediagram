@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="27379f19-ab72-4e2e-b803-c5539fb729da" name="ProjectManagement" linkedPackageId="bd9cfdc4-184b-418c-9b45-91af8a41defe" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="c802e017-f12d-4ba2-88f1-7b3859f5a27c">
+      <profileInstance Id="ff3acba0-3315-47a6-bb8b-d3f36abe42a9" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="470d2481-6e81-4589-a651-dceb94572d11">
+      <profileInstance Id="96f8ad7a-4425-4c33-9cfc-a0bb743ac9f9" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="861ff491-f542-4d9c-8aa9-876a0b9eae6f" name="Student" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="285a2796-5ecf-4cd2-998f-da4db5c7ae9f" />
+        <targetEnds>
+          <association Id="c6604c28-4fc6-467b-bb9e-45cb17870470" isDerived="false" sourceEndRoleName="Student" targetEndRoleName="Create a project" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b315d055-d562-4f95-859b-823a3ff3f7d3" LastKnownName="Create a project" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="dc677f5d-27fc-4d76-a6bc-af86050f603b" name="Student" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9496893c-9e28-4e23-9a45-4cf0333407f3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="14800ec4-3db3-4daf-ac6d-60ae3d3401cf" name="Create a project" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cc82c581-20e2-4619-b458-adbadfdff541" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fc2a7909-49d9-45c6-a4db-356b697fd071" />
+          </association>
+          <association Id="3b917693-fb58-4930-a2fb-1ede203640d4" isDerived="false" sourceEndRoleName="Student" targetEndRoleName="List own projects" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c8b3ee70-dd80-41a8-af9d-c94b283bebc4" LastKnownName="List own projects" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ffee9795-2952-428a-ad7b-df4af725d431" name="Student" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d1ad2e5b-b472-4140-aba9-c6cbf835f122" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ec1a390e-80b1-4d1b-9a51-d60d3eb4f7bc" name="List own projects" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a97d8da4-e679-47e3-a583-29f4dbfc0470" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="90e19ad2-8f8b-4bc6-bddc-93ce97493d30" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b315d055-d562-4f95-859b-823a3ff3f7d3" name="Create a project" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f6e63166-830f-4f5c-8fb5-d59d1188ae29" />
+        <additions>
+          <include Id="6c1b58be-5850-4ae4-aaba-9b56d5ab5016">
+            <useCaseMoniker Id="5a47d144-35d1-4740-a70a-98dc5703d820" LastKnownName="Open a project" />
+            <elementDefinition Id="24e70a87-37d6-4d83-9f84-c1efc2d08783" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c8b3ee70-dd80-41a8-af9d-c94b283bebc4" name="List own projects" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2e342d91-76a9-40d5-bded-f5081a3715bc" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5a47d144-35d1-4740-a70a-98dc5703d820" name="Open a project" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5f80e5f9-e8bb-4e0d-89a1-1bb6b81aeb7d" />
+        <extendedCases>
+          <extend Id="3365e74d-8656-4984-85ad-881c8f4c9347">
+            <useCaseMoniker Id="c8b3ee70-dd80-41a8-af9d-c94b283bebc4" LastKnownName="List own projects" />
+            <elementDefinition Id="3349147e-1a17-41ce-8f5d-2330cde0a9f0" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="bd9cfdc4-184b-418c-9b45-91af8a41defe" name="Laboras22Model">
+    <elementDefinition Id="c536aa51-794c-4276-85bd-a9b858d12991" />
+  </package>
+</useCaseModelRoot>
