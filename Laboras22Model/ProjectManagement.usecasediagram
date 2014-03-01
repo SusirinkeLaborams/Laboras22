@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="27379f19-ab72-4e2e-b803-c5539fb729da" name="ProjectManagement" linkedPackageId="bd9cfdc4-184b-418c-9b45-91af8a41defe" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
-  <profileInstances>
-    <packageHasProfileInstances Id="c802e017-f12d-4ba2-88f1-7b3859f5a27c">
-      <profileInstance Id="ff3acba0-3315-47a6-bb8b-d3f36abe42a9" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="470d2481-6e81-4589-a651-dceb94572d11">
-      <profileInstance Id="96f8ad7a-4425-4c33-9cfc-a0bb743ac9f9" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <useCaseModelRootHasTypes>
       <actor Id="861ff491-f542-4d9c-8aa9-876a0b9eae6f" name="Student" isAbstract="false" isLeaf="false">
@@ -51,6 +37,22 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="90e19ad2-8f8b-4bc6-bddc-93ce97493d30" />
           </association>
+          <association Id="5b6be99f-cfe3-44ce-8d6a-cec6c78b0414" isDerived="false" sourceEndRoleName="Student" targetEndRoleName="List public projects" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0eb2829b-5f9f-474b-b82e-52e9c60d1f72" LastKnownName="List public projects" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1d2eb688-abf8-4d69-bce4-1f28069c75df" name="Student" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5549c5c6-e8eb-439e-be32-cd7b556d183a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f6aa78a8-a114-414f-a68f-04d590f4f990" name="List public projects" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cf326310-8dc9-4819-9eeb-41f36723d2c9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="15aa5ef5-6776-4e82-900e-4d859bed0969" />
+          </association>
         </targetEnds>
       </actor>
     </useCaseModelRootHasTypes>
@@ -78,11 +80,173 @@
             <useCaseMoniker Id="c8b3ee70-dd80-41a8-af9d-c94b283bebc4" LastKnownName="List own projects" />
             <elementDefinition Id="3349147e-1a17-41ce-8f5d-2330cde0a9f0" />
           </extend>
+          <extend Id="0abd75ef-7f11-4336-a1c9-361fe5626560">
+            <useCaseMoniker Id="0eb2829b-5f9f-474b-b82e-52e9c60d1f72" LastKnownName="List public projects" />
+            <elementDefinition Id="a65336d7-d161-45d0-af77-bc9ea98006d9" />
+          </extend>
         </extendedCases>
       </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0eb2829b-5f9f-474b-b82e-52e9c60d1f72" name="List public projects" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bea232ac-d64e-4eb6-b508-cc25b7a54938" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="0a8d91e0-62e6-4bcf-be20-8ae47f3871bb" name="Administrator" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f7847da7-5fa0-4c5b-a229-ce865703c2b2" />
+        <targetEnds>
+          <association Id="da44a028-ef3b-48bb-b901-90954c3c54a9" isDerived="false" sourceEndRoleName="Admin" targetEndRoleName="List all projects" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="24e5b9c0-21cc-4333-9641-1797a3bdaf6a" LastKnownName="List all projects" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5def58cf-3d64-4323-b1d5-3c39b66e9caf" name="Admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="16101302-61ac-4209-821d-c486f5d15a22" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="686d6a79-c9b1-4796-b5f5-8a309e3ca88b" name="List all projects" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ad264945-0545-47b7-b4ba-994679c34b54" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="bbd0f46e-1935-429e-a4d0-0e32a7173903" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="24e5b9c0-21cc-4333-9641-1797a3bdaf6a" name="List all projects" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="54c5919e-d611-41cc-974e-552dacf50fa8" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8a966e44-cda1-426d-b036-09d59773ea12" name="Open a project" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="232dd2b4-68b8-471f-ad88-d40510515a65" />
+        <extendedCases>
+          <extend Id="5a560ca3-fdd1-41b1-a78a-c5950584f309">
+            <useCaseMoniker Id="24e5b9c0-21cc-4333-9641-1797a3bdaf6a" LastKnownName="List all projects" />
+            <elementDefinition Id="6f4fb248-6d7c-4780-b4df-d0a6c1da78a5" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="28e9292d-146d-42ca-bacb-59dedbff37e3" name="Delete project" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6f86258c-8122-43de-b84c-df0049359d17" />
+        <extendedCases>
+          <extend Id="14f747f7-f07d-4be4-a189-fd84fb81dd0e">
+            <useCaseMoniker Id="8a966e44-cda1-426d-b036-09d59773ea12" LastKnownName="Open a project" />
+            <elementDefinition Id="3609ee33-8c62-4853-82fc-bd6f1f465666" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="3e54aef6-cb3b-4931-bc0a-9fa672c36ff9" name="Delete project" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8f5d18ff-b733-429a-9933-df68f74a405f" />
+        <extendedCases>
+          <extend Id="384daaf4-ba84-4ad4-aae1-e49467595cdc">
+            <useCaseMoniker Id="5a47d144-35d1-4740-a70a-98dc5703d820" LastKnownName="Open a project" />
+            <elementDefinition Id="7df04ead-c600-49ab-8427-81c88a361cf9" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="18f21278-c8b9-4583-b28c-41dd0a56e39e" name="Add content" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d098aa1f-2451-45db-83cc-9659b849fcb4" />
+        <extendedCases>
+          <extend Id="0e1ad433-b741-4bf8-a6d9-27ea3da83d38">
+            <useCaseMoniker Id="5a47d144-35d1-4740-a70a-98dc5703d820" LastKnownName="Open a project" />
+            <elementDefinition Id="719cb195-20ff-48cf-b0ce-2b51b2910086" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="679204eb-3a30-4d9c-abec-845c32c6dbd1" name="Add participants" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2c0b66e9-6a13-49b0-9ba5-319d059bfbd5" />
+        <extendedCases>
+          <extend Id="8c666444-0c3b-4fb5-9f34-8987e14e15ea">
+            <useCaseMoniker Id="5a47d144-35d1-4740-a70a-98dc5703d820" LastKnownName="Open a project" />
+            <elementDefinition Id="28368447-7cb4-4976-badc-3674155dd54e" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4656b795-0f9e-479b-84f8-2391f81147ba" name="Add rating" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fb152be5-08a2-48d7-8d3c-ea345e4c22bf" />
+        <extendedCases>
+          <extend Id="05275c9f-deb8-4536-8181-a616a199b832">
+            <useCaseMoniker Id="5a47d144-35d1-4740-a70a-98dc5703d820" LastKnownName="Open a project" />
+            <elementDefinition Id="f43a4f12-5dc2-4a17-ac2b-a0e4a4cfca97" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d317275c-3e37-4b5a-8c96-82955431bec8" name="Add comment" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7a78d449-b73b-4c4e-a396-b6b8d4c609c5" />
+        <extendedCases>
+          <extend Id="748fac10-cb65-4f8c-a43d-6c449b89f528">
+            <useCaseMoniker Id="5a47d144-35d1-4740-a70a-98dc5703d820" LastKnownName="Open a project" />
+            <elementDefinition Id="174ec281-6442-4819-b687-684b6c2a423e" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6987ccc7-e010-436a-a3b4-e43fd6c35deb" name="Add grade" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="83ecafe8-fa88-448a-b553-117dee54d6b8" />
+        <extendedCases>
+          <extend Id="04322842-5119-46b3-8350-2dffcdd95763">
+            <useCaseMoniker Id="5a47d144-35d1-4740-a70a-98dc5703d820" LastKnownName="Open a project" />
+            <elementDefinition Id="9cab0862-6462-4c87-a13e-31233982b517" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="c2524951-070d-455a-aaf2-1f9417d57a18" name="Lecturer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7e48ff86-af4c-4ef6-8cf8-478cc7ad86d5" />
+        <targetEnds>
+          <association Id="7299b7a9-55ad-46ed-b809-18e094bd5fbf" isDerived="false" sourceEndRoleName="Lecturer" targetEndRoleName="List public projects" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0eb2829b-5f9f-474b-b82e-52e9c60d1f72" LastKnownName="List public projects" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="60fb6bb4-5ef8-41ab-8d56-6a5c65802f23" name="Lecturer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="396ff432-a7ea-4f03-8951-ab95d796243a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3ebd7c05-8c45-493b-ace8-0960557fc7cd" name="List public projects" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4417dee1-91bf-4680-8de2-b226a6344eb9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="40bcb17e-4609-448d-a512-4ac44ac55911" />
+          </association>
+        </targetEnds>
+      </actor>
     </useCaseModelRootHasTypes>
   </packagedElements>
   <package Id="bd9cfdc4-184b-418c-9b45-91af8a41defe" name="Laboras22Model">
     <elementDefinition Id="c536aa51-794c-4276-85bd-a9b858d12991" />
+    <profileInstances>
+      <packageHasProfileInstances Id="c802e017-f12d-4ba2-88f1-7b3859f5a27c">
+        <profileInstance Id="ff3acba0-3315-47a6-bb8b-d3f36abe42a9" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="470d2481-6e81-4589-a651-dceb94572d11">
+        <profileInstance Id="96f8ad7a-4425-4c33-9cfc-a0bb743ac9f9" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </useCaseModelRoot>

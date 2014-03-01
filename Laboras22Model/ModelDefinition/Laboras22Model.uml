@@ -428,6 +428,45 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="15aa5ef5-6776-4e82-900e-4d859bed0969"
+            isDerived="false"
+            sourceEndRoleName="Student"
+            targetEndRoleName="List public projects"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="bea232ac-d64e-4eb6-b508-cc25b7a54938"
+              LastKnownName="List public projects"
+              LastKnownLocation="Laboras22Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5549c5c6-e8eb-439e-be32-cd7b556d183a"
+                  name="Student"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cf326310-8dc9-4819-9eeb-41f36723d2c9"
+                  name="List public projects"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
       </actor>
     </packageHasNamedElement>
@@ -469,8 +508,263 @@
               LastKnownName="List own projects"
               LastKnownLocation="Laboras22Model.uml" />
           </extend>
+          <extend
+            Id="a65336d7-d161-45d0-af77-bc9ea98006d9">
+            <useCaseMoniker
+              Id="bea232ac-d64e-4eb6-b508-cc25b7a54938"
+              LastKnownName="List public projects"
+              LastKnownLocation="Laboras22Model.uml" />
+          </extend>
         </extendedCases>
       </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="bea232ac-d64e-4eb6-b508-cc25b7a54938"
+        name="List public projects"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="f7847da7-5fa0-4c5b-a229-ce865703c2b2"
+        name="Administrator"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="bbd0f46e-1935-429e-a4d0-0e32a7173903"
+            isDerived="false"
+            sourceEndRoleName="Admin"
+            targetEndRoleName="List all projects"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="54c5919e-d611-41cc-974e-552dacf50fa8"
+              LastKnownName="List all projects"
+              LastKnownLocation="Laboras22Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="16101302-61ac-4209-821d-c486f5d15a22"
+                  name="Admin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ad264945-0545-47b7-b4ba-994679c34b54"
+                  name="List all projects"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="54c5919e-d611-41cc-974e-552dacf50fa8"
+        name="List all projects"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="232dd2b4-68b8-471f-ad88-d40510515a65"
+        name="Open a project"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="6f4fb248-6d7c-4780-b4df-d0a6c1da78a5">
+            <useCaseMoniker
+              Id="54c5919e-d611-41cc-974e-552dacf50fa8"
+              LastKnownName="List all projects"
+              LastKnownLocation="Laboras22Model.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6f86258c-8122-43de-b84c-df0049359d17"
+        name="Delete project"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="3609ee33-8c62-4853-82fc-bd6f1f465666">
+            <useCaseMoniker
+              Id="232dd2b4-68b8-471f-ad88-d40510515a65"
+              LastKnownName="Open a project"
+              LastKnownLocation="Laboras22Model.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8f5d18ff-b733-429a-9933-df68f74a405f"
+        name="Delete project"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="7df04ead-c600-49ab-8427-81c88a361cf9">
+            <useCaseMoniker
+              Id="5f80e5f9-e8bb-4e0d-89a1-1bb6b81aeb7d"
+              LastKnownName="Open a project"
+              LastKnownLocation="Laboras22Model.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d098aa1f-2451-45db-83cc-9659b849fcb4"
+        name="Add content"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="719cb195-20ff-48cf-b0ce-2b51b2910086">
+            <useCaseMoniker
+              Id="5f80e5f9-e8bb-4e0d-89a1-1bb6b81aeb7d"
+              LastKnownName="Open a project"
+              LastKnownLocation="Laboras22Model.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2c0b66e9-6a13-49b0-9ba5-319d059bfbd5"
+        name="Add participants"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="28368447-7cb4-4976-badc-3674155dd54e">
+            <useCaseMoniker
+              Id="5f80e5f9-e8bb-4e0d-89a1-1bb6b81aeb7d"
+              LastKnownName="Open a project"
+              LastKnownLocation="Laboras22Model.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="fb152be5-08a2-48d7-8d3c-ea345e4c22bf"
+        name="Add rating"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="f43a4f12-5dc2-4a17-ac2b-a0e4a4cfca97">
+            <useCaseMoniker
+              Id="5f80e5f9-e8bb-4e0d-89a1-1bb6b81aeb7d"
+              LastKnownName="Open a project"
+              LastKnownLocation="Laboras22Model.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7a78d449-b73b-4c4e-a396-b6b8d4c609c5"
+        name="Add comment"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="174ec281-6442-4819-b687-684b6c2a423e">
+            <useCaseMoniker
+              Id="5f80e5f9-e8bb-4e0d-89a1-1bb6b81aeb7d"
+              LastKnownName="Open a project"
+              LastKnownLocation="Laboras22Model.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="83ecafe8-fa88-448a-b553-117dee54d6b8"
+        name="Add grade"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="9cab0862-6462-4c87-a13e-31233982b517">
+            <useCaseMoniker
+              Id="5f80e5f9-e8bb-4e0d-89a1-1bb6b81aeb7d"
+              LastKnownName="Open a project"
+              LastKnownLocation="Laboras22Model.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="7e48ff86-af4c-4ef6-8cf8-478cc7ad86d5"
+        name="Lecturer"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="40bcb17e-4609-448d-a512-4ac44ac55911"
+            isDerived="false"
+            sourceEndRoleName="Lecturer"
+            targetEndRoleName="List public projects"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="bea232ac-d64e-4eb6-b508-cc25b7a54938"
+              LastKnownName="List public projects"
+              LastKnownLocation="Laboras22Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="396ff432-a7ea-4f03-8951-ab95d796243a"
+                  name="Lecturer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4417dee1-91bf-4680-8de2-b226a6344eb9"
+                  name="List public projects"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
