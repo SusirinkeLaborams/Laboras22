@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Laboras22.Classes;
+using Laboras22.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +25,8 @@ namespace Laboras22.Views
         public MainWindow()
         {
             InitializeComponent();
+
+            DataProvider<IDataItem>.Connect();
         }
     }
 }
