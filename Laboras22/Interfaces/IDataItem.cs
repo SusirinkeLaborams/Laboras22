@@ -8,6 +8,6 @@ namespace Laboras22.Interfaces
 {
     interface IDataItem
     {
-        int id;
+        int Id { get; set; }
     }
 }
