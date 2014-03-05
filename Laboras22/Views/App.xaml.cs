@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace Laboras22
+namespace Laboras22.Views
 {
     /// <summary>
     /// Interaction logic for App.xaml
