@@ -1,8 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
   dslVersion="1.0.0.0"
   Id="c536aa51-794c-4276-85bd-a9b858d12991"
   name="Laboras22Model" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="c0e8e1a7-1bde-4db4-9bcc-849ef596f63d">
+      <body>User</body>
+    </comment>
+    <comment
+      Id="7182c47f-4155-4447-a951-b7363d0708d5">
+      <body>Client
+</body>
+    </comment>
+    <comment
+      Id="65d59e17-e3ad-4b80-9a4d-7ef50c446762">
+      <body>Server</body>
+    </comment>
+  </ownedCommentsInternal>
   <profileInstances>
     <packageHasProfileInstances
       Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
@@ -1115,45 +1130,6 @@
             </relationshipOwnedElementsInternal>
           </association>
           <association
-            Id="4063ab6c-9d26-46c8-9889-08bf3ad1f590"
-            isDerived="false"
-            sourceEndRoleName="Lecturer"
-            targetEndRoleName="List all projects"
-            isLeaf="false"
-            isAbstract="false">
-            <useCaseMoniker
-              Id="54c5919e-d611-41cc-974e-552dacf50fa8"
-              LastKnownName="List all projects"
-              LastKnownLocation="Laboras22Model.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="854dd9e6-c750-478c-b057-1e5523421e12"
-                  name="Lecturer"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="b02d78ff-de2a-4bf3-b3be-2926e922b234"
-                  name="List all projects"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
             Id="8ee7707f-a350-44d8-b20e-d44bf8834065"
             isDerived="false"
             sourceEndRoleName="Lecturer"
@@ -1526,6 +1502,242 @@
         name="Register"
         isAbstract="false"
         isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="eb34f83a-e261-4bfd-bec9-59e5e4c42cb8"
+        name="CreateProject"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="0e889389-87fe-456d-9e31-55d6dd63c3e5"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="6b209171-ed69-4873-b2bf-8f2c7496e89e"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="e06035aa-8ca0-4ae8-80e1-44f5d841d278"
+                  LastKnownName="Select &quot;Log in&quot;"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="8a5371b5-22de-4025-a866-173070b3a849"
+            name="Select &quot;Create project&quot;"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f6378798-6aa4-44f0-88bf-a7389d749710"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="39a82d8c-33bd-4562-94ff-c575080939f3"
+                  LastKnownName="Open project creation form"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="39a82d8c-33bd-4562-94ff-c575080939f3"
+            name="Open project creation form"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="81c1f142-9dbd-4088-9c80-c6745a0a3dcc"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="061c010e-1e60-40e1-aafb-e467b9de7582"
+                  LastKnownName="Fill in project information"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="061c010e-1e60-40e1-aafb-e467b9de7582"
+            name="Fill in project information"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e2017e78-54c3-4fda-8f89-4bb1896fd90b"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="e9e476fd-ade9-4bb4-af65-fed6b349d48f"
+                  LastKnownName="Select &quot;Save&quot;"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="e9e476fd-ade9-4bb4-af65-fed6b349d48f"
+            name="Select &quot;Save&quot;"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="42a7bddf-875f-4fea-a179-bd3c956725e2"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="59bc9205-ac9d-40fe-9247-f37bfc3c42b9"
+                  LastKnownName="Send project"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="e06035aa-8ca0-4ae8-80e1-44f5d841d278"
+            name="Select &quot;Log in&quot;"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9fc30d54-6020-41ef-8ee4-cd70a84a237d"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="26305c31-8752-41a6-bfd5-3bfb9bdc9e89"
+                  LastKnownName="Ask for credentials"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="26305c31-8752-41a6-bfd5-3bfb9bdc9e89"
+            name="Ask for credentials"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ecb5fd6c-a76f-4425-91cf-39a06be37393"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="30508f11-8af0-4be9-9001-e7c6be944c1d"
+                  LastKnownName="Input credentials"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="30508f11-8af0-4be9-9001-e7c6be944c1d"
+            name="Input credentials"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="bb7bdd43-ef1a-4a45-a252-6c2528f5cb58"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="09677a33-3e6a-424c-a1ed-1bef12aee70e"
+                  LastKnownName="Send credentials"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="09677a33-3e6a-424c-a1ed-1bef12aee70e"
+            name="Send credentials"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="0af5cd6c-cb25-4021-90c9-0d9f99e7e0a6"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ca2f24aa-3a78-4ff7-9e52-89dc82c20610"
+                  LastKnownName="Check credentials"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="ca2f24aa-3a78-4ff7-9e52-89dc82c20610"
+            name="Check credentials"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="bbb46c7b-59a3-4693-a73b-c1a706ad136b"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="c46cae02-0770-417b-8ad8-f1b7ba0e4c5b"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="c46cae02-0770-417b-8ad8-f1b7ba0e4c5b"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="353a6ee1-bc2f-43ca-9b44-8b649e61b0d4"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="26305c31-8752-41a6-bfd5-3bfb9bdc9e89"
+                  LastKnownName="Ask for credentials"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="2e473e5e-9407-42ec-a8ae-cfb23f7c3499"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="8a5371b5-22de-4025-a866-173070b3a849"
+                  LastKnownName="Select &quot;Create project&quot;"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="59bc9205-ac9d-40fe-9247-f37bfc3c42b9"
+            name="Send project"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="06158508-de6f-4324-abc7-3d02b097e58b"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="b32bf98b-a251-4640-81a9-67d2c77ded88"
+                  LastKnownName="Save project"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="b32bf98b-a251-4640-81a9-67d2c77ded88"
+            name="Save project"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="21b9a2e5-b3df-4be3-9cbe-c00248023457"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="933efb1b-dda3-4101-a31b-e4b4b3d64fde"
+                  LastKnownName="Open project"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="933efb1b-dda3-4101-a31b-e4b4b3d64fde"
+            name="Open project"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="74bb6344-f28f-42f2-a76a-9c310b6a2d01"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="0314ca09-3db6-4a75-948a-6793d12b643d"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="0314ca09-3db6-4a75-948a-6793d12b643d"
+            name="ActivityFinal1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

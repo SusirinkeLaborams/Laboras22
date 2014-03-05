@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="6f46c635-efab-4193-b615-6ccc23776b23" name="CreateProject" linkedPackageId="6504cfb1-fff7-4c65-a19f-232f5689d00e" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="b725dc55-f10e-410f-8fe0-5706ccc6ab58">
+      <elementDefinition Id="c0e8e1a7-1bde-4db4-9bcc-849ef596f63d" />
+      <body>User</body>
+    </comment>
+    <comment Id="10900343-0db6-4ed6-b94d-2d7a462b356b">
+      <elementDefinition Id="7182c47f-4155-4447-a951-b7363d0708d5" />
+      <body>Client
+</body>
+    </comment>
+    <comment Id="8a4e9e1b-45fd-4f2c-8ccb-c435be7ac4bb">
+      <elementDefinition Id="65d59e17-e3ad-4b80-9a4d-7ef50c446762" />
+      <body>Server</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="a69e43ec-4947-417e-b653-7bd33d4c3d6a">
+      <profileInstance Id="b75eada1-9d6a-4dce-842c-749999f894cd" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="400d7310-68c2-4793-8acf-ed7a60d8b14c">
+      <profileInstance Id="1cada7d1-cf7d-4d13-8b6e-51ada5563664" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="569a9396-2ab4-4b25-bc2c-510cc8485b9f" name="CreateProject" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="eb34f83a-e261-4bfd-bec9-59e5e4c42cb8" />
+        <nodes>
+          <initialNode Id="1d416bbf-73be-4aac-b0f8-b714cbdb1844" name="Initial1" isLeaf="false">
+            <elementDefinition Id="0e889389-87fe-456d-9e31-55d6dd63c3e5" />
+            <flowNodeTargets>
+              <controlFlow Id="6865d12f-a58d-4322-9954-695367385713" isLeaf="false">
+                <opaqueActionMoniker Id="0b36b36d-e87b-42ce-95f8-8620285bff35" LastKnownName="Select &quot;Log in&quot;" />
+                <elementDefinition Id="6b209171-ed69-4873-b2bf-8f2c7496e89e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="88f444e2-c457-4769-ad71-d82962b53bbc" name="Select &quot;Create project&quot;" isLeaf="false">
+            <elementDefinition Id="8a5371b5-22de-4025-a866-173070b3a849" />
+            <flowNodeTargets>
+              <controlFlow Id="33d0c7b8-06b8-47f0-92d7-896c4313ed4a" isLeaf="false">
+                <opaqueActionMoniker Id="eb258aba-5b5d-4068-bb57-6ac36718d23a" LastKnownName="Open project creation form" />
+                <elementDefinition Id="f6378798-6aa4-44f0-88bf-a7389d749710" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="eb258aba-5b5d-4068-bb57-6ac36718d23a" name="Open project creation form" isLeaf="false">
+            <elementDefinition Id="39a82d8c-33bd-4562-94ff-c575080939f3" />
+            <flowNodeTargets>
+              <controlFlow Id="20f7c67b-bc78-46d4-bf64-cd7b02453db9" isLeaf="false">
+                <opaqueActionMoniker Id="c3259178-7fc6-45b0-ab89-9643a9c0ee72" LastKnownName="Fill in project information" />
+                <elementDefinition Id="81c1f142-9dbd-4088-9c80-c6745a0a3dcc" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="c3259178-7fc6-45b0-ab89-9643a9c0ee72" name="Fill in project information" isLeaf="false">
+            <elementDefinition Id="061c010e-1e60-40e1-aafb-e467b9de7582" />
+            <flowNodeTargets>
+              <controlFlow Id="43bdb017-5eee-48f4-92a5-e61b0a45bf9e" isLeaf="false">
+                <opaqueActionMoniker Id="3e4ebbb5-65ad-465d-a699-ebaa5bd3714c" LastKnownName="Select &quot;Save&quot;" />
+                <elementDefinition Id="e2017e78-54c3-4fda-8f89-4bb1896fd90b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="3e4ebbb5-65ad-465d-a699-ebaa5bd3714c" name="Select &quot;Save&quot;" isLeaf="false">
+            <elementDefinition Id="e9e476fd-ade9-4bb4-af65-fed6b349d48f" />
+            <flowNodeTargets>
+              <controlFlow Id="b44c2004-034b-4041-9868-c1626084669e" isLeaf="false">
+                <opaqueActionMoniker Id="702af3de-53da-4015-a80c-04db0dc6dc33" LastKnownName="Send project" />
+                <elementDefinition Id="42a7bddf-875f-4fea-a179-bd3c956725e2" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="0b36b36d-e87b-42ce-95f8-8620285bff35" name="Select &quot;Log in&quot;" isLeaf="false">
+            <elementDefinition Id="e06035aa-8ca0-4ae8-80e1-44f5d841d278" />
+            <flowNodeTargets>
+              <controlFlow Id="45ad1f64-f6e6-4946-bcca-102cefe404df" isLeaf="false">
+                <opaqueActionMoniker Id="70c56b65-56b8-49e8-83b4-e8cd64d0ca44" LastKnownName="Ask for credentials" />
+                <elementDefinition Id="9fc30d54-6020-41ef-8ee4-cd70a84a237d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="70c56b65-56b8-49e8-83b4-e8cd64d0ca44" name="Ask for credentials" isLeaf="false">
+            <elementDefinition Id="26305c31-8752-41a6-bfd5-3bfb9bdc9e89" />
+            <flowNodeTargets>
+              <controlFlow Id="6c8e0db7-071c-41e6-8c07-a43d61706860" isLeaf="false">
+                <opaqueActionMoniker Id="40acd9aa-70b1-4ab5-84da-748c23ea4ab3" LastKnownName="Input credentials" />
+                <elementDefinition Id="ecb5fd6c-a76f-4425-91cf-39a06be37393" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="40acd9aa-70b1-4ab5-84da-748c23ea4ab3" name="Input credentials" isLeaf="false">
+            <elementDefinition Id="30508f11-8af0-4be9-9001-e7c6be944c1d" />
+            <flowNodeTargets>
+              <controlFlow Id="f2561b05-d500-4692-afc6-54ac2fb73573" isLeaf="false">
+                <opaqueActionMoniker Id="7842c585-2937-48ef-a86d-57cec4704c0e" LastKnownName="Send credentials" />
+                <elementDefinition Id="bb7bdd43-ef1a-4a45-a252-6c2528f5cb58" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="7842c585-2937-48ef-a86d-57cec4704c0e" name="Send credentials" isLeaf="false">
+            <elementDefinition Id="09677a33-3e6a-424c-a1ed-1bef12aee70e" />
+            <flowNodeTargets>
+              <controlFlow Id="38e9af5d-7ea2-4c8e-ab1d-86ba7d6b6574" isLeaf="false">
+                <opaqueActionMoniker Id="e0a24ded-ccad-430c-80d5-4c15d67aeed4" LastKnownName="Check credentials" />
+                <elementDefinition Id="0af5cd6c-cb25-4021-90c9-0d9f99e7e0a6" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="e0a24ded-ccad-430c-80d5-4c15d67aeed4" name="Check credentials" isLeaf="false">
+            <elementDefinition Id="ca2f24aa-3a78-4ff7-9e52-89dc82c20610" />
+            <flowNodeTargets>
+              <controlFlow Id="9b25c324-1e79-47ba-acf7-30daf564eabd" isLeaf="false">
+                <decisionNodeMoniker Id="c00cd274-95db-4b9f-b2f1-aac1a7bf0d40" LastKnownName="Decision1" />
+                <elementDefinition Id="bbb46c7b-59a3-4693-a73b-c1a706ad136b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="c00cd274-95db-4b9f-b2f1-aac1a7bf0d40" name="Decision1" isLeaf="false">
+            <elementDefinition Id="c46cae02-0770-417b-8ad8-f1b7ba0e4c5b" />
+            <flowNodeTargets>
+              <controlFlow Id="eeac5d91-eae9-4b97-a333-e4038dff4b1a" isLeaf="false">
+                <opaqueActionMoniker Id="70c56b65-56b8-49e8-83b4-e8cd64d0ca44" LastKnownName="Ask for credentials" />
+                <elementDefinition Id="353a6ee1-bc2f-43ca-9b44-8b649e61b0d4" />
+              </controlFlow>
+              <controlFlow Id="f604113e-461e-479e-b2d4-2041ac4d6cb2" isLeaf="false">
+                <opaqueActionMoniker Id="88f444e2-c457-4769-ad71-d82962b53bbc" LastKnownName="Select &quot;Create project&quot;" />
+                <elementDefinition Id="2e473e5e-9407-42ec-a8ae-cfb23f7c3499" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="702af3de-53da-4015-a80c-04db0dc6dc33" name="Send project" isLeaf="false">
+            <elementDefinition Id="59bc9205-ac9d-40fe-9247-f37bfc3c42b9" />
+            <flowNodeTargets>
+              <controlFlow Id="a6b53ca5-11e4-43a6-9aa9-8a7e603dd7b4" isLeaf="false">
+                <opaqueActionMoniker Id="d9a0d58c-c5e1-46b2-8d84-ba7c240c6dd1" LastKnownName="Save project" />
+                <elementDefinition Id="06158508-de6f-4324-abc7-3d02b097e58b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="d9a0d58c-c5e1-46b2-8d84-ba7c240c6dd1" name="Save project" isLeaf="false">
+            <elementDefinition Id="b32bf98b-a251-4640-81a9-67d2c77ded88" />
+            <flowNodeTargets>
+              <controlFlow Id="01517b3e-77a8-4f95-a09e-7a4e4c7a859d" isLeaf="false">
+                <opaqueActionMoniker Id="a5403fc7-a6e8-472f-8866-30615f4c1b70" LastKnownName="Open project" />
+                <elementDefinition Id="21b9a2e5-b3df-4be3-9cbe-c00248023457" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="a5403fc7-a6e8-472f-8866-30615f4c1b70" name="Open project" isLeaf="false">
+            <elementDefinition Id="933efb1b-dda3-4101-a31b-e4b4b3d64fde" />
+            <flowNodeTargets>
+              <controlFlow Id="e44a489a-5b67-43de-a9f3-6296d178af53" isLeaf="false">
+                <activityFinalNodeMoniker Id="70514a76-7f15-4612-98d4-9cbca6d95bae" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="74bb6344-f28f-42f2-a76a-9c310b6a2d01" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="70514a76-7f15-4612-98d4-9cbca6d95bae" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="0314ca09-3db6-4a75-948a-6793d12b643d" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="6504cfb1-fff7-4c65-a19f-232f5689d00e" name="Laboras22Model">
+    <elementDefinition Id="c536aa51-794c-4276-85bd-a9b858d12991" />
+  </package>
+</activityRootModel>
