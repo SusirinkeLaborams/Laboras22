@@ -1,0 +1,431 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="bd7b2d7e-1506-4471-828f-3e4202b71d55"
+  name="MobileServices"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="7f649a41-a567-4403-a9db-9079bfa44e2d"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DMicrosoft.WindowsAzure.MobileServices"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <Interface
+        Id="b5d11407-801e-4379-a11b-308c44c85187"
+        name="IMobileServiceTableQuery&lt;T‎&gt;"
+        isAbstract="false"
+        isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="1013ecc0-f4cb-430e-977e-151208d27df0"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="23c8b752-8b58-4d33-89fa-d193490987ec">
+                <propertyInstance
+                  Id="8d740adc-2c9a-4694-bdfe-d5b7858ffdf9"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="56425401-bead-4373-9d18-5616a3da3acc">
+                <propertyInstance
+                  Id="c7739c6a-6db6-4b99-9ddc-1d6e0f2a4201"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="89203acd-8950-409c-80f8-eb89b2ccffac">
+                <propertyInstance
+                  Id="a59db3ad-229b-4cd3-a6f0-ca5a1bf05cd7"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="49b2196a-912d-4825-a10a-6510d1c39cc4">
+                <propertyInstance
+                  Id="e281d709-fb64-40ff-8c13-9380d0ad79ba"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <signatures>
+          <templateBinding
+            Id="2a187976-76eb-4dc7-8207-04e83c3a7445">
+            <redefinableTemplateSignatureMoniker
+              Id="0bdebf1f-15d8-4388-b37f-e5a56d72ce2e"
+              LastKnownLocation="Package16_2347.uml" />
+            <relationshipOwnedElementsInternal>
+              <templateBindingHasTemplateParameterSubstitution>
+                <templateParameterSubstitution
+                  Id="b779c35f-0451-4a01-8c7b-919cf87502d4">
+                  <formal>
+                    <classifierTemplateParameterMoniker
+                      Id="6e9c4fec-165d-40b2-b149-7fbbdd220910"
+                      LastKnownLocation="Package16_2347.uml" />
+                  </formal>
+                </templateParameterSubstitution>
+              </templateBindingHasTemplateParameterSubstitution>
+            </relationshipOwnedElementsInternal>
+          </templateBinding>
+        </signatures>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="79a90d57-d08a-49b2-9025-5a40c1a52d72"
+        name="IMobileServiceTableQuery"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="b561acb6-57e7-4f08-bc22-b93748b8a909"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3D&quot;file:%2F%2F%2FE:%2FMy docs%2FC%2523%2FLaboras22%2Fpackages%2FWindowsAzure.MobileServices.1.1.4%2Flib%2Fnet45%2FMicrosoft.WindowsAzure.Mobile.dll&quot; Namespace%3DMicrosoft.WindowsAzure.MobileServices Type%3D(Name%3DIMobileServiceTableQuery GenericParameterCount%3D1)"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="e0e2d7d7-6d12-4dc8-bc30-7919a9818885"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="632c9905-5c35-4799-9648-c0dfe0d5ccc3">
+                <propertyInstance
+                  Id="986fa08c-f0db-425c-8487-452e5751af65"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7e368608-ad8d-40bd-a6d1-aa2f015dec43">
+                <propertyInstance
+                  Id="89c8e734-8b4d-419b-8214-4eba41fdd553"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="733932b8-736a-4fcb-8bf6-3a2ee1bd149a">
+                <propertyInstance
+                  Id="e6cd1618-8027-44aa-b518-1a523570b2dd"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7b4d2911-95cd-4a5b-8f99-23e52e8d2fea">
+                <propertyInstance
+                  Id="2587e646-1b01-4d5d-a3fe-60e59364bbef"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedRedefinableTemplateSignatureInternal>
+          <redefinableTemplateSignature
+            Id="0bdebf1f-15d8-4388-b37f-e5a56d72ce2e"
+            parameters=""
+            name="RedefinableTemplateSignature1"
+            isLeaf="false">
+            <ownedParameters>
+              <classifierTemplateParameter
+                Id="6e9c4fec-165d-40b2-b149-7fbbdd220910">
+                <referencesInternal>
+                  <reference
+                    Id="d4361331-604d-4766-be4e-93c67deaf8e5"
+                    handle="viewcode://./CodeSchema_GenericParameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FMy docs%2FC%2523%2FLaboras22%2Fpackages%2FWindowsAzure.MobileServices.1.1.4%2Flib%2Fnet45%2FMicrosoft.WindowsAzure.Mobile.dll&quot; Namespace%3DMicrosoft.WindowsAzure.MobileServices Type%3D(Name%3DIMobileServiceTableQuery GenericParameterCount%3D1) ParameterIdentifier%3D0"
+                    tag="ViewCode" />
+                </referencesInternal>
+                <ownedParameterableElement>
+                  <class
+                    Id="46b6ea54-2bab-459a-ae98-c6f46411f85d"
+                    name="T"
+                    isAbstract="false"
+                    isLeaf="false"
+                    isActiveClass="false" />
+                </ownedParameterableElement>
+              </classifierTemplateParameter>
+            </ownedParameters>
+          </redefinableTemplateSignature>
+        </ownedRedefinableTemplateSignatureInternal>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="c5b087e9-2b5e-4341-9761-80f9df006f44"
+        name="IMobileServiceTableQuery&lt;DataItem‎&gt;"
+        isAbstract="false"
+        isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="be6e6983-33cf-4513-872d-26602c95bf65"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a3779ff0-bd3c-4620-bbd6-c99462d91fd8">
+                <propertyInstance
+                  Id="9d6172b2-3fd6-45a3-a282-b0c2f4cdba20"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ef6ad913-f1ab-4f52-9945-0360c3d0b3e5">
+                <propertyInstance
+                  Id="44806807-0233-4945-8e6c-94e85c715676"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="30643919-4f53-4a04-a9c2-352f740e60bd">
+                <propertyInstance
+                  Id="e0f4d0ab-0fcb-482c-95f8-49b1c2b7979c"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0096becf-ff35-4229-8dce-d6b04042de96">
+                <propertyInstance
+                  Id="c1f989f2-f672-44a8-80ec-dabae39ea5ce"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <signatures>
+          <templateBinding
+            Id="2795459e-3058-491d-b0e1-5cc92a4c7d81">
+            <redefinableTemplateSignatureMoniker
+              Id="0bdebf1f-15d8-4388-b37f-e5a56d72ce2e"
+              LastKnownLocation="Package16_2347.uml" />
+            <relationshipOwnedElementsInternal>
+              <templateBindingHasTemplateParameterSubstitution>
+                <templateParameterSubstitution
+                  Id="0f9a0730-f605-4d9f-a363-d83eab7c5933">
+                  <actuals>
+                    <classMoniker
+                      Id="4d8e855f-8d74-4244-b32b-84af15606c4d"
+                      LastKnownName="DataItem"
+                      LastKnownLocation="Package11_2347.uml" />
+                  </actuals>
+                  <formal>
+                    <classifierTemplateParameterMoniker
+                      Id="6e9c4fec-165d-40b2-b149-7fbbdd220910"
+                      LastKnownLocation="Package16_2347.uml" />
+                  </formal>
+                </templateParameterSubstitution>
+              </templateBindingHasTemplateParameterSubstitution>
+            </relationshipOwnedElementsInternal>
+          </templateBinding>
+        </signatures>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="4ffebacc-1a56-4ec3-90d5-5655ffa42d18"
+        name="IMobileServiceTable&lt;DataItem‎&gt;"
+        isAbstract="false"
+        isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="c9e32d5d-d8c5-432e-b304-121c34db7f99"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b11657ad-4891-439e-85c3-395deacf4b28">
+                <propertyInstance
+                  Id="a5a1dde3-5ebe-4058-b530-3a45b4360c42"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="eeef4bee-e0c3-48d0-a663-00bd4009b3fa">
+                <propertyInstance
+                  Id="7ac7d2fc-66ea-4504-8448-822ff37f16da"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c5eb6dc8-e66f-46f6-9cd8-846549869519">
+                <propertyInstance
+                  Id="ff9dc667-182d-468b-977a-5834920dc14d"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a401e415-8b0a-4cfd-b008-c8cf6f13cbcf">
+                <propertyInstance
+                  Id="5fca963e-11ae-4898-a9da-35b6b838a9fa"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <signatures>
+          <templateBinding
+            Id="231862d2-7050-4346-8cfa-3f04426c0599">
+            <redefinableTemplateSignatureMoniker
+              Id="a23c9c3d-a378-46bd-81da-c1c1b34e4b3c"
+              LastKnownLocation="Package16_2347.uml" />
+            <relationshipOwnedElementsInternal>
+              <templateBindingHasTemplateParameterSubstitution>
+                <templateParameterSubstitution
+                  Id="fa5ee917-2563-42a7-a300-277e61201e02">
+                  <actuals>
+                    <classMoniker
+                      Id="4d8e855f-8d74-4244-b32b-84af15606c4d"
+                      LastKnownName="DataItem"
+                      LastKnownLocation="Package11_2347.uml" />
+                  </actuals>
+                  <formal>
+                    <classifierTemplateParameterMoniker
+                      Id="d3f03428-26b8-4b67-b22e-1aba67e430ec"
+                      LastKnownLocation="Package16_2347.uml" />
+                  </formal>
+                </templateParameterSubstitution>
+              </templateBindingHasTemplateParameterSubstitution>
+            </relationshipOwnedElementsInternal>
+          </templateBinding>
+        </signatures>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="6d672f87-fabc-4bb0-a790-415d30e2fbd1"
+        name="IMobileServiceTable"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="ae851bcd-8f8d-4d6a-bcb8-0d5135c160a1"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3D&quot;file:%2F%2F%2FE:%2FMy docs%2FC%2523%2FLaboras22%2Fpackages%2FWindowsAzure.MobileServices.1.1.4%2Flib%2Fnet45%2FMicrosoft.WindowsAzure.Mobile.dll&quot; Namespace%3DMicrosoft.WindowsAzure.MobileServices Type%3D(Name%3DIMobileServiceTable GenericParameterCount%3D1)"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="00867822-9831-4cf0-9372-8ae11cb913cf"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b2f414e5-cde1-4cff-b04e-35e3f9857a43">
+                <propertyInstance
+                  Id="b3f49e09-8993-401c-a2fb-c4182431cc97"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="33c974b7-2dc0-4c6e-9d3e-ab10f1bf4d1a">
+                <propertyInstance
+                  Id="1748629a-0d12-4e06-a097-8080342bf0df"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0536eada-17d3-4948-a5d5-928ccfd38cf5">
+                <propertyInstance
+                  Id="4e68225a-b566-4496-830b-ecf9a018f1dc"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="256903de-bd3e-4ab7-a811-374ccea4cd97">
+                <propertyInstance
+                  Id="4d8d40b2-2ffe-4b6f-99ce-5f6e35464015"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedRedefinableTemplateSignatureInternal>
+          <redefinableTemplateSignature
+            Id="a23c9c3d-a378-46bd-81da-c1c1b34e4b3c"
+            parameters=""
+            name="RedefinableTemplateSignature1"
+            isLeaf="false">
+            <ownedParameters>
+              <classifierTemplateParameter
+                Id="d3f03428-26b8-4b67-b22e-1aba67e430ec">
+                <referencesInternal>
+                  <reference
+                    Id="c2dd9a0c-22a3-4cb0-9f88-0f925f01a27a"
+                    handle="viewcode://./CodeSchema_GenericParameter?Assembly%3D&quot;file:%2F%2F%2FE:%2FMy docs%2FC%2523%2FLaboras22%2Fpackages%2FWindowsAzure.MobileServices.1.1.4%2Flib%2Fnet45%2FMicrosoft.WindowsAzure.Mobile.dll&quot; Namespace%3DMicrosoft.WindowsAzure.MobileServices Type%3D(Name%3DIMobileServiceTable GenericParameterCount%3D1) ParameterIdentifier%3D0"
+                    tag="ViewCode" />
+                </referencesInternal>
+                <ownedParameterableElement>
+                  <class
+                    Id="54aac267-a31f-4c20-b941-e3bde0f17af1"
+                    name="T"
+                    isAbstract="false"
+                    isLeaf="false"
+                    isActiveClass="false" />
+                </ownedParameterableElement>
+              </classifierTemplateParameter>
+            </ownedParameters>
+          </redefinableTemplateSignature>
+        </ownedRedefinableTemplateSignatureInternal>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0a4e8ca2-edd8-4010-9bd0-27c75815ddcf"
+        name="MobileServiceClient"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="c59dc6f1-1862-4bae-941c-d0f866917f7d"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FE:%2FMy docs%2FC%2523%2FLaboras22%2Fpackages%2FWindowsAzure.MobileServices.1.1.4%2Flib%2Fnet45%2FMicrosoft.WindowsAzure.Mobile.dll&quot; Namespace%3DMicrosoft.WindowsAzure.MobileServices Type%3DMobileServiceClient"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="30c390ed-75d4-459e-bf05-da0ae26e8f82"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1b64aacf-df36-4dec-b3a2-4d75b6ae6b88">
+                <propertyInstance
+                  Id="2ddc06e3-d4c8-4f9b-80ae-ccb998cbc205"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9daf5d4d-0907-4e07-9b96-0cc491c2aa50">
+                <propertyInstance
+                  Id="6bd721a7-35b7-4095-9122-3c7f5583ca1f"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6930ea6a-39c0-4e45-9121-e97344abea2f">
+                <propertyInstance
+                  Id="13fe1343-7ae9-4a0a-a5df-5d4910e542a2"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fd1142bd-af8d-452b-be25-dbe6fdd1f054">
+                <propertyInstance
+                  Id="7b8e1213-8e02-421e-ae22-a9acc161d646"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="637238d7-9686-44ba-b817-b35671854cbf">
+                <propertyInstance
+                  Id="8ef70333-9305-436c-bb76-6e376521d60d"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

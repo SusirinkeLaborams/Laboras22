@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="f4b0930e-581f-40ee-8bd7-1aa5f5f363f3"
+  name="Laboras22"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="70f6969d-8beb-419b-868b-432a9c98a3d2"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DLaboras22"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="cca038e8-0894-4e22-95c1-aaa45b728998"
+        LastKnownName="Views"
+        LastKnownLocation="Package1_2347.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="83e1fb16-ecda-40c9-9860-89f4377e9a9f"
+        LastKnownName="Interfaces"
+        LastKnownLocation="Package4_2347.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="84f8e7af-7d2e-438f-bc23-f09a4a3534f0"
+        LastKnownName="Properties"
+        LastKnownLocation="Package7_2347.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="53762008-868a-4f15-8fcb-8a05211a7504"
+        LastKnownName="Classes"
+        LastKnownLocation="Package11_2347.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
