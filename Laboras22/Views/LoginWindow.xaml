@@ -7,5 +7,7 @@
         <TextBox x:Name="UserNameTextBox" />
         <TextBlock x:Name="PasswordTextBlock" Text="Password" />
         <TextBox x:Name="PasswordTextBox" />
+        <Button x:Name="LoginButton" Content="Login" />
+        <Button x:Name="RegisterButton" Content="Register" />
     </Grid>
 </Window>
