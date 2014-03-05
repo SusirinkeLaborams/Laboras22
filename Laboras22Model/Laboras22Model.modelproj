@@ -29,6 +29,13 @@
       <SubType>Content</SubType>
       <DependentUpon>CreateProject.activitydiagram</DependentUpon>
     </Content>
+    <Content Include="DeleteProject.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DeleteProject.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DeleteProject.activitydiagram</DependentUpon>
+    </Content>
     <Content Include="ProjectManagement.usecasediagram">
       <SubType>Content</SubType>
     </Content>

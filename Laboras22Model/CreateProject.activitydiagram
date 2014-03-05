@@ -15,20 +15,6 @@
       <body>Server</body>
     </comment>
   </ownedCommentsInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="a69e43ec-4947-417e-b653-7bd33d4c3d6a">
-      <profileInstance Id="b75eada1-9d6a-4dce-842c-749999f894cd" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="400d7310-68c2-4793-8acf-ed7a60d8b14c">
-      <profileInstance Id="1cada7d1-cf7d-4d13-8b6e-51ada5563664" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <activityRootModelHasActivity>
       <activity Id="569a9396-2ab4-4b25-bc2c-510cc8485b9f" name="CreateProject" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
@@ -127,11 +113,11 @@
           <decisionNode Id="c00cd274-95db-4b9f-b2f1-aac1a7bf0d40" name="Decision1" isLeaf="false">
             <elementDefinition Id="c46cae02-0770-417b-8ad8-f1b7ba0e4c5b" />
             <flowNodeTargets>
-              <controlFlow Id="eeac5d91-eae9-4b97-a333-e4038dff4b1a" isLeaf="false">
+              <controlFlow Id="eeac5d91-eae9-4b97-a333-e4038dff4b1a" guard="Incorrect" isLeaf="false">
                 <opaqueActionMoniker Id="70c56b65-56b8-49e8-83b4-e8cd64d0ca44" LastKnownName="Ask for credentials" />
                 <elementDefinition Id="353a6ee1-bc2f-43ca-9b44-8b649e61b0d4" />
               </controlFlow>
-              <controlFlow Id="f604113e-461e-479e-b2d4-2041ac4d6cb2" isLeaf="false">
+              <controlFlow Id="f604113e-461e-479e-b2d4-2041ac4d6cb2" guard="Correct" isLeaf="false">
                 <opaqueActionMoniker Id="88f444e2-c457-4769-ad71-d82962b53bbc" LastKnownName="Select &quot;Create project&quot;" />
                 <elementDefinition Id="2e473e5e-9407-42ec-a8ae-cfb23f7c3499" />
               </controlFlow>
@@ -173,5 +159,19 @@
   </packagedElements>
   <package Id="6504cfb1-fff7-4c65-a19f-232f5689d00e" name="Laboras22Model">
     <elementDefinition Id="c536aa51-794c-4276-85bd-a9b858d12991" />
+    <profileInstances>
+      <packageHasProfileInstances Id="a69e43ec-4947-417e-b653-7bd33d4c3d6a">
+        <profileInstance Id="b75eada1-9d6a-4dce-842c-749999f894cd" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="400d7310-68c2-4793-8acf-ed7a60d8b14c">
+        <profileInstance Id="1cada7d1-cf7d-4d13-8b6e-51ada5563664" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </activityRootModel>
