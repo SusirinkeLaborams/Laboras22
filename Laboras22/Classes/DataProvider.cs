@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Laboras22.Classes
 {
-    internal class DataProvider<DataItem> where DataItem : IDataItem
+    internal partial class DataProvider<DataItem> where DataItem : IDataItem
     {
         private static MobileServiceClient s_AzureService;
         private static bool s_IsConnected;
@@ -18,10 +18,14 @@ namespace Laboras22.Classes
 
         public static void Connect()
         {
+            s_AzureService = new MobileServiceClient(kLogin, kPassword);
         }
 
         public static void Disconnect()
         {
+            s_AzureService.Logout();
+            s_AzureService.Dispose();
+            s_AzureService = null;
         }
 
         public DataProvider()
