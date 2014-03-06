@@ -113,6 +113,13 @@
       <SubType>Content</SubType>
       <DependentUpon>ProjectManagement.usecasediagram</DependentUpon>
     </Content>
+    <Content Include="RegisterUser.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="RegisterUser.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>RegisterUser.activitydiagram</DependentUpon>
+    </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="AssignmentManagement.usecasediagram">
       <SubType>Content</SubType>
