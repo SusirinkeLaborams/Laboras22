@@ -50,6 +50,13 @@
       <SubType>Content</SubType>
       <DependentUpon>Laboras22.classdiagram</DependentUpon>
     </Content>
+    <Content Include="Login.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Login.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Login.activitydiagram</DependentUpon>
+    </Content>
     <Content Include="ModelDefinition\Package10_2347.uml">
       <SubType>Content</SubType>
     </Content>

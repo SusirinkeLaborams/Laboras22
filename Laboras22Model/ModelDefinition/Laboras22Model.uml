@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
   dslVersion="1.0.0.0"
   Id="c536aa51-794c-4276-85bd-a9b858d12991"
   name="Laboras22Model" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -54,6 +54,35 @@
     <comment
       Id="bea4c412-4897-41d1-9672-75030cf80877">
       <body>Server</body>
+    </comment>
+    <comment
+      Id="e7933123-4bbc-445b-ac5a-193674b90380">
+      <body>User
+</body>
+    </comment>
+    <comment
+      Id="78000e3b-0526-41b0-8637-1d27be98179a">
+      <body>Client
+</body>
+    </comment>
+    <comment
+      Id="c06d12a9-f1c2-4eed-ab15-d229ef771c7d">
+      <body>Server</body>
+    </comment>
+    <comment
+      Id="d6012644-17c8-4c36-b9f3-701d24c8979b">
+      <body>User
+</body>
+    </comment>
+    <comment
+      Id="b33bc5ff-4b7a-46b7-874e-35607a188ecc">
+      <body>Client
+</body>
+    </comment>
+    <comment
+      Id="e682007d-6900-4158-b6a3-c8d6f96d2bde">
+      <body>Server
+</body>
     </comment>
   </ownedCommentsInternal>
   <profileInstances>
@@ -2674,6 +2703,231 @@
             Id="54626c5c-ee11-434a-8138-b0c182a6caa2"
             name="ActivityFinal1"
             isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <artifact
+        Id="47afc1e0-ed46-4491-a3c8-7b2ec2781e7d"
+        name="Artifact1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="fef2df40-9552-45f9-aada-7a703eb644ac"
+        name="Login"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="fba38e01-7aa6-49d7-85c8-c4248bb16912"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="70e7a9e2-033f-4b8f-bb68-8dc8f5b752bf"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="de70af2a-0d86-453e-a131-48f45fb9ccc2"
+                  LastKnownName="Display login information form"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="de70af2a-0d86-453e-a131-48f45fb9ccc2"
+            name="Display login information form"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="2024be85-b8fb-4dc0-b179-20d4d7434ffe"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="3232fd71-9cb4-43e1-a8ea-219473864d47"
+                  LastKnownName="Input login information"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="3232fd71-9cb4-43e1-a8ea-219473864d47"
+            name="Input login information"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="6cbe6611-58be-45d8-b026-0212ad78d336"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="b6f73fb5-86e4-4a85-a575-4198d24b784b"
+                  LastKnownName="Check if input is valid"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="b6f73fb5-86e4-4a85-a575-4198d24b784b"
+            name="Check if input is valid"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d1bfc08a-dd3a-44b5-a71d-ef9d1e742aae"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="67385920-4dcf-40c0-ab5c-d5a7c9262305"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="ec358aeb-3bc3-4f49-9707-05e9518265e2"
+            name="Display error"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="8cf07713-ef65-4401-b54c-6c39e905a695"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="de70af2a-0d86-453e-a131-48f45fb9ccc2"
+                  LastKnownName="Display login information form"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="67385920-4dcf-40c0-ab5c-d5a7c9262305"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="2965f680-7064-435f-8657-f758ab22eded"
+                guard="Valid"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="1c78a5cd-c48e-4fa6-8a35-5425dfb4e5a1"
+                  LastKnownName="Get user salt"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="20648928-7cff-43ac-bd94-7d9db800c998"
+                guard="Invalid"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ec358aeb-3bc3-4f49-9707-05e9518265e2"
+                  LastKnownName="Display error"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="8d662bd6-ca5e-469b-9d93-945bb4431df2"
+            name="Digest password"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="fac7aff8-9156-4fcd-bd5a-d7f6ebe3f3e3"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="1a2631a5-ccc2-4f40-a74b-5a92f828fce3"
+                  LastKnownName="Check if password is valid"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="1c78a5cd-c48e-4fa6-8a35-5425dfb4e5a1"
+            name="Get user salt"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="8a334ff4-ad09-4dda-81f1-f5165530a755"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="8d662bd6-ca5e-469b-9d93-945bb4431df2"
+                  LastKnownName="Digest password"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="1a2631a5-ccc2-4f40-a74b-5a92f828fce3"
+            name="Check if password is valid"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="3551e9aa-eaf8-4abf-b5b6-921d04db27a2"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="2797674c-2c79-4a4c-b0c2-2999b65d6f59"
+                  LastKnownName="Decision2"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="2797674c-2c79-4a4c-b0c2-2999b65d6f59"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="811d8c23-5ccf-497d-b2ba-1e9c9f7e561c"
+                guard="Invalid"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ec358aeb-3bc3-4f49-9707-05e9518265e2"
+                  LastKnownName="Display error"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="10b4fbb7-9dfc-4274-9d72-ab279e3047d2"
+                guard="Valid"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="265ddf7f-ec30-4663-8627-dab9d9f0c477"
+                  LastKnownName="Create session"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="265ddf7f-ec30-4663-8627-dab9d9f0c477"
+            name="Create session"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="4a681c26-8854-49e4-80f6-9db6398aa0bf"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d6690fca-e685-44d2-bbb5-b6e79b12d29c"
+                  LastKnownName="Display login confirmation"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="19e66345-7507-456d-b636-ef3e78c2a661"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <opaqueAction
+            Id="d6690fca-e685-44d2-bbb5-b6e79b12d29c"
+            name="Display login confirmation"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="0245bba9-6106-4b03-888e-1cd7f1c50be7"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="19e66345-7507-456d-b636-ef3e78c2a661"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
         </nodes>
       </activity>
     </packageHasNamedElement>
