@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="d4d3fa69-061e-4261-8dec-fb018acb2886"
   name="Tasks"
@@ -331,6 +331,94 @@
         <generalsInternal>
           <generalization
             Id="d885fec1-a21b-4997-9a06-7d8eb3f23641"
+            isSubstitutable="false">
+            <classMoniker
+              Id="ed0a5c70-33e8-42f8-90be-4cb8a013148f"
+              LastKnownName="Task"
+              LastKnownLocation="Package13_2347.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="fcbbdfcc-1f7c-4e3f-92eb-215a65c980ec"
+        name="Task&lt;IEnumerable‎&lt;DataItem‎&gt;‎&gt;"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="1c341306-9d3b-43e6-8536-b0673c905c77"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9f03fbed-2e27-423b-abcb-d9fb4bba0574">
+                <propertyInstance
+                  Id="4080bd7a-4caf-4df9-8fa2-d478337d114a"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9cf4ad03-6da1-4864-b42e-800b3d514ebd">
+                <propertyInstance
+                  Id="a3c54426-d696-43a8-8461-4fd8f0fa076c"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1e66c35d-10df-43b4-a32a-e2d64d9fef1d">
+                <propertyInstance
+                  Id="e002d1b6-9fb1-4097-919c-431dd6da28e2"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cad7c795-ef39-41bc-aa7c-6c64e2898ff2">
+                <propertyInstance
+                  Id="43f726f7-0088-4dab-8d86-23dad2654f86"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0c612940-d403-4623-9525-f95f7aaed196">
+                <propertyInstance
+                  Id="8923aa2d-7c35-48df-9b20-d29fb52e35fd"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <signatures>
+          <templateBinding
+            Id="5e3a924e-5917-4500-85f1-7e8138d6d43a">
+            <redefinableTemplateSignatureMoniker
+              Id="784ae904-1229-4e74-888e-b57e5b306455"
+              LastKnownLocation="Package13_2347.uml" />
+            <relationshipOwnedElementsInternal>
+              <templateBindingHasTemplateParameterSubstitution>
+                <templateParameterSubstitution
+                  Id="da6399b9-54d4-4cbc-94d3-108fa7fc0c33">
+                  <actuals>
+                    <interfaceMoniker
+                      Id="e4d9d561-daed-4f18-9b94-7f4899ba7129"
+                      LastKnownName="IEnumerable&lt;DataItem‎&gt;"
+                      LastKnownLocation="Package20_2347.uml" />
+                  </actuals>
+                  <formal>
+                    <classifierTemplateParameterMoniker
+                      Id="d82f6b85-885f-4a2c-9add-7ad9c6be385d"
+                      LastKnownLocation="Package13_2347.uml" />
+                  </formal>
+                </templateParameterSubstitution>
+              </templateBindingHasTemplateParameterSubstitution>
+            </relationshipOwnedElementsInternal>
+          </templateBinding>
+        </signatures>
+        <generalsInternal>
+          <generalization
+            Id="73b26cfa-1039-4273-8757-117ffc32bc0b"
             isSubstitutable="false">
             <classMoniker
               Id="ed0a5c70-33e8-42f8-90be-4cb8a013148f"
