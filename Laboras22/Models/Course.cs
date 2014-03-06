@@ -10,5 +10,7 @@ namespace Laboras22.Models
     class Course : IDataItem
     {
         public int Id { get; set; }
+        public string Name { get; set; }
+        public int FacultyDepartmentId { get; set; }
     }
 }
