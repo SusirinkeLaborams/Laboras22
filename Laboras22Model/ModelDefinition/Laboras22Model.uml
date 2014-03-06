@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
   dslVersion="1.0.0.0"
   Id="c536aa51-794c-4276-85bd-a9b858d12991"
   name="Laboras22Model" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -41,6 +41,18 @@
     </comment>
     <comment
       Id="5f6be4f9-7146-432f-8bf6-3b493ed05699">
+      <body>Server</body>
+    </comment>
+    <comment
+      Id="1cdbc98d-30b8-44ec-bdd3-594a2ba88977">
+      <body>User</body>
+    </comment>
+    <comment
+      Id="08def22a-1f7c-4c8d-8ce4-78a49931ce97">
+      <body>Client</body>
+    </comment>
+    <comment
+      Id="bea4c412-4897-41d1-9672-75030cf80877">
       <body>Server</body>
     </comment>
   </ownedCommentsInternal>
@@ -2377,6 +2389,289 @@
           </opaqueAction>
           <activityFinalNode
             Id="c58f1dd5-45c1-4091-a92b-1ac092d678cf"
+            name="ActivityFinal1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="15d6185c-2ee3-4e50-941e-c8110ac11cbf"
+        name="CreateAssignment"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="e1b49d9c-c7ff-43d3-a46e-013f67f3a430"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="7e3042f9-f842-48e3-961e-068390cef547"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="fa9af54e-a61b-4f54-ae57-9764318615bb"
+                  LastKnownName="Request login"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="c546907a-ae7d-429c-bcf3-47e457c27192"
+            name="Display list of courses"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d7b0827c-a727-41e2-8e06-896cf5217310"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="92e362be-77f3-43dd-b7e2-7344eaa95a4b"
+                  LastKnownName="Select course"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="1e214e62-202a-4245-b1d7-eb8fd686b878"
+            name="Select &quot;Create assignment&quot;"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="47579d79-b2bd-448c-a58a-87ca79138fc4"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="32e526cb-cb95-448e-a910-7b0772453d66"
+                  LastKnownName="Request assignment data"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="1682e0b2-3cba-4613-b627-d37131a5af8a"
+            name="Login"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="16654522-aebf-49d4-98da-e0bc343d3641"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ff0cbe1c-f18a-4888-877f-04f708326733"
+                  LastKnownName="Request list of courses"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="fa9af54e-a61b-4f54-ae57-9764318615bb"
+            name="Request login"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="cfd89406-f205-4f53-bc63-923d3a2e97ac"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="1682e0b2-3cba-4613-b627-d37131a5af8a"
+                  LastKnownName="Login"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="92e362be-77f3-43dd-b7e2-7344eaa95a4b"
+            name="Select course"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="331a15cc-e0aa-48e7-84a1-b91378636cf6"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="8bf38f24-18c2-41ad-bfb9-f100fe06c958"
+                  LastKnownName="Display course menu"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="32e526cb-cb95-448e-a910-7b0772453d66"
+            name="Request assignment data"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9a9598a7-a9cc-408c-afef-126627e498e9"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="39bec434-b5bf-4fec-a30b-d9c171f0916d"
+                  LastKnownName="Enter assignment data"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="ff0cbe1c-f18a-4888-877f-04f708326733"
+            name="Request list of courses"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1079ccb3-ba65-437e-9572-02c1dc02806d"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="460cce93-4a6d-4a05-b77b-12de39c43d39"
+                  LastKnownName="Return list of courses"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="460cce93-4a6d-4a05-b77b-12de39c43d39"
+            name="Return list of courses"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1db974c5-c58d-47ad-9ba8-2f19b405fa21"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c546907a-ae7d-429c-bcf3-47e457c27192"
+                  LastKnownName="Display list of courses"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="8bf38f24-18c2-41ad-bfb9-f100fe06c958"
+            name="Display course menu"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="95a54662-737a-4f4a-a988-00c98d0e02c7"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="1e214e62-202a-4245-b1d7-eb8fd686b878"
+                  LastKnownName="Select &quot;Create assignment&quot;"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="39bec434-b5bf-4fec-a30b-d9c171f0916d"
+            name="Enter assignment data"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="38217be0-8e9d-40c8-b0a9-bd395c968b24"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="1b8e67ef-6ee8-4865-b05b-2b7cf3d14e8c"
+                  LastKnownName="Check whether the data is valid"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="1b8e67ef-6ee8-4865-b05b-2b7cf3d14e8c"
+            name="Check whether the data is valid"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f283c749-2c03-4525-ad69-29f8cf834265"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="6f349486-36f2-4756-a881-afeceb1c3598"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="6f349486-36f2-4756-a881-afeceb1c3598"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a5fc9b78-4ec0-4a8d-92a1-b92a03c95307"
+                guard="Invalid data"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d36ca1d0-b98c-4b77-80af-efe0c7db5c6b"
+                  LastKnownName="Display error message"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="92b7a302-c58f-4232-b12c-263138a1ac5c"
+                guard="Valid data"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="19c0c82d-084a-4d67-a61b-11cf3887c27c"
+                  LastKnownName="Upload data to the server"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="d36ca1d0-b98c-4b77-80af-efe0c7db5c6b"
+            name="Display error message"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="6d72811f-8766-4724-813b-2c6cab5ff91c"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="32e526cb-cb95-448e-a910-7b0772453d66"
+                  LastKnownName="Request assignment data"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="19c0c82d-084a-4d67-a61b-11cf3887c27c"
+            name="Upload data to the server"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f2883d99-8348-49b7-b1a3-efdf3dd9a507"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="0a0c0cfb-5738-498a-a1fe-f1785920a7f4"
+                  LastKnownName="Store data in a database"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="0a0c0cfb-5738-498a-a1fe-f1785920a7f4"
+            name="Store data in a database"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a19d8ee5-6ec1-4ed4-bc19-4ca5da6c0113"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c9279f46-0f89-46fc-b6b3-965a3a0019bc"
+                  LastKnownName="Display success message"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="c9279f46-0f89-46fc-b6b3-965a3a0019bc"
+            name="Display success message"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="6293e7b7-fcf6-4003-b343-adec2f754f8c"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="54626c5c-ee11-434a-8138-b0c182a6caa2"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="54626c5c-ee11-434a-8138-b0c182a6caa2"
             name="ActivityFinal1"
             isLeaf="false" />
         </nodes>

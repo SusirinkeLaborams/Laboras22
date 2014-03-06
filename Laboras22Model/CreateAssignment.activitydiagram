@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="80689730-f5b9-40b7-88c9-7293384f7169" name="CreateAssignment" linkedPackageId="37826e82-bef2-4d4f-96f2-a8046d644212" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="2ac2178d-a4b1-4f40-a070-d836382ba390">
+      <elementDefinition Id="1cdbc98d-30b8-44ec-bdd3-594a2ba88977" />
+      <body>User</body>
+    </comment>
+    <comment Id="6eafcdf4-19ca-4eee-bb01-cef10e6c2a10">
+      <elementDefinition Id="08def22a-1f7c-4c8d-8ce4-78a49931ce97" />
+      <body>Client</body>
+    </comment>
+    <comment Id="b8204971-c562-4713-88b9-99ae3a469a39">
+      <elementDefinition Id="bea4c412-4897-41d1-9672-75030cf80877" />
+      <body>Server</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="33ad6cca-34bb-4d17-9ff8-7b901917f62d" name="CreateAssignment" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="15d6185c-2ee3-4e50-941e-c8110ac11cbf" />
+        <nodes>
+          <initialNode Id="d2e46039-68d7-49b1-aa54-0cf796b009e9" name="Initial1" isLeaf="false">
+            <elementDefinition Id="e1b49d9c-c7ff-43d3-a46e-013f67f3a430" />
+            <flowNodeTargets>
+              <controlFlow Id="57444f18-5975-4cae-9bd3-2e00f53c87ee" isLeaf="false">
+                <opaqueActionMoniker Id="d8b16784-57f2-4649-a3b5-89fa0192909f" LastKnownName="Request login" />
+                <elementDefinition Id="7e3042f9-f842-48e3-961e-068390cef547" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="a83ae740-b0c3-4639-83bc-dc9620a0f9cb" name="Display list of courses" isLeaf="false">
+            <elementDefinition Id="c546907a-ae7d-429c-bcf3-47e457c27192" />
+            <flowNodeTargets>
+              <controlFlow Id="c57fedc2-faa9-4bf0-9ed9-5a6e67f241e8" isLeaf="false">
+                <opaqueActionMoniker Id="ef068727-af7c-4934-8bdb-bf91d812faae" LastKnownName="Select course" />
+                <elementDefinition Id="d7b0827c-a727-41e2-8e06-896cf5217310" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="1fc55cdd-32b5-48c8-9a38-ec31f2379386" name="Select &quot;Create assignment&quot;" isLeaf="false">
+            <elementDefinition Id="1e214e62-202a-4245-b1d7-eb8fd686b878" />
+            <flowNodeTargets>
+              <controlFlow Id="97a6717f-44d6-4f7e-99a3-31cba74d0063" isLeaf="false">
+                <opaqueActionMoniker Id="3fcc3481-90cb-4511-a975-7816e9b2c3a2" LastKnownName="Request assignment data" />
+                <elementDefinition Id="47579d79-b2bd-448c-a58a-87ca79138fc4" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="e79082e0-34f0-492a-bb87-39ade7a2040f" name="Login" isLeaf="false">
+            <elementDefinition Id="1682e0b2-3cba-4613-b627-d37131a5af8a" />
+            <flowNodeTargets>
+              <controlFlow Id="67f8206d-dd9c-473a-babb-cb2f77f6f998" isLeaf="false">
+                <opaqueActionMoniker Id="9da465b9-b042-44db-a7bb-bcb00659117c" LastKnownName="Request list of courses" />
+                <elementDefinition Id="16654522-aebf-49d4-98da-e0bc343d3641" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="d8b16784-57f2-4649-a3b5-89fa0192909f" name="Request login" isLeaf="false">
+            <elementDefinition Id="fa9af54e-a61b-4f54-ae57-9764318615bb" />
+            <flowNodeTargets>
+              <controlFlow Id="25f7de3e-5f04-46aa-ba16-c5a0e80bee11" isLeaf="false">
+                <opaqueActionMoniker Id="e79082e0-34f0-492a-bb87-39ade7a2040f" LastKnownName="Login" />
+                <elementDefinition Id="cfd89406-f205-4f53-bc63-923d3a2e97ac" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="ef068727-af7c-4934-8bdb-bf91d812faae" name="Select course" isLeaf="false">
+            <elementDefinition Id="92e362be-77f3-43dd-b7e2-7344eaa95a4b" />
+            <flowNodeTargets>
+              <controlFlow Id="56c4e73f-bfe2-4804-953c-49f2bd8fd4af" isLeaf="false">
+                <opaqueActionMoniker Id="caf0c84f-6000-4caa-89ff-33814800c6e7" LastKnownName="Display course menu" />
+                <elementDefinition Id="331a15cc-e0aa-48e7-84a1-b91378636cf6" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="3fcc3481-90cb-4511-a975-7816e9b2c3a2" name="Request assignment data" isLeaf="false">
+            <elementDefinition Id="32e526cb-cb95-448e-a910-7b0772453d66" />
+            <flowNodeTargets>
+              <controlFlow Id="6c4773c3-7d5f-48e2-b610-2ba2821ae908" isLeaf="false">
+                <opaqueActionMoniker Id="f7c5958c-b93d-4f51-b79a-aba821587bb3" LastKnownName="Enter assignment data" />
+                <elementDefinition Id="9a9598a7-a9cc-408c-afef-126627e498e9" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="9da465b9-b042-44db-a7bb-bcb00659117c" name="Request list of courses" isLeaf="false">
+            <elementDefinition Id="ff0cbe1c-f18a-4888-877f-04f708326733" />
+            <flowNodeTargets>
+              <controlFlow Id="91b5b4cd-543a-46ee-9361-9fa096f4f5be" isLeaf="false">
+                <opaqueActionMoniker Id="0deb0113-5654-42da-a394-380598676afc" LastKnownName="Return list of courses" />
+                <elementDefinition Id="1079ccb3-ba65-437e-9572-02c1dc02806d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="0deb0113-5654-42da-a394-380598676afc" name="Return list of courses" isLeaf="false">
+            <elementDefinition Id="460cce93-4a6d-4a05-b77b-12de39c43d39" />
+            <flowNodeTargets>
+              <controlFlow Id="23e27505-fce7-4831-9389-ba4fc43c75bd" isLeaf="false">
+                <opaqueActionMoniker Id="a83ae740-b0c3-4639-83bc-dc9620a0f9cb" LastKnownName="Display list of courses" />
+                <elementDefinition Id="1db974c5-c58d-47ad-9ba8-2f19b405fa21" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="caf0c84f-6000-4caa-89ff-33814800c6e7" name="Display course menu" isLeaf="false">
+            <elementDefinition Id="8bf38f24-18c2-41ad-bfb9-f100fe06c958" />
+            <flowNodeTargets>
+              <controlFlow Id="9a1dbf34-e040-4246-b543-4f4fe48289da" isLeaf="false">
+                <opaqueActionMoniker Id="1fc55cdd-32b5-48c8-9a38-ec31f2379386" LastKnownName="Select &quot;Create assignment&quot;" />
+                <elementDefinition Id="95a54662-737a-4f4a-a988-00c98d0e02c7" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="f7c5958c-b93d-4f51-b79a-aba821587bb3" name="Enter assignment data" isLeaf="false">
+            <elementDefinition Id="39bec434-b5bf-4fec-a30b-d9c171f0916d" />
+            <flowNodeTargets>
+              <controlFlow Id="e1d6ff73-5e64-44e2-84fb-20cf863d8b11" isLeaf="false">
+                <opaqueActionMoniker Id="8ebb488d-8b62-499b-97de-60ed69e78b01" LastKnownName="Check whether the data is valid" />
+                <elementDefinition Id="38217be0-8e9d-40c8-b0a9-bd395c968b24" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="8ebb488d-8b62-499b-97de-60ed69e78b01" name="Check whether the data is valid" isLeaf="false">
+            <elementDefinition Id="1b8e67ef-6ee8-4865-b05b-2b7cf3d14e8c" />
+            <flowNodeTargets>
+              <controlFlow Id="e4d84a51-5b7e-4361-a032-d76b11f4df38" isLeaf="false">
+                <decisionNodeMoniker Id="70dcec02-f439-4afa-a512-f2e6f4ad3ee1" LastKnownName="Decision1" />
+                <elementDefinition Id="f283c749-2c03-4525-ad69-29f8cf834265" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="70dcec02-f439-4afa-a512-f2e6f4ad3ee1" name="Decision1" isLeaf="false">
+            <elementDefinition Id="6f349486-36f2-4756-a881-afeceb1c3598" />
+            <flowNodeTargets>
+              <controlFlow Id="e72f766a-e850-4f3c-bf3b-81adb6606291" guard="Invalid data" isLeaf="false">
+                <opaqueActionMoniker Id="fd52f0ca-8c82-4edf-b127-209e59c8f8f9" LastKnownName="Display error message" />
+                <elementDefinition Id="a5fc9b78-4ec0-4a8d-92a1-b92a03c95307" />
+              </controlFlow>
+              <controlFlow Id="d48bf5bb-3d70-4aeb-92d1-ad2118410dc8" guard="Valid data" isLeaf="false">
+                <opaqueActionMoniker Id="f64f26c9-6020-4cb3-9ef5-6bf37d05a309" LastKnownName="Upload data to the server" />
+                <elementDefinition Id="92b7a302-c58f-4232-b12c-263138a1ac5c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="fd52f0ca-8c82-4edf-b127-209e59c8f8f9" name="Display error message" isLeaf="false">
+            <elementDefinition Id="d36ca1d0-b98c-4b77-80af-efe0c7db5c6b" />
+            <flowNodeTargets>
+              <controlFlow Id="d64e160f-fa8c-44f0-a819-cecd85aebf7b" isLeaf="false">
+                <opaqueActionMoniker Id="3fcc3481-90cb-4511-a975-7816e9b2c3a2" LastKnownName="Request assignment data" />
+                <elementDefinition Id="6d72811f-8766-4724-813b-2c6cab5ff91c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="f64f26c9-6020-4cb3-9ef5-6bf37d05a309" name="Upload data to the server" isLeaf="false">
+            <elementDefinition Id="19c0c82d-084a-4d67-a61b-11cf3887c27c" />
+            <flowNodeTargets>
+              <controlFlow Id="f69623a6-fc2e-4050-86c0-6a61ba6fcc12" isLeaf="false">
+                <opaqueActionMoniker Id="8354b708-42e2-428c-84d1-1e47d2b8848b" LastKnownName="Store data in a database" />
+                <elementDefinition Id="f2883d99-8348-49b7-b1a3-efdf3dd9a507" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="8354b708-42e2-428c-84d1-1e47d2b8848b" name="Store data in a database" isLeaf="false">
+            <elementDefinition Id="0a0c0cfb-5738-498a-a1fe-f1785920a7f4" />
+            <flowNodeTargets>
+              <controlFlow Id="fe933be0-ea2a-42f2-b414-0fab83f7d2b7" isLeaf="false">
+                <opaqueActionMoniker Id="8531ab7d-790f-492f-bd59-7c1cee5ecc0f" LastKnownName="Display success message" />
+                <elementDefinition Id="a19d8ee5-6ec1-4ed4-bc19-4ca5da6c0113" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="8531ab7d-790f-492f-bd59-7c1cee5ecc0f" name="Display success message" isLeaf="false">
+            <elementDefinition Id="c9279f46-0f89-46fc-b6b3-965a3a0019bc" />
+            <flowNodeTargets>
+              <controlFlow Id="a936dd3f-1bb2-4df0-a9f4-02b0d3958d6f" isLeaf="false">
+                <activityFinalNodeMoniker Id="a0bc49cc-1593-4ce5-9009-b2417d8d9908" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="6293e7b7-fcf6-4003-b343-adec2f754f8c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="a0bc49cc-1593-4ce5-9009-b2417d8d9908" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="54626c5c-ee11-434a-8138-b0c182a6caa2" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="37826e82-bef2-4d4f-96f2-a8046d644212" name="Laboras22Model">
+    <elementDefinition Id="c536aa51-794c-4276-85bd-a9b858d12991" />
+    <profileInstances>
+      <packageHasProfileInstances Id="b91584f5-c352-47de-8ca7-80b642e6766b">
+        <profileInstance Id="91047c3b-eb70-48d3-b0d9-632af25b962f" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="4afaeec7-847c-41cb-9214-32cbe4c71bf7">
+        <profileInstance Id="26a13419-2807-40ac-9812-6e26ac2310ae" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="5c92747c-0129-43f6-b3be-d6c77d1083d3">
+        <profileInstance Id="7185d0c4-ed1b-4f8a-9ff7-37822a2146f7" name="CSharpProfile">
+          <elementDefinition Id="fc085c40-2fae-4b8e-a321-06d16de27e3f" />
+        </profileInstance>
+        <elementDefinition Id="7a7cabfb-7283-4390-9b7d-de397cff0af4" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>
