@@ -15,14 +15,6 @@
       <body>Server</body>
     </comment>
   </ownedCommentsInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="d924e8fc-a192-4474-8fb7-a8108f20bc31">
-      <profileInstance Id="ee2707ed-1aa7-457a-9dc9-ac2296c94f44" name="CSharpProfile">
-        <elementDefinition Id="fc085c40-2fae-4b8e-a321-06d16de27e3f" />
-      </profileInstance>
-      <elementDefinition Id="7a7cabfb-7283-4390-9b7d-de397cff0af4" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <activityRootModelHasActivity>
       <activity Id="569a9396-2ab4-4b25-bc2c-510cc8485b9f" name="CreateProject" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
@@ -31,9 +23,9 @@
           <initialNode Id="1d416bbf-73be-4aac-b0f8-b714cbdb1844" name="Initial1" isLeaf="false">
             <elementDefinition Id="0e889389-87fe-456d-9e31-55d6dd63c3e5" />
             <flowNodeTargets>
-              <controlFlow Id="6865d12f-a58d-4322-9954-695367385713" isLeaf="false">
-                <opaqueActionMoniker Id="0b36b36d-e87b-42ce-95f8-8620285bff35" LastKnownName="Select &quot;Log in&quot;" />
-                <elementDefinition Id="6b209171-ed69-4873-b2bf-8f2c7496e89e" />
+              <controlFlow Id="1ac09fc7-f89d-4f56-9781-e436739ac367" isLeaf="false">
+                <opaqueActionMoniker Id="f8e6c27f-100b-42ab-8042-1ba45e4fb36d" LastKnownName="Request login" />
+                <elementDefinition Id="e150dade-f98a-4e64-8510-d51ab8d00e06" />
               </controlFlow>
             </flowNodeTargets>
           </initialNode>
@@ -73,64 +65,24 @@
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
-          <opaqueAction Id="0b36b36d-e87b-42ce-95f8-8620285bff35" name="Select &quot;Log in&quot;" isLeaf="false">
+          <opaqueAction Id="0b36b36d-e87b-42ce-95f8-8620285bff35" name="Log in" isLeaf="false">
             <elementDefinition Id="e06035aa-8ca0-4ae8-80e1-44f5d841d278" />
             <flowNodeTargets>
               <controlFlow Id="45ad1f64-f6e6-4946-bcca-102cefe404df" isLeaf="false">
-                <opaqueActionMoniker Id="70c56b65-56b8-49e8-83b4-e8cd64d0ca44" LastKnownName="Ask for credentials" />
+                <opaqueActionMoniker Id="70c56b65-56b8-49e8-83b4-e8cd64d0ca44" LastKnownName="Display menu" />
                 <elementDefinition Id="9fc30d54-6020-41ef-8ee4-cd70a84a237d" />
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
-          <opaqueAction Id="70c56b65-56b8-49e8-83b4-e8cd64d0ca44" name="Ask for credentials" isLeaf="false">
+          <opaqueAction Id="70c56b65-56b8-49e8-83b4-e8cd64d0ca44" name="Display menu" isLeaf="false">
             <elementDefinition Id="26305c31-8752-41a6-bfd5-3bfb9bdc9e89" />
             <flowNodeTargets>
-              <controlFlow Id="6c8e0db7-071c-41e6-8c07-a43d61706860" isLeaf="false">
-                <opaqueActionMoniker Id="40acd9aa-70b1-4ab5-84da-748c23ea4ab3" LastKnownName="Input credentials" />
-                <elementDefinition Id="ecb5fd6c-a76f-4425-91cf-39a06be37393" />
-              </controlFlow>
-            </flowNodeTargets>
-          </opaqueAction>
-          <opaqueAction Id="40acd9aa-70b1-4ab5-84da-748c23ea4ab3" name="Input credentials" isLeaf="false">
-            <elementDefinition Id="30508f11-8af0-4be9-9001-e7c6be944c1d" />
-            <flowNodeTargets>
-              <controlFlow Id="f2561b05-d500-4692-afc6-54ac2fb73573" isLeaf="false">
-                <opaqueActionMoniker Id="7842c585-2937-48ef-a86d-57cec4704c0e" LastKnownName="Send credentials" />
-                <elementDefinition Id="bb7bdd43-ef1a-4a45-a252-6c2528f5cb58" />
-              </controlFlow>
-            </flowNodeTargets>
-          </opaqueAction>
-          <opaqueAction Id="7842c585-2937-48ef-a86d-57cec4704c0e" name="Send credentials" isLeaf="false">
-            <elementDefinition Id="09677a33-3e6a-424c-a1ed-1bef12aee70e" />
-            <flowNodeTargets>
-              <controlFlow Id="38e9af5d-7ea2-4c8e-ab1d-86ba7d6b6574" isLeaf="false">
-                <opaqueActionMoniker Id="e0a24ded-ccad-430c-80d5-4c15d67aeed4" LastKnownName="Check credentials" />
-                <elementDefinition Id="0af5cd6c-cb25-4021-90c9-0d9f99e7e0a6" />
-              </controlFlow>
-            </flowNodeTargets>
-          </opaqueAction>
-          <opaqueAction Id="e0a24ded-ccad-430c-80d5-4c15d67aeed4" name="Check credentials" isLeaf="false">
-            <elementDefinition Id="ca2f24aa-3a78-4ff7-9e52-89dc82c20610" />
-            <flowNodeTargets>
-              <controlFlow Id="9b25c324-1e79-47ba-acf7-30daf564eabd" isLeaf="false">
-                <decisionNodeMoniker Id="c00cd274-95db-4b9f-b2f1-aac1a7bf0d40" LastKnownName="Decision1" />
-                <elementDefinition Id="bbb46c7b-59a3-4693-a73b-c1a706ad136b" />
-              </controlFlow>
-            </flowNodeTargets>
-          </opaqueAction>
-          <decisionNode Id="c00cd274-95db-4b9f-b2f1-aac1a7bf0d40" name="Decision1" isLeaf="false">
-            <elementDefinition Id="c46cae02-0770-417b-8ad8-f1b7ba0e4c5b" />
-            <flowNodeTargets>
-              <controlFlow Id="eeac5d91-eae9-4b97-a333-e4038dff4b1a" guard="Incorrect" isLeaf="false">
-                <opaqueActionMoniker Id="70c56b65-56b8-49e8-83b4-e8cd64d0ca44" LastKnownName="Ask for credentials" />
-                <elementDefinition Id="353a6ee1-bc2f-43ca-9b44-8b649e61b0d4" />
-              </controlFlow>
-              <controlFlow Id="f604113e-461e-479e-b2d4-2041ac4d6cb2" guard="Correct" isLeaf="false">
+              <controlFlow Id="05e6b498-a77d-4e1f-b84f-b75cd683c1e9" isLeaf="false">
                 <opaqueActionMoniker Id="88f444e2-c457-4769-ad71-d82962b53bbc" LastKnownName="Select &quot;Create project&quot;" />
-                <elementDefinition Id="2e473e5e-9407-42ec-a8ae-cfb23f7c3499" />
+                <elementDefinition Id="585cd51f-e679-47b6-87e5-215413373aa3" />
               </controlFlow>
             </flowNodeTargets>
-          </decisionNode>
+          </opaqueAction>
           <opaqueAction Id="702af3de-53da-4015-a80c-04db0dc6dc33" name="Send project" isLeaf="false">
             <elementDefinition Id="59bc9205-ac9d-40fe-9247-f37bfc3c42b9" />
             <flowNodeTargets>
@@ -161,6 +113,15 @@
           <activityFinalNode Id="70514a76-7f15-4612-98d4-9cbca6d95bae" name="ActivityFinal1" isLeaf="false">
             <elementDefinition Id="0314ca09-3db6-4a75-948a-6793d12b643d" />
           </activityFinalNode>
+          <opaqueAction Id="f8e6c27f-100b-42ab-8042-1ba45e4fb36d" name="Request login" isLeaf="false">
+            <elementDefinition Id="895c0e53-8116-4646-a157-c2dddd98bdcd" />
+            <flowNodeTargets>
+              <controlFlow Id="9ec89574-4bca-4561-a16e-fa9b522b7bbc" isLeaf="false">
+                <opaqueActionMoniker Id="0b36b36d-e87b-42ce-95f8-8620285bff35" LastKnownName="Log in" />
+                <elementDefinition Id="637578a1-3a83-4085-8b7b-02de8671ac87" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
         </nodes>
       </activity>
     </activityRootModelHasActivity>
@@ -179,6 +140,12 @@
           <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
         </profileInstance>
         <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="d924e8fc-a192-4474-8fb7-a8108f20bc31">
+        <profileInstance Id="ee2707ed-1aa7-457a-9dc9-ac2296c94f44" name="CSharpProfile">
+          <elementDefinition Id="fc085c40-2fae-4b8e-a321-06d16de27e3f" />
+        </profileInstance>
+        <elementDefinition Id="7a7cabfb-7283-4390-9b7d-de397cff0af4" />
       </packageHasProfileInstances>
     </profileInstances>
   </package>

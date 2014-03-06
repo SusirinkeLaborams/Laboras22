@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="3a227cdc-c338-425a-b0dc-4a054afd521c" name="RegisterUser" linkedPackageId="ad9ee92f-4868-4b50-b807-a92419d5f137" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="3a227cdc-c338-425a-b0dc-4a054afd521c" name="RegisterUser" linkedPackageId="ad9ee92f-4868-4b50-b807-a92419d5f137" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
   <ownedCommentsInternal>
     <comment Id="463dc76e-b78c-413c-8184-1836a5c94c25">
       <elementDefinition Id="3f202ed8-8232-4aa1-a708-5d4022283d2c" />
@@ -15,26 +15,6 @@
       <body>Server</body>
     </comment>
   </ownedCommentsInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="9e5cd569-859a-4090-9513-35b02c00f6b7">
-      <profileInstance Id="e49ff5d8-29b3-44c0-84af-d9d99207f1d5" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="da528f29-bf5a-4f64-8201-bfa80d0ea236">
-      <profileInstance Id="2c4d9ada-4660-467e-bdeb-1fdfd1661c32" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="d2573f01-daaa-497e-ba41-697ae7e0fa9f">
-      <profileInstance Id="f6739b7e-66f7-45f2-a0ea-6a70522eb875" name="CSharpProfile">
-        <elementDefinition Id="fc085c40-2fae-4b8e-a321-06d16de27e3f" />
-      </profileInstance>
-      <elementDefinition Id="7a7cabfb-7283-4390-9b7d-de397cff0af4" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <activityRootModelHasActivity>
       <activity Id="d199f3d9-f7df-4bfa-838b-dee09f2a2871" name="RegisterUser" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
@@ -44,12 +24,12 @@
             <elementDefinition Id="3e34abc2-de3f-495a-9886-38b99beb0c5b" />
             <flowNodeTargets>
               <controlFlow Id="5b634dd5-38cf-4bf3-b6c1-c6d3fbd3a619" isLeaf="false">
-                <opaqueActionMoniker Id="9e5e85f7-9e56-4b58-91e0-455604781b5c" LastKnownName="Display menu" />
+                <opaqueActionMoniker Id="9e5e85f7-9e56-4b58-91e0-455604781b5c" LastKnownName="Request login" />
                 <elementDefinition Id="7d0250b5-c22e-4e26-93e6-0de30ec7b85f" />
               </controlFlow>
             </flowNodeTargets>
           </initialNode>
-          <opaqueAction Id="9e5e85f7-9e56-4b58-91e0-455604781b5c" name="Display menu" isLeaf="false">
+          <opaqueAction Id="9e5e85f7-9e56-4b58-91e0-455604781b5c" name="Request login" isLeaf="false">
             <elementDefinition Id="07487d2a-7a5f-43ce-9734-03b1dc04d119" />
             <flowNodeTargets>
               <controlFlow Id="7f74681a-e126-43f2-8c60-ea74f1f52ff6" isLeaf="false">
@@ -228,5 +208,25 @@
   </packagedElements>
   <package Id="ad9ee92f-4868-4b50-b807-a92419d5f137" name="Laboras22Model">
     <elementDefinition Id="c536aa51-794c-4276-85bd-a9b858d12991" />
+    <profileInstances>
+      <packageHasProfileInstances Id="9e5cd569-859a-4090-9513-35b02c00f6b7">
+        <profileInstance Id="e49ff5d8-29b3-44c0-84af-d9d99207f1d5" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="da528f29-bf5a-4f64-8201-bfa80d0ea236">
+        <profileInstance Id="2c4d9ada-4660-467e-bdeb-1fdfd1661c32" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="d2573f01-daaa-497e-ba41-697ae7e0fa9f">
+        <profileInstance Id="f6739b7e-66f7-45f2-a0ea-6a70522eb875" name="CSharpProfile">
+          <elementDefinition Id="fc085c40-2fae-4b8e-a321-06d16de27e3f" />
+        </profileInstance>
+        <elementDefinition Id="7a7cabfb-7283-4390-9b7d-de397cff0af4" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </activityRootModel>
