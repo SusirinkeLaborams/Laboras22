@@ -22,6 +22,13 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
+    <Content Include="AddGrade.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="AddGrade.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>AddGrade.activitydiagram</DependentUpon>
+    </Content>
     <Content Include="CreateAssignment.activitydiagram">
       <SubType>Content</SubType>
     </Content>
