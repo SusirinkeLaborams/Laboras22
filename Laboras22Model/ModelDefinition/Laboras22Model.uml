@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="c536aa51-794c-4276-85bd-a9b858d12991"
   name="Laboras22Model" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -2712,21 +2712,21 @@
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
-                Id="2965f680-7064-435f-8657-f758ab22eded"
-                guard="Valid"
-                isLeaf="false">
-                <opaqueActionMoniker
-                  Id="1c78a5cd-c48e-4fa6-8a35-5425dfb4e5a1"
-                  LastKnownName="Get user salt"
-                  LastKnownLocation="Laboras22Model.uml" />
-              </controlFlow>
-              <controlFlow
                 Id="20648928-7cff-43ac-bd94-7d9db800c998"
                 guard="Invalid"
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="ec358aeb-3bc3-4f49-9707-05e9518265e2"
                   LastKnownName="Display error"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="58d81e12-4622-43c2-9a04-b1664cc2b720"
+                guard="Valid"
+                isLeaf="false">
+                <forkNodeMoniker
+                  Id="47fc034b-55a0-4c48-85d3-a89b7869bcf1"
+                  LastKnownName="Fork1"
                   LastKnownLocation="Laboras22Model.uml" />
               </controlFlow>
             </flowNodeTargets>
@@ -2782,21 +2782,21 @@
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
-                Id="811d8c23-5ccf-497d-b2ba-1e9c9f7e561c"
-                guard="Invalid"
-                isLeaf="false">
-                <opaqueActionMoniker
-                  Id="ec358aeb-3bc3-4f49-9707-05e9518265e2"
-                  LastKnownName="Display error"
-                  LastKnownLocation="Laboras22Model.uml" />
-              </controlFlow>
-              <controlFlow
                 Id="10b4fbb7-9dfc-4274-9d72-ab279e3047d2"
                 guard="Valid"
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="265ddf7f-ec30-4663-8627-dab9d9f0c477"
                   LastKnownName="Create session"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="8978bac2-fd4e-4738-85f4-80800ba16707"
+                guard="Invalid"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="a98b0b5d-c05f-4c43-8fab-b5f5e5a61b2a"
+                  LastKnownName="Notify client of error"
                   LastKnownLocation="Laboras22Model.uml" />
               </controlFlow>
             </flowNodeTargets>
@@ -2807,11 +2807,11 @@
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
-                Id="4a681c26-8854-49e4-80f6-9db6398aa0bf"
+                Id="6ce7054d-891f-4a7d-abe5-cfa2f17fc7c4"
                 isLeaf="false">
-                <opaqueActionMoniker
-                  Id="d6690fca-e685-44d2-bbb5-b6e79b12d29c"
-                  LastKnownName="Display login confirmation"
+                <joinNodeMoniker
+                  Id="57d30fd8-c383-4056-b265-62ea653feac1"
+                  LastKnownName="Join1"
                   LastKnownLocation="Laboras22Model.uml" />
               </controlFlow>
             </flowNodeTargets>
@@ -2835,6 +2835,112 @@
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
+          <forkNode
+            Id="47fc034b-55a0-4c48-85d3-a89b7869bcf1"
+            name="Fork1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="13d504f5-3b49-4bf5-8db8-6b071536fbc3"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="6670156d-31c6-4398-b3e7-ee0bddad6111"
+                  LastKnownName="Display loading animation"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="d5d8e9a0-2576-4607-aaf3-3749e387ce39"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="1c78a5cd-c48e-4fa6-8a35-5425dfb4e5a1"
+                  LastKnownName="Get user salt"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="71649e99-e622-4e88-a4df-a7d31861b5d6"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="9bce7cd8-d1ad-4fde-9792-e18549d9b495"
+                  LastKnownName="Join2"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction
+            Id="6670156d-31c6-4398-b3e7-ee0bddad6111"
+            name="Display loading animation"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="802fc33d-8936-4d54-8d9f-fbad9c700865"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="57d30fd8-c383-4056-b265-62ea653feac1"
+                  LastKnownName="Join1"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <joinNode
+            Id="57d30fd8-c383-4056-b265-62ea653feac1"
+            name="Join1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="5f790975-e802-44e2-9a76-2d95062fb9db"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d6690fca-e685-44d2-bbb5-b6e79b12d29c"
+                  LastKnownName="Display login confirmation"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <opaqueAction
+            Id="a98b0b5d-c05f-4c43-8fab-b5f5e5a61b2a"
+            name="Notify client of error"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b6ccbb9d-2b95-401c-aa73-507b167ffb45"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="0025c5cb-a59e-43fe-ae6c-be83ad232122"
+                  LastKnownName="Process error"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="0025c5cb-a59e-43fe-ae6c-be83ad232122"
+            name="Process error"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="4631cec0-0092-4ad8-a8ad-b8950d38eff4"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="9bce7cd8-d1ad-4fde-9792-e18549d9b495"
+                  LastKnownName="Join2"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <joinNode
+            Id="9bce7cd8-d1ad-4fde-9792-e18549d9b495"
+            name="Join2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="17ff1da0-0e67-4ef2-9182-9a42add559bd"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ec358aeb-3bc3-4f49-9707-05e9518265e2"
+                  LastKnownName="Display error"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
         </nodes>
       </activity>
     </packageHasNamedElement>

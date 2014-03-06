@@ -17,26 +17,6 @@
 </body>
     </comment>
   </ownedCommentsInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="ca7b6d4c-f32c-488b-97ee-d8434378ba6c">
-      <profileInstance Id="97ab8e7c-dc76-497f-926b-ac9ca23b126a" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="68c7767c-e2a3-4d8f-ad75-37c267b7dfdc">
-      <profileInstance Id="44532f2a-7ada-4159-a844-24d2656f9ed9" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="c19c9ad7-e2fc-4aa0-a474-04f55609330c">
-      <profileInstance Id="5d30fc6f-af23-41a5-9004-afebf533ddbf" name="CSharpProfile">
-        <elementDefinition Id="fc085c40-2fae-4b8e-a321-06d16de27e3f" />
-      </profileInstance>
-      <elementDefinition Id="7a7cabfb-7283-4390-9b7d-de397cff0af4" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <activityRootModelHasActivity>
       <activity Id="ebce7ad8-4f82-4857-99b8-db55930f8171" name="Login" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
@@ -90,13 +70,13 @@
           <decisionNode Id="741f9ccc-7711-4289-be2e-4f7c5c10fcb0" name="Decision1" isLeaf="false">
             <elementDefinition Id="67385920-4dcf-40c0-ab5c-d5a7c9262305" />
             <flowNodeTargets>
-              <controlFlow Id="a1128a94-4a41-418b-9022-6e095b6bf763" guard="Valid" isLeaf="false">
-                <opaqueActionMoniker Id="5be2daf5-d856-4f2d-bb10-362ea1da7874" LastKnownName="Get user salt" />
-                <elementDefinition Id="2965f680-7064-435f-8657-f758ab22eded" />
-              </controlFlow>
               <controlFlow Id="bfdc3500-ec57-4580-877a-d830d2f5e8c6" guard="Invalid" isLeaf="false">
                 <opaqueActionMoniker Id="8f2249eb-96a8-4f5f-88c9-fa31fce978b9" LastKnownName="Display error" />
                 <elementDefinition Id="20648928-7cff-43ac-bd94-7d9db800c998" />
+              </controlFlow>
+              <controlFlow Id="cdc0a00c-f6e9-4ca6-a9f0-fb46f53d144d" guard="Valid" isLeaf="false">
+                <forkNodeMoniker Id="dc87bcb7-c98a-4e0d-ac42-22e9adac7c86" LastKnownName="Fork1" />
+                <elementDefinition Id="58d81e12-4622-43c2-9a04-b1664cc2b720" />
               </controlFlow>
             </flowNodeTargets>
           </decisionNode>
@@ -130,22 +110,22 @@
           <decisionNode Id="92eb0c96-ee1e-46c5-aacd-4aa015e9bff6" name="Decision2" isLeaf="false">
             <elementDefinition Id="2797674c-2c79-4a4c-b0c2-2999b65d6f59" />
             <flowNodeTargets>
-              <controlFlow Id="ecdcbb00-005e-458d-93f2-369f1ccaf288" guard="Invalid" isLeaf="false">
-                <opaqueActionMoniker Id="8f2249eb-96a8-4f5f-88c9-fa31fce978b9" LastKnownName="Display error" />
-                <elementDefinition Id="811d8c23-5ccf-497d-b2ba-1e9c9f7e561c" />
-              </controlFlow>
               <controlFlow Id="dcc9406b-cec6-4689-9839-b1cb8f2d522c" guard="Valid" isLeaf="false">
                 <opaqueActionMoniker Id="f9de13a4-6483-4b58-b330-404a25784a36" LastKnownName="Create session" />
                 <elementDefinition Id="10b4fbb7-9dfc-4274-9d72-ab279e3047d2" />
+              </controlFlow>
+              <controlFlow Id="423a7de1-55cd-4a9d-a3d9-86c6cc9351b7" guard="Invalid" isLeaf="false">
+                <opaqueActionMoniker Id="4e0f1d01-e86d-4747-8369-0ae886da2b21" LastKnownName="Notify client of error" />
+                <elementDefinition Id="8978bac2-fd4e-4738-85f4-80800ba16707" />
               </controlFlow>
             </flowNodeTargets>
           </decisionNode>
           <opaqueAction Id="f9de13a4-6483-4b58-b330-404a25784a36" name="Create session" isLeaf="false">
             <elementDefinition Id="265ddf7f-ec30-4663-8627-dab9d9f0c477" />
             <flowNodeTargets>
-              <controlFlow Id="83e2d141-791a-4dea-b9e8-e45f984421d6" isLeaf="false">
-                <opaqueActionMoniker Id="fe79b5f0-9115-45b6-bf29-7a133f3c0b02" LastKnownName="Display login confirmation" />
-                <elementDefinition Id="4a681c26-8854-49e4-80f6-9db6398aa0bf" />
+              <controlFlow Id="697f43a2-0f08-431f-8c9d-67305905585a" isLeaf="false">
+                <joinNodeMoniker Id="cfee46d1-fd50-4b47-b91f-313b6df2e95d" LastKnownName="Join1" />
+                <elementDefinition Id="6ce7054d-891f-4a7d-abe5-cfa2f17fc7c4" />
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
@@ -161,11 +141,93 @@
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
+          <forkNode Id="dc87bcb7-c98a-4e0d-ac42-22e9adac7c86" name="Fork1" isLeaf="false">
+            <elementDefinition Id="47fc034b-55a0-4c48-85d3-a89b7869bcf1" />
+            <flowNodeTargets>
+              <controlFlow Id="afbc7d19-ee96-4fe6-9776-6426ef33f3a1" isLeaf="false">
+                <opaqueActionMoniker Id="d1e99905-430b-4069-bcb6-d7d1839d59e8" LastKnownName="Display loading animation" />
+                <elementDefinition Id="13d504f5-3b49-4bf5-8db8-6b071536fbc3" />
+              </controlFlow>
+              <controlFlow Id="a9cbf704-db86-441e-b1ac-1817bad39eb9" isLeaf="false">
+                <opaqueActionMoniker Id="5be2daf5-d856-4f2d-bb10-362ea1da7874" LastKnownName="Get user salt" />
+                <elementDefinition Id="d5d8e9a0-2576-4607-aaf3-3749e387ce39" />
+              </controlFlow>
+              <controlFlow Id="82a7e6bb-a2bf-45f6-aa6b-b0d0d7ed20c1" isLeaf="false">
+                <joinNodeMoniker Id="faa89d45-8be4-4d86-a114-21177144e521" LastKnownName="Join2" />
+                <elementDefinition Id="71649e99-e622-4e88-a4df-a7d31861b5d6" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction Id="d1e99905-430b-4069-bcb6-d7d1839d59e8" name="Display loading animation" isLeaf="false">
+            <elementDefinition Id="6670156d-31c6-4398-b3e7-ee0bddad6111" />
+            <flowNodeTargets>
+              <controlFlow Id="53dfd698-4cd4-4037-a558-db20be030061" isLeaf="false">
+                <joinNodeMoniker Id="cfee46d1-fd50-4b47-b91f-313b6df2e95d" LastKnownName="Join1" />
+                <elementDefinition Id="802fc33d-8936-4d54-8d9f-fbad9c700865" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <joinNode Id="cfee46d1-fd50-4b47-b91f-313b6df2e95d" name="Join1" isLeaf="false">
+            <elementDefinition Id="57d30fd8-c383-4056-b265-62ea653feac1" />
+            <flowNodeTargets>
+              <controlFlow Id="b9dea9f1-d6d0-4cec-a1f0-78d970868d90" isLeaf="false">
+                <opaqueActionMoniker Id="fe79b5f0-9115-45b6-bf29-7a133f3c0b02" LastKnownName="Display login confirmation" />
+                <elementDefinition Id="5f790975-e802-44e2-9a76-2d95062fb9db" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <opaqueAction Id="4e0f1d01-e86d-4747-8369-0ae886da2b21" name="Notify client of error" isLeaf="false">
+            <elementDefinition Id="a98b0b5d-c05f-4c43-8fab-b5f5e5a61b2a" />
+            <flowNodeTargets>
+              <controlFlow Id="0d685a1c-a3de-40b3-a469-1baba88f01cb" isLeaf="false">
+                <opaqueActionMoniker Id="d9cca267-0433-4843-b50b-5b756e374fbd" LastKnownName="Process error" />
+                <elementDefinition Id="b6ccbb9d-2b95-401c-aa73-507b167ffb45" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="d9cca267-0433-4843-b50b-5b756e374fbd" name="Process error" isLeaf="false">
+            <elementDefinition Id="0025c5cb-a59e-43fe-ae6c-be83ad232122" />
+            <flowNodeTargets>
+              <controlFlow Id="714001df-4f67-4c04-be71-b485e99385fa" isLeaf="false">
+                <joinNodeMoniker Id="faa89d45-8be4-4d86-a114-21177144e521" LastKnownName="Join2" />
+                <elementDefinition Id="4631cec0-0092-4ad8-a8ad-b8950d38eff4" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <joinNode Id="faa89d45-8be4-4d86-a114-21177144e521" name="Join2" isLeaf="false">
+            <elementDefinition Id="9bce7cd8-d1ad-4fde-9792-e18549d9b495" />
+            <flowNodeTargets>
+              <controlFlow Id="92379533-67ba-4333-b93a-25e2d893acbd" isLeaf="false">
+                <opaqueActionMoniker Id="8f2249eb-96a8-4f5f-88c9-fa31fce978b9" LastKnownName="Display error" />
+                <elementDefinition Id="17ff1da0-0e67-4ef2-9182-9a42add559bd" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
         </nodes>
       </activity>
     </activityRootModelHasActivity>
   </packagedElements>
   <package Id="8c744043-6554-42f0-8330-41637d070dd1" name="Laboras22Model">
     <elementDefinition Id="c536aa51-794c-4276-85bd-a9b858d12991" />
+    <profileInstances>
+      <packageHasProfileInstances Id="ca7b6d4c-f32c-488b-97ee-d8434378ba6c">
+        <profileInstance Id="97ab8e7c-dc76-497f-926b-ac9ca23b126a" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="68c7767c-e2a3-4d8f-ad75-37c267b7dfdc">
+        <profileInstance Id="44532f2a-7ada-4159-a844-24d2656f9ed9" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="c19c9ad7-e2fc-4aa0-a474-04f55609330c">
+        <profileInstance Id="5d30fc6f-af23-41a5-9004-afebf533ddbf" name="CSharpProfile">
+          <elementDefinition Id="fc085c40-2fae-4b8e-a321-06d16de27e3f" />
+        </profileInstance>
+        <elementDefinition Id="7a7cabfb-7283-4390-9b7d-de397cff0af4" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </activityRootModel>
