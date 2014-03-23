@@ -18478,6 +18478,773 @@
         Id="8b76d6a9-8c79-4006-9b95-3620173f74aa"
         name="ExecutionEvent" />
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="d05f6d73-d3f6-4bd9-9a00-966906222e57"
+        name="AddRating"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="d64ab94a-07d2-464d-9daf-81eb8953c4c2"
+            name="BehaviorExecutionSpecification1">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="5ebd8530-3de0-4885-b4f0-dc9a6e9c6e08"
+                LastKnownName="mainWindow : MainWindow"
+                LastKnownLocation="Laboras22Model.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="0c74a5d3-c03b-4e44-aa25-96be4677e21f"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="Laboras22Model.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="3e92292c-6d6f-4a3b-bf56-be1efb979040"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="Laboras22Model.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="27db663f-8ac5-477d-b9b0-278b825cdde1"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="Laboras22Model.uml" />
+              <interactionUseOccurrenceSpecificationMoniker
+                Id="1bc5cbb0-635d-46f9-b0c8-4d4ca896fcf0"
+                LastKnownName="InteractionUseOccurrenceSpecification1"
+                LastKnownLocation="Laboras22Model.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="ab2f8a21-1f1c-42d7-b098-531944ef7cb8"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="Laboras22Model.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="c8f7e7b8-403a-4569-a92d-ca956a2a98c3"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="Laboras22Model.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="bf9b5f9a-3bba-4d33-b05b-5e7175269b3c"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="Laboras22Model.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="3e92292c-6d6f-4a3b-bf56-be1efb979040"
+            name="ExecutionOccurrenceSpecification1">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="5d19b9ea-677a-4a1a-a4f8-fa711a224bff"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="5ebd8530-3de0-4885-b4f0-dc9a6e9c6e08"
+                LastKnownName="mainWindow : MainWindow"
+                LastKnownLocation="Laboras22Model.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="718cebed-3d13-4d7d-9b2e-ab7f98ead1ae"
+            name="MessageOccurrenceSpecification1">
+            <covered>
+              <lifelineMoniker
+                Id="95cb3099-df28-4abb-8057-8990873b03e7"
+                LastKnownName="user : User"
+                LastKnownLocation="Laboras22Model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="27db663f-8ac5-477d-b9b0-278b825cdde1"
+            name="MessageOccurrenceSpecification2">
+            <covered>
+              <lifelineMoniker
+                Id="5ebd8530-3de0-4885-b4f0-dc9a6e9c6e08"
+                LastKnownName="mainWindow : MainWindow"
+                LastKnownLocation="Laboras22Model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <interactionUse
+            Id="260d7313-b828-4b43-adc0-2992f78305a2"
+            name="OpenProject">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="5ebd8530-3de0-4885-b4f0-dc9a6e9c6e08"
+                LastKnownName="mainWindow : MainWindow"
+                LastKnownLocation="Laboras22Model.uml" />
+            </coveredLifelines>
+            <interactionUseOccurrenceSpecifications>
+              <interactionUseOccurrenceSpecificationMoniker
+                Id="1bc5cbb0-635d-46f9-b0c8-4d4ca896fcf0"
+                LastKnownName="InteractionUseOccurrenceSpecification1"
+                LastKnownLocation="Laboras22Model.uml" />
+            </interactionUseOccurrenceSpecifications>
+          </interactionUse>
+          <interactionUseOccurrenceSpecification
+            Id="1bc5cbb0-635d-46f9-b0c8-4d4ca896fcf0"
+            name="InteractionUseOccurrenceSpecification1">
+            <covered>
+              <lifelineMoniker
+                Id="5ebd8530-3de0-4885-b4f0-dc9a6e9c6e08"
+                LastKnownName="mainWindow : MainWindow"
+                LastKnownLocation="Laboras22Model.uml" />
+            </covered>
+          </interactionUseOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="8e8bfc06-3fe8-4d16-b9e0-64821c166ca8"
+            name="BehaviorExecutionSpecification2">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="6c065e60-351a-459c-af2e-82178b4b2d54"
+                LastKnownName="projectWindow : ProjectWindow"
+                LastKnownLocation="Laboras22Model.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="e193250b-1a34-40b4-955e-7f20aee33c6d"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="Laboras22Model.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="20c76c1b-c558-4049-b989-1788c125c0bf"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="Laboras22Model.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="8a8dd1b2-c387-41c3-b75a-2261addbc81b"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="Laboras22Model.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="2bbdd408-c5b3-42aa-a87f-c98d00888a46"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="Laboras22Model.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="20c76c1b-c558-4049-b989-1788c125c0bf"
+            name="ExecutionOccurrenceSpecification3">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="f895a467-45ef-4c39-a68a-6b4e4628915d"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="6c065e60-351a-459c-af2e-82178b4b2d54"
+                LastKnownName="projectWindow : ProjectWindow"
+                LastKnownLocation="Laboras22Model.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="8a8dd1b2-c387-41c3-b75a-2261addbc81b"
+            name="MessageOccurrenceSpecification6">
+            <covered>
+              <lifelineMoniker
+                Id="6c065e60-351a-459c-af2e-82178b4b2d54"
+                LastKnownName="projectWindow : ProjectWindow"
+                LastKnownLocation="Laboras22Model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="ab2f8a21-1f1c-42d7-b098-531944ef7cb8"
+            name="MessageOccurrenceSpecification5">
+            <covered>
+              <lifelineMoniker
+                Id="5ebd8530-3de0-4885-b4f0-dc9a6e9c6e08"
+                LastKnownName="mainWindow : MainWindow"
+                LastKnownLocation="Laboras22Model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="2bbdd408-c5b3-42aa-a87f-c98d00888a46"
+            name="MessageOccurrenceSpecification7">
+            <covered>
+              <lifelineMoniker
+                Id="6c065e60-351a-459c-af2e-82178b4b2d54"
+                LastKnownName="projectWindow : ProjectWindow"
+                LastKnownLocation="Laboras22Model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="c8f7e7b8-403a-4569-a92d-ca956a2a98c3"
+            name="MessageOccurrenceSpecification8">
+            <covered>
+              <lifelineMoniker
+                Id="5ebd8530-3de0-4885-b4f0-dc9a6e9c6e08"
+                LastKnownName="mainWindow : MainWindow"
+                LastKnownLocation="Laboras22Model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="e193250b-1a34-40b4-955e-7f20aee33c6d"
+            name="ExecutionOccurrenceSpecification4">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="bbe21bd3-3c1f-407a-80d9-1d189e588921"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="6c065e60-351a-459c-af2e-82178b4b2d54"
+                LastKnownName="projectWindow : ProjectWindow"
+                LastKnownLocation="Laboras22Model.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="bf9b5f9a-3bba-4d33-b05b-5e7175269b3c"
+            name="MessageOccurrenceSpecification3">
+            <covered>
+              <lifelineMoniker
+                Id="5ebd8530-3de0-4885-b4f0-dc9a6e9c6e08"
+                LastKnownName="mainWindow : MainWindow"
+                LastKnownLocation="Laboras22Model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="fc82903a-6b56-4f45-806f-83d28f0b8212"
+            name="MessageOccurrenceSpecification4">
+            <covered>
+              <lifelineMoniker
+                Id="95cb3099-df28-4abb-8057-8990873b03e7"
+                LastKnownName="user : User"
+                LastKnownLocation="Laboras22Model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="0c74a5d3-c03b-4e44-aa25-96be4677e21f"
+            name="ExecutionOccurrenceSpecification2">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="7576454b-8d5a-4a5f-beb9-abb7c2589913"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="5ebd8530-3de0-4885-b4f0-dc9a6e9c6e08"
+                LastKnownName="mainWindow : MainWindow"
+                LastKnownLocation="Laboras22Model.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="d2e28fc9-75b5-4f7f-95e3-44ba343996f8"
+            name="BehaviorExecutionSpecification3">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="6c065e60-351a-459c-af2e-82178b4b2d54"
+                LastKnownName="projectWindow : ProjectWindow"
+                LastKnownLocation="Laboras22Model.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="237f8442-38bd-4f6c-b6d3-4a722bc1478b"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="Laboras22Model.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="d5409622-0ed3-434c-ba9b-00dfa965593b"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="Laboras22Model.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="03127d74-707b-4462-b804-38ed381352d0"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="Laboras22Model.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="e9c93035-1504-4fbe-bc0b-58d80fc52f49"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="Laboras22Model.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="f361cfdb-5fbd-4de8-b685-a3a73c54633f"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="Laboras22Model.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="3e0e7d2c-0c0c-40dd-ae6c-24a36cbb91a3"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="Laboras22Model.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="d5409622-0ed3-434c-ba9b-00dfa965593b"
+            name="ExecutionOccurrenceSpecification5">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="daef4240-4b2a-4384-988b-4aa354d3bb28"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="6c065e60-351a-459c-af2e-82178b4b2d54"
+                LastKnownName="projectWindow : ProjectWindow"
+                LastKnownLocation="Laboras22Model.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="3c8818d6-5731-4eb5-99fd-da28d9e61175"
+            name="MessageOccurrenceSpecification9">
+            <covered>
+              <lifelineMoniker
+                Id="95cb3099-df28-4abb-8057-8990873b03e7"
+                LastKnownName="user : User"
+                LastKnownLocation="Laboras22Model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="03127d74-707b-4462-b804-38ed381352d0"
+            name="MessageOccurrenceSpecification10">
+            <covered>
+              <lifelineMoniker
+                Id="6c065e60-351a-459c-af2e-82178b4b2d54"
+                LastKnownName="projectWindow : ProjectWindow"
+                LastKnownLocation="Laboras22Model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="8436314a-922f-4635-8ccf-ea8c37e6f365"
+            name="BehaviorExecutionSpecification4">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="996ecc94-c25d-4655-83d0-1d50125cba0c"
+                LastKnownName="dataProvider : DataProvider"
+                LastKnownLocation="Laboras22Model.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="aa0bdebb-31a1-49df-9697-c374807e0f2b"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="Laboras22Model.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="5e3ac1cf-1290-49a3-a777-a26e5cff366e"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="Laboras22Model.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="5fc9b463-4ffa-4706-a0e7-03129041e330"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="Laboras22Model.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="83f56fa7-6c2f-40cc-b678-93ef7ff51154"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="Laboras22Model.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="5e3ac1cf-1290-49a3-a777-a26e5cff366e"
+            name="ExecutionOccurrenceSpecification7">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="e31b1b25-8bf1-49df-a6ee-dd73f772d5e3"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="996ecc94-c25d-4655-83d0-1d50125cba0c"
+                LastKnownName="dataProvider : DataProvider"
+                LastKnownLocation="Laboras22Model.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="e9c93035-1504-4fbe-bc0b-58d80fc52f49"
+            name="MessageOccurrenceSpecification13">
+            <covered>
+              <lifelineMoniker
+                Id="6c065e60-351a-459c-af2e-82178b4b2d54"
+                LastKnownName="projectWindow : ProjectWindow"
+                LastKnownLocation="Laboras22Model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="5fc9b463-4ffa-4706-a0e7-03129041e330"
+            name="MessageOccurrenceSpecification14">
+            <covered>
+              <lifelineMoniker
+                Id="996ecc94-c25d-4655-83d0-1d50125cba0c"
+                LastKnownName="dataProvider : DataProvider"
+                LastKnownLocation="Laboras22Model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="83f56fa7-6c2f-40cc-b678-93ef7ff51154"
+            name="MessageOccurrenceSpecification15">
+            <covered>
+              <lifelineMoniker
+                Id="996ecc94-c25d-4655-83d0-1d50125cba0c"
+                LastKnownName="dataProvider : DataProvider"
+                LastKnownLocation="Laboras22Model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="f361cfdb-5fbd-4de8-b685-a3a73c54633f"
+            name="MessageOccurrenceSpecification16">
+            <covered>
+              <lifelineMoniker
+                Id="6c065e60-351a-459c-af2e-82178b4b2d54"
+                LastKnownName="projectWindow : ProjectWindow"
+                LastKnownLocation="Laboras22Model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="aa0bdebb-31a1-49df-9697-c374807e0f2b"
+            name="ExecutionOccurrenceSpecification8">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="8caf1f84-26db-4f0f-8c82-c2090c9cf232"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="996ecc94-c25d-4655-83d0-1d50125cba0c"
+                LastKnownName="dataProvider : DataProvider"
+                LastKnownLocation="Laboras22Model.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="d40fc52a-6d9c-404c-b660-02701e1b7c1a"
+            name="MessageOccurrenceSpecification12">
+            <covered>
+              <lifelineMoniker
+                Id="95cb3099-df28-4abb-8057-8990873b03e7"
+                LastKnownName="user : User"
+                LastKnownLocation="Laboras22Model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="3e0e7d2c-0c0c-40dd-ae6c-24a36cbb91a3"
+            name="MessageOccurrenceSpecification11">
+            <covered>
+              <lifelineMoniker
+                Id="6c065e60-351a-459c-af2e-82178b4b2d54"
+                LastKnownName="projectWindow : ProjectWindow"
+                LastKnownLocation="Laboras22Model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="237f8442-38bd-4f6c-b6d3-4a722bc1478b"
+            name="ExecutionOccurrenceSpecification6">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="0dbbda71-fd02-4fd5-b8d2-0c79474244e1"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="6c065e60-351a-459c-af2e-82178b4b2d54"
+                LastKnownName="projectWindow : ProjectWindow"
+                LastKnownLocation="Laboras22Model.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="95cb3099-df28-4abb-8057-8990873b03e7"
+            name="user : User"
+            isActor="true"
+            lifelineDisplayName="user : User">
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="718cebed-3d13-4d7d-9b2e-ab7f98ead1ae"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="Laboras22Model.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="fc82903a-6b56-4f45-806f-83d28f0b8212"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="Laboras22Model.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="3c8818d6-5731-4eb5-99fd-da28d9e61175"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="Laboras22Model.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="d40fc52a-6d9c-404c-b660-02701e1b7c1a"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="Laboras22Model.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="5ebd8530-3de0-4885-b4f0-dc9a6e9c6e08"
+            name="mainWindow : MainWindow"
+            isActor="false"
+            lifelineDisplayName="mainWindow : MainWindow">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="3e92292c-6d6f-4a3b-bf56-be1efb979040"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="Laboras22Model.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="0c74a5d3-c03b-4e44-aa25-96be4677e21f"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="Laboras22Model.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="6c065e60-351a-459c-af2e-82178b4b2d54"
+            name="projectWindow : ProjectWindow"
+            isActor="false"
+            lifelineDisplayName="projectWindow : ProjectWindow">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="20c76c1b-c558-4049-b989-1788c125c0bf"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="Laboras22Model.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="e193250b-1a34-40b4-955e-7f20aee33c6d"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="Laboras22Model.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="d5409622-0ed3-434c-ba9b-00dfa965593b"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="Laboras22Model.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="237f8442-38bd-4f6c-b6d3-4a722bc1478b"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="Laboras22Model.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="996ecc94-c25d-4655-83d0-1d50125cba0c"
+            name="dataProvider : DataProvider"
+            isActor="false"
+            lifelineDisplayName="dataProvider : DataProvider">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="5e3ac1cf-1290-49a3-a777-a26e5cff366e"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="Laboras22Model.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="aa0bdebb-31a1-49df-9697-c374807e0f2b"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="Laboras22Model.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="db773115-567b-4029-ae42-91ea349a2f41"
+            name="Open project"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="718cebed-3d13-4d7d-9b2e-ab7f98ead1ae"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="Laboras22Model.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="27db663f-8ac5-477d-b9b0-278b825cdde1"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="Laboras22Model.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="ad4ebeea-9131-4ba6-bf5f-b308af3ea087"
+            name="&lt;&lt;create&gt;&gt;"
+            messageKind="Complete"
+            messageSort="CreateMessage"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="ab2f8a21-1f1c-42d7-b098-531944ef7cb8"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="Laboras22Model.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="8a8dd1b2-c387-41c3-b75a-2261addbc81b"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="Laboras22Model.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="e10d4982-29a7-492b-9297-cebc391abc7d"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="2bbdd408-c5b3-42aa-a87f-c98d00888a46"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="Laboras22Model.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="c8f7e7b8-403a-4569-a92d-ca956a2a98c3"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="Laboras22Model.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="da522f62-257f-41c0-8721-054f3e36bb13"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="bf9b5f9a-3bba-4d33-b05b-5e7175269b3c"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="Laboras22Model.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="fc82903a-6b56-4f45-806f-83d28f0b8212"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="Laboras22Model.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="fca0d90b-bd0d-4ec9-bbae-0497b37354fb"
+            name="Set rating"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="3c8818d6-5731-4eb5-99fd-da28d9e61175"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="Laboras22Model.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="03127d74-707b-4462-b804-38ed381352d0"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="Laboras22Model.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="8d1e934a-9614-4576-a6c4-5cf6a17f701f"
+            name="Save new rating"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="e9c93035-1504-4fbe-bc0b-58d80fc52f49"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="Laboras22Model.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="5fc9b463-4ffa-4706-a0e7-03129041e330"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="Laboras22Model.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="07f6915d-33bf-48e5-981f-affe4863b8c0"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="83f56fa7-6c2f-40cc-b678-93ef7ff51154"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="Laboras22Model.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="f361cfdb-5fbd-4de8-b685-a3a73c54633f"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="Laboras22Model.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="505687f5-b5e4-4f52-b054-96d44693409e"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="3e0e7d2c-0c0c-40dd-ae6c-24a36cbb91a3"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="Laboras22Model.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="d40fc52a-6d9c-404c-b660-02701e1b7c1a"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="Laboras22Model.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="5d19b9ea-677a-4a1a-a4f8-fa711a224bff"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="7576454b-8d5a-4a5f-beb9-abb7c2589913"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="f895a467-45ef-4c39-a68a-6b4e4628915d"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="bbe21bd3-3c1f-407a-80d9-1d189e588921"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="daef4240-4b2a-4384-988b-4aa354d3bb28"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="0dbbda71-fd02-4fd5-b8d2-0c79474244e1"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="e31b1b25-8bf1-49df-a6ee-dd73f772d5e3"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="8caf1f84-26db-4f0f-8c82-c2090c9cf232"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"

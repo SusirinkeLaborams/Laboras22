@@ -143,6 +143,13 @@
     <Content Include="ModelDefinition\Package_2347.uml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Sequence\AddRating.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Sequence\AddRating.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Sequence\AddRating.sequencediagram</DependentUpon>
+    </Content>
     <Content Include="Sequence\CreateProject.sequencediagram">
       <SubType>Content</SubType>
     </Content>
