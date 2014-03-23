@@ -22,47 +22,47 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
-    <Content Include="AddGrade.activitydiagram">
+    <Content Include="Activity\AddGrade.activitydiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="AddGrade.activitydiagram.layout">
+    <Content Include="Activity\AddGrade.activitydiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>AddGrade.activitydiagram</DependentUpon>
+      <DependentUpon>Activity\AddGrade.activitydiagram</DependentUpon>
     </Content>
-    <Content Include="CreateAssignment.activitydiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="CreateAssignment.activitydiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>CreateAssignment.activitydiagram</DependentUpon>
-    </Content>
-    <Content Include="CreateProject.activitydiagram">
+    <Content Include="Activity\CreateAssignment.activitydiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="CreateProject.activitydiagram.layout">
+    <Content Include="Activity\CreateAssignment.activitydiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>CreateProject.activitydiagram</DependentUpon>
+      <DependentUpon>Activity\CreateAssignment.activitydiagram</DependentUpon>
     </Content>
-    <Content Include="DeleteProject.sequencediagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="DeleteProject.sequencediagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>DeleteProject.sequencediagram</DependentUpon>
-    </Content>
-    <Content Include="OpenProject.sequencediagram">
+    <Content Include="Activity\CreateProject.activitydiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="OpenProject.sequencediagram.layout">
+    <Content Include="Activity\CreateProject.activitydiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>OpenProject.sequencediagram</DependentUpon>
+      <DependentUpon>Activity\CreateProject.activitydiagram</DependentUpon>
     </Content>
-    <Content Include="DeleteProject.activitydiagram">
+    <Content Include="Activity\DeleteProject.activitydiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="DeleteProject.activitydiagram.layout">
+    <Content Include="Activity\DeleteProject.activitydiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>DeleteProject.activitydiagram</DependentUpon>
+      <DependentUpon>Activity\DeleteProject.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="Activity\Login.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Activity\Login.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Activity\Login.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="Activity\RegisterUser.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Activity\RegisterUser.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Activity\RegisterUser.activitydiagram</DependentUpon>
     </Content>
     <Content Include="Laboras22.classdiagram">
       <SubType>Content</SubType>
@@ -70,20 +70,6 @@
     <Content Include="Laboras22.classdiagram.layout">
       <SubType>Content</SubType>
       <DependentUpon>Laboras22.classdiagram</DependentUpon>
-    </Content>
-    <Content Include="Login.activitydiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Login.activitydiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>Login.activitydiagram</DependentUpon>
-    </Content>
-    <Content Include="Login.sequencediagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Login.sequencediagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>Login.sequencediagram</DependentUpon>
     </Content>
     <Content Include="ModelDefinition\Package10_2347.uml">
       <SubType>Content</SubType>
@@ -157,51 +143,75 @@
     <Content Include="ModelDefinition\Package_2347.uml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="ModifyUserData.sequencediagram">
+    <Content Include="Sequence\CreateProject.sequencediagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="ModifyUserData.sequencediagram.layout">
+    <Content Include="Sequence\CreateProject.sequencediagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>ModifyUserData.sequencediagram</DependentUpon>
+      <DependentUpon>Sequence\CreateProject.sequencediagram</DependentUpon>
     </Content>
-    <Content Include="ProjectManagement.usecasediagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="ProjectManagement.usecasediagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>ProjectManagement.usecasediagram</DependentUpon>
-    </Content>
-    <Content Include="Register.sequencediagram">
+    <Content Include="Sequence\DeleteProject.sequencediagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Register.sequencediagram.layout">
+    <Content Include="Sequence\DeleteProject.sequencediagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>Register.sequencediagram</DependentUpon>
+      <DependentUpon>Sequence\DeleteProject.sequencediagram</DependentUpon>
     </Content>
-    <Content Include="RegisterUser.activitydiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="RegisterUser.activitydiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>RegisterUser.activitydiagram</DependentUpon>
-    </Content>
-    <Content Include="RemoveUsers.sequencediagram">
+    <Content Include="Sequence\Login.sequencediagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="RemoveUsers.sequencediagram.layout">
+    <Content Include="Sequence\Login.sequencediagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>RemoveUsers.sequencediagram</DependentUpon>
+      <DependentUpon>Sequence\Login.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="Sequence\ModifyUserData.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Sequence\ModifyUserData.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Sequence\ModifyUserData.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="Sequence\OpenProject.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Sequence\OpenProject.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Sequence\OpenProject.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="Sequence\Register.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Sequence\Register.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Sequence\Register.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="Sequence\RemoveUsers.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Sequence\RemoveUsers.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Sequence\RemoveUsers.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="UseCase\AssignmentManagement.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UseCase\AssignmentManagement.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UseCase\AssignmentManagement.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="UseCase\ProjectManagement.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UseCase\ProjectManagement.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UseCase\ProjectManagement.usecasediagram</DependentUpon>
     </Content>
     <Folder Include="ModelDefinition\" />
-    <Content Include="AssignmentManagement.usecasediagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="AssignmentManagement.usecasediagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>AssignmentManagement.usecasediagram</DependentUpon>
-    </Content>
     <Content Include="ModelDefinition\Laboras22Model.uml">
       <SubType>Content</SubType>
     </Content>
+    <Folder Include="Activity" />
+    <Folder Include="UseCase" />
+    <Folder Include="Sequence" />
   </ItemGroup>
 </Project>
