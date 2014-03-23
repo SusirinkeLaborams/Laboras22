@@ -43,6 +43,13 @@
       <SubType>Content</SubType>
       <DependentUpon>CreateProject.activitydiagram</DependentUpon>
     </Content>
+    <Content Include="DeleteProject.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DeleteProject.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DeleteProject.sequencediagram</DependentUpon>
+    </Content>
     <Content Include="OpenProject.sequencediagram">
       <SubType>Content</SubType>
     </Content>
