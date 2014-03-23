@@ -11990,7 +11990,7 @@
     <packageHasNamedElement>
       <interaction
         Id="24d3d631-70f1-4532-8c20-d35063c506af"
-        name="CreateProject"
+        name="OpenProject"
         collapseFragmentsFlag="false"
         isActiveClass="false"
         isAbstract="false"
@@ -12003,7 +12003,7 @@
             <coveredLifelines>
               <lifelineMoniker
                 Id="c45d4f11-c23c-402c-ab5b-a5c976f695ef"
-                LastKnownName="loginWindow"
+                LastKnownName="loginWindow : LoginWindow"
                 LastKnownLocation="Laboras22Model.uml" />
             </coveredLifelines>
             <finish>
@@ -12055,7 +12055,7 @@
             <covered>
               <lifelineMoniker
                 Id="c45d4f11-c23c-402c-ab5b-a5c976f695ef"
-                LastKnownName="loginWindow"
+                LastKnownName="loginWindow : LoginWindow"
                 LastKnownLocation="Laboras22Model.uml" />
             </covered>
           </executionOccurrenceSpecification>
@@ -12065,7 +12065,7 @@
             <covered>
               <lifelineMoniker
                 Id="97cc2db4-4518-45e3-a23a-64bd373f3fb9"
-                LastKnownName="user"
+                LastKnownName="user : User"
                 LastKnownLocation="Laboras22Model.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -12075,7 +12075,7 @@
             <covered>
               <lifelineMoniker
                 Id="c45d4f11-c23c-402c-ab5b-a5c976f695ef"
-                LastKnownName="loginWindow"
+                LastKnownName="loginWindow : LoginWindow"
                 LastKnownLocation="Laboras22Model.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -12085,7 +12085,7 @@
             <coveredLifelines>
               <lifelineMoniker
                 Id="c45d4f11-c23c-402c-ab5b-a5c976f695ef"
-                LastKnownName="loginWindow"
+                LastKnownName="loginWindow : LoginWindow"
                 LastKnownLocation="Laboras22Model.uml" />
             </coveredLifelines>
             <interactionUseOccurrenceSpecifications>
@@ -12101,7 +12101,7 @@
             <covered>
               <lifelineMoniker
                 Id="c45d4f11-c23c-402c-ab5b-a5c976f695ef"
-                LastKnownName="loginWindow"
+                LastKnownName="loginWindow : LoginWindow"
                 LastKnownLocation="Laboras22Model.uml" />
             </covered>
           </interactionUseOccurrenceSpecification>
@@ -12111,7 +12111,7 @@
             <coveredLifelines>
               <lifelineMoniker
                 Id="f8c019c9-d3fe-485f-baef-4468681d1e7e"
-                LastKnownName="mainWindow"
+                LastKnownName="mainWindow : MainWindow"
                 LastKnownLocation="Laboras22Model.uml" />
             </coveredLifelines>
             <finish>
@@ -12151,27 +12151,27 @@
             <covered>
               <lifelineMoniker
                 Id="f8c019c9-d3fe-485f-baef-4468681d1e7e"
-                LastKnownName="mainWindow"
+                LastKnownName="mainWindow : MainWindow"
                 LastKnownLocation="Laboras22Model.uml" />
             </covered>
           </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="136d4ab5-df03-40b1-b347-e6ea80c1741b"
-            name="MessageOccurrenceSpecification20">
-            <covered>
-              <lifelineMoniker
-                Id="f8c019c9-d3fe-485f-baef-4468681d1e7e"
-                LastKnownName="mainWindow"
-                LastKnownLocation="Laboras22Model.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
           <messageOccurrenceSpecification
             Id="dc984cb5-a0df-43fc-ac4e-c2c58f4e15c2"
             name="MessageOccurrenceSpecification19">
             <covered>
               <lifelineMoniker
                 Id="c45d4f11-c23c-402c-ab5b-a5c976f695ef"
-                LastKnownName="loginWindow"
+                LastKnownName="loginWindow : LoginWindow"
+                LastKnownLocation="Laboras22Model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="136d4ab5-df03-40b1-b347-e6ea80c1741b"
+            name="MessageOccurrenceSpecification20">
+            <covered>
+              <lifelineMoniker
+                Id="f8c019c9-d3fe-485f-baef-4468681d1e7e"
+                LastKnownName="mainWindow : MainWindow"
                 LastKnownLocation="Laboras22Model.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -12181,7 +12181,7 @@
             <covered>
               <lifelineMoniker
                 Id="f8c019c9-d3fe-485f-baef-4468681d1e7e"
-                LastKnownName="mainWindow"
+                LastKnownName="mainWindow : MainWindow"
                 LastKnownLocation="Laboras22Model.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -12191,7 +12191,7 @@
             <covered>
               <lifelineMoniker
                 Id="c45d4f11-c23c-402c-ab5b-a5c976f695ef"
-                LastKnownName="loginWindow"
+                LastKnownName="loginWindow : LoginWindow"
                 LastKnownLocation="Laboras22Model.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -12209,7 +12209,7 @@
             <covered>
               <lifelineMoniker
                 Id="f8c019c9-d3fe-485f-baef-4468681d1e7e"
-                LastKnownName="mainWindow"
+                LastKnownName="mainWindow : MainWindow"
                 LastKnownLocation="Laboras22Model.uml" />
             </covered>
           </executionOccurrenceSpecification>
@@ -12219,7 +12219,7 @@
             <covered>
               <lifelineMoniker
                 Id="c45d4f11-c23c-402c-ab5b-a5c976f695ef"
-                LastKnownName="loginWindow"
+                LastKnownName="loginWindow : LoginWindow"
                 LastKnownLocation="Laboras22Model.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -12229,7 +12229,7 @@
             <covered>
               <lifelineMoniker
                 Id="97cc2db4-4518-45e3-a23a-64bd373f3fb9"
-                LastKnownName="user"
+                LastKnownName="user : User"
                 LastKnownLocation="Laboras22Model.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -12247,7 +12247,7 @@
             <covered>
               <lifelineMoniker
                 Id="c45d4f11-c23c-402c-ab5b-a5c976f695ef"
-                LastKnownName="loginWindow"
+                LastKnownName="loginWindow : LoginWindow"
                 LastKnownLocation="Laboras22Model.uml" />
             </covered>
           </executionOccurrenceSpecification>
@@ -12257,7 +12257,7 @@
             <coveredLifelines>
               <lifelineMoniker
                 Id="f8c019c9-d3fe-485f-baef-4468681d1e7e"
-                LastKnownName="mainWindow"
+                LastKnownName="mainWindow : MainWindow"
                 LastKnownLocation="Laboras22Model.uml" />
             </coveredLifelines>
             <finish>
@@ -12305,27 +12305,27 @@
             <covered>
               <lifelineMoniker
                 Id="f8c019c9-d3fe-485f-baef-4468681d1e7e"
-                LastKnownName="mainWindow"
+                LastKnownName="mainWindow : MainWindow"
                 LastKnownLocation="Laboras22Model.uml" />
             </covered>
           </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="9d36d0e2-5f1f-464f-afe9-5935c22c25b5"
-            name="MessageOccurrenceSpecification24">
-            <covered>
-              <lifelineMoniker
-                Id="f8c019c9-d3fe-485f-baef-4468681d1e7e"
-                LastKnownName="mainWindow"
-                LastKnownLocation="Laboras22Model.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
           <messageOccurrenceSpecification
             Id="6c56d777-8ecf-4006-94ee-4f6169fc4b0e"
             name="MessageOccurrenceSpecification23">
             <covered>
               <lifelineMoniker
                 Id="97cc2db4-4518-45e3-a23a-64bd373f3fb9"
-                LastKnownName="user"
+                LastKnownName="user : User"
+                LastKnownLocation="Laboras22Model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="9d36d0e2-5f1f-464f-afe9-5935c22c25b5"
+            name="MessageOccurrenceSpecification24">
+            <covered>
+              <lifelineMoniker
+                Id="f8c019c9-d3fe-485f-baef-4468681d1e7e"
+                LastKnownName="mainWindow : MainWindow"
                 LastKnownLocation="Laboras22Model.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -12335,7 +12335,7 @@
             <coveredLifelines>
               <lifelineMoniker
                 Id="bd85782d-d1fc-4deb-9c03-24ea103b2dce"
-                LastKnownName="projectList"
+                LastKnownName="projectList : ProjectList"
                 LastKnownLocation="Laboras22Model.uml" />
             </coveredLifelines>
             <finish>
@@ -12375,7 +12375,7 @@
             <covered>
               <lifelineMoniker
                 Id="bd85782d-d1fc-4deb-9c03-24ea103b2dce"
-                LastKnownName="projectList"
+                LastKnownName="projectList : ProjectList"
                 LastKnownLocation="Laboras22Model.uml" />
             </covered>
           </executionOccurrenceSpecification>
@@ -12385,7 +12385,7 @@
             <covered>
               <lifelineMoniker
                 Id="f8c019c9-d3fe-485f-baef-4468681d1e7e"
-                LastKnownName="mainWindow"
+                LastKnownName="mainWindow : MainWindow"
                 LastKnownLocation="Laboras22Model.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -12395,7 +12395,7 @@
             <covered>
               <lifelineMoniker
                 Id="bd85782d-d1fc-4deb-9c03-24ea103b2dce"
-                LastKnownName="projectList"
+                LastKnownName="projectList : ProjectList"
                 LastKnownLocation="Laboras22Model.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -12405,7 +12405,7 @@
             <covered>
               <lifelineMoniker
                 Id="bd85782d-d1fc-4deb-9c03-24ea103b2dce"
-                LastKnownName="projectList"
+                LastKnownName="projectList : ProjectList"
                 LastKnownLocation="Laboras22Model.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -12415,7 +12415,7 @@
             <covered>
               <lifelineMoniker
                 Id="f8c019c9-d3fe-485f-baef-4468681d1e7e"
-                LastKnownName="mainWindow"
+                LastKnownName="mainWindow : MainWindow"
                 LastKnownLocation="Laboras22Model.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -12433,27 +12433,27 @@
             <covered>
               <lifelineMoniker
                 Id="bd85782d-d1fc-4deb-9c03-24ea103b2dce"
-                LastKnownName="projectList"
+                LastKnownName="projectList : ProjectList"
                 LastKnownLocation="Laboras22Model.uml" />
             </covered>
           </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="1b95e6c4-c618-449f-9c84-0e6a63b1932e"
-            name="MessageOccurrenceSpecification25">
-            <covered>
-              <lifelineMoniker
-                Id="f8c019c9-d3fe-485f-baef-4468681d1e7e"
-                LastKnownName="mainWindow"
-                LastKnownLocation="Laboras22Model.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
           <messageOccurrenceSpecification
             Id="b96bdaa7-e01e-41cd-a4ff-0cace58b42a1"
             name="MessageOccurrenceSpecification26">
             <covered>
               <lifelineMoniker
                 Id="97cc2db4-4518-45e3-a23a-64bd373f3fb9"
-                LastKnownName="user"
+                LastKnownName="user : User"
+                LastKnownLocation="Laboras22Model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="1b95e6c4-c618-449f-9c84-0e6a63b1932e"
+            name="MessageOccurrenceSpecification25">
+            <covered>
+              <lifelineMoniker
+                Id="f8c019c9-d3fe-485f-baef-4468681d1e7e"
+                LastKnownName="mainWindow : MainWindow"
                 LastKnownLocation="Laboras22Model.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -12471,7 +12471,7 @@
             <covered>
               <lifelineMoniker
                 Id="f8c019c9-d3fe-485f-baef-4468681d1e7e"
-                LastKnownName="mainWindow"
+                LastKnownName="mainWindow : MainWindow"
                 LastKnownLocation="Laboras22Model.uml" />
             </covered>
           </executionOccurrenceSpecification>
@@ -12481,7 +12481,7 @@
             <coveredLifelines>
               <lifelineMoniker
                 Id="bd85782d-d1fc-4deb-9c03-24ea103b2dce"
-                LastKnownName="projectList"
+                LastKnownName="projectList : ProjectList"
                 LastKnownLocation="Laboras22Model.uml" />
             </coveredLifelines>
             <finish>
@@ -12521,7 +12521,7 @@
             <covered>
               <lifelineMoniker
                 Id="bd85782d-d1fc-4deb-9c03-24ea103b2dce"
-                LastKnownName="projectList"
+                LastKnownName="projectList : ProjectList"
                 LastKnownLocation="Laboras22Model.uml" />
             </covered>
           </executionOccurrenceSpecification>
@@ -12531,7 +12531,7 @@
             <covered>
               <lifelineMoniker
                 Id="97cc2db4-4518-45e3-a23a-64bd373f3fb9"
-                LastKnownName="user"
+                LastKnownName="user : User"
                 LastKnownLocation="Laboras22Model.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -12541,17 +12541,7 @@
             <covered>
               <lifelineMoniker
                 Id="bd85782d-d1fc-4deb-9c03-24ea103b2dce"
-                LastKnownName="projectList"
-                LastKnownLocation="Laboras22Model.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
-            Id="2d888a2e-d4c3-4227-880c-8e5b17bef7ec"
-            name="MessageOccurrenceSpecification33">
-            <covered>
-              <lifelineMoniker
-                Id="bd85782d-d1fc-4deb-9c03-24ea103b2dce"
-                LastKnownName="projectList"
+                LastKnownName="projectList : ProjectList"
                 LastKnownLocation="Laboras22Model.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -12561,7 +12551,17 @@
             <covered>
               <lifelineMoniker
                 Id="97cc2db4-4518-45e3-a23a-64bd373f3fb9"
-                LastKnownName="user"
+                LastKnownName="user : User"
+                LastKnownLocation="Laboras22Model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="2d888a2e-d4c3-4227-880c-8e5b17bef7ec"
+            name="MessageOccurrenceSpecification33">
+            <covered>
+              <lifelineMoniker
+                Id="bd85782d-d1fc-4deb-9c03-24ea103b2dce"
+                LastKnownName="projectList : ProjectList"
                 LastKnownLocation="Laboras22Model.uml" />
             </covered>
           </messageOccurrenceSpecification>
@@ -12579,7 +12579,7 @@
             <covered>
               <lifelineMoniker
                 Id="bd85782d-d1fc-4deb-9c03-24ea103b2dce"
-                LastKnownName="projectList"
+                LastKnownName="projectList : ProjectList"
                 LastKnownLocation="Laboras22Model.uml" />
             </covered>
           </executionOccurrenceSpecification>
@@ -12587,9 +12587,9 @@
         <lifelines>
           <lifeline
             Id="97cc2db4-4518-45e3-a23a-64bd373f3fb9"
-            name="user"
+            name="user : User"
             isActor="true"
-            lifelineDisplayName="user">
+            lifelineDisplayName="user : User">
             <topLevelOccurrences>
               <messageOccurrenceSpecificationMoniker
                 Id="474f7a62-8ca0-40e7-a68d-b10c2d674d87"
@@ -12619,9 +12619,9 @@
           </lifeline>
           <lifeline
             Id="c45d4f11-c23c-402c-ab5b-a5c976f695ef"
-            name="loginWindow"
+            name="loginWindow : LoginWindow"
             isActor="false"
-            lifelineDisplayName="loginWindow">
+            lifelineDisplayName="loginWindow : LoginWindow">
             <topLevelOccurrences>
               <executionOccurrenceSpecificationMoniker
                 Id="78f83bc3-80a9-4b3a-b751-240995ef4b18"
@@ -12635,9 +12635,9 @@
           </lifeline>
           <lifeline
             Id="f8c019c9-d3fe-485f-baef-4468681d1e7e"
-            name="mainWindow"
+            name="mainWindow : MainWindow"
             isActor="false"
-            lifelineDisplayName="mainWindow">
+            lifelineDisplayName="mainWindow : MainWindow">
             <topLevelOccurrences>
               <executionOccurrenceSpecificationMoniker
                 Id="f19639cf-d631-43a6-8624-c97fcdaea5c4"
@@ -12659,9 +12659,9 @@
           </lifeline>
           <lifeline
             Id="bd85782d-d1fc-4deb-9c03-24ea103b2dce"
-            name="projectList"
+            name="projectList : ProjectList"
             isActor="false"
-            lifelineDisplayName="projectList">
+            lifelineDisplayName="projectList : ProjectList">
             <topLevelOccurrences>
               <executionOccurrenceSpecificationMoniker
                 Id="807ee115-163b-4991-a751-5a89374a1739"
@@ -12874,6 +12874,24 @@
             </receiveEvent>
           </message>
         </messages>
+        <ownedAttributesInternal>
+          <property
+            Id="36109af9-3883-4ced-8ff3-cc6129afea9d"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="59ffc160-56ea-4cb3-8111-3f5ffb37d12a"
+                LastKnownName="Assignment"
+                LastKnownLocation="Package_1300.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
       </interaction>
     </packageHasNamedElement>
     <packageHasNamedElement>
