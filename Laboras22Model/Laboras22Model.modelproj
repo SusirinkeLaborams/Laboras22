@@ -150,12 +150,26 @@
       <SubType>Content</SubType>
       <DependentUpon>Sequence\AddRating.sequencediagram</DependentUpon>
     </Content>
+    <Content Include="Sequence\CreateAssignment.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Sequence\CreateAssignment.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Sequence\CreateAssignment.sequencediagram</DependentUpon>
+    </Content>
     <Content Include="Sequence\CreateProject.sequencediagram">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Sequence\CreateProject.sequencediagram.layout">
       <SubType>Content</SubType>
       <DependentUpon>Sequence\CreateProject.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="Sequence\DeleteAssignment.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Sequence\DeleteAssignment.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Sequence\DeleteAssignment.sequencediagram</DependentUpon>
     </Content>
     <Content Include="Sequence\DeleteProject.sequencediagram">
       <SubType>Content</SubType>
@@ -170,6 +184,13 @@
     <Content Include="Sequence\Login.sequencediagram.layout">
       <SubType>Content</SubType>
       <DependentUpon>Sequence\Login.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="Sequence\ManageAssignment.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Sequence\ManageAssignment.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Sequence\ManageAssignment.sequencediagram</DependentUpon>
     </Content>
     <Content Include="Sequence\ModifyUserData.sequencediagram">
       <SubType>Content</SubType>
