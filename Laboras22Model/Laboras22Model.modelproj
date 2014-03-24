@@ -64,6 +64,13 @@
       <SubType>Content</SubType>
       <DependentUpon>Activity\RegisterUser.activitydiagram</DependentUpon>
     </Content>
+    <Content Include="EntityThing.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="EntityThing.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>EntityThing.classdiagram</DependentUpon>
+    </Content>
     <Content Include="Laboras22.classdiagram">
       <SubType>Content</SubType>
     </Content>
