@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
   dslVersion="1.0.0.0"
   Id="c536aa51-794c-4276-85bd-a9b858d12991"
   name="Laboras22Model" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -19244,6 +19244,938 @@
       <executionEvent
         Id="8caf1f84-26db-4f0f-8c82-c2090c9cf232"
         name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="d02e23a3-86ea-4c0d-84a9-8a08626540f5"
+        name="Student2"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="fad5fe94-c412-4c0f-bc6c-ecc088139494"
+            isDerived="false"
+            sourceEndRoleName="Student"
+            targetEndRoleName="Create a project"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="39f14dce-7308-4a95-8618-619cb53cd0f6"
+              LastKnownName="Create a project1"
+              LastKnownLocation="Laboras22Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="765d66d6-b1d8-4058-8eb9-a5143cc63d2f"
+                  name="Student"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="65a78f81-5480-480b-92d6-2b3f554f1764"
+                  name="Create a project"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="0ed4f79d-0dd5-4aa3-9380-24a6ed4b6379"
+            isDerived="false"
+            sourceEndRoleName="Student"
+            targetEndRoleName="List own projects"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="381cab91-397f-40d8-88b3-16690778cca0"
+              LastKnownName="List own projects1"
+              LastKnownLocation="Laboras22Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4ff2c4d5-d686-430e-9561-1e4449398533"
+                  name="Student"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5d73cf3a-7ce2-4264-a51c-08d7bc1dbf17"
+                  name="List own projects"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="02e326d9-a7c2-43cd-97ec-8a6835491c81"
+            isDerived="false"
+            sourceEndRoleName="Student"
+            targetEndRoleName="List public projects"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1049d88a-57ba-4a8f-b328-0beac1042d5c"
+              LastKnownName="List public projects1"
+              LastKnownLocation="Laboras22Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="35c3c7a7-1e83-4ee6-a4f6-0bfa0053f0f0"
+                  name="Student"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e4d3a942-f5d3-4e73-a7f3-370fc0944241"
+                  name="List public projects"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="67713a2c-5bce-47ac-9c18-33c94b27329b"
+            isDerived="false"
+            sourceEndRoleName="Student"
+            targetEndRoleName="View assignments"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="753c8cf1-d7b5-4cff-b5dd-8544a123b69d"
+              LastKnownName="View assignments1"
+              LastKnownLocation="Laboras22Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="44386be5-2813-4789-90bf-52aee2bf67da"
+                  name="Student"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ee8e9984-d61e-471f-abbd-f946784c6926"
+                  name="View assignments"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="e1a00a17-046b-4fc4-8d93-e43c013d893f"
+            isDerived="false"
+            sourceEndRoleName="Student"
+            targetEndRoleName="Log in"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="6343fd8c-f8ce-40cc-b78e-e654d1f75efa"
+              LastKnownName="Log in1"
+              LastKnownLocation="Laboras22Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0e998585-8dd7-4726-9f26-acd07f5fa064"
+                  name="Student"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="dabec65c-ec38-4271-9560-9056df9abf93"
+                  name="Log in"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="39f14dce-7308-4a95-8618-619cb53cd0f6"
+        name="Create a project1"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="7dc0433c-ae77-421f-b4f1-608a2b68025a">
+            <useCaseMoniker
+              Id="874d2942-011c-4a27-b9de-1d92df0c6b2d"
+              LastKnownName="Open a project1"
+              LastKnownLocation="Laboras22Model.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="381cab91-397f-40d8-88b3-16690778cca0"
+        name="List own projects1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="874d2942-011c-4a27-b9de-1d92df0c6b2d"
+        name="Open a project1"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="360e0571-10a3-46df-a321-3fc8a739b7ac">
+            <useCaseMoniker
+              Id="381cab91-397f-40d8-88b3-16690778cca0"
+              LastKnownName="List own projects1"
+              LastKnownLocation="Laboras22Model.uml" />
+          </extend>
+          <extend
+            Id="682c3ee0-577e-45a0-9864-a36e8869642d">
+            <useCaseMoniker
+              Id="1049d88a-57ba-4a8f-b328-0beac1042d5c"
+              LastKnownName="List public projects1"
+              LastKnownLocation="Laboras22Model.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1049d88a-57ba-4a8f-b328-0beac1042d5c"
+        name="List public projects1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="720868c3-5d54-4925-ae99-33f6e5998e0f"
+        name="Administrator2"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="68785c6d-4028-4538-9ba0-70d93f43e553"
+            isDerived="false"
+            sourceEndRoleName="Administrator"
+            targetEndRoleName="View assignments"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="753c8cf1-d7b5-4cff-b5dd-8544a123b69d"
+              LastKnownName="View assignments1"
+              LastKnownLocation="Laboras22Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cf194e1d-059f-4782-974b-1d246d5d3a4c"
+                  name="Administrator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="844d7ff3-2170-4038-baba-675136e9e5a9"
+                  name="View assignments"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="4cded0fe-8a76-4c5c-bd78-effb324c6793"
+            isDerived="false"
+            sourceEndRoleName="Administrator"
+            targetEndRoleName="Manage all assignments"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="93abd728-63e5-4e1f-97d1-f5175da2bf65"
+              LastKnownName="Manage all assignments1"
+              LastKnownLocation="Laboras22Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bb214e3e-5c11-4921-b10d-35aa26067312"
+                  name="Administrator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="83276d05-4a6a-4be9-961a-b10c31628c68"
+                  name="Manage all assignments"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="d5ffabe6-59ec-4782-9ffc-8d65b66fd6bb"
+            isDerived="false"
+            sourceEndRoleName="Administrator"
+            targetEndRoleName="Log in"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="6343fd8c-f8ce-40cc-b78e-e654d1f75efa"
+              LastKnownName="Log in1"
+              LastKnownLocation="Laboras22Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="17441eab-766d-4f3e-bc64-c4edb63b60c3"
+                  name="Administrator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e9643980-42f9-4fbf-a2de-874dfd53a2e4"
+                  name="Log in"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="7db1db4b-270e-4bbe-ae85-dfe16be68417"
+            isDerived="false"
+            sourceEndRoleName="Administrator"
+            targetEndRoleName="List public projects"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1049d88a-57ba-4a8f-b328-0beac1042d5c"
+              LastKnownName="List public projects1"
+              LastKnownLocation="Laboras22Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2c7c5279-9273-4825-b5e4-28b0b1af719e"
+                  name="Administrator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="aa92006e-1b28-408b-a522-4ff25c5c6156"
+                  name="List public projects"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="42b48f6f-1214-41ad-89e3-575761b38484"
+            isDerived="false"
+            sourceEndRoleName="Administrator"
+            targetEndRoleName="Remove users"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="f984551b-9ea9-4a24-89c7-b9e0b5aae7ad"
+              LastKnownName="Remove users"
+              LastKnownLocation="Laboras22Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6f94a1a7-f84f-4929-95b1-255bf40b8ace"
+                  name="Administrator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e6129c51-12fb-41bb-aab4-caf469922b49"
+                  name="Remove users"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="93e0b0c8-1a7a-452d-95c5-dcf2e6572d88"
+            isDerived="false"
+            sourceEndRoleName="Administrator"
+            targetEndRoleName="Modify user data"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="c373a458-2e55-47cb-9aa4-22449fa3f171"
+              LastKnownName="Modify user data"
+              LastKnownLocation="Laboras22Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="26a074f2-a34a-42cd-acc1-d44880aeffed"
+                  name="Administrator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d4d6fca4-644d-4600-9bbe-8b42a0db9049"
+                  name="Modify user data"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="124a1799-28a0-4505-a768-3bb4a19af065"
+            isDerived="false"
+            sourceEndRoleName="Administrator"
+            targetEndRoleName="Register users"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="40b959bc-af9e-4ec3-b810-b89fa170edfb"
+              LastKnownName="Register users"
+              LastKnownLocation="Laboras22Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="edaf2f70-d282-405a-b0b3-26616f8386e1"
+                  name="Administrator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="977bc3f6-1416-44f6-939b-577e39fea186"
+                  name="Register users"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6a7bdbeb-cc3c-49da-abf3-22dabecafe63"
+        name="Delete project1"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="1333d62d-6dd1-4fcf-9381-032c4b03a6bc">
+            <useCaseMoniker
+              Id="874d2942-011c-4a27-b9de-1d92df0c6b2d"
+              LastKnownName="Open a project1"
+              LastKnownLocation="Laboras22Model.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="757ae351-2eca-4777-bc61-93def76b5f6c"
+        name="Add content1"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="fc6e4507-5572-491f-8e78-f14b4884cbb3">
+            <useCaseMoniker
+              Id="874d2942-011c-4a27-b9de-1d92df0c6b2d"
+              LastKnownName="Open a project1"
+              LastKnownLocation="Laboras22Model.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0f1cfc6e-bb1a-4706-a15e-f6951af371d8"
+        name="Add participants1"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="0e55e328-3d85-4c1b-89a3-b80c648ddf96">
+            <useCaseMoniker
+              Id="874d2942-011c-4a27-b9de-1d92df0c6b2d"
+              LastKnownName="Open a project1"
+              LastKnownLocation="Laboras22Model.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5bcfa6ba-42b4-45c2-b8ae-ce0cccd4de9a"
+        name="Add rating1"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="afc2a729-196b-4164-bd80-fb5375d838d0">
+            <useCaseMoniker
+              Id="874d2942-011c-4a27-b9de-1d92df0c6b2d"
+              LastKnownName="Open a project1"
+              LastKnownLocation="Laboras22Model.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="312f1366-7cd4-4302-8af3-f2c688a07f0a"
+        name="Add comment1"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="35bb424d-ded5-4d94-b547-cbd5c56d794b">
+            <useCaseMoniker
+              Id="874d2942-011c-4a27-b9de-1d92df0c6b2d"
+              LastKnownName="Open a project1"
+              LastKnownLocation="Laboras22Model.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5b87d8ab-50c4-4f0e-89f8-bedb21546c04"
+        name="Add grade1"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="433e7d6e-cfef-4221-9dda-a67ccb55032d">
+            <useCaseMoniker
+              Id="874d2942-011c-4a27-b9de-1d92df0c6b2d"
+              LastKnownName="Open a project1"
+              LastKnownLocation="Laboras22Model.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="b267d54f-8cd9-4fc8-9b40-58b1ef14c98f"
+        name="Lecturer2"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="b535ef33-9782-4242-9635-09b634961445"
+            isDerived="false"
+            sourceEndRoleName="Lecturer"
+            targetEndRoleName="List public projects"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1049d88a-57ba-4a8f-b328-0beac1042d5c"
+              LastKnownName="List public projects1"
+              LastKnownLocation="Laboras22Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1b3dd5eb-d40f-4bcc-8dec-3b4cc941ced7"
+                  name="Lecturer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="77dc2a99-ea08-49b6-86eb-c378b92df471"
+                  name="List public projects"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="81df0c5d-e0e4-4c0f-9b41-39facfbe1f2d"
+            isDerived="false"
+            sourceEndRoleName="Lecturer"
+            targetEndRoleName="View assignments"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="753c8cf1-d7b5-4cff-b5dd-8544a123b69d"
+              LastKnownName="View assignments1"
+              LastKnownLocation="Laboras22Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c03dc5b6-ae0c-43f8-a65b-863484d15041"
+                  name="Lecturer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5eea8577-1a45-4468-9f34-2b1c0f2cddc2"
+                  name="View assignments"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="aa94c038-e647-4b3f-aa27-9acee8c9c5c6"
+            isDerived="false"
+            sourceEndRoleName="Lecturer"
+            targetEndRoleName="Manage own assignments"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="d487bb82-fc32-40ba-8cb6-c17afc3849b5"
+              LastKnownName="Manage own assignments1"
+              LastKnownLocation="Laboras22Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a31819c0-2251-491b-9e4b-8ccf9b9c33a8"
+                  name="Lecturer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="03c797f4-5168-4552-8e7e-08dd25064f6f"
+                  name="Manage own assignments"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="d664eb7b-25f9-4f49-bb2a-40946e0edae5"
+            isDerived="false"
+            sourceEndRoleName="Lecturer"
+            targetEndRoleName="Log in"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="6343fd8c-f8ce-40cc-b78e-e654d1f75efa"
+              LastKnownName="Log in1"
+              LastKnownLocation="Laboras22Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6fd751b3-4891-49c1-9bf7-60f1ae9c682d"
+                  name="Lecturer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f8524adc-32bd-4a1e-ac3f-323941bc3d9a"
+                  name="Log in"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d487bb82-fc32-40ba-8cb6-c17afc3849b5"
+        name="Manage own assignments1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5ab02d09-9fd4-4653-8f6e-6b7be6f3e169"
+        name="Create assignment1"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="72115aaf-1e9f-4d6f-b42b-21845cf94941">
+            <useCaseMoniker
+              Id="d487bb82-fc32-40ba-8cb6-c17afc3849b5"
+              LastKnownName="Manage own assignments1"
+              LastKnownLocation="Laboras22Model.uml" />
+          </extend>
+          <extend
+            Id="e8705ba4-517f-462d-9b18-b4644b29cfd8">
+            <useCaseMoniker
+              Id="93abd728-63e5-4e1f-97d1-f5175da2bf65"
+              LastKnownName="Manage all assignments1"
+              LastKnownLocation="Laboras22Model.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="246322c5-6c71-49c3-9e78-38c76fa47be1"
+        name="Delete assignment1"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="05acce9b-941d-4e58-a9c8-53f45c67bf71">
+            <useCaseMoniker
+              Id="d487bb82-fc32-40ba-8cb6-c17afc3849b5"
+              LastKnownName="Manage own assignments1"
+              LastKnownLocation="Laboras22Model.uml" />
+          </extend>
+          <extend
+            Id="fa9b63d8-02db-46d2-be2f-6ea8bb4305d0">
+            <useCaseMoniker
+              Id="93abd728-63e5-4e1f-97d1-f5175da2bf65"
+              LastKnownName="Manage all assignments1"
+              LastKnownLocation="Laboras22Model.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="753c8cf1-d7b5-4cff-b5dd-8544a123b69d"
+        name="View assignments1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="93abd728-63e5-4e1f-97d1-f5175da2bf65"
+        name="Manage all assignments1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e375276d-2459-416c-88d3-0f04fec0e11b"
+        name="View assignment statistics1"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="134afaab-d6e0-4c23-ac4f-77fc831959b2">
+            <useCaseMoniker
+              Id="d487bb82-fc32-40ba-8cb6-c17afc3849b5"
+              LastKnownName="Manage own assignments1"
+              LastKnownLocation="Laboras22Model.uml" />
+          </extend>
+          <extend
+            Id="2de6633b-5a0e-43c5-81ed-89d78e987a97">
+            <useCaseMoniker
+              Id="93abd728-63e5-4e1f-97d1-f5175da2bf65"
+              LastKnownName="Manage all assignments1"
+              LastKnownLocation="Laboras22Model.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6343fd8c-f8ce-40cc-b78e-e654d1f75efa"
+        name="Log in1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f984551b-9ea9-4a24-89c7-b9e0b5aae7ad"
+        name="Remove users"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c373a458-2e55-47cb-9aa4-22449fa3f171"
+        name="Modify user data"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="40b959bc-af9e-4ec3-b810-b89fa170edfb"
+        name="Register users"
+        isAbstract="false"
+        isLeaf="false" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
