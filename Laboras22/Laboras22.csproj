@@ -82,6 +82,9 @@
     <Compile Include="Views\ManageUsersWindow.xaml.cs">
       <DependentUpon>ManageUsersWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\ProjectWindow.xaml.cs">
+      <DependentUpon>ProjectWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\RegisterWindow.xaml.cs">
       <DependentUpon>RegisterWindow.xaml</DependentUpon>
     </Compile>
@@ -109,6 +112,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Views\ManageUsersWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ProjectWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
