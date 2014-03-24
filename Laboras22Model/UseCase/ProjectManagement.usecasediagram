@@ -6,7 +6,7 @@
         <elementDefinition Id="d02e23a3-86ea-4c0d-84a9-8a08626540f5" />
         <targetEnds>
           <association Id="84af7d79-1bc1-4e9c-a9a8-ecf301cf57f3" isDerived="false" sourceEndRoleName="Student" targetEndRoleName="Create a project" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="3a14a82b-f936-4efd-8822-8157c0da2af0" LastKnownName="Create a project1" />
+            <useCaseMoniker Id="3a14a82b-f936-4efd-8822-8157c0da2af0" LastKnownName="Create a project" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="7dd8b78d-bf8a-4bcb-b0ca-e7ffe776f190" name="Student" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -22,7 +22,7 @@
             <elementDefinition Id="fad5fe94-c412-4c0f-bc6c-ecc088139494" />
           </association>
           <association Id="7e037de6-ef56-4f07-9518-9b9ff076cb2b" isDerived="false" sourceEndRoleName="Student" targetEndRoleName="List own projects" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="dc0fdb7d-5aff-475e-99bb-74c2676646bc" LastKnownName="List own projects1" />
+            <useCaseMoniker Id="dc0fdb7d-5aff-475e-99bb-74c2676646bc" LastKnownName="List own projects" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="9dd34202-d0a6-4f37-a524-d610d550103b" name="Student" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -38,7 +38,7 @@
             <elementDefinition Id="0ed4f79d-0dd5-4aa3-9380-24a6ed4b6379" />
           </association>
           <association Id="f38807f4-bce5-433f-aea1-7ef31163daf2" isDerived="false" sourceEndRoleName="Student" targetEndRoleName="List public projects" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="382403fd-f152-4560-a6af-401a85b61d2b" LastKnownName="List public projects1" />
+            <useCaseMoniker Id="382403fd-f152-4560-a6af-401a85b61d2b" LastKnownName="List public projects" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="ee76b9c9-64e8-4fff-a749-9ff21de7a7dd" name="Student" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -54,7 +54,7 @@
             <elementDefinition Id="02e326d9-a7c2-43cd-97ec-8a6835491c81" />
           </association>
           <association Id="54748268-125e-435b-8ccd-591aab341b90" isDerived="false" sourceEndRoleName="Student" targetEndRoleName="View assignments" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="165141a5-2ed8-46eb-b830-d772c1646e6a" LastKnownName="View assignments1" />
+            <useCaseMoniker Id="165141a5-2ed8-46eb-b830-d772c1646e6a" LastKnownName="View assignments" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="5b650290-efd6-4bbd-b034-3696fd18b343" name="Student" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -70,7 +70,7 @@
             <elementDefinition Id="67713a2c-5bce-47ac-9c18-33c94b27329b" />
           </association>
           <association Id="61697cbe-3dee-4036-80d1-e63369d01669" isDerived="false" sourceEndRoleName="Student" targetEndRoleName="Log in" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="023367aa-739e-4d5d-9b75-349ae705c00c" LastKnownName="Log in1" />
+            <useCaseMoniker Id="023367aa-739e-4d5d-9b75-349ae705c00c" LastKnownName="Log in" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="c0f8c841-2522-4886-a38b-e0d8105247f2" name="Student" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -89,38 +89,38 @@
       </actor>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="3a14a82b-f936-4efd-8822-8157c0da2af0" name="Create a project1" isAbstract="false" isLeaf="false">
+      <useCase Id="3a14a82b-f936-4efd-8822-8157c0da2af0" name="Create a project" isAbstract="false" isLeaf="false">
         <elementDefinition Id="39f14dce-7308-4a95-8618-619cb53cd0f6" />
         <additions>
           <include Id="3aa0f695-f76b-4102-9bac-950baf211ad9">
-            <useCaseMoniker Id="c913c0c0-4d74-45c3-aa7d-0c5b6f3c2e89" LastKnownName="Open a project1" />
+            <useCaseMoniker Id="c913c0c0-4d74-45c3-aa7d-0c5b6f3c2e89" LastKnownName="Open a project" />
             <elementDefinition Id="7dc0433c-ae77-421f-b4f1-608a2b68025a" />
           </include>
         </additions>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="dc0fdb7d-5aff-475e-99bb-74c2676646bc" name="List own projects1" isAbstract="false" isLeaf="false">
+      <useCase Id="dc0fdb7d-5aff-475e-99bb-74c2676646bc" name="List own projects" isAbstract="false" isLeaf="false">
         <elementDefinition Id="381cab91-397f-40d8-88b3-16690778cca0" />
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="c913c0c0-4d74-45c3-aa7d-0c5b6f3c2e89" name="Open a project1" isAbstract="false" isLeaf="false">
+      <useCase Id="c913c0c0-4d74-45c3-aa7d-0c5b6f3c2e89" name="Open a project" isAbstract="false" isLeaf="false">
         <elementDefinition Id="874d2942-011c-4a27-b9de-1d92df0c6b2d" />
         <extendedCases>
           <extend Id="56b69342-7f84-4014-9543-d75a039fc80f">
-            <useCaseMoniker Id="dc0fdb7d-5aff-475e-99bb-74c2676646bc" LastKnownName="List own projects1" />
+            <useCaseMoniker Id="dc0fdb7d-5aff-475e-99bb-74c2676646bc" LastKnownName="List own projects" />
             <elementDefinition Id="360e0571-10a3-46df-a321-3fc8a739b7ac" />
           </extend>
           <extend Id="06c983e6-6556-49de-abb3-a39b28372350">
-            <useCaseMoniker Id="382403fd-f152-4560-a6af-401a85b61d2b" LastKnownName="List public projects1" />
+            <useCaseMoniker Id="382403fd-f152-4560-a6af-401a85b61d2b" LastKnownName="List public projects" />
             <elementDefinition Id="682c3ee0-577e-45a0-9864-a36e8869642d" />
           </extend>
         </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="382403fd-f152-4560-a6af-401a85b61d2b" name="List public projects1" isAbstract="false" isLeaf="false">
+      <useCase Id="382403fd-f152-4560-a6af-401a85b61d2b" name="List public projects" isAbstract="false" isLeaf="false">
         <elementDefinition Id="1049d88a-57ba-4a8f-b328-0beac1042d5c" />
       </useCase>
     </useCaseModelRootHasTypes>
@@ -129,7 +129,7 @@
         <elementDefinition Id="720868c3-5d54-4925-ae99-33f6e5998e0f" />
         <targetEnds>
           <association Id="a3f439fe-ad1d-49a9-8cb0-20ed5630c98e" isDerived="false" sourceEndRoleName="Administrator" targetEndRoleName="View assignments" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="165141a5-2ed8-46eb-b830-d772c1646e6a" LastKnownName="View assignments1" />
+            <useCaseMoniker Id="165141a5-2ed8-46eb-b830-d772c1646e6a" LastKnownName="View assignments" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="b7d659fd-0d17-4899-ba4e-97bec75a2c22" name="Administrator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -145,7 +145,7 @@
             <elementDefinition Id="68785c6d-4028-4538-9ba0-70d93f43e553" />
           </association>
           <association Id="42ed1c82-3b86-4738-ab1a-c2c3b7afaf68" isDerived="false" sourceEndRoleName="Administrator" targetEndRoleName="Manage all assignments" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="81ff1275-39d6-4ad7-b97f-616853a520d4" LastKnownName="Manage all assignments1" />
+            <useCaseMoniker Id="81ff1275-39d6-4ad7-b97f-616853a520d4" LastKnownName="Manage all assignments" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="acf31790-fd91-46f3-9341-8eb6161ba1ae" name="Administrator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -161,7 +161,7 @@
             <elementDefinition Id="4cded0fe-8a76-4c5c-bd78-effb324c6793" />
           </association>
           <association Id="89ae2614-a6d6-491b-a939-d0a3265ce556" isDerived="false" sourceEndRoleName="Administrator" targetEndRoleName="Log in" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="023367aa-739e-4d5d-9b75-349ae705c00c" LastKnownName="Log in1" />
+            <useCaseMoniker Id="023367aa-739e-4d5d-9b75-349ae705c00c" LastKnownName="Log in" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="908302b2-bf0d-478b-8841-392bbbb2db06" name="Administrator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -177,7 +177,7 @@
             <elementDefinition Id="d5ffabe6-59ec-4782-9ffc-8d65b66fd6bb" />
           </association>
           <association Id="204609e5-0e7b-4607-9205-546e293af63d" isDerived="false" sourceEndRoleName="Administrator" targetEndRoleName="List public projects" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="382403fd-f152-4560-a6af-401a85b61d2b" LastKnownName="List public projects1" />
+            <useCaseMoniker Id="382403fd-f152-4560-a6af-401a85b61d2b" LastKnownName="List public projects" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="b10477e0-5a0c-4688-ad94-cb5fd0f0f369" name="Administrator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -244,66 +244,66 @@
       </actor>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="8a725e7b-7cc1-4b06-82cc-7a0612870700" name="Delete project1" isAbstract="false" isLeaf="false">
+      <useCase Id="8a725e7b-7cc1-4b06-82cc-7a0612870700" name="Delete project" isAbstract="false" isLeaf="false">
         <elementDefinition Id="6a7bdbeb-cc3c-49da-abf3-22dabecafe63" />
         <extendedCases>
           <extend Id="48c902ae-a501-4080-913b-91774c41a41c">
-            <useCaseMoniker Id="c913c0c0-4d74-45c3-aa7d-0c5b6f3c2e89" LastKnownName="Open a project1" />
+            <useCaseMoniker Id="c913c0c0-4d74-45c3-aa7d-0c5b6f3c2e89" LastKnownName="Open a project" />
             <elementDefinition Id="1333d62d-6dd1-4fcf-9381-032c4b03a6bc" />
           </extend>
         </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="284a9f3f-1f58-4dcd-89f3-0a006538964f" name="Add content1" isAbstract="false" isLeaf="false">
+      <useCase Id="284a9f3f-1f58-4dcd-89f3-0a006538964f" name="Add content" isAbstract="false" isLeaf="false">
         <elementDefinition Id="757ae351-2eca-4777-bc61-93def76b5f6c" />
         <extendedCases>
           <extend Id="3c160f9e-8e36-4d2b-89e8-6ec610d6e8eb">
-            <useCaseMoniker Id="c913c0c0-4d74-45c3-aa7d-0c5b6f3c2e89" LastKnownName="Open a project1" />
+            <useCaseMoniker Id="c913c0c0-4d74-45c3-aa7d-0c5b6f3c2e89" LastKnownName="Open a project" />
             <elementDefinition Id="fc6e4507-5572-491f-8e78-f14b4884cbb3" />
           </extend>
         </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="e54fabe1-0e31-44ee-811b-9faa1d349b7d" name="Add participants1" isAbstract="false" isLeaf="false">
+      <useCase Id="e54fabe1-0e31-44ee-811b-9faa1d349b7d" name="Add participants" isAbstract="false" isLeaf="false">
         <elementDefinition Id="0f1cfc6e-bb1a-4706-a15e-f6951af371d8" />
         <extendedCases>
           <extend Id="27c90b28-91e2-4251-bbd5-6586462bcbe8">
-            <useCaseMoniker Id="c913c0c0-4d74-45c3-aa7d-0c5b6f3c2e89" LastKnownName="Open a project1" />
+            <useCaseMoniker Id="c913c0c0-4d74-45c3-aa7d-0c5b6f3c2e89" LastKnownName="Open a project" />
             <elementDefinition Id="0e55e328-3d85-4c1b-89a3-b80c648ddf96" />
           </extend>
         </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="5ab6c58b-39d5-4043-a22d-88c08c99b581" name="Add rating1" isAbstract="false" isLeaf="false">
+      <useCase Id="5ab6c58b-39d5-4043-a22d-88c08c99b581" name="Add rating" isAbstract="false" isLeaf="false">
         <elementDefinition Id="5bcfa6ba-42b4-45c2-b8ae-ce0cccd4de9a" />
         <extendedCases>
           <extend Id="71a4c291-5287-439d-8bea-73f0991a465c">
-            <useCaseMoniker Id="c913c0c0-4d74-45c3-aa7d-0c5b6f3c2e89" LastKnownName="Open a project1" />
+            <useCaseMoniker Id="c913c0c0-4d74-45c3-aa7d-0c5b6f3c2e89" LastKnownName="Open a project" />
             <elementDefinition Id="afc2a729-196b-4164-bd80-fb5375d838d0" />
           </extend>
         </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="172626df-f463-42a7-8229-96939f956bf1" name="Add comment1" isAbstract="false" isLeaf="false">
+      <useCase Id="172626df-f463-42a7-8229-96939f956bf1" name="Add comment" isAbstract="false" isLeaf="false">
         <elementDefinition Id="312f1366-7cd4-4302-8af3-f2c688a07f0a" />
         <extendedCases>
           <extend Id="75a2176b-5bce-4e9d-97e6-e735981e7da0">
-            <useCaseMoniker Id="c913c0c0-4d74-45c3-aa7d-0c5b6f3c2e89" LastKnownName="Open a project1" />
+            <useCaseMoniker Id="c913c0c0-4d74-45c3-aa7d-0c5b6f3c2e89" LastKnownName="Open a project" />
             <elementDefinition Id="35bb424d-ded5-4d94-b547-cbd5c56d794b" />
           </extend>
         </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="b106b397-d1db-404c-95a0-105096929c9d" name="Add grade1" isAbstract="false" isLeaf="false">
+      <useCase Id="b106b397-d1db-404c-95a0-105096929c9d" name="Add grade" isAbstract="false" isLeaf="false">
         <elementDefinition Id="5b87d8ab-50c4-4f0e-89f8-bedb21546c04" />
         <extendedCases>
           <extend Id="826bca95-d59a-40c6-8112-5c2eb3ef3bca">
-            <useCaseMoniker Id="c913c0c0-4d74-45c3-aa7d-0c5b6f3c2e89" LastKnownName="Open a project1" />
+            <useCaseMoniker Id="c913c0c0-4d74-45c3-aa7d-0c5b6f3c2e89" LastKnownName="Open a project" />
             <elementDefinition Id="433e7d6e-cfef-4221-9dda-a67ccb55032d" />
           </extend>
         </extendedCases>
@@ -314,7 +314,7 @@
         <elementDefinition Id="b267d54f-8cd9-4fc8-9b40-58b1ef14c98f" />
         <targetEnds>
           <association Id="10a8ff7d-1fd8-48c4-80eb-8166eb464163" isDerived="false" sourceEndRoleName="Lecturer" targetEndRoleName="List public projects" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="382403fd-f152-4560-a6af-401a85b61d2b" LastKnownName="List public projects1" />
+            <useCaseMoniker Id="382403fd-f152-4560-a6af-401a85b61d2b" LastKnownName="List public projects" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="7d20f59e-f010-40fe-8a12-1e94926405c0" name="Lecturer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -330,7 +330,7 @@
             <elementDefinition Id="b535ef33-9782-4242-9635-09b634961445" />
           </association>
           <association Id="14a08888-1e40-477e-87c8-0cb18d505925" isDerived="false" sourceEndRoleName="Lecturer" targetEndRoleName="View assignments" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="165141a5-2ed8-46eb-b830-d772c1646e6a" LastKnownName="View assignments1" />
+            <useCaseMoniker Id="165141a5-2ed8-46eb-b830-d772c1646e6a" LastKnownName="View assignments" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="0661edfe-7f46-4521-a192-ae2397f2a754" name="Lecturer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -346,7 +346,7 @@
             <elementDefinition Id="81df0c5d-e0e4-4c0f-9b41-39facfbe1f2d" />
           </association>
           <association Id="49b6ec59-3921-494b-af12-b91fbbec0e18" isDerived="false" sourceEndRoleName="Lecturer" targetEndRoleName="Manage own assignments" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="39952455-40e0-4114-9144-2b4284dc37ad" LastKnownName="Manage own assignments1" />
+            <useCaseMoniker Id="39952455-40e0-4114-9144-2b4284dc37ad" LastKnownName="Manage own assignments" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="1d3cd2a5-4bb6-48ee-8f2b-a213cb561411" name="Lecturer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -362,7 +362,7 @@
             <elementDefinition Id="aa94c038-e647-4b3f-aa27-9acee8c9c5c6" />
           </association>
           <association Id="18197164-aaab-41ab-bd9d-b78b5427e5ff" isDerived="false" sourceEndRoleName="Lecturer" targetEndRoleName="Log in" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="023367aa-739e-4d5d-9b75-349ae705c00c" LastKnownName="Log in1" />
+            <useCaseMoniker Id="023367aa-739e-4d5d-9b75-349ae705c00c" LastKnownName="Log in" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="1f2fe980-ddab-4ad4-aa99-2add5995da7a" name="Lecturer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -381,67 +381,67 @@
       </actor>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="39952455-40e0-4114-9144-2b4284dc37ad" name="Manage own assignments1" isAbstract="false" isLeaf="false">
+      <useCase Id="39952455-40e0-4114-9144-2b4284dc37ad" name="Manage own assignments" isAbstract="false" isLeaf="false">
         <elementDefinition Id="d487bb82-fc32-40ba-8cb6-c17afc3849b5" />
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="9c2d72ea-7f35-42d4-b0db-6fc48c980567" name="Create assignment1" isAbstract="false" isLeaf="false">
+      <useCase Id="9c2d72ea-7f35-42d4-b0db-6fc48c980567" name="Create assignment" isAbstract="false" isLeaf="false">
         <elementDefinition Id="5ab02d09-9fd4-4653-8f6e-6b7be6f3e169" />
         <extendedCases>
           <extend Id="1c6969b2-4ccc-42c9-8883-e5cb42e335ed">
-            <useCaseMoniker Id="39952455-40e0-4114-9144-2b4284dc37ad" LastKnownName="Manage own assignments1" />
+            <useCaseMoniker Id="39952455-40e0-4114-9144-2b4284dc37ad" LastKnownName="Manage own assignments" />
             <elementDefinition Id="72115aaf-1e9f-4d6f-b42b-21845cf94941" />
           </extend>
           <extend Id="c4f2f9b1-e9eb-4ac0-93e6-5273b041d629">
-            <useCaseMoniker Id="81ff1275-39d6-4ad7-b97f-616853a520d4" LastKnownName="Manage all assignments1" />
+            <useCaseMoniker Id="81ff1275-39d6-4ad7-b97f-616853a520d4" LastKnownName="Manage all assignments" />
             <elementDefinition Id="e8705ba4-517f-462d-9b18-b4644b29cfd8" />
           </extend>
         </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="f0504df9-1c20-499c-8493-cec7f2f49564" name="Delete assignment1" isAbstract="false" isLeaf="false">
+      <useCase Id="f0504df9-1c20-499c-8493-cec7f2f49564" name="Delete assignment" isAbstract="false" isLeaf="false">
         <elementDefinition Id="246322c5-6c71-49c3-9e78-38c76fa47be1" />
         <extendedCases>
           <extend Id="ebc5a224-2c6a-4275-aec8-30feefb37ef6">
-            <useCaseMoniker Id="39952455-40e0-4114-9144-2b4284dc37ad" LastKnownName="Manage own assignments1" />
+            <useCaseMoniker Id="39952455-40e0-4114-9144-2b4284dc37ad" LastKnownName="Manage own assignments" />
             <elementDefinition Id="05acce9b-941d-4e58-a9c8-53f45c67bf71" />
           </extend>
           <extend Id="7744709f-d765-4cd2-b8c0-55b57f5ae144">
-            <useCaseMoniker Id="81ff1275-39d6-4ad7-b97f-616853a520d4" LastKnownName="Manage all assignments1" />
+            <useCaseMoniker Id="81ff1275-39d6-4ad7-b97f-616853a520d4" LastKnownName="Manage all assignments" />
             <elementDefinition Id="fa9b63d8-02db-46d2-be2f-6ea8bb4305d0" />
           </extend>
         </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="165141a5-2ed8-46eb-b830-d772c1646e6a" name="View assignments1" isAbstract="false" isLeaf="false">
+      <useCase Id="165141a5-2ed8-46eb-b830-d772c1646e6a" name="View assignments" isAbstract="false" isLeaf="false">
         <elementDefinition Id="753c8cf1-d7b5-4cff-b5dd-8544a123b69d" />
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="81ff1275-39d6-4ad7-b97f-616853a520d4" name="Manage all assignments1" isAbstract="false" isLeaf="false">
+      <useCase Id="81ff1275-39d6-4ad7-b97f-616853a520d4" name="Manage all assignments" isAbstract="false" isLeaf="false">
         <elementDefinition Id="93abd728-63e5-4e1f-97d1-f5175da2bf65" />
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="a1ac1de2-128e-4707-a911-68c1701ee54c" name="View assignment statistics1" isAbstract="false" isLeaf="false">
+      <useCase Id="a1ac1de2-128e-4707-a911-68c1701ee54c" name="View assignment statistics" isAbstract="false" isLeaf="false">
         <elementDefinition Id="e375276d-2459-416c-88d3-0f04fec0e11b" />
         <extendedCases>
           <extend Id="559324d0-c798-42f6-9aa3-92d565dd9758">
-            <useCaseMoniker Id="39952455-40e0-4114-9144-2b4284dc37ad" LastKnownName="Manage own assignments1" />
+            <useCaseMoniker Id="39952455-40e0-4114-9144-2b4284dc37ad" LastKnownName="Manage own assignments" />
             <elementDefinition Id="134afaab-d6e0-4c23-ac4f-77fc831959b2" />
           </extend>
           <extend Id="79d9f800-38b9-43f0-865a-fc05a7c30529">
-            <useCaseMoniker Id="81ff1275-39d6-4ad7-b97f-616853a520d4" LastKnownName="Manage all assignments1" />
+            <useCaseMoniker Id="81ff1275-39d6-4ad7-b97f-616853a520d4" LastKnownName="Manage all assignments" />
             <elementDefinition Id="2de6633b-5a0e-43c5-81ed-89d78e987a97" />
           </extend>
         </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="023367aa-739e-4d5d-9b75-349ae705c00c" name="Log in1" isAbstract="false" isLeaf="false">
+      <useCase Id="023367aa-739e-4d5d-9b75-349ae705c00c" name="Log in" isAbstract="false" isLeaf="false">
         <elementDefinition Id="6343fd8c-f8ce-40cc-b78e-e654d1f75efa" />
       </useCase>
     </useCaseModelRootHasTypes>

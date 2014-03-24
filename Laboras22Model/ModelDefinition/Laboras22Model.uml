@@ -19261,7 +19261,7 @@
             isAbstract="false">
             <useCaseMoniker
               Id="39f14dce-7308-4a95-8618-619cb53cd0f6"
-              LastKnownName="Create a project1"
+              LastKnownName="Create a project"
               LastKnownLocation="Laboras22Model.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -19300,7 +19300,7 @@
             isAbstract="false">
             <useCaseMoniker
               Id="381cab91-397f-40d8-88b3-16690778cca0"
-              LastKnownName="List own projects1"
+              LastKnownName="List own projects"
               LastKnownLocation="Laboras22Model.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -19339,7 +19339,7 @@
             isAbstract="false">
             <useCaseMoniker
               Id="1049d88a-57ba-4a8f-b328-0beac1042d5c"
-              LastKnownName="List public projects1"
+              LastKnownName="List public projects"
               LastKnownLocation="Laboras22Model.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -19378,7 +19378,7 @@
             isAbstract="false">
             <useCaseMoniker
               Id="753c8cf1-d7b5-4cff-b5dd-8544a123b69d"
-              LastKnownName="View assignments1"
+              LastKnownName="View assignments"
               LastKnownLocation="Laboras22Model.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -19417,7 +19417,7 @@
             isAbstract="false">
             <useCaseMoniker
               Id="6343fd8c-f8ce-40cc-b78e-e654d1f75efa"
-              LastKnownName="Log in1"
+              LastKnownName="Log in"
               LastKnownLocation="Laboras22Model.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -19453,7 +19453,7 @@
     <packageHasNamedElement>
       <useCase
         Id="39f14dce-7308-4a95-8618-619cb53cd0f6"
-        name="Create a project1"
+        name="Create a project"
         isAbstract="false"
         isLeaf="false">
         <additions>
@@ -19461,7 +19461,7 @@
             Id="7dc0433c-ae77-421f-b4f1-608a2b68025a">
             <useCaseMoniker
               Id="874d2942-011c-4a27-b9de-1d92df0c6b2d"
-              LastKnownName="Open a project1"
+              LastKnownName="Open a project"
               LastKnownLocation="Laboras22Model.uml" />
           </include>
         </additions>
@@ -19470,14 +19470,14 @@
     <packageHasNamedElement>
       <useCase
         Id="381cab91-397f-40d8-88b3-16690778cca0"
-        name="List own projects1"
+        name="List own projects"
         isAbstract="false"
         isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
         Id="874d2942-011c-4a27-b9de-1d92df0c6b2d"
-        name="Open a project1"
+        name="Open a project"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
@@ -19485,14 +19485,14 @@
             Id="360e0571-10a3-46df-a321-3fc8a739b7ac">
             <useCaseMoniker
               Id="381cab91-397f-40d8-88b3-16690778cca0"
-              LastKnownName="List own projects1"
+              LastKnownName="List own projects"
               LastKnownLocation="Laboras22Model.uml" />
           </extend>
           <extend
             Id="682c3ee0-577e-45a0-9864-a36e8869642d">
             <useCaseMoniker
               Id="1049d88a-57ba-4a8f-b328-0beac1042d5c"
-              LastKnownName="List public projects1"
+              LastKnownName="List public projects"
               LastKnownLocation="Laboras22Model.uml" />
           </extend>
         </extendedCases>
@@ -19501,7 +19501,7 @@
     <packageHasNamedElement>
       <useCase
         Id="1049d88a-57ba-4a8f-b328-0beac1042d5c"
-        name="List public projects1"
+        name="List public projects"
         isAbstract="false"
         isLeaf="false" />
     </packageHasNamedElement>
@@ -19521,7 +19521,7 @@
             isAbstract="false">
             <useCaseMoniker
               Id="753c8cf1-d7b5-4cff-b5dd-8544a123b69d"
-              LastKnownName="View assignments1"
+              LastKnownName="View assignments"
               LastKnownLocation="Laboras22Model.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -19560,7 +19560,7 @@
             isAbstract="false">
             <useCaseMoniker
               Id="93abd728-63e5-4e1f-97d1-f5175da2bf65"
-              LastKnownName="Manage all assignments1"
+              LastKnownName="Manage all assignments"
               LastKnownLocation="Laboras22Model.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -19599,7 +19599,7 @@
             isAbstract="false">
             <useCaseMoniker
               Id="6343fd8c-f8ce-40cc-b78e-e654d1f75efa"
-              LastKnownName="Log in1"
+              LastKnownName="Log in"
               LastKnownLocation="Laboras22Model.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -19638,7 +19638,7 @@
             isAbstract="false">
             <useCaseMoniker
               Id="1049d88a-57ba-4a8f-b328-0beac1042d5c"
-              LastKnownName="List public projects1"
+              LastKnownName="List public projects"
               LastKnownLocation="Laboras22Model.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -19791,7 +19791,7 @@
     <packageHasNamedElement>
       <useCase
         Id="6a7bdbeb-cc3c-49da-abf3-22dabecafe63"
-        name="Delete project1"
+        name="Delete project"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
@@ -19799,7 +19799,7 @@
             Id="1333d62d-6dd1-4fcf-9381-032c4b03a6bc">
             <useCaseMoniker
               Id="874d2942-011c-4a27-b9de-1d92df0c6b2d"
-              LastKnownName="Open a project1"
+              LastKnownName="Open a project"
               LastKnownLocation="Laboras22Model.uml" />
           </extend>
         </extendedCases>
@@ -19808,7 +19808,7 @@
     <packageHasNamedElement>
       <useCase
         Id="757ae351-2eca-4777-bc61-93def76b5f6c"
-        name="Add content1"
+        name="Add content"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
@@ -19816,7 +19816,7 @@
             Id="fc6e4507-5572-491f-8e78-f14b4884cbb3">
             <useCaseMoniker
               Id="874d2942-011c-4a27-b9de-1d92df0c6b2d"
-              LastKnownName="Open a project1"
+              LastKnownName="Open a project"
               LastKnownLocation="Laboras22Model.uml" />
           </extend>
         </extendedCases>
@@ -19825,7 +19825,7 @@
     <packageHasNamedElement>
       <useCase
         Id="0f1cfc6e-bb1a-4706-a15e-f6951af371d8"
-        name="Add participants1"
+        name="Add participants"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
@@ -19833,7 +19833,7 @@
             Id="0e55e328-3d85-4c1b-89a3-b80c648ddf96">
             <useCaseMoniker
               Id="874d2942-011c-4a27-b9de-1d92df0c6b2d"
-              LastKnownName="Open a project1"
+              LastKnownName="Open a project"
               LastKnownLocation="Laboras22Model.uml" />
           </extend>
         </extendedCases>
@@ -19842,7 +19842,7 @@
     <packageHasNamedElement>
       <useCase
         Id="5bcfa6ba-42b4-45c2-b8ae-ce0cccd4de9a"
-        name="Add rating1"
+        name="Add rating"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
@@ -19850,7 +19850,7 @@
             Id="afc2a729-196b-4164-bd80-fb5375d838d0">
             <useCaseMoniker
               Id="874d2942-011c-4a27-b9de-1d92df0c6b2d"
-              LastKnownName="Open a project1"
+              LastKnownName="Open a project"
               LastKnownLocation="Laboras22Model.uml" />
           </extend>
         </extendedCases>
@@ -19859,7 +19859,7 @@
     <packageHasNamedElement>
       <useCase
         Id="312f1366-7cd4-4302-8af3-f2c688a07f0a"
-        name="Add comment1"
+        name="Add comment"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
@@ -19867,7 +19867,7 @@
             Id="35bb424d-ded5-4d94-b547-cbd5c56d794b">
             <useCaseMoniker
               Id="874d2942-011c-4a27-b9de-1d92df0c6b2d"
-              LastKnownName="Open a project1"
+              LastKnownName="Open a project"
               LastKnownLocation="Laboras22Model.uml" />
           </extend>
         </extendedCases>
@@ -19876,7 +19876,7 @@
     <packageHasNamedElement>
       <useCase
         Id="5b87d8ab-50c4-4f0e-89f8-bedb21546c04"
-        name="Add grade1"
+        name="Add grade"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
@@ -19884,7 +19884,7 @@
             Id="433e7d6e-cfef-4221-9dda-a67ccb55032d">
             <useCaseMoniker
               Id="874d2942-011c-4a27-b9de-1d92df0c6b2d"
-              LastKnownName="Open a project1"
+              LastKnownName="Open a project"
               LastKnownLocation="Laboras22Model.uml" />
           </extend>
         </extendedCases>
@@ -19906,7 +19906,7 @@
             isAbstract="false">
             <useCaseMoniker
               Id="1049d88a-57ba-4a8f-b328-0beac1042d5c"
-              LastKnownName="List public projects1"
+              LastKnownName="List public projects"
               LastKnownLocation="Laboras22Model.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -19945,7 +19945,7 @@
             isAbstract="false">
             <useCaseMoniker
               Id="753c8cf1-d7b5-4cff-b5dd-8544a123b69d"
-              LastKnownName="View assignments1"
+              LastKnownName="View assignments"
               LastKnownLocation="Laboras22Model.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -19984,7 +19984,7 @@
             isAbstract="false">
             <useCaseMoniker
               Id="d487bb82-fc32-40ba-8cb6-c17afc3849b5"
-              LastKnownName="Manage own assignments1"
+              LastKnownName="Manage own assignments"
               LastKnownLocation="Laboras22Model.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -20023,7 +20023,7 @@
             isAbstract="false">
             <useCaseMoniker
               Id="6343fd8c-f8ce-40cc-b78e-e654d1f75efa"
-              LastKnownName="Log in1"
+              LastKnownName="Log in"
               LastKnownLocation="Laboras22Model.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -20059,14 +20059,14 @@
     <packageHasNamedElement>
       <useCase
         Id="d487bb82-fc32-40ba-8cb6-c17afc3849b5"
-        name="Manage own assignments1"
+        name="Manage own assignments"
         isAbstract="false"
         isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
         Id="5ab02d09-9fd4-4653-8f6e-6b7be6f3e169"
-        name="Create assignment1"
+        name="Create assignment"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
@@ -20074,14 +20074,14 @@
             Id="72115aaf-1e9f-4d6f-b42b-21845cf94941">
             <useCaseMoniker
               Id="d487bb82-fc32-40ba-8cb6-c17afc3849b5"
-              LastKnownName="Manage own assignments1"
+              LastKnownName="Manage own assignments"
               LastKnownLocation="Laboras22Model.uml" />
           </extend>
           <extend
             Id="e8705ba4-517f-462d-9b18-b4644b29cfd8">
             <useCaseMoniker
               Id="93abd728-63e5-4e1f-97d1-f5175da2bf65"
-              LastKnownName="Manage all assignments1"
+              LastKnownName="Manage all assignments"
               LastKnownLocation="Laboras22Model.uml" />
           </extend>
         </extendedCases>
@@ -20090,7 +20090,7 @@
     <packageHasNamedElement>
       <useCase
         Id="246322c5-6c71-49c3-9e78-38c76fa47be1"
-        name="Delete assignment1"
+        name="Delete assignment"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
@@ -20098,14 +20098,14 @@
             Id="05acce9b-941d-4e58-a9c8-53f45c67bf71">
             <useCaseMoniker
               Id="d487bb82-fc32-40ba-8cb6-c17afc3849b5"
-              LastKnownName="Manage own assignments1"
+              LastKnownName="Manage own assignments"
               LastKnownLocation="Laboras22Model.uml" />
           </extend>
           <extend
             Id="fa9b63d8-02db-46d2-be2f-6ea8bb4305d0">
             <useCaseMoniker
               Id="93abd728-63e5-4e1f-97d1-f5175da2bf65"
-              LastKnownName="Manage all assignments1"
+              LastKnownName="Manage all assignments"
               LastKnownLocation="Laboras22Model.uml" />
           </extend>
         </extendedCases>
@@ -20114,21 +20114,21 @@
     <packageHasNamedElement>
       <useCase
         Id="753c8cf1-d7b5-4cff-b5dd-8544a123b69d"
-        name="View assignments1"
+        name="View assignments"
         isAbstract="false"
         isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
         Id="93abd728-63e5-4e1f-97d1-f5175da2bf65"
-        name="Manage all assignments1"
+        name="Manage all assignments"
         isAbstract="false"
         isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
         Id="e375276d-2459-416c-88d3-0f04fec0e11b"
-        name="View assignment statistics1"
+        name="View assignment statistics"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
@@ -20136,14 +20136,14 @@
             Id="134afaab-d6e0-4c23-ac4f-77fc831959b2">
             <useCaseMoniker
               Id="d487bb82-fc32-40ba-8cb6-c17afc3849b5"
-              LastKnownName="Manage own assignments1"
+              LastKnownName="Manage own assignments"
               LastKnownLocation="Laboras22Model.uml" />
           </extend>
           <extend
             Id="2de6633b-5a0e-43c5-81ed-89d78e987a97">
             <useCaseMoniker
               Id="93abd728-63e5-4e1f-97d1-f5175da2bf65"
-              LastKnownName="Manage all assignments1"
+              LastKnownName="Manage all assignments"
               LastKnownLocation="Laboras22Model.uml" />
           </extend>
         </extendedCases>
@@ -20152,7 +20152,7 @@
     <packageHasNamedElement>
       <useCase
         Id="6343fd8c-f8ce-40cc-b78e-e654d1f75efa"
-        name="Log in1"
+        name="Log in"
         isAbstract="false"
         isLeaf="false" />
     </packageHasNamedElement>
