@@ -199,6 +199,13 @@
       <SubType>Content</SubType>
       <DependentUpon>Sequence\RemoveUsers.sequencediagram</DependentUpon>
     </Content>
+    <Content Include="Sequence\ViewAssignments.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Sequence\ViewAssignments.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Sequence\ViewAssignments.sequencediagram</DependentUpon>
+    </Content>
     <Content Include="UseCase\AssignmentManagement.usecasediagram">
       <SubType>Content</SubType>
     </Content>
