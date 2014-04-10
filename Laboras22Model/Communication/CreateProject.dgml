@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="AddRatingWindow" Bounds="-148.869025293481,-397.298936268469,134.25,25.96" Label="ProjectCreationFrame" UseManualLocation="True" />
+    <Node Id="CreateprojectFram" Category="Comment" Bounds="-367.97878519694,-209.214500423177,174.45,25.96" Label="Create Project creation frame" UseManualLocation="True" />
+    <Node Id="DataProvider" Bounds="56.7816659037272,-195.263095446777,88.7866666666667,25.96" Label="DataProvider" UseManualLocation="True" />
+    <Node Id="DisplayProjectProperties" Category="Comment" Bounds="-363.560758576258,-380.853390837771,156.013333333333,25.96" Label="Display project properties" UseManualLocation="True" />
+    <Node Id="EnterProjectProperties" Category="Comment" Bounds="-368.041095865482,-478.230600749738,145.103333333333,25.96" Label="Enter project properties" UseManualLocation="True" />
+    <Node Id="MainWindow" Bounds="-520.219844532679,-194.24919522909,90.2566666666667,25.96" Label="MainWindow" UseManualLocation="True" />
+    <Node Id="OpenProject" Category="Comment" Bounds="-528.142596842448,-331.912499186198,94.6666666666667,25.96" Label="Create project" UseManualLocation="True" />
+    <Node Id="SaveModifiedProject" Category="Comment" Bounds="-2.907980632782,-263.966470135498,84.84,25.96" Label="Save project" UseManualLocation="True" />
+    <Node Id="User" Bounds="-505.167297740461,-468.500039253809,50,25.96" Label="User" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="AddRatingWindow" Target="DataProvider" Bounds="-76.1120986938477,-371.338928222656,135.810291290283,172.789962768555" />
+    <Link Source="AddRatingWindow" Target="User" Bounds="-446.310211181641,-452.552001953125,297.441192626953,58.6027221679688" />
+    <Link Source="MainWindow" Target="AddRatingWindow" Bounds="-449.946681389126,-367.210641296428,335.060507185556,172.961445739787" />
+    <Link Source="User" Target="AddRatingWindow" Bounds="-455.167297363281,-448.073822021484,297.483245849609,58.4354248046875" />
+    <Link Source="User" Target="MainWindow" Bounds="-473.568359375,-442.5400390625,44.3551635742188,239.854919433594" />
+  </Links>
+  <Categories>
+    <Category Id="Comment" Label="Comment" Description="Represents a user defined comment on the diagram" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="Comments" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="Label" Label="Label" Description="Displayable label of an Annotatable object" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="Comment" ValueLabel="Has comment">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
+</DirectedGraph>
