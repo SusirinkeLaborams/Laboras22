@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="02e17cad-3be8-4373-91b4-e786f63f9e9c" name="UserInterfaceState" linkedPackageId="0a0c8af5-e535-4715-897e-d4c70c28dfe3" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="7f5bccd9-33a4-46ca-aa46-116383fc72a5">
+      <profileInstance Id="30142af3-a4a7-498d-9a39-eb3d43827f50" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="00f19fe0-0236-41c7-848e-9331d9e6b9f7">
+      <profileInstance Id="7eacd7e3-d9d0-4e4a-9f94-ff3b13c9fba4" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="ee6c998d-6d72-4ad2-8dfb-fc5ac50e2712">
+      <profileInstance Id="26a5c83f-a021-4c3b-bdaa-e42f3f4a5810" name="CSharpProfile">
+        <elementDefinition Id="fc085c40-2fae-4b8e-a321-06d16de27e3f" />
+      </profileInstance>
+      <elementDefinition Id="7a7cabfb-7283-4390-9b7d-de397cff0af4" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="d04e49ce-1b4c-4887-a230-654c328c1936" name="UserInterfaceState" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="90a683b2-02c1-450e-83ab-41435ec08631" />
+        <nodes>
+          <initialNode Id="cd3f8091-6277-48e1-8b46-1d63326649d1" name="Initial1" isLeaf="false">
+            <elementDefinition Id="f0f17456-68e8-45af-8ef8-9e5203aca8b3" />
+            <flowNodeTargets>
+              <controlFlow Id="7c7a3e52-c44c-48f1-85f7-f79751c459a7" isLeaf="false">
+                <opaqueActionMoniker Id="22c6f2f7-3fe6-423e-adfe-3cc3bf8921bc" LastKnownName="Login window" />
+                <elementDefinition Id="881345f1-4607-4fc3-9c18-410697ed78a8" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="22c6f2f7-3fe6-423e-adfe-3cc3bf8921bc" name="Login window" isLeaf="false">
+            <elementDefinition Id="f9404dfb-7dbd-4b6f-bf17-fbbb074ba504" />
+            <flowNodeTargets>
+              <controlFlow Id="e1fde37a-be0d-403d-87b8-e5d71a5a2b8c" isLeaf="false">
+                <opaqueActionMoniker Id="dda2e604-98f8-4f9d-aef1-882f0d658572" LastKnownName="Main window" />
+                <elementDefinition Id="4b0affbc-637a-4642-9757-be3c3f58d7df" />
+              </controlFlow>
+              <controlFlow Id="954a3fa5-a802-44fe-8539-0da20333fe0d" isLeaf="false">
+                <opaqueActionMoniker Id="47cef841-1f07-4f9a-904b-5e9292dea9b8" LastKnownName="Registration window" />
+                <elementDefinition Id="ae911b8f-ce00-4a29-98d9-b299f6723cd8" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="dda2e604-98f8-4f9d-aef1-882f0d658572" name="Main window" isLeaf="false">
+            <elementDefinition Id="a9bcdcce-d27d-4357-95ce-9633d28c9c59" />
+            <flowNodeTargets>
+              <controlFlow Id="4a390dc8-e18c-4ea6-ba98-8be3ebbb4654" isLeaf="false">
+                <opaqueActionMoniker Id="22c6f2f7-3fe6-423e-adfe-3cc3bf8921bc" LastKnownName="Login window" />
+                <elementDefinition Id="1aff99de-7112-4b50-9868-25a88c51bf86" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="47cef841-1f07-4f9a-904b-5e9292dea9b8" name="Registration window" isLeaf="false">
+            <elementDefinition Id="37585230-477c-427a-b7b8-8c4afeb0b26f" />
+            <flowNodeTargets>
+              <controlFlow Id="30d560da-bf54-4010-ac6c-24e5585710d5" isLeaf="false">
+                <opaqueActionMoniker Id="22c6f2f7-3fe6-423e-adfe-3cc3bf8921bc" LastKnownName="Login window" />
+                <elementDefinition Id="6c3da379-85de-450e-9373-867f9c656a21" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="0a0c8af5-e535-4715-897e-d4c70c28dfe3" name="Laboras22Model">
+    <elementDefinition Id="c536aa51-794c-4276-85bd-a9b858d12991" />
+  </package>
+</activityRootModel>

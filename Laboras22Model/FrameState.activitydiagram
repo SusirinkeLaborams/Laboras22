@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="92b54e03-dcbe-43ff-aaab-7b24d67ef827" name="FrameState" linkedPackageId="b776cba4-2da9-4c6d-9671-46a3e15aa775" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="960d1e08-480a-4b75-ae10-659c87339f52">
+      <profileInstance Id="daf0c190-e131-4232-8996-a4d7dd8cef0c" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="328e3499-38c7-486d-944e-1899913ddaee">
+      <profileInstance Id="b234320b-f8e4-4301-bfa1-752f1c1e75ce" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="8c905f18-3042-4bc9-9edb-bb80a118d371">
+      <profileInstance Id="8ced1cb8-6ed7-453e-90d1-718f0503efb4" name="CSharpProfile">
+        <elementDefinition Id="fc085c40-2fae-4b8e-a321-06d16de27e3f" />
+      </profileInstance>
+      <elementDefinition Id="7a7cabfb-7283-4390-9b7d-de397cff0af4" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="905e3a9a-8099-4390-8f7a-3750917d7a87" name="FrameState" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="9200b58a-f385-4ba3-8e87-bf1fb39e2312" />
+        <nodes>
+          <initialNode Id="1700d279-71a6-48ab-9251-af1a50e7229f" name="Initial1" isLeaf="false">
+            <elementDefinition Id="539add19-6127-4179-b9dd-22a94532de4f" />
+            <flowNodeTargets>
+              <controlFlow Id="e1f93703-a814-41cf-b00e-1e913b50497d" isLeaf="false">
+                <opaqueActionMoniker Id="1ffb5238-f896-424d-a89d-f1198407ad44" LastKnownName="Course list" />
+                <elementDefinition Id="7188760b-c61f-48bc-aaf8-aa42a60c6c84" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="1ffb5238-f896-424d-a89d-f1198407ad44" name="Course list" isLeaf="false">
+            <elementDefinition Id="670d320a-8cbb-45ba-8f2c-641a652e5391" />
+            <flowNodeTargets>
+              <controlFlow Id="1f91aa2d-720b-43e4-adb9-70293a74209d" isLeaf="false">
+                <opaqueActionMoniker Id="8e000da4-7816-4f2d-ab97-36f060acc003" LastKnownName="User data" />
+                <elementDefinition Id="9f46a053-19f7-4bfd-bcdd-b0569c3ac74f" />
+              </controlFlow>
+              <controlFlow Id="4ed9fb96-602d-4252-9666-f648b98a2154" isLeaf="false">
+                <opaqueActionMoniker Id="e16c048d-0b6e-4f5a-a973-e258af0cfa42" LastKnownName="Project list" />
+                <elementDefinition Id="a86ad17e-7a46-42f7-8931-777a12565e68" />
+              </controlFlow>
+              <controlFlow Id="14a78c50-cb58-4526-93d4-7fa9d0681ff3" isLeaf="false">
+                <opaqueActionMoniker Id="31a4ccec-b651-45f9-ba80-28cdd88d4108" LastKnownName="Course creation" />
+                <elementDefinition Id="c55ad62e-3b68-485c-ad9b-9afcf6ed99ac" />
+              </controlFlow>
+              <controlFlow Id="228e0c84-b147-468e-854e-f4703cb54cd6" isLeaf="false">
+                <opaqueActionMoniker Id="da75ce7d-aadd-4d9f-b3f2-75dd7fdd29d1" LastKnownName="Course modification" />
+                <elementDefinition Id="16b5fbcb-409c-46af-92ab-21d7c489fd96" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="e16c048d-0b6e-4f5a-a973-e258af0cfa42" name="Project list" isLeaf="false">
+            <elementDefinition Id="920024a5-98ca-4286-babe-9150218f13e2" />
+            <flowNodeTargets>
+              <controlFlow Id="f2654f69-59e8-4ece-8abf-a4ed2d6b6646" isLeaf="false">
+                <opaqueActionMoniker Id="3e3ea288-b983-4c41-9a7e-5d473cb4cec4" LastKnownName="Project creation" />
+                <elementDefinition Id="1a59a092-c453-414b-9e38-58563b2ff637" />
+              </controlFlow>
+              <controlFlow Id="f126dfc5-c959-4cb2-8c98-ba8692f3d1a1" isLeaf="false">
+                <opaqueActionMoniker Id="44798ba3-747b-4908-82bb-2461c614b026" LastKnownName="Project modification" />
+                <elementDefinition Id="3ad13390-4a9a-4cd0-8bf9-3dfd087ce903" />
+              </controlFlow>
+              <controlFlow Id="ad16591f-0782-4685-9233-a832113ad4ef" isLeaf="false">
+                <opaqueActionMoniker Id="1ffb5238-f896-424d-a89d-f1198407ad44" LastKnownName="Course list" />
+                <elementDefinition Id="990e96ae-8d11-44b2-957c-e3fae3ac4ff0" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="3e3ea288-b983-4c41-9a7e-5d473cb4cec4" name="Project creation" isLeaf="false">
+            <elementDefinition Id="5cc0e850-b7b1-4581-879c-f8856808aeef" />
+            <flowNodeTargets>
+              <controlFlow Id="52f3b909-25cf-4f4b-abcd-acc867aedd8d" isLeaf="false">
+                <opaqueActionMoniker Id="e16c048d-0b6e-4f5a-a973-e258af0cfa42" LastKnownName="Project list" />
+                <elementDefinition Id="cb807d63-ef09-4b4d-8066-b292ff7fc6f7" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="44798ba3-747b-4908-82bb-2461c614b026" name="Project modification" isLeaf="false">
+            <elementDefinition Id="476b54db-9412-4271-b8d8-b39cfe6bdccc" />
+            <flowNodeTargets>
+              <controlFlow Id="4916f032-51ed-4c9d-a8ee-8296a56f8197" isLeaf="false">
+                <opaqueActionMoniker Id="e16c048d-0b6e-4f5a-a973-e258af0cfa42" LastKnownName="Project list" />
+                <elementDefinition Id="5231c29a-ed1e-4ca3-b243-46778d5e6c20" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="8e000da4-7816-4f2d-ab97-36f060acc003" name="User data" isLeaf="false">
+            <elementDefinition Id="161a60c4-5497-4888-9d37-8e0da897c793" />
+            <flowNodeTargets>
+              <controlFlow Id="ad40e507-7296-4fba-a349-067d373631bb" isLeaf="false">
+                <opaqueActionMoniker Id="4d2a0638-d172-4bb3-90af-6cf9ac7b6456" LastKnownName="User data modification" />
+                <elementDefinition Id="8d8cb967-98bc-492b-95a4-6b52cda3acfc" />
+              </controlFlow>
+              <controlFlow Id="8aad4351-e218-46f0-9e87-41c96a708d99" isLeaf="false">
+                <opaqueActionMoniker Id="1ffb5238-f896-424d-a89d-f1198407ad44" LastKnownName="Course list" />
+                <elementDefinition Id="56e58972-a305-4c42-846c-a353ba9eebb9" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="4d2a0638-d172-4bb3-90af-6cf9ac7b6456" name="User data modification" isLeaf="false">
+            <elementDefinition Id="4153faf5-a5e4-422f-82c4-e0f9dd431146" />
+            <flowNodeTargets>
+              <controlFlow Id="0901876a-6466-4c55-ac54-f2c97bc0d73c" isLeaf="false">
+                <opaqueActionMoniker Id="8e000da4-7816-4f2d-ab97-36f060acc003" LastKnownName="User data" />
+                <elementDefinition Id="e7b09a59-bede-4608-add4-55be61701800" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="31a4ccec-b651-45f9-ba80-28cdd88d4108" name="Course creation" isLeaf="false">
+            <elementDefinition Id="a2d634db-8809-47b9-8e25-bdaf5ebccf7a" />
+            <flowNodeTargets>
+              <controlFlow Id="80f82131-0d2e-4f1d-8aed-f8c49247c820" isLeaf="false">
+                <opaqueActionMoniker Id="1ffb5238-f896-424d-a89d-f1198407ad44" LastKnownName="Course list" />
+                <elementDefinition Id="d9b0af6f-83cf-47f4-bd84-fcb4c9065ad1" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="da75ce7d-aadd-4d9f-b3f2-75dd7fdd29d1" name="Course modification" isLeaf="false">
+            <elementDefinition Id="91977b80-9df8-43c6-816d-32b142e2a693" />
+            <flowNodeTargets>
+              <controlFlow Id="a0f171a9-dc67-4555-8aab-f2a5cf8b8282" isLeaf="false">
+                <opaqueActionMoniker Id="1ffb5238-f896-424d-a89d-f1198407ad44" LastKnownName="Course list" />
+                <elementDefinition Id="9312a26a-5853-4db0-8cfd-97bfcd373e10" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="b776cba4-2da9-4c6d-9671-46a3e15aa775" name="Laboras22Model">
+    <elementDefinition Id="c536aa51-794c-4276-85bd-a9b858d12991" />
+  </package>
+</activityRootModel>

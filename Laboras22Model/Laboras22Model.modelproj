@@ -71,6 +71,16 @@
       <SubType>Content</SubType>
       <DependentUpon>EntityThing.classdiagram</DependentUpon>
     </Content>
+    <Content Include="FrameState.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="FrameState.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>FrameState.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="Graph1.dgml">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Laboras22.classdiagram">
       <SubType>Content</SubType>
     </Content>
@@ -234,6 +244,20 @@
       <SubType>Content</SubType>
       <DependentUpon>Sequence\ViewAssignments.sequencediagram</DependentUpon>
     </Content>
+    <Content Include="DataProviderState.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DataProviderState.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DataProviderState.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="SessionState.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SessionState.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>SessionState.activitydiagram</DependentUpon>
+    </Content>
     <Content Include="UseCase\AssignmentManagement.usecasediagram">
       <SubType>Content</SubType>
     </Content>
@@ -247,6 +271,13 @@
     <Content Include="UseCase\ProjectManagement.usecasediagram.layout">
       <SubType>Content</SubType>
       <DependentUpon>UseCase\ProjectManagement.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="WindowState.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="WindowState.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>WindowState.activitydiagram</DependentUpon>
     </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\Laboras22Model.uml">

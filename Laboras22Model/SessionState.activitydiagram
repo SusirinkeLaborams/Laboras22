@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="91ca6d77-3fc3-4291-b2b9-645e7b6ebdd3" name="SessionState" linkedPackageId="7d536b4d-aea9-4fdf-b369-059dbceb2281" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="06966930-2df7-41a0-abe6-c626f4943e1e">
+      <profileInstance Id="cba6d2d6-7598-4d79-a60f-252dc26273b5" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="cb339680-b1ab-4efd-9818-a81f39f59c60">
+      <profileInstance Id="a196bff4-3c2d-40b8-9e8d-d8bc19217a40" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="5b57bddb-fce7-4435-8334-f06c2a7cda03">
+      <profileInstance Id="b2f89650-8994-44c3-8620-5e616d3325ff" name="CSharpProfile">
+        <elementDefinition Id="fc085c40-2fae-4b8e-a321-06d16de27e3f" />
+      </profileInstance>
+      <elementDefinition Id="7a7cabfb-7283-4390-9b7d-de397cff0af4" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="a348f5de-34fb-4fba-a518-fb3763707f4b" name="SessionState" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="bea2c150-3ec7-4c22-8522-6c021498c520" />
+        <nodes>
+          <initialNode Id="a4977789-499d-445c-8da3-2308827bbce5" name="Initial1" isLeaf="false">
+            <elementDefinition Id="a9b0628c-f36e-42a6-8e65-57cf64b366c9" />
+            <flowNodeTargets>
+              <controlFlow Id="18058ec5-34b8-44e0-9bca-868971eed59e" isLeaf="false">
+                <opaqueActionMoniker Id="0d921d28-1895-438d-b763-98168211dafa" LastKnownName="User not connected" />
+                <elementDefinition Id="c6deb2aa-6d60-4b31-97d6-915be92e79bf" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="0d921d28-1895-438d-b763-98168211dafa" name="User not connected" isLeaf="false">
+            <elementDefinition Id="3ebc7941-25e7-4ddf-9eef-312fbfb0819b" />
+            <flowNodeTargets>
+              <controlFlow Id="d465ae12-bb9d-44de-875b-571b0dd724bd" isLeaf="false">
+                <opaqueActionMoniker Id="ade47b7c-dd93-4908-82a1-8ddd000416e6" LastKnownName="User authentification" />
+                <elementDefinition Id="4dc940c6-0188-40f0-a90e-68668b6b7309" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="ade47b7c-dd93-4908-82a1-8ddd000416e6" name="User authentification" isLeaf="false">
+            <elementDefinition Id="f55ef9fe-c4a5-480b-af82-d2dc1b88d728" />
+            <flowNodeTargets>
+              <controlFlow Id="17d932fd-d7df-4343-ad5e-b01130d2b034" isLeaf="false">
+                <opaqueActionMoniker Id="9d6d851e-47f5-4156-9854-5e96922cdd0c" LastKnownName="User connected" />
+                <elementDefinition Id="b0098ebf-5ecb-459d-9a71-c01ddbcabc41" />
+              </controlFlow>
+              <controlFlow Id="9832dad0-c2b7-4822-b42d-d2ee7a4aff1c" guard="Authentification failed" isLeaf="false">
+                <opaqueActionMoniker Id="0d921d28-1895-438d-b763-98168211dafa" LastKnownName="User not connected" />
+                <elementDefinition Id="212cb46e-85b1-497f-83ea-5e5020d2c7ec" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="9d6d851e-47f5-4156-9854-5e96922cdd0c" name="User connected" isLeaf="false">
+            <elementDefinition Id="f9ed559f-a40c-441e-8543-21eb80f276bb" />
+            <flowNodeTargets>
+              <controlFlow Id="8a26f28d-6c61-44eb-accb-67a063c0468e" isLeaf="false">
+                <opaqueActionMoniker Id="0d921d28-1895-438d-b763-98168211dafa" LastKnownName="User not connected" />
+                <elementDefinition Id="45adf409-fb7a-48e3-8ae0-721b1f22897b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="7d536b4d-aea9-4fdf-b369-059dbceb2281" name="Laboras22Model">
+    <elementDefinition Id="c536aa51-794c-4276-85bd-a9b858d12991" />
+  </package>
+</activityRootModel>
