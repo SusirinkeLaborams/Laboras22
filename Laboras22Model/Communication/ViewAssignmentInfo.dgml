@@ -2,19 +2,19 @@
 <DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
   <Nodes>
     <Node Id="AddRatingWindow" Bounds="-309.645440266927,-336.987130885389,116.096666666667,25.96" Label="Assignment frame" UseManualLocation="True" />
-    <Node Id="CreateprojectFram" Category="Comment" Bounds="-405.725425477354,-455.296268920898,152.08,25.96" Label="Create assignment frame" UseManualLocation="True" />
+    <Node Id="CreateprojectFram" Category="Comment" Bounds="-405.725425477354,-455.296268920898,164.436666666667,25.96" Label="2. Create assignment frame" UseManualLocation="True" />
     <Node Id="DataProvider" Bounds="-326.218330281576,-191.445422717285,88.7866666666667,25.96" Label="DataProvider" UseManualLocation="True" />
-    <Node Id="GetAssignment" Category="Comment" Bounds="-291.787132568359,-250.405522717285,102.39,25.96" Label="Get assignment" UseManualLocation="True" />
+    <Node Id="GetAssignment" Category="Comment" Bounds="-291.787132568359,-250.405522717285,114.746666666667,25.96" Label="3. Get assignment" UseManualLocation="True" />
     <Node Id="MainWindow" Bounds="-458.982092144021,-561.020502790243,90.2566666666667,25.96" Label="MainWindow" UseManualLocation="True" />
-    <Node Id="OpenProject" Category="Comment" Bounds="-333.142584025065,-573.907330883789,109.123333333333,25.96" Label="View assignment" UseManualLocation="True" />
-    <Node Id="ShowAssignments" Category="Comment" Bounds="-195.787133585612,-392.947230883789,117.773333333333,25.96" Label="Show assignments" UseManualLocation="True" />
+    <Node Id="OpenProject" Category="Comment" Bounds="-333.142584025065,-573.907330883789,121.48,25.96" Label="1. View assignment" UseManualLocation="True" />
+    <Node Id="ShowAssignments" Category="Comment" Bounds="-195.787133585612,-392.947230883789,130.13,25.96" Label="4. Show assignments" UseManualLocation="True" />
     <Node Id="User" Bounds="-90.142608642578,-474.872599186198,50,25.96" Label="User" UseManualLocation="True" />
   </Nodes>
   <Links>
     <Link Source="AddRatingWindow" Target="User" Bounds="-244.099456787109,-447.993621826172,145.68627166748,111.006500244141" />
     <Link Source="DataProvider" Target="AddRatingWindow" Bounds="-294.89013671875,-304.030914306641,27.1276550292969,112.585494995117" />
-    <Link Source="MainWindow" Target="AddRatingWindow" Bounds="-415.320892333984,-535.060546875,133.306915283203,193.5927734375" />
-    <Link Source="User" Target="MainWindow" Bounds="-360.203252749273,-534.786350618378,270.060644106695,66.7175898355721" />
+    <Link Source="MainWindow" Target="AddRatingWindow" Bounds="-415.320892333984,-535.060485839844,133.306915283203,193.592712402344" />
+    <Link Source="User" Target="MainWindow" Bounds="-360.203265264246,-534.78633083698,270.060656621668,66.7175666813998" />
   </Links>
   <Categories>
     <Category Id="Comment" Label="Comment" Description="Represents a user defined comment on the diagram" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="Comments" />

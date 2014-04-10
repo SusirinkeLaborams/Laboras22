@@ -1,20 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
   <Nodes>
-    <Node Id="AddRatingWindow" Bounds="-181.883765505567,-227.336163024902,89.47,25.96" Label="ProjectFrame" UseManualLocation="True" />
-    <Node Id="CreateprojectFram" Category="Comment" Bounds="-340.4870988389,-235.296268920898,128.603333333333,25.96" Label="Create project frame" UseManualLocation="True" />
+    <Node Id="AddRatingWindow" Bounds="-175.548765590632,-227.336163024902,89.47,25.96" Label="ProjectFrame" UseManualLocation="True" />
+    <Node Id="CreateprojectFram" Category="Comment" Bounds="-346.508765590632,-235.296268920898,140.96,25.96" Label="2. Create project frame" UseManualLocation="True" />
     <Node Id="DataProvider" Bounds="56.7816659037272,-195.263095446777,88.7866666666667,25.96" UseManualLocation="True" />
-    <Node Id="MainWindow" Bounds="-460.743765505567,-275.952396850586,90.2566666666667,25.96" UseManualLocation="True" />
-    <Node Id="OpenProject" Category="Comment" Bounds="-528.142596842448,-331.912499186198,89.5033333333333,25.96" Label="Open project" UseManualLocation="True" />
-    <Node Id="SaveModifiedProject" Category="Comment" Bounds="-61.7871236673991,-251.223195446777,135.473333333333,25.96" Label="Save modified project" UseManualLocation="True" />
-    <Node Id="SetRating" Category="Comment" Bounds="-331.787139892578,-339.25636352946,71.1133333333333,25.96" Label="Set rating" UseManualLocation="True" />
+    <Node Id="MainWindow" Bounds="-466.765432257299,-275.952396850586,90.2566666666667,25.96" UseManualLocation="True" />
+    <Node Id="OpenProject" Category="Comment" Bounds="-528.142596842448,-331.912499186198,101.86,25.96" Label="1. Open project" UseManualLocation="True" />
+    <Node Id="SaveModifiedProject" Category="Comment" Bounds="-56.0787655906324,-251.223194580078,147.83,25.96" Label="3. Save modified project" UseManualLocation="True" />
+    <Node Id="SetRating" Category="Comment" Bounds="-331.787139892578,-339.25636352946,83.47,25.96" Label="4. Set rating" UseManualLocation="True" />
     <Node Id="User" Bounds="-496.142608642578,-387.872599186198,50,25.96" UseManualLocation="True" />
   </Nodes>
   <Links>
-    <Link Source="AddRatingWindow" Target="DataProvider" Bounds="-92.4137617492676,-208.33582887035,140.275837281053,18.8780018831248" />
-    <Link Source="MainWindow" Target="AddRatingWindow" Bounds="-370.487091064453,-256.908172607422,197.618469238281,27.40625" />
-    <Link Source="User" Target="AddRatingWindow" Bounds="-446.714305618107,-363.150962201804,274.449203691655,131.915889724673" />
-    <Link Source="User" Target="MainWindow" Bounds="-454.293151855469,-361.91259765625,35.1139526367188,77.0774536132813" />
+    <Link Source="AddRatingWindow" Target="DataProvider" Bounds="-86.0787655906323,-208.171429556568,133.945229908328,18.518286494642" />
+    <Link Source="MainWindow" Target="AddRatingWindow" Bounds="-376.508758544922,-259.473022460938,210.600204467773,28.2355499267578" />
+    <Link Source="User" Target="AddRatingWindow" Bounds="-446.602311206443,-363.316701653157,280.131783325794,132.140893074604" />
+    <Link Source="User" Target="MainWindow" Bounds="-449.410064697266,-361.91259765625,31.8095092773438,76.9818115234375" />
   </Links>
   <Categories>
     <Category Id="Comment" Label="Comment" Description="Represents a user defined comment on the diagram" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="Comments" />
