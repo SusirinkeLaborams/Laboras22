@@ -73,6 +73,13 @@
     <Content Include="Communication\CreateProject.dgml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="DataFlow\AssignmentDataflow.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DataFlow\AssignmentDataflow.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DataFlow\AssignmentDataflow.activitydiagram</DependentUpon>
+    </Content>
     <Content Include="EntityThing.classdiagram">
       <SubType>Content</SubType>
     </Content>
@@ -291,6 +298,7 @@
     </Content>
     <Folder Include="Activity" />
     <Folder Include="Communication" />
+    <Folder Include="DataFlow" />
     <Folder Include="State" />
     <Folder Include="UseCase" />
     <Folder Include="Sequence" />
