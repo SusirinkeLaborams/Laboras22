@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
   dslVersion="1.0.0.0"
   Id="c536aa51-794c-4276-85bd-a9b858d12991"
   name="Laboras22Model" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -31179,7 +31179,7 @@
               </objectFlow>
               <objectFlow
                 Id="3ab06f1b-acde-4362-99fe-806a251ca5be"
-                guard="Fuil assignment information"
+                guard="Full assignment information"
                 isLeaf="false"
                 isMulticast="false"
                 isMultireceive="false">
@@ -31440,6 +31440,232 @@
                 value="2147483647" />
             </upperBound>
           </objectNode>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="fab03707-fc39-432d-98b9-636b4706286a"
+        name="UserManagementDataflow"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <objectNode
+            Id="9e710537-d6df-4a70-b0f0-5a4d08e91509"
+            name="Administrator"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="014370ec-e1be-48dd-b675-b0969e05d4a0"
+                guard="User authentification data"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <opaqueActionMoniker
+                  Id="789c8f71-d9a1-4498-bdff-d0a68bd928f0"
+                  LastKnownName="View all users"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </objectFlow>
+              <objectFlow
+                Id="cb315a5b-20ac-419f-83e9-81c69b7efbf1"
+                guard="Users data"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <opaqueActionMoniker
+                  Id="6d3df61c-5d37-4846-9f2d-85ee18bd6444"
+                  LastKnownName="Register users"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="68d9560a-875f-43d1-b169-65decd4e8c06"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <objectNode
+            Id="92d98ee9-3576-47a0-8ee8-a016e00fc4f6"
+            name="Any user"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="9d5f9b0a-00c1-4b57-9d25-3fefb8fe8c3c"
+                guard="Authentification data"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <opaqueActionMoniker
+                  Id="31ebc209-c65f-425f-bf9a-11d6b5de53f5"
+                  LastKnownName="Login"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </objectFlow>
+              <objectFlow
+                Id="ead465c7-f765-47f7-85df-4563b41489a4"
+                guard="Modified data"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <opaqueActionMoniker
+                  Id="37efdbed-946c-4fcb-a1e0-b8274099226d"
+                  LastKnownName="Modify own data"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="c3c6be7c-aa9c-4c83-944e-93c361601dfe"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <opaqueAction
+            Id="789c8f71-d9a1-4498-bdff-d0a68bd928f0"
+            name="View all users"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="7a9860d1-1e2f-45ad-943b-fe4ff29cb7c6"
+                guard="Users ids"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="9b436740-4bac-4853-8883-11e35c090704"
+                  LastKnownName="Edit user data"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="528c2018-9660-411c-94be-15c322b7085b"
+                guard="Users ids"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="3db82d9d-3d4f-41b2-b18a-db12a48feed7"
+                  LastKnownName="Remove users"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="6d3df61c-5d37-4846-9f2d-85ee18bd6444"
+            name="Register users"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="e23ec423-7f94-43b2-9547-8920c7089b89"
+                guard="New users list"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="5c0f3c8e-253b-4327-b371-aff40121d02b"
+                  LastKnownName="Data provider"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="9b436740-4bac-4853-8883-11e35c090704"
+            name="Edit user data"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="a74120ff-4032-4ad5-8b65-23985a28b766"
+                guard="Modified users"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="5c0f3c8e-253b-4327-b371-aff40121d02b"
+                  LastKnownName="Data provider"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="3db82d9d-3d4f-41b2-b18a-db12a48feed7"
+            name="Remove users"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="168812a4-22f8-44f2-9a51-014839d8f3ef"
+                guard="Removed users"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="5c0f3c8e-253b-4327-b371-aff40121d02b"
+                  LastKnownName="Data provider"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <objectNode
+            Id="5c0f3c8e-253b-4327-b371-aff40121d02b"
+            name="Data provider"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="d5ef9fca-64ad-43fb-a8fc-d527754a0324"
+                guard="User list"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <opaqueActionMoniker
+                  Id="789c8f71-d9a1-4498-bdff-d0a68bd928f0"
+                  LastKnownName="View all users"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </objectFlow>
+              <objectFlow
+                Id="eee5bb1d-29d6-482b-af4b-443edfc0e062"
+                guard="User authentification data"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <opaqueActionMoniker
+                  Id="31ebc209-c65f-425f-bf9a-11d6b5de53f5"
+                  LastKnownName="Login"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="74718726-2fd2-4090-a3a9-b369f5f713f8"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <opaqueAction
+            Id="31ebc209-c65f-425f-bf9a-11d6b5de53f5"
+            name="Login"
+            isLeaf="false" />
+          <opaqueAction
+            Id="37efdbed-946c-4fcb-a1e0-b8274099226d"
+            name="Modify own data"
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="335d9ccb-eaff-4ef1-bab9-a9eb4318adaf"
+                guard="Modified user data"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="5c0f3c8e-253b-4327-b371-aff40121d02b"
+                  LastKnownName="Data provider"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
         </nodes>
       </activity>
     </packageHasNamedElement>

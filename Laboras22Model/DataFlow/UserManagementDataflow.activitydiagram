@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="811015ab-fdf3-47f6-a099-d8e14b1ae949" name="UserManagementDataflow" linkedPackageId="a6c316bc-9393-4982-b945-f5b47cf2cbff" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="4363ccf3-875a-4f18-ad07-2a4345abe6ae">
+      <profileInstance Id="34ec0fe9-72d6-4a2f-9b53-59c9467ac312" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="d97c4541-6e4a-4992-afc0-7aa9e2460633">
+      <profileInstance Id="7dc4cf24-962f-4959-90cc-535a41147bb2" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="16fd832a-590e-427a-9855-f7900906180c">
+      <profileInstance Id="579d828a-6291-4680-ba37-3d4c13046524" name="CSharpProfile">
+        <elementDefinition Id="fc085c40-2fae-4b8e-a321-06d16de27e3f" />
+      </profileInstance>
+      <elementDefinition Id="7a7cabfb-7283-4390-9b7d-de397cff0af4" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="92e9af2e-b49f-42df-8464-5becc965c7e5" name="UserManagementDataflow" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="fab03707-fc39-432d-98b9-636b4706286a" />
+        <nodes>
+          <objectNode Id="8d21ca1a-b8b4-47a5-ac98-ae5e66fda174" name="Administrator" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="9e710537-d6df-4a70-b0f0-5a4d08e91509" />
+            <objectFlowTargets>
+              <objectFlow Id="d4aed962-f47b-45a5-8a4e-2c8c7bda7c20" guard="User authentification data" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="7d4f5210-b8ab-4065-ae6a-b73f2869b49c" LastKnownName="View all users" />
+                <elementDefinition Id="014370ec-e1be-48dd-b675-b0969e05d4a0" />
+              </objectFlow>
+              <objectFlow Id="d245918a-9d56-4ae8-93c4-72ecb0efac2f" guard="Users data" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="37f43dfe-c57d-4666-a810-7c4409bc54d2" LastKnownName="Register users" />
+                <elementDefinition Id="cb315a5b-20ac-419f-83e9-81c69b7efbf1" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="72b57e04-4348-4102-88ea-eb0506ed7ec0" name="2147483647" value="2147483647">
+                <elementDefinition Id="68d9560a-875f-43d1-b169-65decd4e8c06" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="3b526d68-a8d4-4d00-882f-b158a5b6c8d6" name="Any user" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="92d98ee9-3576-47a0-8ee8-a016e00fc4f6" />
+            <objectFlowTargets>
+              <objectFlow Id="958ac699-dcf7-4967-a1f1-4bd550baa7e9" guard="Authentification data" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="63dabe8d-fa7d-4058-b864-f33d9121ced1" LastKnownName="Login" />
+                <elementDefinition Id="9d5f9b0a-00c1-4b57-9d25-3fefb8fe8c3c" />
+              </objectFlow>
+              <objectFlow Id="6fb41720-3e6c-451c-bfcb-767fe487680a" guard="Modified data" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="d75c0440-90b9-4f64-8c1f-65e4225125ae" LastKnownName="Modify own data" />
+                <elementDefinition Id="ead465c7-f765-47f7-85df-4563b41489a4" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="635000af-d024-4495-a28e-5423b9bb4cd9" name="2147483647" value="2147483647">
+                <elementDefinition Id="c3c6be7c-aa9c-4c83-944e-93c361601dfe" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <opaqueAction Id="7d4f5210-b8ab-4065-ae6a-b73f2869b49c" name="View all users" isLeaf="false">
+            <elementDefinition Id="789c8f71-d9a1-4498-bdff-d0a68bd928f0" />
+            <flowNodeTargets>
+              <controlFlow Id="b91adb47-5734-4795-b971-72b4904f93c5" guard="Users ids" isLeaf="false">
+                <opaqueActionMoniker Id="449a58ae-62e6-405f-8909-2df07d0a1159" LastKnownName="Edit user data" />
+                <elementDefinition Id="7a9860d1-1e2f-45ad-943b-fe4ff29cb7c6" />
+              </controlFlow>
+              <controlFlow Id="326f6a14-46c1-4605-8d51-b2c7660a547d" guard="Users ids" isLeaf="false">
+                <opaqueActionMoniker Id="0766cac3-1ca5-408d-a3ff-b7459e0bfdb6" LastKnownName="Remove users" />
+                <elementDefinition Id="528c2018-9660-411c-94be-15c322b7085b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="37f43dfe-c57d-4666-a810-7c4409bc54d2" name="Register users" isLeaf="false">
+            <elementDefinition Id="6d3df61c-5d37-4846-9f2d-85ee18bd6444" />
+            <objectFlowTargets>
+              <objectFlow Id="4d044422-0de1-431f-bfe3-2385fcd60229" guard="New users list" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="1ce4a0a6-0967-4d03-9ff6-7d0cf097a869" LastKnownName="Data provider" />
+                <elementDefinition Id="e23ec423-7f94-43b2-9547-8920c7089b89" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction Id="449a58ae-62e6-405f-8909-2df07d0a1159" name="Edit user data" isLeaf="false">
+            <elementDefinition Id="9b436740-4bac-4853-8883-11e35c090704" />
+            <objectFlowTargets>
+              <objectFlow Id="9e58e406-0778-4e43-9078-dfc140855379" guard="Modified users" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="1ce4a0a6-0967-4d03-9ff6-7d0cf097a869" LastKnownName="Data provider" />
+                <elementDefinition Id="a74120ff-4032-4ad5-8b65-23985a28b766" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction Id="0766cac3-1ca5-408d-a3ff-b7459e0bfdb6" name="Remove users" isLeaf="false">
+            <elementDefinition Id="3db82d9d-3d4f-41b2-b18a-db12a48feed7" />
+            <objectFlowTargets>
+              <objectFlow Id="7b5d9649-d2c9-475f-8d22-bf9d5d44cf75" guard="Removed users" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="1ce4a0a6-0967-4d03-9ff6-7d0cf097a869" LastKnownName="Data provider" />
+                <elementDefinition Id="168812a4-22f8-44f2-9a51-014839d8f3ef" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <objectNode Id="1ce4a0a6-0967-4d03-9ff6-7d0cf097a869" name="Data provider" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="5c0f3c8e-253b-4327-b371-aff40121d02b" />
+            <objectFlowTargets>
+              <objectFlow Id="5323439f-3230-4959-81ad-fd1ef6cfe8b0" guard="User list" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="7d4f5210-b8ab-4065-ae6a-b73f2869b49c" LastKnownName="View all users" />
+                <elementDefinition Id="d5ef9fca-64ad-43fb-a8fc-d527754a0324" />
+              </objectFlow>
+              <objectFlow Id="2ca12990-7dbe-4475-b8fb-1339394e7cfa" guard="User authentification data" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="63dabe8d-fa7d-4058-b864-f33d9121ced1" LastKnownName="Login" />
+                <elementDefinition Id="eee5bb1d-29d6-482b-af4b-443edfc0e062" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="08dfbf7c-affb-4b61-b25f-7cfc8b43d65a" name="2147483647" value="2147483647">
+                <elementDefinition Id="74718726-2fd2-4090-a3a9-b369f5f713f8" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <opaqueAction Id="63dabe8d-fa7d-4058-b864-f33d9121ced1" name="Login" isLeaf="false">
+            <elementDefinition Id="31ebc209-c65f-425f-bf9a-11d6b5de53f5" />
+          </opaqueAction>
+          <opaqueAction Id="d75c0440-90b9-4f64-8c1f-65e4225125ae" name="Modify own data" isLeaf="false">
+            <elementDefinition Id="37efdbed-946c-4fcb-a1e0-b8274099226d" />
+            <objectFlowTargets>
+              <objectFlow Id="ba805b8b-700f-4a38-843f-43ee33e411e3" guard="Modified user data" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="1ce4a0a6-0967-4d03-9ff6-7d0cf097a869" LastKnownName="Data provider" />
+                <elementDefinition Id="335d9ccb-eaff-4ef1-bab9-a9eb4318adaf" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="a6c316bc-9393-4982-b945-f5b47cf2cbff" name="Laboras22Model">
+    <elementDefinition Id="c536aa51-794c-4276-85bd-a9b858d12991" />
+  </package>
+</activityRootModel>

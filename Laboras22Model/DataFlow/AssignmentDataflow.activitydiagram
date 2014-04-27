@@ -1,25 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="739552d2-e575-43c0-8f0e-6b5f22e2df0b" name="AssignmentDataflow" linkedPackageId="4742a252-6386-435f-84ff-41157e2696be" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="b33ac9df-cb75-480a-97d5-200f01d4d5c3">
-      <profileInstance Id="01781308-ad5b-44a3-8f43-614ea5da8ae3" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="aa70d961-b9e1-4dd5-bdfc-b0501397e644">
-      <profileInstance Id="a92772fd-0e83-439a-bc91-d4743d4cf177" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="35054dd0-9da7-4cd2-a4fc-de8e39b8aa14">
-      <profileInstance Id="ec6919b7-a88f-4aea-9e42-046d676c83b0" name="CSharpProfile">
-        <elementDefinition Id="fc085c40-2fae-4b8e-a321-06d16de27e3f" />
-      </profileInstance>
-      <elementDefinition Id="7a7cabfb-7283-4390-9b7d-de397cff0af4" />
-    </packageHasProfileInstances>
-  </profileInstances>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="739552d2-e575-43c0-8f0e-6b5f22e2df0b" name="AssignmentDataflow" linkedPackageId="4742a252-6386-435f-84ff-41157e2696be" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
   <packagedElements>
     <activityRootModelHasActivity>
       <activity Id="bb34b102-7288-45fa-a4ec-1f4bacf6cdd4" name="AssignmentDataflow" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
@@ -32,7 +12,7 @@
                 <opaqueActionMoniker Id="421d8c19-d4f0-44dc-aabb-34ca218215ad" LastKnownName="Manage own assignments" />
                 <elementDefinition Id="6e6837db-24ef-47be-8347-7905f80e2970" />
               </objectFlow>
-              <objectFlow Id="9a424c5a-0a5c-40c3-8da4-106477073310" guard="Fuil assignment information" isLeaf="false" isMulticast="false" isMultireceive="false">
+              <objectFlow Id="9a424c5a-0a5c-40c3-8da4-106477073310" guard="Full assignment information" isLeaf="false" isMulticast="false" isMultireceive="false">
                 <opaqueActionMoniker Id="7932973f-3322-4e7c-8424-7fd85c9576a2" LastKnownName="Create assignment" />
                 <elementDefinition Id="3ab06f1b-acde-4362-99fe-806a251ca5be" />
               </objectFlow>
@@ -169,5 +149,25 @@
   </packagedElements>
   <package Id="4742a252-6386-435f-84ff-41157e2696be" name="Laboras22Model">
     <elementDefinition Id="c536aa51-794c-4276-85bd-a9b858d12991" />
+    <profileInstances>
+      <packageHasProfileInstances Id="b33ac9df-cb75-480a-97d5-200f01d4d5c3">
+        <profileInstance Id="01781308-ad5b-44a3-8f43-614ea5da8ae3" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="aa70d961-b9e1-4dd5-bdfc-b0501397e644">
+        <profileInstance Id="a92772fd-0e83-439a-bc91-d4743d4cf177" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="35054dd0-9da7-4cd2-a4fc-de8e39b8aa14">
+        <profileInstance Id="ec6919b7-a88f-4aea-9e42-046d676c83b0" name="CSharpProfile">
+          <elementDefinition Id="fc085c40-2fae-4b8e-a321-06d16de27e3f" />
+        </profileInstance>
+        <elementDefinition Id="7a7cabfb-7283-4390-9b7d-de397cff0af4" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </activityRootModel>
