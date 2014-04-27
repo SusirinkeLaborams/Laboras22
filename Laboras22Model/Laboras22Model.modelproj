@@ -80,6 +80,13 @@
       <SubType>Content</SubType>
       <DependentUpon>DataFlow\AssignmentDataflow.activitydiagram</DependentUpon>
     </Content>
+    <Content Include="DataFlow\ProjectDataflow.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DataFlow\ProjectDataflow.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DataFlow\ProjectDataflow.activitydiagram</DependentUpon>
+    </Content>
     <Content Include="DataFlow\UserManagementDataflow.activitydiagram">
       <SubType>Content</SubType>
     </Content>

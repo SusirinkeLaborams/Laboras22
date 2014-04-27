@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm12="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="ba68526f-5eae-41ce-9a52-5438f30e1afb" name="ProjectDataflow" linkedPackageId="5993c60b-cb92-42ca-a4b3-529e1c2413e8" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="dfc0c17e-2140-4f41-b934-a810dffddb8b">
+      <profileInstance Id="0dba0c9f-3d82-49ab-81c6-c40c78becd7b" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="d3e1d429-928d-47a8-994e-ff70cae36ca1">
+      <profileInstance Id="b60002f9-bd6e-4cca-9442-9e594b734db4" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="371baa68-4023-4f5e-b91e-e2c9010e8f03">
+      <profileInstance Id="11e5b2b9-0510-438b-92c7-39875c560384" name="CSharpProfile">
+        <elementDefinition Id="fc085c40-2fae-4b8e-a321-06d16de27e3f" />
+      </profileInstance>
+      <elementDefinition Id="7a7cabfb-7283-4390-9b7d-de397cff0af4" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="d1e4e22f-8ac4-4168-b27a-c72ec432e0c5" name="ProjectDataflow" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="47419694-e85a-4b59-bbdc-8889926a21d6" />
+        <nodes>
+          <objectNode Id="b522d595-250a-4ee5-8b4f-b57c0820417c" name="Student" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="a65e5cce-ac61-4457-93d1-75822e70fec8" />
+            <objectFlowTargets>
+              <objectFlow Id="8fb6f0b9-236a-49cc-9c44-b3205df637b3" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="b2f8b717-2a43-4204-a677-ab0f49a93217" LastKnownName="List own projects" />
+                <elementDefinition Id="21ecd802-a155-402d-9ae4-c713ddc2dd57" />
+              </objectFlow>
+              <objectFlow Id="e59e6c7b-e9b6-488a-901a-538007a91d4d" guard="Project data" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="8fdd0010-dc99-49a9-b066-a2cd72a760d5" LastKnownName="Create a project" />
+                <elementDefinition Id="6a9f4027-a1e9-4dab-b280-60693d4eb1c9" />
+              </objectFlow>
+              <objectFlow Id="f8f64eab-9f41-4371-b115-7c3cc9f44be2" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="d41680d6-910a-474e-a8a9-b85e9828c9a1" LastKnownName="List public projects" />
+                <elementDefinition Id="60503d96-d447-46cc-bfd8-cc685ae0c140" />
+              </objectFlow>
+              <objectFlow Id="2dfa208f-6bb0-420b-8274-eb91f12f3849" guard="Project id and comment" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="bb4954cb-3a11-4f8e-9915-9bf48928dc98" LastKnownName="Add comment" />
+                <elementDefinition Id="c7f34c3e-fbb7-461c-a99c-9a4561ca4072" />
+              </objectFlow>
+              <objectFlow Id="e94378a7-9edd-48b5-a2c4-f9aecdfdf41a" guard="Project id and participant email" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="c7cf3fbd-1049-494d-bce0-8f7faa66da6d" LastKnownName="Add participants" />
+                <elementDefinition Id="36479b8b-bf9a-4a1c-885e-e9c4a16c36ca" />
+              </objectFlow>
+              <objectFlow Id="27c1c7f6-5653-4f79-b71a-d55ca233b224" guard="Project id and rating" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="97b10d8c-833f-4dba-8cf1-5b95fbd3d453" LastKnownName="Add rating" />
+                <elementDefinition Id="d0bcae52-b1d1-42de-8f8d-91e7a622dfce" />
+              </objectFlow>
+              <objectFlow Id="be723197-2c26-44da-adc4-7e35902df6ee" guard="Project id and content" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="7de5f6d8-d7dd-422e-91b7-8b9969213051" LastKnownName="Add content" />
+                <elementDefinition Id="ea2f7fd3-fce5-4925-86ff-79d84e51f02e" />
+              </objectFlow>
+              <objectFlow Id="f7786acb-6b85-4ee1-95f9-23c4d9be7067" guard="Project id" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="8a6426d7-d9de-4a90-b710-f9bccf94c5b2" LastKnownName="Delete" />
+                <elementDefinition Id="253c0040-1469-40d6-bb70-6e96af5d5a39" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="9f871d65-eac1-466c-bcbb-9ad523db1c34" name="2147483647" value="2147483647">
+                <elementDefinition Id="28e69608-482b-4335-8f9b-478ca671da0b" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="68b32a6c-ff30-4d8e-970b-eddc5b5b404f" name="Lecturer" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="373b8a63-d306-40a1-b504-e7065c219a47" />
+            <objectFlowTargets>
+              <objectFlow Id="40219331-013d-4a87-92e2-69baa20b2391" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="d41680d6-910a-474e-a8a9-b85e9828c9a1" LastKnownName="List public projects" />
+                <elementDefinition Id="ca1b237e-799f-4a26-96cc-302561ea5d76" />
+              </objectFlow>
+              <objectFlow Id="60197a33-4685-475a-8098-d1131ca11037" guard="Project id" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="bda0986a-f7df-4421-af07-0df9dc1b4c33" LastKnownName="Open a project" />
+                <elementDefinition Id="376b1a38-b3f3-4aca-8182-7bed98439a38" />
+              </objectFlow>
+              <objectFlow Id="9ac8a5a0-fcd1-48b7-b96f-b85e3683e8b6" guard="Project id and grade" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="52dee8d9-387c-4b5d-bee1-dc1e628d0c46" LastKnownName="Add grade" />
+                <elementDefinition Id="0414fd87-829b-4e9d-bce1-f49ce75d231c" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="0e23bf50-57a8-4177-9a94-df891f367797" name="2147483647" value="2147483647">
+                <elementDefinition Id="2fb4af99-c508-4ee1-a3fa-3bd3f9aa13e9" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="cec91d6f-be20-4fc7-a30e-0d757f6123a2" name="Administrator" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="05f8e29d-7535-4902-a53e-ca794ac620a4" />
+            <objectFlowTargets>
+              <objectFlow Id="c3302854-1cc8-484a-9bdc-10851e0e0b77" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="d41680d6-910a-474e-a8a9-b85e9828c9a1" LastKnownName="List public projects" />
+                <elementDefinition Id="496c4c18-f286-4a4e-a9e7-3469d4250b59" />
+              </objectFlow>
+              <objectFlow Id="ffa9ae00-4127-4411-a5a2-41349620f9d9" guard="Project id" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="bda0986a-f7df-4421-af07-0df9dc1b4c33" LastKnownName="Open a project" />
+                <elementDefinition Id="e667c480-c93e-49ec-be36-dd7e8a5a5620" />
+              </objectFlow>
+              <objectFlow Id="d871df35-f689-4b09-9f88-859c39c4ea6c" guard="Project id" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="8a6426d7-d9de-4a90-b710-f9bccf94c5b2" LastKnownName="Delete" />
+                <elementDefinition Id="d8f5a957-5aac-421f-9ad8-d481341bd9d9" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="ae47890b-d64b-49b7-a36d-06a22a27a553" name="2147483647" value="2147483647">
+                <elementDefinition Id="a4054411-8ac2-4cfb-94e4-a332d1a76ec9" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <opaqueAction Id="b2f8b717-2a43-4204-a677-ab0f49a93217" name="List own projects" isLeaf="false">
+            <elementDefinition Id="1a224418-c29c-45c6-bb6a-677e18cb2fcf" />
+          </opaqueAction>
+          <opaqueAction Id="d41680d6-910a-474e-a8a9-b85e9828c9a1" name="List public projects" isLeaf="false">
+            <elementDefinition Id="6ce57dba-42fc-4a25-9c12-f0e5dc7c53a0" />
+          </opaqueAction>
+          <opaqueAction Id="8fdd0010-dc99-49a9-b066-a2cd72a760d5" name="Create a project" isLeaf="false">
+            <elementDefinition Id="bed193c9-b15a-4e72-9166-2f033f9fae28" />
+            <flowNodeTargets>
+              <controlFlow Id="2e5da29a-0f09-4c6c-a36b-51ee4f8db647" guard="New project id" isLeaf="false">
+                <opaqueActionMoniker Id="bda0986a-f7df-4421-af07-0df9dc1b4c33" LastKnownName="Open a project" />
+                <elementDefinition Id="03927f14-8d38-433c-a207-afcbb0577af1" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="bda0986a-f7df-4421-af07-0df9dc1b4c33" name="Open a project" isLeaf="false">
+            <elementDefinition Id="4478b64f-3b69-49e6-8bdd-03e2f36171f8" />
+          </opaqueAction>
+          <opaqueAction Id="bb4954cb-3a11-4f8e-9915-9bf48928dc98" name="Add comment" isLeaf="false">
+            <elementDefinition Id="5ea8f8ef-932b-4f5d-ae7a-291c6841f93f" />
+          </opaqueAction>
+          <opaqueAction Id="c7cf3fbd-1049-494d-bce0-8f7faa66da6d" name="Add participants" isLeaf="false">
+            <elementDefinition Id="e5fb9410-08a2-4fc9-8674-a0c540377529" />
+          </opaqueAction>
+          <opaqueAction Id="97b10d8c-833f-4dba-8cf1-5b95fbd3d453" name="Add rating" isLeaf="false">
+            <elementDefinition Id="22dc7bb2-8aae-4567-899f-cf4f4e1b4635" />
+          </opaqueAction>
+          <opaqueAction Id="7de5f6d8-d7dd-422e-91b7-8b9969213051" name="Add content" isLeaf="false">
+            <elementDefinition Id="d7e7fc1a-9573-4997-91fc-d37b94489522" />
+          </opaqueAction>
+          <opaqueAction Id="8a6426d7-d9de-4a90-b710-f9bccf94c5b2" name="Delete" isLeaf="false">
+            <elementDefinition Id="5b7186e0-49ee-4c4f-b487-e147a4fa4117" />
+          </opaqueAction>
+          <opaqueAction Id="52dee8d9-387c-4b5d-bee1-dc1e628d0c46" name="Add grade" isLeaf="false">
+            <elementDefinition Id="50e7557d-a04b-4977-b9a9-1e5d389b1203" />
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="5993c60b-cb92-42ca-a4b3-529e1c2413e8" name="Laboras22Model">
+    <elementDefinition Id="c536aa51-794c-4276-85bd-a9b858d12991" />
+  </package>
+</activityRootModel>
