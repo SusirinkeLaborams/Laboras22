@@ -87,6 +87,13 @@
       <SubType>Content</SubType>
       <DependentUpon>Component\DataProvider.componentdiagram</DependentUpon>
     </Content>
+    <Content Include="Component\Installation.componentdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Component\Installation.componentdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Component\Installation.componentdiagram</DependentUpon>
+    </Content>
     <Content Include="Component\Project.componentdiagram">
       <SubType>Content</SubType>
     </Content>

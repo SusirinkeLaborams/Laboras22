@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="bd44416b-0d38-406a-8227-4d9a3ed86e4e" name="Installation" linkedPackageId="75134c70-3461-4b0f-bfbc-7917c6824ccb" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="530e0407-dae9-46c5-826d-8dba5915ef8b">
+      <profileInstance Id="8ab885a8-06ca-4c98-8794-077b57188d68" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="dfa0e58f-79e5-4ac9-b0e8-ef095bc4e76d">
+      <profileInstance Id="27890fa5-fe46-43c9-bf01-4a41671f9b58" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="6643d3c7-3e36-4088-9f23-8baea568fcf7">
+      <profileInstance Id="b29f87d5-ac98-419a-9e59-d919792117c7" name="CSharpProfile">
+        <elementDefinition Id="fc085c40-2fae-4b8e-a321-06d16de27e3f" />
+      </profileInstance>
+      <elementDefinition Id="7a7cabfb-7283-4390-9b7d-de397cff0af4" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="d260da8b-6dab-4598-b382-f7bde9cc7ce6" name="Client" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="44a793d7-9f78-4567-8130-043e00d9ee00" name="process" profile="StandardProfileL2">
+            <elementDefinition Id="7a3ad33d-d65c-43fe-939d-bafa6fae6ac0" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="bce743bf-7f5c-408d-8f2f-6a9b2b0d198c" />
+        <suppliersInternal>
+          <dependency Id="8e02ab92-0f73-4c4f-830c-abe098d45dca" name="https">
+            <componentMoniker Id="d3504ff9-f130-4e89-aff3-4e27ff1af521" LastKnownName="Database" />
+            <elementDefinition Id="a1dd84ec-41df-4aa4-993c-d344c9046d9f" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <part Id="3b7c2bce-f143-48b3-8fa3-422fe494559a" name="Laboras22" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="522791c1-0a06-4eaf-bcff-ecbbdfc06921" />
+            <type_NamedElement>
+              <componentMoniker Id="67c14c25-c7f5-438e-9fc9-d62ec78989fb" LastKnownName=" Application" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="d3504ff9-f130-4e89-aff3-4e27ff1af521" name="Database" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="2df8957d-2348-4ce5-8da8-00d50a176601" name="service" profile="StandardProfileL2">
+            <elementDefinition Id="398d9274-604c-4f0b-9f6c-80b08f7e58a2" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="7022b592-26e1-4b9b-b2d7-798c94aa84d6" />
+        <ownedAttributesInternal>
+          <part Id="0632e228-39ac-4ab5-98f0-632d8db8119f" name="Azure Mobile services database" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="02b5b38b-6cc9-40b5-a2c0-6e9a273c8c74" />
+            <type_NamedElement>
+              <componentMoniker Id="439642c9-c438-4d7f-bda6-d790c6d2a27c" LastKnownName="Database" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="67c14c25-c7f5-438e-9fc9-d62ec78989fb" name=" Application" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c31c1476-0878-4613-a543-1133c63204fe" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="439642c9-c438-4d7f-bda6-d790c6d2a27c" name="Database" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1cc7a868-64d9-4459-80a4-169f41852d6c" />
+      </component>
+    </componentModelHasComponents>
+  </packagedElements>
+  <package Id="75134c70-3461-4b0f-bfbc-7917c6824ccb" name="Laboras22Model">
+    <elementDefinition Id="c536aa51-794c-4276-85bd-a9b858d12991" />
+  </package>
+</componentModel>
