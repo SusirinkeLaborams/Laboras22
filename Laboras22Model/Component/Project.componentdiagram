@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="2f581231-d4b7-42fe-85c9-7c4ef76ffcfc" name="Project" linkedPackageId="2fe4463d-ac5d-4bf0-94b7-f9222a682bac" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="68ec69a0-965d-4f0f-bb20-6631c07262a6">
+      <profileInstance Id="ca17e938-20bd-4544-970b-b1cef669df25" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="6a866d0f-a39e-4f39-87c3-449b66185412">
+      <profileInstance Id="4f2180a0-66bd-472a-9169-e153d6cc1733" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="1d8b06e9-85fe-4026-a50a-45b8ff45bd3f">
+      <profileInstance Id="65d5025e-e1d9-480e-a866-1616e8c96f16" name="CSharpProfile">
+        <elementDefinition Id="fc085c40-2fae-4b8e-a321-06d16de27e3f" />
+      </profileInstance>
+      <elementDefinition Id="7a7cabfb-7283-4390-9b7d-de397cff0af4" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="1dc9f737-bd8e-408c-92d4-1ae89fec0efe" name="Project management" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5f184a87-e205-4f05-b700-630bdecadfdc" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="004707ec-f28a-4c2f-8eec-21845ff5b2e6" name="ProjectViewModel.cs" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="5e73b023-d994-4a65-b222-bdce0c9b3b70" name="class" profile="CSharpProfile">
+            <elementDefinition Id="fcad28af-1bf4-4369-a09e-46cf058f97bb" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="fd6096a6-f689-4b8f-83ee-819e734bbb6a">
+                <propertyInstance Id="7c6f6217-f309-4d80-a130-c37a0861cc72" name="ClrAttributes">
+                  <elementDefinition Id="d63facc0-8ad9-40cf-95e5-e26a6388f3b9" />
+                </propertyInstance>
+                <elementDefinition Id="c9276c14-0c01-4a99-b2e4-3329dd8ac3c3" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="e55efe9f-4e30-4961-a719-dd81226a4b28">
+                <propertyInstance Id="d3c66923-6ba5-4d93-a3c0-22770d2440fb" name="IsPartial" value="false">
+                  <elementDefinition Id="0f9514a6-327b-4d3e-bbba-91cfda8213f0" />
+                </propertyInstance>
+                <elementDefinition Id="b917831c-411e-458c-a9d0-dce112cc80dc" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="fc95a6db-e785-40a1-8da5-04b5b002a937">
+                <propertyInstance Id="3d9e90a3-0b0c-4f5b-b45d-eb7d2b0cc19a" name="IsStatic" value="false">
+                  <elementDefinition Id="98f19ece-cadc-437e-83f7-ee932f5d265b" />
+                </propertyInstance>
+                <elementDefinition Id="45016ba4-a370-41ea-b819-8bf8c18df370" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="f7c82416-bd9c-412f-9d60-43ce0a5394c2">
+                <propertyInstance Id="54fba6c8-2907-472a-b797-dc450e47ff00" name="IsUnsafe" value="false">
+                  <elementDefinition Id="01f32ed7-f904-486d-aac1-53a9acf1e0cb" />
+                </propertyInstance>
+                <elementDefinition Id="2ee22c22-e3b7-496b-ae06-093944f82eb7" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="8a1a9c75-478a-4d4b-b1d5-8f3c0a132adc">
+                <propertyInstance Id="442ff53a-8ba8-4397-afde-9373405248fa" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="3ef79af3-8fcf-4b7e-bf39-e14332ba547c" />
+                </propertyInstance>
+                <elementDefinition Id="1d55c7fb-3d61-4781-9c65-da6a073e5714" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="92d95acf-aeaf-4155-815b-72b94f719fc6" />
+        <suppliersInternal>
+          <dependency Id="42ce61f2-06f2-491b-85a9-3cfd87a88719" name="&lt;&lt;manifest&gt;&gt;">
+            <componentMoniker Id="1dc9f737-bd8e-408c-92d4-1ae89fec0efe" LastKnownName="Project management" />
+            <elementDefinition Id="8aee880c-286d-4515-8f90-9503124be282" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="2a711c33-72a9-4309-a413-6ab36bbf7edc" name="Project.cs" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="4843e4ef-ce7a-43b0-8f77-f45de1a95a6f" name="class" profile="CSharpProfile">
+            <elementDefinition Id="f25a3c00-544a-4da7-9011-bd7baa005f97" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="894bbe44-cc55-45f8-a630-845a8053e76e">
+                <propertyInstance Id="c81004f7-ef07-4e91-977e-9ec32bffae92" name="ClrAttributes">
+                  <elementDefinition Id="e3a808df-c7bf-479f-8059-abec939a90d5" />
+                </propertyInstance>
+                <elementDefinition Id="0984b129-a729-4bcc-a627-4d582e39225b" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="a98956d4-e732-49f1-95d9-9118a30824bb">
+                <propertyInstance Id="e1d9b3a5-0dc1-42d4-b2e5-b16aafd0f32d" name="IsPartial" value="false">
+                  <elementDefinition Id="7d8a9b6e-5496-47f4-8e26-36ca9ed0e569" />
+                </propertyInstance>
+                <elementDefinition Id="41e0416d-0e90-4cd7-9544-4320c6a3bb2e" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="9be1ee5c-ea17-43ff-be83-9798fad8f0a7">
+                <propertyInstance Id="69a1f3bf-d50d-46e4-aeb8-0a5858a6cd3b" name="IsStatic" value="false">
+                  <elementDefinition Id="4b25af8d-c612-465f-a9a2-c8a4f851a96a" />
+                </propertyInstance>
+                <elementDefinition Id="3b791188-dbce-4988-bd5b-9de23667c13d" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="c1927909-6524-4257-a7fb-3028dca1a061">
+                <propertyInstance Id="c79fbd6e-e0a8-4d64-9ab2-f719d5ad1ba3" name="IsUnsafe" value="false">
+                  <elementDefinition Id="025f7969-45e8-4b31-baa2-6d7e1afdda70" />
+                </propertyInstance>
+                <elementDefinition Id="06383757-2ded-49f4-86c6-59da00071554" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="05394be0-84aa-48b7-8355-d136450d9084">
+                <propertyInstance Id="67b68ba4-d37f-4ca8-8ac7-1367678a9504" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="46474dcd-9338-4ba0-be95-adaddb95b34a" />
+                </propertyInstance>
+                <elementDefinition Id="62fd09a3-d0de-4e00-8cca-ecb76ef1e58e" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="ae9f1462-d795-4422-8d51-1db112b0b728" />
+        <suppliersInternal>
+          <dependency Id="8b0e0766-fb64-4978-aa01-737ce84baa27" name="&lt;&lt;manifest&gt;&gt;">
+            <componentMoniker Id="1dc9f737-bd8e-408c-92d4-1ae89fec0efe" LastKnownName="Project management" />
+            <elementDefinition Id="6e0a54bf-c360-4897-8e45-0d6aaafa0b84" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+  </packagedElements>
+  <package Id="2fe4463d-ac5d-4bf0-94b7-f9222a682bac" name="Laboras22Model">
+    <elementDefinition Id="c536aa51-794c-4276-85bd-a9b858d12991" />
+  </package>
+</componentModel>

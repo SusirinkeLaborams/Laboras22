@@ -15,7 +15,7 @@
       <componentMoniker Id="26e98d40-01fb-4012-ad0d-ac6f9ec37063" LastKnownName="Project management" />
     </componentShape>
     <componentShape Id="9f56d80e-5b6d-4eec-ad2c-aa1abfc33a30" isExpanded="false" absoluteBounds="0.5, 6.125, 1.5, 0.7" customColor="161, 199, 231" whiteBoxBoundsHeight="0.95" whiteBoxBoundsWidth="1.5" blackBoxBoundsHeight="0.7" blackBoxBoundsWidth="1.5" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0" whiteBoxSettingsInitialized="true" blackBoxSettingsInitialized="true">
-      <componentMoniker Id="8c6fe9fc-7edc-4340-abe7-e4e6e33e7d5a" LastKnownName="Laboras221" />
+      <componentMoniker Id="8c6fe9fc-7edc-4340-abe7-e4e6e33e7d5a" LastKnownName="Laboras22" />
     </componentShape>
     <componentShape Id="0ee44db0-cb3e-4942-b307-88340bbf217a" isExpanded="false" absoluteBounds="8.3385419845581055, 6.4791667461395264, 1.5, 0.7" customColor="161, 199, 231" whiteBoxBoundsHeight="0.95" whiteBoxBoundsWidth="1.5" blackBoxBoundsHeight="0.7" blackBoxBoundsWidth="1.5" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0" whiteBoxSettingsInitialized="true" blackBoxSettingsInitialized="true">
       <componentMoniker Id="1fa00915-4af9-42d7-80be-4d0d7fd15027" LastKnownName="Data provider" />
@@ -36,7 +36,7 @@
         <componentShapeMoniker Id="6e028bc7-de88-491e-8c46-576a203952d0" />
       </nodes>
     </dependencyConnector>
-    <dependencyConnector edgePoints="[(1.25 : 6.825); (1.25 : 7.475); (1.57291916666667 : 7.475 : JumpStart); (1.73958583333333 : 7.475 : JumpEnd); (3.625 : 7.475)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
+    <dependencyConnector edgePoints="[(1.25 : 6.825); (1.25 : 7.475); (3.625 : 7.475)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
       <dependencyMoniker Id="82765d73-17dc-43d8-96d8-49a3efbb1058" />
       <relativeChildShapes />
       <nodes>

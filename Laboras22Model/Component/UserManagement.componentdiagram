@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="a558954c-ee9b-4155-a555-e240745086d3" name="UserManagement" linkedPackageId="ffef2eb7-65ae-4545-9b76-6d7ba516327a" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="45047028-9907-4f9b-81d4-b23baa9be218">
+      <profileInstance Id="d094f60b-cda1-4bef-aea3-395f331a968d" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="0affa9de-e410-420c-bd33-06f44a4993a7">
+      <profileInstance Id="5df084c1-2d1f-484c-9ec5-d5fe711010e0" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="5d5c7305-c807-4b20-8d1b-ffb2700b7c5a">
+      <profileInstance Id="e34b64b7-18de-421f-aaf4-8da83653fda3" name="CSharpProfile">
+        <elementDefinition Id="fc085c40-2fae-4b8e-a321-06d16de27e3f" />
+      </profileInstance>
+      <elementDefinition Id="7a7cabfb-7283-4390-9b7d-de397cff0af4" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="2577447c-8d93-4e4a-a1fb-82a40fbb59ec" name="UserManagement" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5b389f16-c77f-48d7-ac65-5e0997e24169" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="8c083284-15ea-470f-8251-af02fdd69737" name="User.cs" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="f720dc5e-2df5-4468-9da8-f139c8ef1a01" name="class" profile="CSharpProfile">
+            <elementDefinition Id="349a355c-a162-4ebf-8393-0b8057728bdf" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="d1948c06-bfa6-4390-bf3b-cfa04b6babf0">
+                <propertyInstance Id="ab99e7a4-bff0-4129-af51-cb1dbc524c5c" name="ClrAttributes">
+                  <elementDefinition Id="f7cf7972-7693-424b-86bc-6d4522ad1410" />
+                </propertyInstance>
+                <elementDefinition Id="a1492880-dd00-4130-8b77-43a0fe84f130" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="8af61c06-ebe9-4f81-8598-2be53e5cce54">
+                <propertyInstance Id="65a71ab6-0dcf-402e-b009-8c9cbf1555d4" name="IsPartial" value="false">
+                  <elementDefinition Id="8aae92d5-1a8a-4ff1-b7db-916708d82d79" />
+                </propertyInstance>
+                <elementDefinition Id="26b68824-9bd5-493f-9502-0f17932bf606" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="149c7d20-2761-455c-9cda-bae4a378992b">
+                <propertyInstance Id="e1bdde48-37ba-4525-ab97-0b4ee163fa53" name="IsStatic" value="false">
+                  <elementDefinition Id="f4914d14-f5c4-49aa-b68f-69180b5f19c5" />
+                </propertyInstance>
+                <elementDefinition Id="8ad1c9da-9528-4a0a-9495-c45db107b658" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="f0701b3c-a62f-40da-bc33-fbe9684ff22e">
+                <propertyInstance Id="d64ab2da-cf04-45c0-beeb-173c6a66403b" name="IsUnsafe" value="false">
+                  <elementDefinition Id="63e51bb0-6430-4435-98e8-bdc4f29443da" />
+                </propertyInstance>
+                <elementDefinition Id="d548610b-c03b-4b31-875c-ef1e74c8efd6" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="61d04d93-89e2-4f7e-a7fa-50e9868a3e04">
+                <propertyInstance Id="fcf6ec06-8d14-43e2-b91c-5d48de52d60d" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="6f01b23e-d715-4336-abee-6619da226779" />
+                </propertyInstance>
+                <elementDefinition Id="fd97d3ee-4b9c-413f-823b-33439f370d02" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="f62a9926-eb2c-4ffe-9f19-d7c41bf1f8f1" />
+        <suppliersInternal>
+          <dependency Id="ec095b3c-6a3b-4e92-891e-7926edca229c" name="&lt;&lt;manifest&gt;&gt;">
+            <componentMoniker Id="2577447c-8d93-4e4a-a1fb-82a40fbb59ec" LastKnownName="UserManagement" />
+            <elementDefinition Id="df447c1f-02ae-4547-a4c5-41aa1a8eeb75" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+  </packagedElements>
+  <package Id="ffef2eb7-65ae-4545-9b76-6d7ba516327a" name="Laboras22Model">
+    <elementDefinition Id="c536aa51-794c-4276-85bd-a9b858d12991" />
+  </package>
+</componentModel>

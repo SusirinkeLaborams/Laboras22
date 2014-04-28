@@ -1,5 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="e799bc25-5d0e-466a-a887-9826de9d6e10" name="SystemComponents" linkedPackageId="09166e22-e4e3-47e5-9389-f2a9330c358c" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="14467365-8a34-49bf-8869-75f6a99d4389">
+      <profileInstance Id="8c513d60-883f-491d-84e8-b490b97da047" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="f9d8370a-47eb-493f-982f-fcafcb5872b2">
+      <profileInstance Id="c992179d-2220-4033-8093-005db96cbd9f" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="d946823a-8adb-4891-9377-f14adc7ff093">
+      <profileInstance Id="83a0996c-2e6d-4607-b63d-13390c917463" name="CSharpProfile">
+        <elementDefinition Id="fc085c40-2fae-4b8e-a321-06d16de27e3f" />
+      </profileInstance>
+      <elementDefinition Id="7a7cabfb-7283-4390-9b7d-de397cff0af4" />
+    </packageHasProfileInstances>
+  </profileInstances>
   <packagedElements>
     <componentModelHasComponents>
       <component Id="3d5e0129-be5c-482a-bb4e-4a0188e1f5dc" name="GUI system" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -40,7 +60,7 @@
       </component>
     </componentModelHasComponents>
     <componentModelHasComponents>
-      <component Id="8c6fe9fc-7edc-4340-abe7-e4e6e33e7d5a" name="Laboras221" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <component Id="8c6fe9fc-7edc-4340-abe7-e4e6e33e7d5a" name="Laboras22" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="1da8c5c5-9143-43bd-8b4e-d38c38d90a2c" />
         <suppliersInternal>
           <dependency Id="61c839b6-5553-4d47-bcd1-6ba7b1ebfc88" name="&lt;&lt;use&gt;&gt;">

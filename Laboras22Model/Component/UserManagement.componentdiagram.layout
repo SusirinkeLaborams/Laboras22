@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UserManagement">
+  <componentModelMoniker Id="a558954c-ee9b-4155-a555-e240745086d3" />
+  <nestedChildShapes>
+    <componentShape Id="06fae2cd-668f-423d-816e-955772a7ac21" isExpanded="false" absoluteBounds="0.5, 0.75, 1.9270833333333335, 0.7" customColor="161, 199, 231" whiteBoxBoundsHeight="0.95" whiteBoxBoundsWidth="1.5" blackBoxBoundsHeight="0.7" blackBoxBoundsWidth="1.5" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0" whiteBoxSettingsInitialized="true" blackBoxSettingsInitialized="true">
+      <componentMoniker Id="2577447c-8d93-4e4a-a1fb-82a40fbb59ec" LastKnownName="UserManagement" />
+    </componentShape>
+    <componentShape Id="21724c03-7890-4361-a991-f6bfec92243b" isExpanded="false" absoluteBounds="4.5, 0.75, 1.5, 0.7" customColor="161, 199, 231" whiteBoxBoundsHeight="0.95" whiteBoxBoundsWidth="1.5" blackBoxBoundsHeight="0.7" blackBoxBoundsWidth="1.5" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0" whiteBoxSettingsInitialized="true" blackBoxSettingsInitialized="true">
+      <componentMoniker Id="8c083284-15ea-470f-8251-af02fdd69737" LastKnownName="User.cs" />
+    </componentShape>
+    <dependencyConnector edgePoints="[(4.5 : 1.1); (2.42708333333333 : 1.1)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
+      <dependencyMoniker Id="ec095b3c-6a3b-4e92-891e-7926edca229c" />
+      <relativeChildShapes />
+      <nodes>
+        <componentShapeMoniker Id="21724c03-7890-4361-a991-f6bfec92243b" />
+        <componentShapeMoniker Id="06fae2cd-668f-423d-816e-955772a7ac21" />
+      </nodes>
+    </dependencyConnector>
+  </nestedChildShapes>
+</componentDiagram>

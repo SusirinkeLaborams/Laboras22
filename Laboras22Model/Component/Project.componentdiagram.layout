@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Project">
+  <componentModelMoniker Id="2f581231-d4b7-42fe-85c9-7c4ef76ffcfc" />
+  <nestedChildShapes>
+    <componentShape Id="21dc4727-a8da-4f3e-a6f6-f0ee19384bc8" isExpanded="false" absoluteBounds="0.5, 1, 2.979166666666667, 0.7" customColor="161, 199, 231" whiteBoxBoundsHeight="0.95" whiteBoxBoundsWidth="1.5" blackBoxBoundsHeight="0.7" blackBoxBoundsWidth="1.5" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0" whiteBoxSettingsInitialized="true" blackBoxSettingsInitialized="true">
+      <componentMoniker Id="1dc9f737-bd8e-408c-92d4-1ae89fec0efe" LastKnownName="Project management" />
+    </componentShape>
+    <componentShape Id="fd7c4a99-33ec-46a4-9c1f-18f5df8dc0c8" isExpanded="false" absoluteBounds="5.25, 1.125, 3.1354166666666661, 0.7" customColor="161, 199, 231" whiteBoxBoundsHeight="0.95" whiteBoxBoundsWidth="1.5" blackBoxBoundsHeight="0.7" blackBoxBoundsWidth="1.5" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0" whiteBoxSettingsInitialized="true" blackBoxSettingsInitialized="true">
+      <componentMoniker Id="004707ec-f28a-4c2f-8eec-21845ff5b2e6" LastKnownName="ProjectViewModel.cs" />
+    </componentShape>
+    <componentShape Id="8663c472-6f14-46cb-a355-e8b53c709ce6" isExpanded="false" absoluteBounds="5.25, 2, 3.1354166666666661, 0.7" customColor="161, 199, 231" whiteBoxBoundsHeight="0.95" whiteBoxBoundsWidth="1.5" blackBoxBoundsHeight="0.7" blackBoxBoundsWidth="1.5" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0" whiteBoxSettingsInitialized="true" blackBoxSettingsInitialized="true">
+      <componentMoniker Id="2a711c33-72a9-4309-a413-6ab36bbf7edc" LastKnownName="Project.cs" />
+    </componentShape>
+    <dependencyConnector edgePoints="[(5.25 : 1.4125); (3.47916666666667 : 1.4125)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
+      <dependencyMoniker Id="42ce61f2-06f2-491b-85a9-3cfd87a88719" />
+      <relativeChildShapes />
+      <nodes>
+        <componentShapeMoniker Id="fd7c4a99-33ec-46a4-9c1f-18f5df8dc0c8" />
+        <componentShapeMoniker Id="21dc4727-a8da-4f3e-a6f6-f0ee19384bc8" />
+      </nodes>
+    </dependencyConnector>
+    <dependencyConnector edgePoints="[(5.25 : 2.35); (1.98958333333333 : 2.35); (1.98958333333333 : 1.7)]" fixedFrom="Caller" fixedTo="Caller" customColor="Black">
+      <dependencyMoniker Id="8b0e0766-fb64-4978-aa01-737ce84baa27" />
+      <relativeChildShapes />
+      <moveableDecoratorHostShapes>
+        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="3.75, 2.0625, 0.80233645439147949, 0.14800345897674561" shapeFieldName="NameDecorator" />
+      </moveableDecoratorHostShapes>
+      <nodes>
+        <componentShapeMoniker Id="8663c472-6f14-46cb-a355-e8b53c709ce6" />
+        <componentShapeMoniker Id="21dc4727-a8da-4f3e-a6f6-f0ee19384bc8" />
+      </nodes>
+    </dependencyConnector>
+  </nestedChildShapes>
+</componentDiagram>

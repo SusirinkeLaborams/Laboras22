@@ -73,12 +73,47 @@
     <Content Include="Communication\CreateProject.dgml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Component\Assignment.componentdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Component\Assignment.componentdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Component\Assignment.componentdiagram</DependentUpon>
+    </Content>
+    <Content Include="Component\DataProvider.componentdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Component\DataProvider.componentdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Component\DataProvider.componentdiagram</DependentUpon>
+    </Content>
+    <Content Include="Component\Project.componentdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Component\Project.componentdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Component\Project.componentdiagram</DependentUpon>
+    </Content>
     <Content Include="Component\SystemComponents.componentdiagram">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Component\SystemComponents.componentdiagram.layout">
       <SubType>Content</SubType>
       <DependentUpon>Component\SystemComponents.componentdiagram</DependentUpon>
+    </Content>
+    <Content Include="Component\User.componentdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Component\User.componentdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Component\User.componentdiagram</DependentUpon>
+    </Content>
+    <Content Include="Component\UserManagement.componentdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Component\UserManagement.componentdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Component\UserManagement.componentdiagram</DependentUpon>
     </Content>
     <Content Include="DataFlow\AssignmentDataflow.activitydiagram">
       <SubType>Content</SubType>

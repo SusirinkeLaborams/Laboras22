@@ -32138,7 +32138,7 @@
     <packageHasNamedElement>
       <component
         Id="1da8c5c5-9143-43bd-8b4e-d38c38d90a2c"
-        name="Laboras221"
+        name="Laboras22"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -32185,6 +32185,1035 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="193094ec-7637-49d4-b8ab-b825762ff64f"
+        name="GUI System"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="d47c50ef-ef05-4f4f-ad4d-236ccdf497ac"
+        name="AssignmentWindow.xaml"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="d1a91511-7022-43f7-84d5-0c75f85b0972"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="00f1791e-36a4-43af-9c3f-9795c1c01e3d">
+                <propertyInstance
+                  Id="9cf44088-66a3-468d-8013-21f9e588e47a"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="07153d97-4b90-45ad-98ec-1c20f9854f43">
+                <propertyInstance
+                  Id="74c00e64-aec7-416f-9696-f87a5eaa1776"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="bb1a724a-c46c-40ba-93f2-5603fa85be1f">
+                <propertyInstance
+                  Id="797c3a59-cf1d-45cf-ac5d-35f3b6ae937c"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8b6e8bba-09a6-4310-81b3-f00c92fab744">
+                <propertyInstance
+                  Id="b16d31b1-3042-4d30-bbf7-fd8db3ab8325"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="92ff58d4-abde-4bb0-bc69-8ade88b393ab">
+                <propertyInstance
+                  Id="ec2ca27a-99a8-4538-a0e3-e39f52266079"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <dependency
+            Id="3bd45d23-7f33-47f1-93f7-2924ab14d456"
+            name="&lt;&lt;manifest&gt;&gt;">
+            <componentMoniker
+              Id="193094ec-7637-49d4-b8ab-b825762ff64f"
+              LastKnownName="GUI System"
+              LastKnownLocation="Laboras22Model.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="b8773397-a611-4961-b046-990656cc11f2"
+        name="ManageUsersWindow.xaml"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="4f7796bc-2293-4794-b5d3-118eff50a303"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3ad72e01-1947-4929-93b0-56c32314deff">
+                <propertyInstance
+                  Id="b50c8c6a-994a-4faa-af5a-8cdc56f2f50c"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4966dc28-55f9-4d2e-8c07-592134829e88">
+                <propertyInstance
+                  Id="67b4a625-d7e1-4582-b0a0-54adea154eec"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fdc9493b-1998-4416-b19b-9d2c192c8f43">
+                <propertyInstance
+                  Id="ab10d82e-2bc6-4ae6-a39a-6751e55c8153"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="284e98eb-0b8a-44ce-a533-9af16b39c56f">
+                <propertyInstance
+                  Id="1a0d5af8-9f8c-4bbb-b55d-5cbf766bb3c1"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d15532c7-2bc0-4f83-bc0a-9a13b30f42b2">
+                <propertyInstance
+                  Id="d461d3b9-d90a-4051-89f0-e9902d23d384"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <dependency
+            Id="d5a03333-5f33-46d9-bab2-968d08796a5b"
+            name="&lt;&lt;manifest&gt;&gt;">
+            <componentMoniker
+              Id="193094ec-7637-49d4-b8ab-b825762ff64f"
+              LastKnownName="GUI System"
+              LastKnownLocation="Laboras22Model.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="7a5324b3-ec35-42c3-9375-c5e9e5408442"
+        name="LoginWindow.xaml"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="9f417a3a-59bc-42f9-9c87-db45303c09f1"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7b5fd683-83b6-4db9-acc4-1af11ed4675b">
+                <propertyInstance
+                  Id="6420e8f3-2f91-4b28-aa09-d19d4f26cac6"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c431cd33-5be7-49ed-874f-cd65ac7d0350">
+                <propertyInstance
+                  Id="ca985ad9-052d-4fcb-9308-5370c4979594"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="227a4fae-3bd4-4d5a-9be0-e715a0bb5330">
+                <propertyInstance
+                  Id="2310e6bf-c55a-4fa6-a59c-1763f4afd77a"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c5c49cc8-8e82-4c7d-a09f-06bee983b71a">
+                <propertyInstance
+                  Id="875b5bb1-6e7f-47b1-9360-171fefa3af1d"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7e8b27dc-0a5c-4f44-8f2e-bb9c6f25c8dc">
+                <propertyInstance
+                  Id="408f8c2b-cdad-41d7-ac1c-87e432c3f6db"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <dependency
+            Id="7c91948a-3a57-45fd-becf-07b098fe858c"
+            name="&lt;&lt;manifest&gt;&gt;">
+            <componentMoniker
+              Id="193094ec-7637-49d4-b8ab-b825762ff64f"
+              LastKnownName="GUI System"
+              LastKnownLocation="Laboras22Model.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="068dec3f-5731-419b-9c76-35b7b84af1de"
+        name="MainWindow.xaml"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="8f31a82c-6498-4df5-9386-e3a64c921a8f"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5ba5b173-1773-4838-9359-63deba8f87cc">
+                <propertyInstance
+                  Id="8f450bff-0882-4b93-b5d0-ac6adb83babd"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b7eac1f5-e8d6-456e-b9ce-6ac14c4212af">
+                <propertyInstance
+                  Id="87055b56-8fc1-406c-a03c-be6223542447"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3cbf5393-5083-431c-9bd6-b312dbc41872">
+                <propertyInstance
+                  Id="b24e9162-6498-4396-bcf6-42bd5c0586e9"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c8ccf772-c0dc-4ace-90e2-6a53cfa565e7">
+                <propertyInstance
+                  Id="82138c92-5a44-4383-be3a-6b937b62abf8"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="44f4443c-cc99-45bd-b196-5cc81342d038">
+                <propertyInstance
+                  Id="de87539a-7471-4339-bc4e-8506c953d436"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <dependency
+            Id="fe83483d-550e-4b58-b8f8-37a771ac2b76"
+            name="&lt;&lt;manifest&gt;&gt;">
+            <componentMoniker
+              Id="193094ec-7637-49d4-b8ab-b825762ff64f"
+              LastKnownName="GUI System"
+              LastKnownLocation="Laboras22Model.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="0dd36007-d9c6-49d8-a031-4177485d6d77"
+        name="UserDataModificationWindow.xaml"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="1cd60f7a-2f1f-4d26-bfca-378385ab7cb3"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="120ae55e-5749-44a4-9964-832163395378">
+                <propertyInstance
+                  Id="49d9cbfd-adf5-41e1-8288-cbff482a4d4d"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9d28f4d1-f0ec-4025-ba6c-4b658241eeb5">
+                <propertyInstance
+                  Id="c8106fb7-8725-4e61-b3e2-c30e16ae293f"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="83455208-01b9-4cbc-bd7b-d1cee7d634cc">
+                <propertyInstance
+                  Id="ac2c024a-6809-433f-967d-f23ca62a3af9"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3270146b-a100-419a-928d-5b9057f86ce5">
+                <propertyInstance
+                  Id="6272e486-e635-429e-a015-efdc08fa0b97"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cd563f0d-7788-4e8a-94e8-45fd56da701e">
+                <propertyInstance
+                  Id="bd4fabb8-3d90-4082-ab77-57afd1f81eb0"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <dependency
+            Id="3fa7b65a-c376-401d-8792-37b375f18368"
+            name="&lt;&lt;manifest&gt;&gt;">
+            <componentMoniker
+              Id="193094ec-7637-49d4-b8ab-b825762ff64f"
+              LastKnownName="GUI System"
+              LastKnownLocation="Laboras22Model.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="621d19f6-3f56-4720-bb6e-159c5ce45ab8"
+        name="RegisterWindow.xaml"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="f7bb0a52-6188-47bf-b81a-3e9c2d63a651"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="571fdd30-afb9-409d-96b3-bc9701d0bda4">
+                <propertyInstance
+                  Id="1b8a2aba-8cb1-4ba0-85ef-86eba87df3f6"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3850c470-0f97-4715-913f-89d84c7b66c6">
+                <propertyInstance
+                  Id="097223d4-04b9-41d3-8160-ac193ecf670b"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="74a549b1-793e-4414-9c6a-c516d86b859f">
+                <propertyInstance
+                  Id="3277fc97-a4c1-4312-bc54-39b8a0ce256d"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="300c9984-9d1f-4775-b34b-3cbe21e76297">
+                <propertyInstance
+                  Id="9e18ea28-98a9-4fdc-b8e8-cf505e0593de"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="18a2241b-e754-4fca-ac84-b501cb08b950">
+                <propertyInstance
+                  Id="ca11df79-9dc1-4233-b4a1-f09719061aaf"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <dependency
+            Id="88b21028-5b3b-4573-b5bc-29db2fedc8e3"
+            name="&lt;&lt;manifest&gt;&gt;">
+            <componentMoniker
+              Id="193094ec-7637-49d4-b8ab-b825762ff64f"
+              LastKnownName="GUI System"
+              LastKnownLocation="Laboras22Model.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="5b389f16-c77f-48d7-ac65-5e0997e24169"
+        name="UserManagement"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="f62a9926-eb2c-4ffe-9f19-d7c41bf1f8f1"
+        name="User.cs"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="349a355c-a162-4ebf-8393-0b8057728bdf"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a1492880-dd00-4130-8b77-43a0fe84f130">
+                <propertyInstance
+                  Id="f7cf7972-7693-424b-86bc-6d4522ad1410"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="26b68824-9bd5-493f-9502-0f17932bf606">
+                <propertyInstance
+                  Id="8aae92d5-1a8a-4ff1-b7db-916708d82d79"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8ad1c9da-9528-4a0a-9495-c45db107b658">
+                <propertyInstance
+                  Id="f4914d14-f5c4-49aa-b68f-69180b5f19c5"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d548610b-c03b-4b31-875c-ef1e74c8efd6">
+                <propertyInstance
+                  Id="63e51bb0-6430-4435-98e8-bdc4f29443da"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fd97d3ee-4b9c-413f-823b-33439f370d02">
+                <propertyInstance
+                  Id="6f01b23e-d715-4336-abee-6619da226779"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <dependency
+            Id="df447c1f-02ae-4547-a4c5-41aa1a8eeb75"
+            name="&lt;&lt;manifest&gt;&gt;">
+            <componentMoniker
+              Id="5b389f16-c77f-48d7-ac65-5e0997e24169"
+              LastKnownName="UserManagement"
+              LastKnownLocation="Laboras22Model.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="cc5362c0-b3c5-4c00-b8ca-f5e952a98776"
+        name="Assignment"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="33d9e659-72eb-4441-b17e-dd2ef6bb86a8"
+        name="Assignment.cs"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="450bb915-f5ba-4015-af0a-76800a9c4834"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="787abaef-3ae4-48fa-b45a-4465a199af54">
+                <propertyInstance
+                  Id="50c59491-1118-4091-a197-23942dd52ee4"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a03f9720-539d-49b9-8ce1-bbf6901f0812">
+                <propertyInstance
+                  Id="729ca861-44cb-4a54-9672-2086f004d1ca"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4fae85f9-c681-49c1-b586-db2edbb737c0">
+                <propertyInstance
+                  Id="08ad37db-dee0-448f-9b16-e5076b544c8e"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1c556965-9742-4980-bd74-615c1526b5da">
+                <propertyInstance
+                  Id="ee478cc6-f116-48be-993d-36b15a229d18"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ce3c8dfa-50e7-4f2c-a602-a13744d8cd59">
+                <propertyInstance
+                  Id="5e67dab0-1326-4828-823a-a7c7d550a166"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <dependency
+            Id="8b4b3ca7-5305-4537-a154-4bb4ece98fca"
+            name="&lt;&lt;manifest&gt;&gt;">
+            <componentMoniker
+              Id="cc5362c0-b3c5-4c00-b8ca-f5e952a98776"
+              LastKnownName="Assignment"
+              LastKnownLocation="Laboras22Model.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="1de45036-d93e-49b5-b574-ec3090217678"
+        name="Course.cs"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="bb09acd5-8cb7-448e-83d0-73da5e34271a"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2053f670-2b0b-42d0-b91b-87a3677ab334">
+                <propertyInstance
+                  Id="9ec22c7e-6092-4103-adb8-230500cd457b"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8425969e-2926-4f8e-9824-ee6e526fc0ca">
+                <propertyInstance
+                  Id="b333d787-f501-4374-80e7-39269c8c170f"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="98143eb0-db66-41e6-8593-5a1651734fa6">
+                <propertyInstance
+                  Id="eddbea10-594e-4674-a8d0-a0c5cee506a7"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="52d3b042-e74d-41c8-a98d-1a60f671c15f">
+                <propertyInstance
+                  Id="4729451d-c4e9-40e1-b734-6bc0489b5007"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="717f7518-7047-4323-8a21-787858f72bb2">
+                <propertyInstance
+                  Id="3993e829-0572-4b2a-aad8-9bd6dc67942b"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <dependency
+            Id="d7708462-29cc-4715-a53e-c958163e52f3"
+            name="&lt;&lt;manifest&gt;&gt;">
+            <componentMoniker
+              Id="cc5362c0-b3c5-4c00-b8ca-f5e952a98776"
+              LastKnownName="Assignment"
+              LastKnownLocation="Laboras22Model.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="7ec96b2d-ec6a-46d0-8855-293bd80a5e9b"
+        name="AssignmentViewModel.cs"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="4214d069-1816-4e6a-82ec-b641dc89e6db"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e684981c-27a2-4482-ac6f-702c4f5f2298">
+                <propertyInstance
+                  Id="231b0e6f-e248-478a-9cb7-76dea424efe1"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fb312a7f-809e-4762-b579-1d1e3b1f501f">
+                <propertyInstance
+                  Id="a62d47a0-7bf6-4865-991f-05b856094438"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a558d390-8ff6-47fb-8c4e-a4d72612823f">
+                <propertyInstance
+                  Id="822d9d4b-31be-4505-819a-1fe720c5f22d"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9ac372b4-e291-48ee-a4b2-dc1ec7a9db00">
+                <propertyInstance
+                  Id="c1c598ce-d2db-452e-9126-56d632bba9d8"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="657ab59b-34ae-43eb-931e-307df4593ce2">
+                <propertyInstance
+                  Id="d35d47f0-7d5e-49b2-8c54-e016dfe94568"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <dependency
+            Id="8c8ccd20-3db7-469f-af60-27d27959158d"
+            name="&lt;&lt;manifest&gt;&gt;">
+            <componentMoniker
+              Id="cc5362c0-b3c5-4c00-b8ca-f5e952a98776"
+              LastKnownName="Assignment"
+              LastKnownLocation="Laboras22Model.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="e1415353-b5a3-435d-bf69-7703f9a14319"
+        name="CourseViewModel.cs"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="6a9505aa-a552-4d04-bf55-16f3b09d75f0"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9b2e3330-94fc-4a1f-a0a1-16cbbca48d9a">
+                <propertyInstance
+                  Id="75b936ae-72e0-42fc-9898-1c066b02c17d"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fbf88970-591b-4dfe-a3bd-138b7cbeea05">
+                <propertyInstance
+                  Id="ce1c1213-a6fe-48f3-a74a-62f69a7dd6b2"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="27a43dd8-6992-4ee2-8625-90a78aa24b39">
+                <propertyInstance
+                  Id="39f4d5ac-1447-4634-89a5-632cf79b368a"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="33b9a12a-427e-494b-9481-d1f6b858510d">
+                <propertyInstance
+                  Id="114aad52-02ae-4942-b9a0-3ff1a1e83af6"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9e881b78-4532-487e-ba98-ab926074013f">
+                <propertyInstance
+                  Id="343452d6-1338-4dcd-b1cf-83fc60f0e37d"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <dependency
+            Id="2b22f90d-b0d6-4b43-90bd-c21772652280"
+            name="&lt;&lt;manifest&gt;&gt;">
+            <componentMoniker
+              Id="cc5362c0-b3c5-4c00-b8ca-f5e952a98776"
+              LastKnownName="Assignment"
+              LastKnownLocation="Laboras22Model.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="5f184a87-e205-4f05-b700-630bdecadfdc"
+        name="Project management"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="92d95acf-aeaf-4155-815b-72b94f719fc6"
+        name="ProjectViewModel.cs"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="fcad28af-1bf4-4369-a09e-46cf058f97bb"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c9276c14-0c01-4a99-b2e4-3329dd8ac3c3">
+                <propertyInstance
+                  Id="d63facc0-8ad9-40cf-95e5-e26a6388f3b9"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b917831c-411e-458c-a9d0-dce112cc80dc">
+                <propertyInstance
+                  Id="0f9514a6-327b-4d3e-bbba-91cfda8213f0"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="45016ba4-a370-41ea-b819-8bf8c18df370">
+                <propertyInstance
+                  Id="98f19ece-cadc-437e-83f7-ee932f5d265b"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2ee22c22-e3b7-496b-ae06-093944f82eb7">
+                <propertyInstance
+                  Id="01f32ed7-f904-486d-aac1-53a9acf1e0cb"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1d55c7fb-3d61-4781-9c65-da6a073e5714">
+                <propertyInstance
+                  Id="3ef79af3-8fcf-4b7e-bf39-e14332ba547c"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <dependency
+            Id="8aee880c-286d-4515-8f90-9503124be282"
+            name="&lt;&lt;manifest&gt;&gt;">
+            <componentMoniker
+              Id="5f184a87-e205-4f05-b700-630bdecadfdc"
+              LastKnownName="Project management"
+              LastKnownLocation="Laboras22Model.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="ae9f1462-d795-4422-8d51-1db112b0b728"
+        name="Project.cs"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="f25a3c00-544a-4da7-9011-bd7baa005f97"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0984b129-a729-4bcc-a627-4d582e39225b">
+                <propertyInstance
+                  Id="e3a808df-c7bf-479f-8059-abec939a90d5"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="41e0416d-0e90-4cd7-9544-4320c6a3bb2e">
+                <propertyInstance
+                  Id="7d8a9b6e-5496-47f4-8e26-36ca9ed0e569"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3b791188-dbce-4988-bd5b-9de23667c13d">
+                <propertyInstance
+                  Id="4b25af8d-c612-465f-a9a2-c8a4f851a96a"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="06383757-2ded-49f4-86c6-59da00071554">
+                <propertyInstance
+                  Id="025f7969-45e8-4b31-baa2-6d7e1afdda70"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="62fd09a3-d0de-4e00-8cca-ecb76ef1e58e">
+                <propertyInstance
+                  Id="46474dcd-9338-4ba0-be95-adaddb95b34a"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <dependency
+            Id="6e0a54bf-c360-4897-8e45-0d6aaafa0b84"
+            name="&lt;&lt;manifest&gt;&gt;">
+            <componentMoniker
+              Id="5f184a87-e205-4f05-b700-630bdecadfdc"
+              LastKnownName="Project management"
+              LastKnownLocation="Laboras22Model.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="00265777-644d-444e-be02-b916491d31e7"
+        name="DataProvider"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="730c23b7-ac09-4c6d-aa01-abb860e6d3cd"
+        name="DataProvider.cs"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="2b4e8c79-0d9c-4e9c-9b86-702c7a2ca2d1"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="12bcdf52-21da-41f8-803c-876d84d5a34b">
+                <propertyInstance
+                  Id="b2c0cbb6-a489-44bb-ac88-1f3e3ada04fb"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="078156ff-20c2-43dd-ab47-7b0d32fed248">
+                <propertyInstance
+                  Id="2436f02a-7d85-4a3a-b4bb-aef9375c09b5"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6cf54a3b-5fb5-4179-b338-887e19778c7a">
+                <propertyInstance
+                  Id="3caee4cc-8ca1-4a92-98ae-924baa445db2"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0da460e0-b887-4039-8f21-9cd2a053b419">
+                <propertyInstance
+                  Id="086f3165-1cd1-4b28-8da5-c30b93a2eee0"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fb2b96f9-b95f-480f-b2ab-de63a6966993">
+                <propertyInstance
+                  Id="23a0c652-1738-4471-9eff-7cab0ea81b9d"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <dependency
+            Id="9ec2ca42-8ed1-44c0-b015-6dc3c2348307">
+            <componentMoniker
+              Id="00265777-644d-444e-be02-b916491d31e7"
+              LastKnownName="DataProvider"
+              LastKnownLocation="Laboras22Model.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="412df63f-ea99-4b5c-b04c-1b78c4cdf921"
+        name="Key.cs"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="43e9e8c0-cace-40bc-8432-09bab709cf70"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1ea63a54-6534-4bff-9d97-7c2017ee0e7c">
+                <propertyInstance
+                  Id="4fd99043-3ef9-4a09-a9bb-db3a54bdca7e"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="23938ff9-92b1-4931-8530-138cd22df54c">
+                <propertyInstance
+                  Id="392f3ffa-1427-491d-9ce2-d21d3fa8b8bb"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e6f4c46e-1c6f-41f0-92d5-945f2700140b">
+                <propertyInstance
+                  Id="5d43621a-b3a3-43da-873b-0b5080547c28"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b7bee95e-568a-41f5-9dea-a47664a3a010">
+                <propertyInstance
+                  Id="29f6664d-3758-4ddf-b1a1-ecdbc25fe6eb"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="72df5053-7f45-44f9-b471-0d947431c493">
+                <propertyInstance
+                  Id="5d62d7ae-b36e-470e-9094-2828d1654387"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <dependency
+            Id="8f64794e-0b64-48d9-8163-011aeb51fe60">
+            <componentMoniker
+              Id="00265777-644d-444e-be02-b916491d31e7"
+              LastKnownName="DataProvider"
+              LastKnownLocation="Laboras22Model.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="27a19a94-b687-479f-9806-8bbf95b48008"
+        name="IDataItem.cs"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="b3843009-a89b-46a1-b0d0-ec9b5377639d"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d1454525-4699-4bb8-a786-7fa8eb513fa2">
+                <propertyInstance
+                  Id="ef1d3246-d2e1-454a-90be-0a114973c66f"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="33646cb4-6ec4-4156-8069-f6d60481a26b">
+                <propertyInstance
+                  Id="4eb16dc7-3fee-4865-9e61-d72650412eb8"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="73930c59-bc54-48e6-ae0e-de486cdcee5f">
+                <propertyInstance
+                  Id="89528677-eb79-44e7-815f-19f27a86ced2"
+                  name="IsStatic"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9abba77b-9e19-4762-bb50-3cd7f7d1b6a5">
+                <propertyInstance
+                  Id="361873a7-9f74-407e-95b3-fc2bd8f9f91f"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="043725c4-1a7d-466d-a9b4-304abd09148e">
+                <propertyInstance
+                  Id="db87ecae-49ba-4dcc-8e00-945fa2ffb0d8"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <dependency
+            Id="fcbde15d-87d6-4a96-9add-c9b256f48ca5">
+            <componentMoniker
+              Id="00265777-644d-444e-be02-b916491d31e7"
+              LastKnownName="DataProvider"
+              LastKnownLocation="Laboras22Model.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
