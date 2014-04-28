@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="e799bc25-5d0e-466a-a887-9826de9d6e10" name="SystemComponents" linkedPackageId="09166e22-e4e3-47e5-9389-f2a9330c358c" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="3d5e0129-be5c-482a-bb4e-4a0188e1f5dc" name="GUI system" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9ac26d02-8814-453f-a739-dc3756d1dfd6" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="af80e9e8-357f-4a94-9a45-9da367fbeef9" name="Assignment management" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="cf3725bd-8d17-4579-b3c1-1a449191e51f" />
+        <suppliersInternal>
+          <dependency Id="af97d650-8581-4f10-ae20-a190713ba65c" name="&lt;&lt;use&gt;&gt;">
+            <componentMoniker Id="1fa00915-4af9-42d7-80be-4d0d7fd15027" LastKnownName="Data provider" />
+            <elementDefinition Id="161b02a6-de36-4638-81d1-874e53186ac4" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="ffc0bbaf-03b7-4ab6-8ef7-90b2b7b43bc1" name="User management" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="27ad8bc7-9b15-49d3-ba2e-1ae4a01f3e54" />
+        <suppliersInternal>
+          <dependency Id="9d7caaf7-d801-4131-bd77-e418735e159f" name="&lt;&lt;use&gt;&gt;">
+            <componentMoniker Id="1fa00915-4af9-42d7-80be-4d0d7fd15027" LastKnownName="Data provider" />
+            <elementDefinition Id="db8f7832-4bed-42ef-8f7c-5a017c01febc" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="26e98d40-01fb-4012-ad0d-ac6f9ec37063" name="Project management" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="72aba24b-7094-4f02-b511-d7f991478a0b" />
+        <suppliersInternal>
+          <dependency Id="b04a159a-fb72-4d6d-8215-116968e1e693" name="&lt;&lt;use&gt;&gt;">
+            <componentMoniker Id="1fa00915-4af9-42d7-80be-4d0d7fd15027" LastKnownName="Data provider" />
+            <elementDefinition Id="6151ac38-9374-4353-b1bf-24c5ae991491" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="8c6fe9fc-7edc-4340-abe7-e4e6e33e7d5a" name="Laboras221" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1da8c5c5-9143-43bd-8b4e-d38c38d90a2c" />
+        <suppliersInternal>
+          <dependency Id="61c839b6-5553-4d47-bcd1-6ba7b1ebfc88" name="&lt;&lt;use&gt;&gt;">
+            <componentMoniker Id="af80e9e8-357f-4a94-9a45-9da367fbeef9" LastKnownName="Assignment management" />
+            <elementDefinition Id="fe86b78d-e280-45ae-8a64-b3929eb36bae" />
+          </dependency>
+          <dependency Id="0b9b742b-0bb7-43c4-948d-874d1fa45252" name="&lt;&lt;use&gt;&gt;">
+            <componentMoniker Id="26e98d40-01fb-4012-ad0d-ac6f9ec37063" LastKnownName="Project management" />
+            <elementDefinition Id="d5924e5a-2c45-4b9e-ad08-e42eacb12c00" />
+          </dependency>
+          <dependency Id="82765d73-17dc-43d8-96d8-49a3efbb1058" name="&lt;&lt;use&gt;&gt;">
+            <componentMoniker Id="ffc0bbaf-03b7-4ab6-8ef7-90b2b7b43bc1" LastKnownName="User management" />
+            <elementDefinition Id="7b1450e8-623b-40b5-94af-2978e3673fc7" />
+          </dependency>
+          <dependency Id="fe7b8292-5527-4e97-bc79-88d2087699b6" name="&lt;&lt;use&gt;&gt;">
+            <componentMoniker Id="3d5e0129-be5c-482a-bb4e-4a0188e1f5dc" LastKnownName="GUI system" />
+            <elementDefinition Id="06a0d3cc-dc13-4807-991b-a0c178b96bec" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="1fa00915-4af9-42d7-80be-4d0d7fd15027" name="Data provider" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e22872bb-02e9-4949-acf6-b98b58229c35" />
+      </component>
+    </componentModelHasComponents>
+  </packagedElements>
+  <package Id="09166e22-e4e3-47e5-9389-f2a9330c358c" name="Laboras22Model">
+    <elementDefinition Id="c536aa51-794c-4276-85bd-a9b858d12991" />
+  </package>
+</componentModel>

@@ -73,6 +73,13 @@
     <Content Include="Communication\CreateProject.dgml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Component\SystemComponents.componentdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Component\SystemComponents.componentdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Component\SystemComponents.componentdiagram</DependentUpon>
+    </Content>
     <Content Include="DataFlow\AssignmentDataflow.activitydiagram">
       <SubType>Content</SubType>
     </Content>
@@ -313,6 +320,7 @@
     <Folder Include="Activity" />
     <Folder Include="Communication" />
     <Folder Include="DataFlow" />
+    <Folder Include="Component" />
     <Folder Include="State" />
     <Folder Include="UseCase" />
     <Folder Include="Sequence" />

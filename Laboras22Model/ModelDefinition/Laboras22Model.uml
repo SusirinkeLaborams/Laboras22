@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
   dslVersion="1.0.0.0"
   Id="c536aa51-794c-4276-85bd-a9b858d12991"
   name="Laboras22Model" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -32069,6 +32069,122 @@
           </objectNode>
         </nodes>
       </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="9ac26d02-8814-453f-a739-dc3756d1dfd6"
+        name="GUI system"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="cf3725bd-8d17-4579-b3c1-1a449191e51f"
+        name="Assignment management"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="161b02a6-de36-4638-81d1-874e53186ac4"
+            name="&lt;&lt;use&gt;&gt;">
+            <componentMoniker
+              Id="e22872bb-02e9-4949-acf6-b98b58229c35"
+              LastKnownName="Data provider"
+              LastKnownLocation="Laboras22Model.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="27ad8bc7-9b15-49d3-ba2e-1ae4a01f3e54"
+        name="User management"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="db8f7832-4bed-42ef-8f7c-5a017c01febc"
+            name="&lt;&lt;use&gt;&gt;">
+            <componentMoniker
+              Id="e22872bb-02e9-4949-acf6-b98b58229c35"
+              LastKnownName="Data provider"
+              LastKnownLocation="Laboras22Model.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="72aba24b-7094-4f02-b511-d7f991478a0b"
+        name="Project management"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="6151ac38-9374-4353-b1bf-24c5ae991491"
+            name="&lt;&lt;use&gt;&gt;">
+            <componentMoniker
+              Id="e22872bb-02e9-4949-acf6-b98b58229c35"
+              LastKnownName="Data provider"
+              LastKnownLocation="Laboras22Model.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="1da8c5c5-9143-43bd-8b4e-d38c38d90a2c"
+        name="Laboras221"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="fe86b78d-e280-45ae-8a64-b3929eb36bae"
+            name="&lt;&lt;use&gt;&gt;">
+            <componentMoniker
+              Id="cf3725bd-8d17-4579-b3c1-1a449191e51f"
+              LastKnownName="Assignment management"
+              LastKnownLocation="Laboras22Model.uml" />
+          </dependency>
+          <dependency
+            Id="d5924e5a-2c45-4b9e-ad08-e42eacb12c00"
+            name="&lt;&lt;use&gt;&gt;">
+            <componentMoniker
+              Id="72aba24b-7094-4f02-b511-d7f991478a0b"
+              LastKnownName="Project management"
+              LastKnownLocation="Laboras22Model.uml" />
+          </dependency>
+          <dependency
+            Id="7b1450e8-623b-40b5-94af-2978e3673fc7"
+            name="&lt;&lt;use&gt;&gt;">
+            <componentMoniker
+              Id="27ad8bc7-9b15-49d3-ba2e-1ae4a01f3e54"
+              LastKnownName="User management"
+              LastKnownLocation="Laboras22Model.uml" />
+          </dependency>
+          <dependency
+            Id="06a0d3cc-dc13-4807-991b-a0c178b96bec"
+            name="&lt;&lt;use&gt;&gt;">
+            <componentMoniker
+              Id="9ac26d02-8814-453f-a739-dc3756d1dfd6"
+              LastKnownName="GUI system"
+              LastKnownLocation="Laboras22Model.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="e22872bb-02e9-4949-acf6-b98b58229c35"
+        name="Data provider"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
