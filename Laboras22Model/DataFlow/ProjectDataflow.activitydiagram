@@ -1,25 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm12="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="ba68526f-5eae-41ce-9a52-5438f30e1afb" name="ProjectDataflow" linkedPackageId="5993c60b-cb92-42ca-a4b3-529e1c2413e8" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="dfc0c17e-2140-4f41-b934-a810dffddb8b">
-      <profileInstance Id="0dba0c9f-3d82-49ab-81c6-c40c78becd7b" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="d3e1d429-928d-47a8-994e-ff70cae36ca1">
-      <profileInstance Id="b60002f9-bd6e-4cca-9442-9e594b734db4" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="371baa68-4023-4f5e-b91e-e2c9010e8f03">
-      <profileInstance Id="11e5b2b9-0510-438b-92c7-39875c560384" name="CSharpProfile">
-        <elementDefinition Id="fc085c40-2fae-4b8e-a321-06d16de27e3f" />
-      </profileInstance>
-      <elementDefinition Id="7a7cabfb-7283-4390-9b7d-de397cff0af4" />
-    </packageHasProfileInstances>
-  </profileInstances>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="ba68526f-5eae-41ce-9a52-5438f30e1afb" name="ProjectDataflow" linkedPackageId="5993c60b-cb92-42ca-a4b3-529e1c2413e8" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
   <packagedElements>
     <activityRootModelHasActivity>
       <activity Id="d1e4e22f-8ac4-4168-b27a-c72ec432e0c5" name="ProjectDataflow" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
@@ -125,33 +105,117 @@
                 <elementDefinition Id="03927f14-8d38-433c-a207-afcbb0577af1" />
               </controlFlow>
             </flowNodeTargets>
+            <objectFlowTargets>
+              <objectFlow Id="15f895e3-03d5-4c22-a0f3-7021ec2aefb1" guard="Project data" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="2f14fd42-3a29-4475-b48f-a21094c6ab52" LastKnownName="DataProvider" />
+                <elementDefinition Id="5813ecc2-8cc6-4ff8-8c6c-7aef69edafdf" />
+              </objectFlow>
+            </objectFlowTargets>
           </opaqueAction>
           <opaqueAction Id="bda0986a-f7df-4421-af07-0df9dc1b4c33" name="Open a project" isLeaf="false">
             <elementDefinition Id="4478b64f-3b69-49e6-8bdd-03e2f36171f8" />
           </opaqueAction>
           <opaqueAction Id="bb4954cb-3a11-4f8e-9915-9bf48928dc98" name="Add comment" isLeaf="false">
             <elementDefinition Id="5ea8f8ef-932b-4f5d-ae7a-291c6841f93f" />
+            <objectFlowTargets>
+              <objectFlow Id="336d4c35-48c3-4158-a62b-a51cb0ac730e" guard="New Data" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="2f14fd42-3a29-4475-b48f-a21094c6ab52" LastKnownName="DataProvider" />
+                <elementDefinition Id="ac881ef7-4027-43fc-888f-a86df385823f" />
+              </objectFlow>
+            </objectFlowTargets>
           </opaqueAction>
           <opaqueAction Id="c7cf3fbd-1049-494d-bce0-8f7faa66da6d" name="Add participants" isLeaf="false">
             <elementDefinition Id="e5fb9410-08a2-4fc9-8674-a0c540377529" />
+            <objectFlowTargets>
+              <objectFlow Id="e6cd56fa-05bd-4b30-946c-82afaf815b69" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="2f14fd42-3a29-4475-b48f-a21094c6ab52" LastKnownName="DataProvider" />
+                <elementDefinition Id="891f0f9e-778d-43a9-a009-c35f29331f58" />
+              </objectFlow>
+            </objectFlowTargets>
           </opaqueAction>
           <opaqueAction Id="97b10d8c-833f-4dba-8cf1-5b95fbd3d453" name="Add rating" isLeaf="false">
             <elementDefinition Id="22dc7bb2-8aae-4567-899f-cf4f4e1b4635" />
+            <objectFlowTargets>
+              <objectFlow Id="80306fea-e26f-4598-ae37-d82a7fe4ae3a" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="2f14fd42-3a29-4475-b48f-a21094c6ab52" LastKnownName="DataProvider" />
+                <elementDefinition Id="9c3ab437-2b50-4e47-b534-18a02ba05157" />
+              </objectFlow>
+            </objectFlowTargets>
           </opaqueAction>
           <opaqueAction Id="7de5f6d8-d7dd-422e-91b7-8b9969213051" name="Add content" isLeaf="false">
             <elementDefinition Id="d7e7fc1a-9573-4997-91fc-d37b94489522" />
+            <objectFlowTargets>
+              <objectFlow Id="09fcd48f-5a20-41b0-b63c-e4f3e0724b5f" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="2f14fd42-3a29-4475-b48f-a21094c6ab52" LastKnownName="DataProvider" />
+                <elementDefinition Id="f08dde36-7a68-4e8e-92a8-3f621640cb35" />
+              </objectFlow>
+            </objectFlowTargets>
           </opaqueAction>
           <opaqueAction Id="8a6426d7-d9de-4a90-b710-f9bccf94c5b2" name="Delete" isLeaf="false">
             <elementDefinition Id="5b7186e0-49ee-4c4f-b487-e147a4fa4117" />
+            <objectFlowTargets>
+              <objectFlow Id="65083437-7149-49c5-b52c-957af2ec6d9c" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="2f14fd42-3a29-4475-b48f-a21094c6ab52" LastKnownName="DataProvider" />
+                <elementDefinition Id="27c9548b-aa42-437c-80ed-bcc852ad1ba4" />
+              </objectFlow>
+            </objectFlowTargets>
           </opaqueAction>
           <opaqueAction Id="52dee8d9-387c-4b5d-bee1-dc1e628d0c46" name="Add grade" isLeaf="false">
             <elementDefinition Id="50e7557d-a04b-4977-b9a9-1e5d389b1203" />
+            <objectFlowTargets>
+              <objectFlow Id="0f9547e3-4227-42f8-bbbd-345453cbac32" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="2f14fd42-3a29-4475-b48f-a21094c6ab52" LastKnownName="DataProvider" />
+                <elementDefinition Id="8f00bcae-1db6-46af-ac44-613c6497cfac" />
+              </objectFlow>
+            </objectFlowTargets>
           </opaqueAction>
+          <objectNode Id="2f14fd42-3a29-4475-b48f-a21094c6ab52" name="DataProvider" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="231a09e1-ebbb-47bb-aa4c-60cb01cf2155" />
+            <objectFlowTargets>
+              <objectFlow Id="4e2542f7-0caf-4342-8c32-fe4fb5d15fe3" guard="Project list" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="d41680d6-910a-474e-a8a9-b85e9828c9a1" LastKnownName="List public projects" />
+                <elementDefinition Id="ca5cac34-86f7-499c-9fd8-84b0068bb89e" />
+              </objectFlow>
+              <objectFlow Id="390586f6-a304-4319-a638-e865d8445049" guard="Project data" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="bda0986a-f7df-4421-af07-0df9dc1b4c33" LastKnownName="Open a project" />
+                <elementDefinition Id="386e4d7f-9ebe-4a47-bfdf-573e8305cab5" />
+              </objectFlow>
+              <objectFlow Id="761cb952-861e-4024-8d84-38134dd75534" guard="Owned projects" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="b2f8b717-2a43-4204-a677-ab0f49a93217" LastKnownName="List own projects" />
+                <elementDefinition Id="5df367b5-5340-4be0-8a9b-26524433cccd" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="c2fea8d2-05ac-4fb8-b718-f7db66527579" name="2147483647" value="2147483647">
+                <elementDefinition Id="98bd11ce-52ff-4fd0-a70c-877defcc370f" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
         </nodes>
       </activity>
     </activityRootModelHasActivity>
   </packagedElements>
   <package Id="5993c60b-cb92-42ca-a4b3-529e1c2413e8" name="Laboras22Model">
     <elementDefinition Id="c536aa51-794c-4276-85bd-a9b858d12991" />
+    <profileInstances>
+      <packageHasProfileInstances Id="dfc0c17e-2140-4f41-b934-a810dffddb8b">
+        <profileInstance Id="0dba0c9f-3d82-49ab-81c6-c40c78becd7b" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="d3e1d429-928d-47a8-994e-ff70cae36ca1">
+        <profileInstance Id="b60002f9-bd6e-4cca-9442-9e594b734db4" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="371baa68-4023-4f5e-b91e-e2c9010e8f03">
+        <profileInstance Id="11e5b2b9-0510-438b-92c7-39875c560384" name="CSharpProfile">
+          <elementDefinition Id="fc085c40-2fae-4b8e-a321-06d16de27e3f" />
+        </profileInstance>
+        <elementDefinition Id="7a7cabfb-7283-4390-9b7d-de397cff0af4" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </activityRootModel>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm12="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
   dslVersion="1.0.0.0"
   Id="c536aa51-794c-4276-85bd-a9b858d12991"
   name="Laboras22Model" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -31898,6 +31898,19 @@
                   LastKnownLocation="Laboras22Model.uml" />
               </controlFlow>
             </flowNodeTargets>
+            <objectFlowTargets>
+              <objectFlow
+                Id="5813ecc2-8cc6-4ff8-8c6c-7aef69edafdf"
+                guard="Project data"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="231a09e1-ebbb-47bb-aa4c-60cb01cf2155"
+                  LastKnownName="DataProvider"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </objectFlow>
+            </objectFlowTargets>
           </opaqueAction>
           <opaqueAction
             Id="4478b64f-3b69-49e6-8bdd-03e2f36171f8"
@@ -31906,27 +31919,154 @@
           <opaqueAction
             Id="5ea8f8ef-932b-4f5d-ae7a-291c6841f93f"
             name="Add comment"
-            isLeaf="false" />
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="ac881ef7-4027-43fc-888f-a86df385823f"
+                guard="New Data"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="231a09e1-ebbb-47bb-aa4c-60cb01cf2155"
+                  LastKnownName="DataProvider"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
           <opaqueAction
             Id="e5fb9410-08a2-4fc9-8674-a0c540377529"
             name="Add participants"
-            isLeaf="false" />
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="891f0f9e-778d-43a9-a009-c35f29331f58"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="231a09e1-ebbb-47bb-aa4c-60cb01cf2155"
+                  LastKnownName="DataProvider"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
           <opaqueAction
             Id="22dc7bb2-8aae-4567-899f-cf4f4e1b4635"
             name="Add rating"
-            isLeaf="false" />
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="9c3ab437-2b50-4e47-b534-18a02ba05157"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="231a09e1-ebbb-47bb-aa4c-60cb01cf2155"
+                  LastKnownName="DataProvider"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
           <opaqueAction
             Id="d7e7fc1a-9573-4997-91fc-d37b94489522"
             name="Add content"
-            isLeaf="false" />
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="f08dde36-7a68-4e8e-92a8-3f621640cb35"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="231a09e1-ebbb-47bb-aa4c-60cb01cf2155"
+                  LastKnownName="DataProvider"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
           <opaqueAction
             Id="5b7186e0-49ee-4c4f-b487-e147a4fa4117"
             name="Delete"
-            isLeaf="false" />
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="27c9548b-aa42-437c-80ed-bcc852ad1ba4"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="231a09e1-ebbb-47bb-aa4c-60cb01cf2155"
+                  LastKnownName="DataProvider"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
           <opaqueAction
             Id="50e7557d-a04b-4977-b9a9-1e5d389b1203"
             name="Add grade"
-            isLeaf="false" />
+            isLeaf="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="8f00bcae-1db6-46af-ac44-613c6497cfac"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="231a09e1-ebbb-47bb-aa4c-60cb01cf2155"
+                  LastKnownName="DataProvider"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <objectNode
+            Id="231a09e1-ebbb-47bb-aa4c-60cb01cf2155"
+            name="DataProvider"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="ca5cac34-86f7-499c-9fd8-84b0068bb89e"
+                guard="Project list"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <opaqueActionMoniker
+                  Id="6ce57dba-42fc-4a25-9c12-f0e5dc7c53a0"
+                  LastKnownName="List public projects"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </objectFlow>
+              <objectFlow
+                Id="386e4d7f-9ebe-4a47-bfdf-573e8305cab5"
+                guard="Project data"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <opaqueActionMoniker
+                  Id="4478b64f-3b69-49e6-8bdd-03e2f36171f8"
+                  LastKnownName="Open a project"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </objectFlow>
+              <objectFlow
+                Id="5df367b5-5340-4be0-8a9b-26524433cccd"
+                guard="Owned projects"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <opaqueActionMoniker
+                  Id="1a224418-c29c-45c6-bb6a-677e18cb2fcf"
+                  LastKnownName="List own projects"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="98bd11ce-52ff-4fd0-a70c-877defcc370f"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
         </nodes>
       </activity>
     </packageHasNamedElement>
