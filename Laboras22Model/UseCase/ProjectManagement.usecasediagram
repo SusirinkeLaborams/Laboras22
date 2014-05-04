@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="27379f19-ab72-4e2e-b803-c5539fb729da" name="ProjectManagement" linkedPackageId="bd9cfdc4-184b-418c-9b45-91af8a41defe" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="27379f19-ab72-4e2e-b803-c5539fb729da" name="ProjectManagement" linkedPackageId="bd9cfdc4-184b-418c-9b45-91af8a41defe" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
   <packagedElements>
     <useCaseModelRootHasTypes>
-      <actor Id="291471d4-2d59-4530-af4c-f5ec417a2aa2" name="Student2" isAbstract="false" isLeaf="false">
+      <actor Id="291471d4-2d59-4530-af4c-f5ec417a2aa2" name="Student" isAbstract="false" isLeaf="false">
         <elementDefinition Id="d02e23a3-86ea-4c0d-84a9-8a08626540f5" />
         <targetEnds>
           <association Id="84af7d79-1bc1-4e9c-a9a8-ecf301cf57f3" isDerived="false" sourceEndRoleName="Student" targetEndRoleName="Create a project" isLeaf="false" isAbstract="false">
@@ -125,7 +125,7 @@
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <actor Id="78bcb5e5-6e85-48ec-beed-785989a17638" name="Administrator2" isAbstract="false" isLeaf="false">
+      <actor Id="78bcb5e5-6e85-48ec-beed-785989a17638" name="Administrator" isAbstract="false" isLeaf="false">
         <elementDefinition Id="720868c3-5d54-4925-ae99-33f6e5998e0f" />
         <targetEnds>
           <association Id="a3f439fe-ad1d-49a9-8cb0-20ed5630c98e" isDerived="false" sourceEndRoleName="Administrator" targetEndRoleName="View assignments" isLeaf="false" isAbstract="false">
@@ -310,7 +310,7 @@
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <actor Id="66e2e7cb-c23d-4de4-8729-658ed3a6c69d" name="Lecturer2" isAbstract="false" isLeaf="false">
+      <actor Id="66e2e7cb-c23d-4de4-8729-658ed3a6c69d" name="Lecturer" isAbstract="false" isLeaf="false">
         <elementDefinition Id="b267d54f-8cd9-4fc8-9b40-58b1ef14c98f" />
         <targetEnds>
           <association Id="10a8ff7d-1fd8-48c4-80eb-8166eb464163" isDerived="false" sourceEndRoleName="Lecturer" targetEndRoleName="List public projects" isLeaf="false" isAbstract="false">
