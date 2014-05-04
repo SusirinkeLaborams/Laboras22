@@ -187,7 +187,7 @@
         <actionShapeMoniker Id="5dbeab86-baf8-4546-8ebf-5e66e05ec3ae" />
       </nodes>
     </objectFlowConnector>
-    <objectFlowConnector edgePoints="[(5.875 : 2.8125); (10.6041666666667 : 2.8125 : JumpStart); (10.7708333333333 : 2.8125 : JumpEnd); (11.0000025 : 2.8125); (11.0000025 : 3.5)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
+    <objectFlowConnector edgePoints="[(5.875 : 2.8125); (10.2916641666667 : 2.8125 : JumpStart); (10.4583308333333 : 2.8125 : JumpEnd); (11.0000025 : 2.8125); (11.0000025 : 3.5)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
       <objectFlowMoniker Id="8bbb249c-6353-4e7b-8b3b-c87a5ee60733" />
       <relativeChildShapes />
       <nodes>

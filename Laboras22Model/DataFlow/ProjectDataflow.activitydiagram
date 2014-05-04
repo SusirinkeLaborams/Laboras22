@@ -99,15 +99,9 @@
           </opaqueAction>
           <opaqueAction Id="8fdd0010-dc99-49a9-b066-a2cd72a760d5" name="Create a project" isLeaf="false">
             <elementDefinition Id="bed193c9-b15a-4e72-9166-2f033f9fae28" />
-            <flowNodeTargets>
-              <controlFlow Id="2e5da29a-0f09-4c6c-a36b-51ee4f8db647" guard="New project id" isLeaf="false">
-                <opaqueActionMoniker Id="bda0986a-f7df-4421-af07-0df9dc1b4c33" LastKnownName="Open a project" />
-                <elementDefinition Id="03927f14-8d38-433c-a207-afcbb0577af1" />
-              </controlFlow>
-            </flowNodeTargets>
             <objectFlowTargets>
               <objectFlow Id="15f895e3-03d5-4c22-a0f3-7021ec2aefb1" guard="Project data" isLeaf="false" isMulticast="false" isMultireceive="false">
-                <objectNodeMoniker Id="2f14fd42-3a29-4475-b48f-a21094c6ab52" LastKnownName="DataProvider" />
+                <objectNodeMoniker Id="2f14fd42-3a29-4475-b48f-a21094c6ab52" LastKnownName="Projects" />
                 <elementDefinition Id="5813ecc2-8cc6-4ff8-8c6c-7aef69edafdf" />
               </objectFlow>
             </objectFlowTargets>
@@ -119,7 +113,7 @@
             <elementDefinition Id="5ea8f8ef-932b-4f5d-ae7a-291c6841f93f" />
             <objectFlowTargets>
               <objectFlow Id="336d4c35-48c3-4158-a62b-a51cb0ac730e" guard="New Data" isLeaf="false" isMulticast="false" isMultireceive="false">
-                <objectNodeMoniker Id="2f14fd42-3a29-4475-b48f-a21094c6ab52" LastKnownName="DataProvider" />
+                <objectNodeMoniker Id="2f14fd42-3a29-4475-b48f-a21094c6ab52" LastKnownName="Projects" />
                 <elementDefinition Id="ac881ef7-4027-43fc-888f-a86df385823f" />
               </objectFlow>
             </objectFlowTargets>
@@ -128,7 +122,7 @@
             <elementDefinition Id="e5fb9410-08a2-4fc9-8674-a0c540377529" />
             <objectFlowTargets>
               <objectFlow Id="e6cd56fa-05bd-4b30-946c-82afaf815b69" isLeaf="false" isMulticast="false" isMultireceive="false">
-                <objectNodeMoniker Id="2f14fd42-3a29-4475-b48f-a21094c6ab52" LastKnownName="DataProvider" />
+                <objectNodeMoniker Id="2f14fd42-3a29-4475-b48f-a21094c6ab52" LastKnownName="Projects" />
                 <elementDefinition Id="891f0f9e-778d-43a9-a009-c35f29331f58" />
               </objectFlow>
             </objectFlowTargets>
@@ -137,7 +131,7 @@
             <elementDefinition Id="22dc7bb2-8aae-4567-899f-cf4f4e1b4635" />
             <objectFlowTargets>
               <objectFlow Id="80306fea-e26f-4598-ae37-d82a7fe4ae3a" isLeaf="false" isMulticast="false" isMultireceive="false">
-                <objectNodeMoniker Id="2f14fd42-3a29-4475-b48f-a21094c6ab52" LastKnownName="DataProvider" />
+                <objectNodeMoniker Id="2f14fd42-3a29-4475-b48f-a21094c6ab52" LastKnownName="Projects" />
                 <elementDefinition Id="9c3ab437-2b50-4e47-b534-18a02ba05157" />
               </objectFlow>
             </objectFlowTargets>
@@ -146,7 +140,7 @@
             <elementDefinition Id="d7e7fc1a-9573-4997-91fc-d37b94489522" />
             <objectFlowTargets>
               <objectFlow Id="09fcd48f-5a20-41b0-b63c-e4f3e0724b5f" isLeaf="false" isMulticast="false" isMultireceive="false">
-                <objectNodeMoniker Id="2f14fd42-3a29-4475-b48f-a21094c6ab52" LastKnownName="DataProvider" />
+                <objectNodeMoniker Id="2f14fd42-3a29-4475-b48f-a21094c6ab52" LastKnownName="Projects" />
                 <elementDefinition Id="f08dde36-7a68-4e8e-92a8-3f621640cb35" />
               </objectFlow>
             </objectFlowTargets>
@@ -155,7 +149,7 @@
             <elementDefinition Id="5b7186e0-49ee-4c4f-b487-e147a4fa4117" />
             <objectFlowTargets>
               <objectFlow Id="65083437-7149-49c5-b52c-957af2ec6d9c" isLeaf="false" isMulticast="false" isMultireceive="false">
-                <objectNodeMoniker Id="2f14fd42-3a29-4475-b48f-a21094c6ab52" LastKnownName="DataProvider" />
+                <objectNodeMoniker Id="2f14fd42-3a29-4475-b48f-a21094c6ab52" LastKnownName="Projects" />
                 <elementDefinition Id="27c9548b-aa42-437c-80ed-bcc852ad1ba4" />
               </objectFlow>
             </objectFlowTargets>
@@ -164,12 +158,12 @@
             <elementDefinition Id="50e7557d-a04b-4977-b9a9-1e5d389b1203" />
             <objectFlowTargets>
               <objectFlow Id="0f9547e3-4227-42f8-bbbd-345453cbac32" isLeaf="false" isMulticast="false" isMultireceive="false">
-                <objectNodeMoniker Id="2f14fd42-3a29-4475-b48f-a21094c6ab52" LastKnownName="DataProvider" />
+                <objectNodeMoniker Id="2f14fd42-3a29-4475-b48f-a21094c6ab52" LastKnownName="Projects" />
                 <elementDefinition Id="8f00bcae-1db6-46af-ac44-613c6497cfac" />
               </objectFlow>
             </objectFlowTargets>
           </opaqueAction>
-          <objectNode Id="2f14fd42-3a29-4475-b48f-a21094c6ab52" name="DataProvider" isLeaf="false" ordering="Unordered" isControlType="false">
+          <objectNode Id="2f14fd42-3a29-4475-b48f-a21094c6ab52" name="Projects" isLeaf="false" ordering="Unordered" isControlType="false">
             <elementDefinition Id="231a09e1-ebbb-47bb-aa4c-60cb01cf2155" />
             <objectFlowTargets>
               <objectFlow Id="4e2542f7-0caf-4342-8c32-fe4fb5d15fe3" guard="Project list" isLeaf="false" isMulticast="false" isMultireceive="false">
