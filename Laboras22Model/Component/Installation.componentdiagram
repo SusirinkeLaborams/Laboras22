@@ -4,8 +4,8 @@
     <componentModelHasComponents>
       <component Id="d260da8b-6dab-4598-b382-f7bde9cc7ce6" name="Client" isAbstract="false" isLeaf="false" isActiveClass="false">
         <appliedStereotypesInternal>
-          <stereotypeInstance Id="44a793d7-9f78-4567-8130-043e00d9ee00" name="process" profile="StandardProfileL2">
-            <elementDefinition Id="7a3ad33d-d65c-43fe-939d-bafa6fae6ac0" />
+          <stereotypeInstance Id="f65cb8cb-df51-40e0-b54a-e5f863fa1908" name="subsystem" profile="StandardProfileL2">
+            <elementDefinition Id="1dad6588-2e25-45e0-9aea-9192b6402b98" />
           </stereotypeInstance>
         </appliedStereotypesInternal>
         <elementDefinition Id="bce743bf-7f5c-408d-8f2f-6a9b2b0d198c" />
