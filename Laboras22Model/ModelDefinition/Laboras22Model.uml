@@ -31550,7 +31550,7 @@
                 isMultireceive="false">
                 <objectNodeMoniker
                   Id="5c0f3c8e-253b-4327-b371-aff40121d02b"
-                  LastKnownName="Student, Lecturer"
+                  LastKnownName="Users"
                   LastKnownLocation="Laboras22Model.uml" />
               </objectFlow>
             </objectFlowTargets>
@@ -31568,7 +31568,7 @@
                 isMultireceive="false">
                 <objectNodeMoniker
                   Id="5c0f3c8e-253b-4327-b371-aff40121d02b"
-                  LastKnownName="Student, Lecturer"
+                  LastKnownName="Users"
                   LastKnownLocation="Laboras22Model.uml" />
               </objectFlow>
             </objectFlowTargets>
@@ -31586,14 +31586,14 @@
                 isMultireceive="false">
                 <objectNodeMoniker
                   Id="5c0f3c8e-253b-4327-b371-aff40121d02b"
-                  LastKnownName="Student, Lecturer"
+                  LastKnownName="Users"
                   LastKnownLocation="Laboras22Model.uml" />
               </objectFlow>
             </objectFlowTargets>
           </opaqueAction>
           <objectNode
             Id="5c0f3c8e-253b-4327-b371-aff40121d02b"
-            name="Student, Lecturer"
+            name="Users"
             isLeaf="false"
             ordering="Unordered"
             isControlType="false">
@@ -31645,7 +31645,7 @@
                 isMultireceive="false">
                 <objectNodeMoniker
                   Id="5c0f3c8e-253b-4327-b371-aff40121d02b"
-                  LastKnownName="Student, Lecturer"
+                  LastKnownName="Users"
                   LastKnownLocation="Laboras22Model.uml" />
               </objectFlow>
             </objectFlowTargets>

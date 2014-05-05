@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm12="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="811015ab-fdf3-47f6-a099-d8e14b1ae949" name="UserManagementDataflow" linkedPackageId="a6c316bc-9393-4982-b945-f5b47cf2cbff" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="811015ab-fdf3-47f6-a099-d8e14b1ae949" name="UserManagementDataflow" linkedPackageId="a6c316bc-9393-4982-b945-f5b47cf2cbff" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
   <packagedElements>
     <activityRootModelHasActivity>
       <activity Id="92e9af2e-b49f-42df-8464-5becc965c7e5" name="UserManagementDataflow" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
@@ -58,7 +58,7 @@
             <elementDefinition Id="6d3df61c-5d37-4846-9f2d-85ee18bd6444" />
             <objectFlowTargets>
               <objectFlow Id="4d044422-0de1-431f-bfe3-2385fcd60229" guard="New users list" isLeaf="false" isMulticast="false" isMultireceive="false">
-                <objectNodeMoniker Id="1ce4a0a6-0967-4d03-9ff6-7d0cf097a869" LastKnownName="Student, Lecturer" />
+                <objectNodeMoniker Id="1ce4a0a6-0967-4d03-9ff6-7d0cf097a869" LastKnownName="Users" />
                 <elementDefinition Id="e23ec423-7f94-43b2-9547-8920c7089b89" />
               </objectFlow>
             </objectFlowTargets>
@@ -67,7 +67,7 @@
             <elementDefinition Id="9b436740-4bac-4853-8883-11e35c090704" />
             <objectFlowTargets>
               <objectFlow Id="9e58e406-0778-4e43-9078-dfc140855379" guard="Modified users" isLeaf="false" isMulticast="false" isMultireceive="false">
-                <objectNodeMoniker Id="1ce4a0a6-0967-4d03-9ff6-7d0cf097a869" LastKnownName="Student, Lecturer" />
+                <objectNodeMoniker Id="1ce4a0a6-0967-4d03-9ff6-7d0cf097a869" LastKnownName="Users" />
                 <elementDefinition Id="a74120ff-4032-4ad5-8b65-23985a28b766" />
               </objectFlow>
             </objectFlowTargets>
@@ -76,12 +76,12 @@
             <elementDefinition Id="3db82d9d-3d4f-41b2-b18a-db12a48feed7" />
             <objectFlowTargets>
               <objectFlow Id="7b5d9649-d2c9-475f-8d22-bf9d5d44cf75" guard="Removed users" isLeaf="false" isMulticast="false" isMultireceive="false">
-                <objectNodeMoniker Id="1ce4a0a6-0967-4d03-9ff6-7d0cf097a869" LastKnownName="Student, Lecturer" />
+                <objectNodeMoniker Id="1ce4a0a6-0967-4d03-9ff6-7d0cf097a869" LastKnownName="Users" />
                 <elementDefinition Id="168812a4-22f8-44f2-9a51-014839d8f3ef" />
               </objectFlow>
             </objectFlowTargets>
           </opaqueAction>
-          <objectNode Id="1ce4a0a6-0967-4d03-9ff6-7d0cf097a869" name="Student, Lecturer" isLeaf="false" ordering="Unordered" isControlType="false">
+          <objectNode Id="1ce4a0a6-0967-4d03-9ff6-7d0cf097a869" name="Users" isLeaf="false" ordering="Unordered" isControlType="false">
             <elementDefinition Id="5c0f3c8e-253b-4327-b371-aff40121d02b" />
             <objectFlowTargets>
               <objectFlow Id="5323439f-3230-4959-81ad-fd1ef6cfe8b0" guard="User list" isLeaf="false" isMulticast="false" isMultireceive="false">
@@ -106,7 +106,7 @@
             <elementDefinition Id="37efdbed-946c-4fcb-a1e0-b8274099226d" />
             <objectFlowTargets>
               <objectFlow Id="ba805b8b-700f-4a38-843f-43ee33e411e3" guard="Modified user data" isLeaf="false" isMulticast="false" isMultireceive="false">
-                <objectNodeMoniker Id="1ce4a0a6-0967-4d03-9ff6-7d0cf097a869" LastKnownName="Student, Lecturer" />
+                <objectNodeMoniker Id="1ce4a0a6-0967-4d03-9ff6-7d0cf097a869" LastKnownName="Users" />
                 <elementDefinition Id="335d9ccb-eaff-4ef1-bab9-a9eb4318adaf" />
               </objectFlow>
             </objectFlowTargets>
