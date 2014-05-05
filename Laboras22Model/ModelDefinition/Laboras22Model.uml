@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
   dslVersion="1.0.0.0"
   Id="c536aa51-794c-4276-85bd-a9b858d12991"
   name="Laboras22Model" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -31188,6 +31188,17 @@
                   LastKnownName="Create assignment"
                   LastKnownLocation="Laboras22Model.uml" />
               </objectFlow>
+              <objectFlow
+                Id="cee1c44d-b67c-4c50-a437-0b21f3645daa"
+                guard="Assignment id"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <opaqueActionMoniker
+                  Id="0ab4202c-269d-47f1-a9bf-b9068e0e0b7c"
+                  LastKnownName="Delete assignment"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </objectFlow>
             </objectFlowTargets>
             <upperBound>
               <literalInteger
@@ -31214,6 +31225,17 @@
                   LastKnownName="Manage all assignments"
                   LastKnownLocation="Laboras22Model.uml" />
               </objectFlow>
+              <objectFlow
+                Id="66964a30-0485-4521-8a0d-44b0c5a562d0"
+                guard="Assignment id"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <opaqueActionMoniker
+                  Id="0ab4202c-269d-47f1-a9bf-b9068e0e0b7c"
+                  LastKnownName="Delete assignment"
+                  LastKnownLocation="Laboras22Model.uml" />
+              </objectFlow>
             </objectFlowTargets>
             <upperBound>
               <literalInteger
@@ -31224,7 +31246,7 @@
           </objectNode>
           <objectNode
             Id="2a4b2f79-d00f-4299-923e-fa4cea116eec"
-            name="Data provider"
+            name="Assignments"
             isLeaf="false"
             ordering="Unordered"
             isControlType="false">
@@ -31272,7 +31294,7 @@
                 isMultireceive="false">
                 <objectNodeMoniker
                   Id="2a4b2f79-d00f-4299-923e-fa4cea116eec"
-                  LastKnownName="Data provider"
+                  LastKnownName="Assignments"
                   LastKnownLocation="Laboras22Model.uml" />
               </objectFlow>
               <objectFlow
@@ -31283,7 +31305,7 @@
                 isMultireceive="false">
                 <objectNodeMoniker
                   Id="c9865ec8-11fe-4951-b615-4ebaec6a61bd"
-                  LastKnownName="Any user"
+                  LastKnownName="Student, Lecturer, Administrator"
                   LastKnownLocation="Laboras22Model.uml" />
               </objectFlow>
             </objectFlowTargets>
@@ -31291,53 +31313,11 @@
           <opaqueAction
             Id="0f927ef6-c5bb-4a14-be77-9eb9446f02df"
             name="Manage own assignments"
-            isLeaf="false">
-            <flowNodeTargets>
-              <controlFlow
-                Id="570a6276-8d3d-4e73-b4dd-ebc33d8cfdfd"
-                guard="Assignment id"
-                isLeaf="false">
-                <opaqueActionMoniker
-                  Id="98114966-1fea-4afa-80be-54c9c5d3a718"
-                  LastKnownName="View assignment statistics"
-                  LastKnownLocation="Laboras22Model.uml" />
-              </controlFlow>
-              <controlFlow
-                Id="6fa5e068-3074-46de-9eab-7c4a2ff3fc7f"
-                guard="Assignment id"
-                isLeaf="false">
-                <opaqueActionMoniker
-                  Id="0ab4202c-269d-47f1-a9bf-b9068e0e0b7c"
-                  LastKnownName="Delete assignment"
-                  LastKnownLocation="Laboras22Model.uml" />
-              </controlFlow>
-            </flowNodeTargets>
-          </opaqueAction>
+            isLeaf="false" />
           <opaqueAction
             Id="ada15a8f-25bd-4b1e-8e5f-7ef6c6601e28"
             name="Manage all assignments"
-            isLeaf="false">
-            <flowNodeTargets>
-              <controlFlow
-                Id="0a33c97e-fb60-4716-a190-9a9fc42fb6c2"
-                guard="Assignment id"
-                isLeaf="false">
-                <opaqueActionMoniker
-                  Id="0ab4202c-269d-47f1-a9bf-b9068e0e0b7c"
-                  LastKnownName="Delete assignment"
-                  LastKnownLocation="Laboras22Model.uml" />
-              </controlFlow>
-              <controlFlow
-                Id="8bec63be-01e1-4e7f-965d-6b1aa1079fed"
-                guard="Assignment id"
-                isLeaf="false">
-                <opaqueActionMoniker
-                  Id="98114966-1fea-4afa-80be-54c9c5d3a718"
-                  LastKnownName="View assignment statistics"
-                  LastKnownLocation="Laboras22Model.uml" />
-              </controlFlow>
-            </flowNodeTargets>
-          </opaqueAction>
+            isLeaf="false" />
           <opaqueAction
             Id="003428da-cf96-40ce-9ce4-81ec487ed0e0"
             name="Create assignment"
@@ -31351,7 +31331,7 @@
                 isMultireceive="false">
                 <objectNodeMoniker
                   Id="2a4b2f79-d00f-4299-923e-fa4cea116eec"
-                  LastKnownName="Data provider"
+                  LastKnownName="Assignments"
                   LastKnownLocation="Laboras22Model.uml" />
               </objectFlow>
             </objectFlowTargets>
@@ -31369,7 +31349,7 @@
                 isMultireceive="false">
                 <objectNodeMoniker
                   Id="2a4b2f79-d00f-4299-923e-fa4cea116eec"
-                  LastKnownName="Data provider"
+                  LastKnownName="Assignments"
                   LastKnownLocation="Laboras22Model.uml" />
               </objectFlow>
             </objectFlowTargets>
@@ -31387,7 +31367,7 @@
                 isMultireceive="false">
                 <objectNodeMoniker
                   Id="2a4b2f79-d00f-4299-923e-fa4cea116eec"
-                  LastKnownName="Data provider"
+                  LastKnownName="Assignments"
                   LastKnownLocation="Laboras22Model.uml" />
               </objectFlow>
               <objectFlow
@@ -31416,7 +31396,7 @@
           </opaqueAction>
           <objectNode
             Id="c9865ec8-11fe-4951-b615-4ebaec6a61bd"
-            name="Any user"
+            name="Student, Lecturer, Administrator"
             isLeaf="false"
             ordering="Unordered"
             isControlType="false">

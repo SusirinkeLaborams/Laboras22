@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="739552d2-e575-43c0-8f0e-6b5f22e2df0b" name="AssignmentDataflow" linkedPackageId="4742a252-6386-435f-84ff-41157e2696be" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="739552d2-e575-43c0-8f0e-6b5f22e2df0b" name="AssignmentDataflow" linkedPackageId="4742a252-6386-435f-84ff-41157e2696be" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
   <packagedElements>
     <activityRootModelHasActivity>
       <activity Id="bb34b102-7288-45fa-a4ec-1f4bacf6cdd4" name="AssignmentDataflow" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
@@ -16,6 +16,10 @@
                 <opaqueActionMoniker Id="7932973f-3322-4e7c-8424-7fd85c9576a2" LastKnownName="Create assignment" />
                 <elementDefinition Id="3ab06f1b-acde-4362-99fe-806a251ca5be" />
               </objectFlow>
+              <objectFlow Id="f5de7a39-6d52-41df-b2f8-e8f1448c0388" guard="Assignment id" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="9b378db2-620c-410a-a8ac-eee155b28641" LastKnownName="Delete assignment" />
+                <elementDefinition Id="cee1c44d-b67c-4c50-a437-0b21f3645daa" />
+              </objectFlow>
             </objectFlowTargets>
             <upperBound>
               <literalInteger Id="a275e861-e6c8-49db-b27b-ca13c9423e23" name="2147483647" value="2147483647">
@@ -30,6 +34,10 @@
                 <opaqueActionMoniker Id="c2cc7986-928b-401f-aef3-758366bab4f3" LastKnownName="Manage all assignments" />
                 <elementDefinition Id="6491ba94-a7c3-4117-8343-3c6e0c15a842" />
               </objectFlow>
+              <objectFlow Id="757e942f-8cc9-41dd-b61c-18b5269495c3" guard="Assignment id" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="9b378db2-620c-410a-a8ac-eee155b28641" LastKnownName="Delete assignment" />
+                <elementDefinition Id="66964a30-0485-4521-8a0d-44b0c5a562d0" />
+              </objectFlow>
             </objectFlowTargets>
             <upperBound>
               <literalInteger Id="cdbc6d1e-b4e1-447e-855b-2793172ff63a" name="2147483647" value="2147483647">
@@ -37,7 +45,7 @@
               </literalInteger>
             </upperBound>
           </objectNode>
-          <objectNode Id="4a000902-6d9a-48c1-8933-6d65d2aafab5" name="Data provider" isLeaf="false" ordering="Unordered" isControlType="false">
+          <objectNode Id="4a000902-6d9a-48c1-8933-6d65d2aafab5" name="Assignments" isLeaf="false" ordering="Unordered" isControlType="false">
             <elementDefinition Id="2a4b2f79-d00f-4299-923e-fa4cea116eec" />
             <objectFlowTargets>
               <objectFlow Id="b1734688-6b23-4d3f-aca4-2c4172b43daf" guard="Appropriate assignment list" isLeaf="false" isMulticast="false" isMultireceive="false">
@@ -59,46 +67,26 @@
             <elementDefinition Id="26e83740-1c57-487c-9b4a-53126c19f069" />
             <objectFlowTargets>
               <objectFlow Id="52aab439-4204-43c7-a1f1-a6c42525e7cf" guard="User data" isLeaf="false" isMulticast="false" isMultireceive="false">
-                <objectNodeMoniker Id="4a000902-6d9a-48c1-8933-6d65d2aafab5" LastKnownName="Data provider" />
+                <objectNodeMoniker Id="4a000902-6d9a-48c1-8933-6d65d2aafab5" LastKnownName="Assignments" />
                 <elementDefinition Id="1e53fdaa-31be-4b4e-84b0-b72659e13f16" />
               </objectFlow>
               <objectFlow Id="81cd2d0e-af3d-41e2-bf7c-b03b3876a64d" guard="Assignment list" isLeaf="false" isMulticast="false" isMultireceive="false">
-                <objectNodeMoniker Id="897c5a6d-0f5d-4b0a-baa7-c19d409fc944" LastKnownName="Any user" />
+                <objectNodeMoniker Id="897c5a6d-0f5d-4b0a-baa7-c19d409fc944" LastKnownName="Student, Lecturer, Administrator" />
                 <elementDefinition Id="c308f761-1910-4752-b9a4-30deae73bbb1" />
               </objectFlow>
             </objectFlowTargets>
           </opaqueAction>
           <opaqueAction Id="421d8c19-d4f0-44dc-aabb-34ca218215ad" name="Manage own assignments" isLeaf="false">
             <elementDefinition Id="0f927ef6-c5bb-4a14-be77-9eb9446f02df" />
-            <flowNodeTargets>
-              <controlFlow Id="0157f7ba-bc84-4be6-a213-bf210b62f2ba" guard="Assignment id" isLeaf="false">
-                <opaqueActionMoniker Id="6f137191-326d-4bf7-99ec-71224cf9adb2" LastKnownName="View assignment statistics" />
-                <elementDefinition Id="570a6276-8d3d-4e73-b4dd-ebc33d8cfdfd" />
-              </controlFlow>
-              <controlFlow Id="065eabcc-edd5-44ca-84a8-1c493ff02051" guard="Assignment id" isLeaf="false">
-                <opaqueActionMoniker Id="9b378db2-620c-410a-a8ac-eee155b28641" LastKnownName="Delete assignment" />
-                <elementDefinition Id="6fa5e068-3074-46de-9eab-7c4a2ff3fc7f" />
-              </controlFlow>
-            </flowNodeTargets>
           </opaqueAction>
           <opaqueAction Id="c2cc7986-928b-401f-aef3-758366bab4f3" name="Manage all assignments" isLeaf="false">
             <elementDefinition Id="ada15a8f-25bd-4b1e-8e5f-7ef6c6601e28" />
-            <flowNodeTargets>
-              <controlFlow Id="f0082ac6-dbc1-4637-996e-f705ae46a46b" guard="Assignment id" isLeaf="false">
-                <opaqueActionMoniker Id="9b378db2-620c-410a-a8ac-eee155b28641" LastKnownName="Delete assignment" />
-                <elementDefinition Id="0a33c97e-fb60-4716-a190-9a9fc42fb6c2" />
-              </controlFlow>
-              <controlFlow Id="8a86cf8f-1348-429b-9a70-32672e163d39" guard="Assignment id" isLeaf="false">
-                <opaqueActionMoniker Id="6f137191-326d-4bf7-99ec-71224cf9adb2" LastKnownName="View assignment statistics" />
-                <elementDefinition Id="8bec63be-01e1-4e7f-965d-6b1aa1079fed" />
-              </controlFlow>
-            </flowNodeTargets>
           </opaqueAction>
           <opaqueAction Id="7932973f-3322-4e7c-8424-7fd85c9576a2" name="Create assignment" isLeaf="false">
             <elementDefinition Id="003428da-cf96-40ce-9ce4-81ec487ed0e0" />
             <objectFlowTargets>
               <objectFlow Id="8bbb249c-6353-4e7b-8b3b-c87a5ee60733" guard="Full assignment information" isLeaf="false" isMulticast="false" isMultireceive="false">
-                <objectNodeMoniker Id="4a000902-6d9a-48c1-8933-6d65d2aafab5" LastKnownName="Data provider" />
+                <objectNodeMoniker Id="4a000902-6d9a-48c1-8933-6d65d2aafab5" LastKnownName="Assignments" />
                 <elementDefinition Id="36a7db65-52cf-42aa-b54f-132041c3efff" />
               </objectFlow>
             </objectFlowTargets>
@@ -107,7 +95,7 @@
             <elementDefinition Id="0ab4202c-269d-47f1-a9bf-b9068e0e0b7c" />
             <objectFlowTargets>
               <objectFlow Id="f66cbfb9-3b7f-4f00-8903-726a415944a4" guard="Assignment id" isLeaf="false" isMulticast="false" isMultireceive="false">
-                <objectNodeMoniker Id="4a000902-6d9a-48c1-8933-6d65d2aafab5" LastKnownName="Data provider" />
+                <objectNodeMoniker Id="4a000902-6d9a-48c1-8933-6d65d2aafab5" LastKnownName="Assignments" />
                 <elementDefinition Id="7f64ecb4-480d-4de0-91db-89eb8d879d04" />
               </objectFlow>
             </objectFlowTargets>
@@ -116,7 +104,7 @@
             <elementDefinition Id="98114966-1fea-4afa-80be-54c9c5d3a718" />
             <objectFlowTargets>
               <objectFlow Id="94e839e8-f171-4f0d-a80e-8c48ca294c43" guard="Assignment id" isLeaf="false" isMulticast="false" isMultireceive="false">
-                <objectNodeMoniker Id="4a000902-6d9a-48c1-8933-6d65d2aafab5" LastKnownName="Data provider" />
+                <objectNodeMoniker Id="4a000902-6d9a-48c1-8933-6d65d2aafab5" LastKnownName="Assignments" />
                 <elementDefinition Id="f20045e1-5576-4948-a246-a4a912cc6ce7" />
               </objectFlow>
               <objectFlow Id="2c346cff-275d-4e29-9ec5-240838a5dd73" guard="Assignment statistics data" isLeaf="false" isMulticast="false" isMultireceive="false">
@@ -129,7 +117,7 @@
               </objectFlow>
             </objectFlowTargets>
           </opaqueAction>
-          <objectNode Id="897c5a6d-0f5d-4b0a-baa7-c19d409fc944" name="Any user" isLeaf="false" ordering="Unordered" isControlType="false">
+          <objectNode Id="897c5a6d-0f5d-4b0a-baa7-c19d409fc944" name="Student, Lecturer, Administrator" isLeaf="false" ordering="Unordered" isControlType="false">
             <elementDefinition Id="c9865ec8-11fe-4951-b615-4ebaec6a61bd" />
             <objectFlowTargets>
               <objectFlow Id="bfe360f3-d517-4e97-b9e8-80d7e4494779" guard="User authentication data" isLeaf="false" isMulticast="false" isMultireceive="false">

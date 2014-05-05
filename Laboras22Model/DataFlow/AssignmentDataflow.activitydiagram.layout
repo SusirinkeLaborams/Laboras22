@@ -9,7 +9,7 @@
       <objectNodeMoniker Id="3c0a6fe2-fd8e-4dcf-a84c-27b033e9bf3c" LastKnownName="Administrator" />
     </objectNodeShape>
     <objectNodeShape Id="98f4b5fe-963a-4a5b-ae79-d4d01cf67149" absoluteBounds="10.125, 3.5, 1.125, 0.375" customColor="White">
-      <objectNodeMoniker Id="4a000902-6d9a-48c1-8933-6d65d2aafab5" LastKnownName="Data provider" />
+      <objectNodeMoniker Id="4a000902-6d9a-48c1-8933-6d65d2aafab5" LastKnownName="Assignments" />
     </objectNodeShape>
     <actionShape Id="c9240581-4363-43d0-8eed-755ea5bddd79" absoluteBounds="4.75, 1.625, 1.125, 0.375" customColor="161, 199, 231">
       <opaqueActionMoniker Id="9475ef34-b006-47ed-aa76-19880f63abd2" LastKnownName="View assignments" />
@@ -48,10 +48,10 @@
         <actionShapeMoniker Id="c9240581-4363-43d0-8eed-755ea5bddd79" />
       </nodes>
     </objectFlowConnector>
-    <objectNodeShape Id="0d7a72a3-5d9e-4faa-976b-8570c90d182a" absoluteBounds="1.75, 1.5, 1.125, 0.375" customColor="White">
-      <objectNodeMoniker Id="897c5a6d-0f5d-4b0a-baa7-c19d409fc944" LastKnownName="Any user" />
+    <objectNodeShape Id="0d7a72a3-5d9e-4faa-976b-8570c90d182a" absoluteBounds="0.75, 1.5, 2.125, 0.375" customColor="White">
+      <objectNodeMoniker Id="897c5a6d-0f5d-4b0a-baa7-c19d409fc944" LastKnownName="Student, Lecturer, Administrator" />
     </objectNodeShape>
-    <objectFlowConnector edgePoints="[(2.875 : 1.75); (4.75 : 1.75)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
+    <objectFlowConnector edgePoints="[(2.875 : 1.75); (4.75 : 1.75)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
       <objectFlowMoniker Id="bfe360f3-d517-4e97-b9e8-80d7e4494779" />
       <relativeChildShapes />
       <nodes>
@@ -59,7 +59,7 @@
         <actionShapeMoniker Id="c9240581-4363-43d0-8eed-755ea5bddd79" />
       </nodes>
     </objectFlowConnector>
-    <objectFlowConnector edgePoints="[(5.125 : 2); (5.125 : 2.3); (2.36666666666667 : 2.3); (2.36666666666667 : 1.875)]" manuallyRouted="true" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
+    <objectFlowConnector edgePoints="[(5.125 : 2); (5.125 : 2.3); (1.91481481481482 : 2.3); (1.91481481481482 : 1.875)]" manuallyRouted="true" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
       <objectFlowMoniker Id="81cd2d0e-af3d-41e2-bf7c-b03b3876a64d" />
       <relativeChildShapes />
       <moveableDecoratorHostShapes>
@@ -70,7 +70,7 @@
         <objectNodeShapeMoniker Id="0d7a72a3-5d9e-4faa-976b-8570c90d182a" />
       </nodes>
     </objectFlowConnector>
-    <objectFlowConnector edgePoints="[(2.3125 : 3.625); (2.3125 : 4.20625); (4.75 : 4.20625)]" manuallyRouted="true" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
+    <objectFlowConnector edgePoints="[(2.3125 : 3.625); (2.3125 : 4.20625); (2.44010416666667 : 4.20625 : JumpStart); (2.60677083333333 : 4.20625 : JumpEnd); (4.75 : 4.20625)]" manuallyRouted="true" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
       <objectFlowMoniker Id="865f1533-58b9-45e8-b045-eb8cecebcdb2" />
       <relativeChildShapes />
       <moveableDecoratorHostShapes>
@@ -81,28 +81,6 @@
         <actionShapeMoniker Id="517f3b68-efec-41b6-9ef2-4f6513dc325d" />
       </nodes>
     </objectFlowConnector>
-    <controlFlowConnector edgePoints="[(5.875 : 4.17842741935484); (6.29166666666667 : 4.17842741935484); (6.29166666666667 : 3.67095588235294); (7.75 : 3.67095588235294)]" manuallyRouted="true" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
-      <controlFlowMoniker Id="0157f7ba-bc84-4be6-a213-bf210b62f2ba" />
-      <relativeChildShapes />
-      <moveableDecoratorHostShapes>
-        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="6.375, 3.6875, 0.83228439092636108, 0.14800345897674561" shapeFieldName="Guard" />
-      </moveableDecoratorHostShapes>
-      <nodes>
-        <actionShapeMoniker Id="517f3b68-efec-41b6-9ef2-4f6513dc325d" />
-        <actionShapeMoniker Id="ee5fac3e-a6bd-4f07-824f-b204ce8a0a3d" />
-      </nodes>
-    </controlFlowConnector>
-    <controlFlowConnector edgePoints="[(5.33223684210526 : 4.375); (5.33223684210526 : 4.85511363636364); (6.96875 : 4.85511363636364 : JumpStart); (7.13541666666666 : 4.85511363636364 : JumpEnd); (7.22916666666667 : 4.85511363636364 : JumpStart); (7.39583333333333 : 4.85511363636364 : JumpEnd); (7.875 : 4.85511363636364)]" manuallyRouted="true" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
-      <controlFlowMoniker Id="065eabcc-edd5-44ca-84a8-1c493ff02051" />
-      <relativeChildShapes />
-      <moveableDecoratorHostShapes>
-        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="6.0625, 4.625, 0.83228439092636108, 0.14800345897674561" shapeFieldName="Guard" />
-      </moveableDecoratorHostShapes>
-      <nodes>
-        <actionShapeMoniker Id="517f3b68-efec-41b6-9ef2-4f6513dc325d" />
-        <actionShapeMoniker Id="c4e70081-0c28-4358-b0a6-3e617687fafa" />
-      </nodes>
-    </controlFlowConnector>
     <objectFlowConnector edgePoints="[(9 : 4.8125); (10.6875 : 4.8125); (10.6875 : 3.875)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
       <objectFlowMoniker Id="f66cbfb9-3b7f-4f00-8903-726a415944a4" />
       <relativeChildShapes />
@@ -123,7 +101,7 @@
       <objectFlowMoniker Id="24f62054-2dc2-40fa-b38e-79894ba9d053" />
       <relativeChildShapes />
       <moveableDecoratorHostShapes>
-        <moveableDecoratorHostShape manuallySized="true" manuallyPlaced="true" absoluteBounds="8.634375, 3.9375000000000009, 1.8053963899612437, 0.14800345897674561" shapeFieldName="Guard" />
+        <moveableDecoratorHostShape manuallySized="true" manuallyPlaced="true" absoluteBounds="8.625, 4.0625, 1.8053963899612437, 0.14800345897674561" shapeFieldName="Guard" />
       </moveableDecoratorHostShapes>
       <nodes>
         <objectNodeShapeMoniker Id="98f4b5fe-963a-4a5b-ae79-d4d01cf67149" />
@@ -149,26 +127,7 @@
         <actionShapeMoniker Id="fcda6b7b-42e4-43d7-b0f2-c9e99acd5ae1" />
       </nodes>
     </objectFlowConnector>
-    <controlFlowConnector edgePoints="[(5.875 : 5.4375); (6.96875 : 5.4375 : JumpStart); (7.13541666666666 : 5.4375 : JumpEnd); (8.4375 : 5.4375); (8.4375 : 5)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
-      <controlFlowMoniker Id="f0082ac6-dbc1-4637-996e-f705ae46a46b" />
-      <relativeChildShapes />
-      <nodes>
-        <actionShapeMoniker Id="fcda6b7b-42e4-43d7-b0f2-c9e99acd5ae1" />
-        <actionShapeMoniker Id="c4e70081-0c28-4358-b0a6-3e617687fafa" />
-      </nodes>
-    </controlFlowConnector>
-    <controlFlowConnector edgePoints="[(5.57670454545455 : 5.25); (5.57670454545455 : 5.05208333333333); (6.96875 : 5.05208333333333 : JumpStart); (7.13541666666666 : 5.05208333333333 : JumpEnd); (7.3125 : 5.05208333333333); (7.3125 : 3.80422994117647); (7.75 : 3.80422994117647)]" manuallyRouted="true" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
-      <controlFlowMoniker Id="8a86cf8f-1348-429b-9a70-32672e163d39" />
-      <relativeChildShapes />
-      <moveableDecoratorHostShapes>
-        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="7.3125, 4.3125, 0.83228439092636108, 0.14800345897674561" shapeFieldName="Guard" />
-      </moveableDecoratorHostShapes>
-      <nodes>
-        <actionShapeMoniker Id="fcda6b7b-42e4-43d7-b0f2-c9e99acd5ae1" />
-        <actionShapeMoniker Id="ee5fac3e-a6bd-4f07-824f-b204ce8a0a3d" />
-      </nodes>
-    </controlFlowConnector>
-    <objectFlowConnector edgePoints="[(8.1671875 : 3.875); (8.1671875 : 4.0625); (7.39583333333333 : 4.0625 : JumpStart); (7.22916666666667 : 4.0625 : JumpEnd); (7.05208333333333 : 4.0625); (7.05208333333333 : 6.1875); (3.25 : 6.1875); (3.25 : 5.625); (2.22265625 : 5.625); (2.22265625 : 5.25)]" manuallyRouted="true" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
+    <objectFlowConnector edgePoints="[(8.1671875 : 3.875); (8.1671875 : 4.0625); (7.05208333333333 : 4.0625); (7.05208333333333 : 6.1875); (3.25 : 6.1875); (3.25 : 5.625); (2.22265625 : 5.625); (2.22265625 : 5.25)]" manuallyRouted="true" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
       <objectFlowMoniker Id="e1656b2f-5666-44cd-b424-722a7fabae15" />
       <relativeChildShapes />
       <moveableDecoratorHostShapes>
@@ -193,6 +152,28 @@
       <nodes>
         <actionShapeMoniker Id="5dbeab86-baf8-4546-8ebf-5e66e05ec3ae" />
         <objectNodeShapeMoniker Id="98f4b5fe-963a-4a5b-ae79-d4d01cf67149" />
+      </nodes>
+    </objectFlowConnector>
+    <objectFlowConnector edgePoints="[(2.5234375 : 3.625); (2.5234375 : 4.63541666666667); (6.3075 : 4.63541666666667); (6.3075 : 4.8125); (6.96875 : 4.8125 : JumpStart); (7.13541666666666 : 4.8125 : JumpEnd); (7.875 : 4.8125)]" manuallyRouted="true" fixedFrom="Caller" fixedTo="Algorithm" customColor="Black">
+      <objectFlowMoniker Id="f5de7a39-6d52-41df-b2f8-e8f1448c0388" />
+      <relativeChildShapes />
+      <moveableDecoratorHostShapes>
+        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="3.2654622495174408, 4.4375, 0.83228439092636108, 0.14800345897674561" shapeFieldName="Guard" />
+      </moveableDecoratorHostShapes>
+      <nodes>
+        <objectNodeShapeMoniker Id="7f09aa33-e0ee-4135-9928-05ada30f0c31" />
+        <actionShapeMoniker Id="c4e70081-0c28-4358-b0a6-3e617687fafa" />
+      </nodes>
+    </objectFlowConnector>
+    <objectFlowConnector edgePoints="[(1.75 : 4.9375); (1.59010416666667 : 4.9375); (1.59010416666667 : 7.03125); (7.48802083333333 : 7.03125); (7.48802083333333 : 4.9375); (7.875 : 4.9375)]" manuallyRouted="true" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <objectFlowMoniker Id="757e942f-8cc9-41dd-b61c-18b5269495c3" />
+      <relativeChildShapes />
+      <moveableDecoratorHostShapes>
+        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="3.9375, 6.8125, 0.83228439092636108, 0.14800345897674561" shapeFieldName="Guard" />
+      </moveableDecoratorHostShapes>
+      <nodes>
+        <objectNodeShapeMoniker Id="a02b439f-4b17-486f-aac1-a89200501ad1" />
+        <actionShapeMoniker Id="c4e70081-0c28-4358-b0a6-3e617687fafa" />
       </nodes>
     </objectFlowConnector>
   </nestedChildShapes>
