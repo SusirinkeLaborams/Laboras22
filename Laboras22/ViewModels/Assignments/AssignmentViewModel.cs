@@ -1,12 +1,13 @@
 ﻿using Laboras22.Classes;
 using Laboras22.Models.Assignments;
+using Laboras22.ViewModels.Users;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Laboras22.ViewModels
+namespace Laboras22.ViewModels.Assignments
 {
     public class AssignmentViewModel : ViewModelBase<Assignment, AssignmentViewModel>
     {
@@ -51,5 +52,10 @@ namespace Laboras22.ViewModels
         private UserViewModel lecturer;
 
         #endregion
+
+        protected override void RefreshFields()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

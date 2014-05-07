@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Laboras22.ViewModels
+namespace Laboras22.ViewModels.Users
 {
     public class UserViewModel : ViewModelBase<User, UserViewModel>
     {
@@ -14,6 +14,11 @@ namespace Laboras22.ViewModels
         public string Email { get { return model.Email; } set { model.Email = value; } }
         public UserType UserType { get { return model.UserType; } set { model.UserType = value; } }
 
-        public string Name { get { return FirstName + " " + LastName } }
+        public string Name { get { return FirstName + " " + LastName; } }
+
+        protected override void RefreshFields()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

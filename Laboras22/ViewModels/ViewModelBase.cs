@@ -8,12 +8,12 @@ using System.Threading.Tasks;
 
 namespace Laboras22.ViewModels
 {
-    public class ViewModelBase<ModelType, ViewModelType>
+    public abstract class ViewModelBase<ModelType, ViewModelType>
         where ModelType : class, IDataItem, new() 
         where ViewModelType : ViewModelBase<ModelType, ViewModelType>, new()
     {
         private static DataProvider<ModelType> dataProvider;
-        private static Dictionary<int, ViewModelType> dataCache;
+        private static Dictionary<int, ViewModelType> dataCache = new Dictionary<int, ViewModelType>();
 
         protected ModelType model;
         public int Id { get { return model.Id; } }
@@ -44,6 +44,14 @@ namespace Laboras22.ViewModels
             await dataProvider.DeleteAsync(model);
             dataCache.Remove(model.Id);
             model = null;
+        }
+
+        public async Task Revert()
+        {
+            EnsureDataProviderExists();
+
+            model = await dataProvider.LookupAsync(model.Id);
+            RefreshFields();
         }
 
         public static ViewModelType Create(ModelType model = null)
@@ -93,7 +101,9 @@ namespace Laboras22.ViewModels
 
             return Create(await dataProvider.LookupAsync(id));
         }
-        
+
+        protected abstract void RefreshFields();
+
         private static void EnsureDataProviderExists()
         {
             if (dataProvider == null)

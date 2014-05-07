@@ -74,12 +74,18 @@
     <Compile Include="Interfaces\IDataItem.cs" />
     <Compile Include="Models\Assignments\Assignment.cs" />
     <Compile Include="Models\Assignments\Course.cs" />
+    <Compile Include="Models\Assignments\Faculty.cs" />
+    <Compile Include="Models\Assignments\FacultyDepartment.cs" />
+    <Compile Include="Models\Assignments\University.cs" />
     <Compile Include="Models\Projects\Project.cs" />
     <Compile Include="Models\Users\User.cs" />
-    <Compile Include="ViewModels\AssignmentViewModel.cs" />
-    <Compile Include="ViewModels\CourseViewModel.cs" />
-    <Compile Include="ViewModels\ProjectViewModel.cs" />
-    <Compile Include="ViewModels\UserViewModel.cs" />
+    <Compile Include="ViewModels\Assignments\AssignmentViewModel.cs" />
+    <Compile Include="ViewModels\Assignments\CourseViewModel.cs" />
+    <Compile Include="ViewModels\Assignments\FacultyDepartmentViewModel.cs" />
+    <Compile Include="ViewModels\Assignments\FacultyViewModel.cs" />
+    <Compile Include="ViewModels\Assignments\UniversityViewModel.cs" />
+    <Compile Include="ViewModels\Projects\ProjectViewModel.cs" />
+    <Compile Include="ViewModels\Users\UserViewModel.cs" />
     <Compile Include="ViewModels\ViewModelBase.cs" />
     <Compile Include="Views\AssignmentWindow.xaml.cs">
       <DependentUpon>AssignmentWindow.xaml</DependentUpon>

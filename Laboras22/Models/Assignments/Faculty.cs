@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace Laboras22.Models.Assignments
 {
-    public class Course : IDataItem
+    public class Faculty : IDataItem
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public int FacultyDepartmentId { get; set; }
-        public int OwnerId { get; set; }
-        public int SchoolYear { get; set; }
+        public int UniversityId { get; set; }
+        public int DeanId { get; set; }
+        public string Address { get; set; }
     }
 }
