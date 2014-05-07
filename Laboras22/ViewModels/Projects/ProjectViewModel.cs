@@ -13,7 +13,7 @@ namespace Laboras22.ViewModels.Projects
         public int AssignmentId { get { return model.AssignmentId; } set { model.AssignmentId = value; } }
         public int OwnerId { get { return model.OwnerId; } set { model.OwnerId = value; } }
 
-        protected override void RefreshFields()
+        protected override async Task RefreshFields()
         {
             throw new NotImplementedException();
         }

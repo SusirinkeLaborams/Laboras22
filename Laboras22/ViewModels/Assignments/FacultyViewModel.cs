@@ -52,9 +52,10 @@ namespace Laboras22.ViewModels.Assignments
 
         #endregion
 
-        protected override void RefreshFields()
+        protected override async Task RefreshFields()
         {
-            throw new NotImplementedException();
+            university = await UniversityViewModel.Get(model.UniversityId);
+            dean = await UserViewModel.Get(model.DeanId);
         }
     }
 }

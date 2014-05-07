@@ -16,7 +16,7 @@ namespace Laboras22.ViewModels.Users
 
         public string Name { get { return FirstName + " " + LastName; } }
 
-        protected override void RefreshFields()
+        protected override async Task RefreshFields()
         {
             throw new NotImplementedException();
         }

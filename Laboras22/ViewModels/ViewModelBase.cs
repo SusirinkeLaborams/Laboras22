@@ -51,7 +51,7 @@ namespace Laboras22.ViewModels
             EnsureDataProviderExists();
 
             model = await dataProvider.LookupAsync(model.Id);
-            RefreshFields();
+            await RefreshFields();
         }
 
         public static ViewModelType Create(ModelType model = null)
@@ -102,7 +102,7 @@ namespace Laboras22.ViewModels
             return Create(await dataProvider.LookupAsync(id));
         }
 
-        protected abstract void RefreshFields();
+        protected abstract Task RefreshFields();
 
         private static void EnsureDataProviderExists()
         {
