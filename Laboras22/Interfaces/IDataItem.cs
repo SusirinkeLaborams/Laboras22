@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Laboras22.Interfaces
 {
-    interface IDataItem
+    public interface IDataItem
     {
         int Id { get; set; }
     }

@@ -5,25 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Laboras22.ViewModel
+namespace Laboras22.ViewModels
 {
-    class ProjectViewModel
+    public class ProjectViewModel : ViewModelBase<Project, ProjectViewModel>
     {
-        private Project project;
-
-        public void Edit()
-        {
-
-        }
-
-        public void Delete()
-        {
-
-        }
-       
-        public static ProjectViewModel CreateProject()
-        {
-            throw new NotImplementedException();
-        }
+        public string Name { get { return model.Name; } set { model.Name = value; } }
+        public int AssignmentId { get { return model.AssignmentId; } set { model.AssignmentId = value; } }
+        public int OwnerId { get { return model.OwnerId; } set { model.OwnerId = value; } }
     }
 }

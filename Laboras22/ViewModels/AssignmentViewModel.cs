@@ -1,30 +1,16 @@
-﻿using Laboras22.Models;
+﻿using Laboras22.Classes;
+using Laboras22.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Laboras22.ViewModel
+namespace Laboras22.ViewModels
 {
-    class AssignmentViewModel
+    public class AssignmentViewModel : ViewModelBase<Assignment, AssignmentViewModel>
     {
-        private Assignment assignment;
-
-        public void Edit()
-        {
-
-        }
-
-        public void Delete()
-        {
-
-        }
-
-        public static AssignmentViewModel CreateAssignment()
-        {
-            throw new NotImplementedException();
-        }
-
+        public string Name { get { return model.Name; } set { model.Name = value; } }
+        public int CourseId { get { return model.CourseId; } set { model.CourseId = value; } }
     }
 }

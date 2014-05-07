@@ -79,6 +79,8 @@
     <Compile Include="ViewModels\AssignmentViewModel.cs" />
     <Compile Include="ViewModels\CourseViewModel.cs" />
     <Compile Include="ViewModels\ProjectViewModel.cs" />
+    <Compile Include="ViewModels\UserViewModel.cs" />
+    <Compile Include="ViewModels\ViewModelBase.cs" />
     <Compile Include="Views\AssignmentWindow.xaml.cs">
       <DependentUpon>AssignmentWindow.xaml</DependentUpon>
     </Compile>

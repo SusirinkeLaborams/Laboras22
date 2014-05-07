@@ -1,30 +1,16 @@
 ﻿using Laboras22.Models;
+using Laboras22.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Laboras22.ViewModel
+namespace Laboras22.ViewModels
 {
-    class CourseViewModel
+    public class CourseViewModel : ViewModelBase<Course, CourseViewModel>
     {
-        private Course course;
-
-        public void Edit()
-        {
-
-        }
-
-        public void Delete()
-        {
-
-        }
-
-        public static CourseViewModel CreateCourse()
-        {
-            throw new NotImplementedException();
-        }
-
+        public string Name { get { return model.Name; } set { model.Name = value; } }
+        public int FacultyDepartmentId { get { return model.FacultyDepartmentId; } set { model.FacultyDepartmentId = value; } }
     }
 }

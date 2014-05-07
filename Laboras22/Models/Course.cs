@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Laboras22.Models
 {
-    class Course : IDataItem
+    public class Course : IDataItem
     {
         public int Id { get; set; }
         public string Name { get; set; }

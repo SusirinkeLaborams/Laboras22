@@ -19,6 +19,7 @@ namespace Laboras22.Classes
         public static void Connect()
         {
             s_AzureService = new MobileServiceClient(kLogin, kPassword);
+            s_IsConnected = true;
         }
 
         public static void Disconnect()
@@ -26,6 +27,8 @@ namespace Laboras22.Classes
             s_AzureService.Logout();
             s_AzureService.Dispose();
             s_AzureService = null;
+
+            s_IsConnected = false;
         }
 
         public DataProvider()

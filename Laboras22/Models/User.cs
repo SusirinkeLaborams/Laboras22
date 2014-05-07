@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace Laboras22.Models
 {
-    enum UserType
+    public enum UserType
     {
         Student = 0,
         Lecturer,
         Administrator
     }
 
-    class User : IDataItem
+    public class User : IDataItem
     {
         public int Id { get; set; }
         public string FirstName { get; set; }
