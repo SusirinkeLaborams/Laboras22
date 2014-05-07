@@ -13,7 +13,10 @@ namespace Laboras22.ViewModels
         where ViewModelType : ViewModelBase<ModelType, ViewModelType>, new()
     {
         private static DataProvider<ModelType> dataProvider;
+        private static Dictionary<int, ViewModelType> dataCache;
+
         protected ModelType model;
+        public int Id { get { return model.Id; } }
 
         protected ViewModelBase()
         {
@@ -24,6 +27,7 @@ namespace Laboras22.ViewModels
             EnsureDataProviderExists();
 
             await dataProvider.InsertAsync(model);
+            dataCache[model.Id] = (ViewModelType)this;
         }
 
         public async Task Update()
@@ -38,6 +42,7 @@ namespace Laboras22.ViewModels
             EnsureDataProviderExists();
 
             await dataProvider.DeleteAsync(model);
+            dataCache.Remove(model.Id);
             model = null;
         }
 
@@ -47,9 +52,18 @@ namespace Laboras22.ViewModels
             {
                 model = new ModelType();
             }
+            else if (model.Id != 0 && dataCache.ContainsKey(model.Id))
+            {
+                return dataCache[model.Id];
+            }
 
             var viewModel = new ViewModelType();
             viewModel.model = model;
+
+            if (model.Id != 0)
+            {                
+                dataCache[model.Id] = viewModel;
+            }
 
             return viewModel;
         }
@@ -68,6 +82,18 @@ namespace Laboras22.ViewModels
             return viewModels;
         }
 
+        public static async Task<ViewModelType> Get(int id)
+        {
+            if (dataCache.ContainsKey(id))
+            {
+                return dataCache[id];
+            }
+
+            EnsureDataProviderExists();
+
+            return Create(await dataProvider.LookupAsync(id));
+        }
+        
         private static void EnsureDataProviderExists()
         {
             if (dataProvider == null)

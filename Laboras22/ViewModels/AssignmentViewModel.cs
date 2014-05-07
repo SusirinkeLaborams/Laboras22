@@ -1,5 +1,5 @@
 ﻿using Laboras22.Classes;
-using Laboras22.Models;
+using Laboras22.Models.Assignments;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +10,46 @@ namespace Laboras22.ViewModels
 {
     public class AssignmentViewModel : ViewModelBase<Assignment, AssignmentViewModel>
     {
+        #region Settable properties
+
         public string Name { get { return model.Name; } set { model.Name = value; } }
-        public int CourseId { get { return model.CourseId; } set { model.CourseId = value; } }
+
+        public CourseViewModel Course 
+        {
+            get { return course; }
+            set 
+            {
+                course = value;
+                model.CourseId = course.Id;
+            }
+        }
+
+        public UserViewModel Lecturer
+        {
+            get { return lecturer; }
+            set
+            {
+                lecturer = value;
+                model.LecturerId = lecturer.Id;
+            }
+        }
+
+        public int Difficulty { get { return model.Difficulty; } set { model.Difficulty = value; } }
+
+        #endregion
+
+        #region Read-only properties
+
+        public string CourseName { get { return Course != null ? Course.Name : null; } }
+        public string LecturerName { get { return Lecturer.LastName; } }
+
+        #endregion
+
+        #region Fields
+
+        private CourseViewModel course;
+        private UserViewModel lecturer;
+
+        #endregion
     }
 }

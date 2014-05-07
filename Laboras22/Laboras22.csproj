@@ -72,10 +72,10 @@
     </ApplicationDefinition>
     <Compile Include="Classes\Key.cs" />
     <Compile Include="Interfaces\IDataItem.cs" />
-    <Compile Include="Models\Assignment.cs" />
-    <Compile Include="Models\Course.cs" />
-    <Compile Include="Models\Project.cs" />
-    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\Assignments\Assignment.cs" />
+    <Compile Include="Models\Assignments\Course.cs" />
+    <Compile Include="Models\Projects\Project.cs" />
+    <Compile Include="Models\Users\User.cs" />
     <Compile Include="ViewModels\AssignmentViewModel.cs" />
     <Compile Include="ViewModels\CourseViewModel.cs" />
     <Compile Include="ViewModels\ProjectViewModel.cs" />

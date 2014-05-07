@@ -1,4 +1,4 @@
-﻿using Laboras22.Models;
+﻿using Laboras22.Models.Assignments;
 using Laboras22.ViewModels;
 using System;
 using System.Collections.Generic;

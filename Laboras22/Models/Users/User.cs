@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Laboras22.Models
+namespace Laboras22.Models.Users
 {
     public enum UserType
     {

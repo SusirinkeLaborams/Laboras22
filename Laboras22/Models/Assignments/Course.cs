@@ -5,12 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Laboras22.Models
+namespace Laboras22.Models.Assignments
 {
-    public class Assignment : IDataItem
+    public class Course : IDataItem
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public int CourseId { get; set; }
+        public int FacultyDepartmentId { get; set; }
     }
 }
