@@ -25,6 +25,5 @@ namespace Laboras22.ViewModel
         {
             throw new NotImplementedException();
         }
-
     }
 }
