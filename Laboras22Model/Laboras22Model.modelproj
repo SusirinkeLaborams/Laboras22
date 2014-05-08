@@ -157,6 +157,13 @@
       <SubType>Content</SubType>
       <DependentUpon>Laboras22.classdiagram</DependentUpon>
     </Content>
+    <Content Include="Laboras22old.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Laboras22old.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Laboras22old.classdiagram</DependentUpon>
+    </Content>
     <Content Include="ModelDefinition\Package10_2347.uml">
       <SubType>Content</SubType>
     </Content>
@@ -187,22 +194,40 @@
     <Content Include="ModelDefinition\Package19_2347.uml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="ModelDefinition\Package1_1333.uml">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="ModelDefinition\Package1_2347.uml">
       <SubType>Content</SubType>
     </Content>
     <Content Include="ModelDefinition\Package20_2347.uml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="ModelDefinition\Package2_1333.uml">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="ModelDefinition\Package2_2347.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package3_1333.uml">
       <SubType>Content</SubType>
     </Content>
     <Content Include="ModelDefinition\Package3_2347.uml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="ModelDefinition\Package4_1333.uml">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="ModelDefinition\Package4_2347.uml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="ModelDefinition\Package5_1333.uml">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="ModelDefinition\Package5_2347.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package6_1333.uml">
       <SubType>Content</SubType>
     </Content>
     <Content Include="ModelDefinition\Package6_2347.uml">
@@ -218,6 +243,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="ModelDefinition\Package_1300.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1333.uml">
       <SubType>Content</SubType>
     </Content>
     <Content Include="ModelDefinition\Package_1350.uml">

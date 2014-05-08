@@ -1,0 +1,2695 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
+  dslVersion="1.0.0.0"
+  Id="d93e2d55-3363-4082-a26d-16c1465826a0"
+  name="Assignments"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="743152d9-44e1-4e8e-9612-e9543532bc34"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DLaboras22.Models.Assignments"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="1576e632-c7a9-4cee-8ed6-f1946ed8407e"
+        name="Assignment"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="6578287f-05e1-42e2-8f59-ea28f18991db"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FE:%2FMy docs%2FC%2523%2FLaboras22%2FLaboras22%2Fbin%2FDebug%2FLaboras22.exe&quot; Namespace%3DLaboras22.Models.Assignments Type%3DAssignment"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="ed36af2b-8d64-4f0c-82ce-02dff96688be"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9e4c1b44-0abe-4c16-9382-cf5a12036eb7">
+                <propertyInstance
+                  Id="6319cf59-b8fc-4271-96c7-0f56bccc0bde"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f1e7d428-2d6e-4a1d-899a-dc20e5aa548c">
+                <propertyInstance
+                  Id="c6a4eed4-00d8-41f1-b940-a449ae88f921"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8c5904d6-5d5c-4e28-bb6b-7706191c77b1">
+                <propertyInstance
+                  Id="279f7e1b-27bd-4db0-b006-f40f41aafde1"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="bcc6a5a4-c733-4e7d-9add-a1526994dafe">
+                <propertyInstance
+                  Id="39afb252-a518-4914-a4e7-af1c9140466a"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="878d6562-d96d-4880-bb8f-63534d78bb51">
+                <propertyInstance
+                  Id="48f7e3fb-9e73-43a5-ba53-a22e543c3f41"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="6bc75566-948d-4756-b9f7-321843f4083b">
+            <interfaceMoniker
+              Id="e9cce9f3-2686-451a-bdb7-f8a2c83a39af"
+              LastKnownName="IDataItem"
+              LastKnownLocation="Package4_2347.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="e1e19c4a-c847-45fc-a4a1-d715b79224fe"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="6212a38a-19c4-4dba-9f3c-56a6f20b1e8d"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FE:%2FMy docs%2FC%2523%2FLaboras22%2FLaboras22%2Fbin%2FDebug%2FLaboras22.exe&quot; Namespace%3DLaboras22.Models.Assignments Type%3DAssignment Member%3DId"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f792dab6-0ccf-44d3-9009-6444b5bd3803"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7ffeadc5-ab95-4eb3-bf3f-fcbe4bf94081">
+                    <propertyInstance
+                      Id="2d030830-aead-44dd-844c-e4606e1b55b1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3b04a349-9710-4d4a-9ef7-d8bcd3f909fa">
+                    <propertyInstance
+                      Id="050fdd64-267d-4825-b95f-aa7b15f40720"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6953c235-037d-4b29-b16d-6091d82e775f">
+                    <propertyInstance
+                      Id="3af84bd9-daa7-4e47-96c6-39b3a5147c7b"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="99e416a9-8a19-4724-a0e7-fa3203284103">
+                    <propertyInstance
+                      Id="fefeb3bc-0fd8-4e5c-97ba-835780954aec"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a7da88f5-9d3f-489d-ae64-876de47aa63b">
+                    <propertyInstance
+                      Id="022709d6-f343-4d12-a2b0-3887db5921a8"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5697eedd-6907-4667-9630-f1264c17de29">
+                    <propertyInstance
+                      Id="78a44ffd-167a-4686-b2f4-4a6f87f9a502"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="856c3c74-aca5-4c9c-8568-e951d1d71a00">
+                    <propertyInstance
+                      Id="561f8d3d-bffb-4317-86b6-9545712e828b"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="Laboras22Model.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="24ba8a8b-3273-4fb9-8e86-ad19dc26cd6c"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="69dd36ff-cdea-4ee6-a71d-da2c1b082108"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FE:%2FMy docs%2FC%2523%2FLaboras22%2FLaboras22%2Fbin%2FDebug%2FLaboras22.exe&quot; Namespace%3DLaboras22.Models.Assignments Type%3DAssignment Member%3DName"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b40749ef-7ead-43d5-933b-0d1fe68ce59b"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="72fd70a5-d3a3-467a-9a3a-e8f189623d85">
+                    <propertyInstance
+                      Id="0cfbb7e1-f6b9-49fe-8e1a-76e757b17e62"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a27467c6-c4c2-4ee4-8213-24d614c4aab8">
+                    <propertyInstance
+                      Id="35ffb89f-19ea-4cd1-bbcb-b7419c6177d1"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8b78757a-a4d5-44c9-aefe-45c603baf7c7">
+                    <propertyInstance
+                      Id="ee8cace6-c0f0-4b4d-baf4-408f3a50b2a2"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e7ddb5f1-9f8b-4bbd-91db-ba1d78bb791c">
+                    <propertyInstance
+                      Id="0a04f9f2-aeeb-485a-b385-385c21cbbe26"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e87aa848-938a-43bc-84a7-4ee98bca0e38">
+                    <propertyInstance
+                      Id="56a9cad6-4889-4398-aff7-cc1c7bc27d56"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9517abc4-15ab-42bf-ba60-54905633bd46">
+                    <propertyInstance
+                      Id="a5a6e966-15f0-4d3e-b1a8-5f591e33a47c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="433fc4f2-3f0b-4fd0-8103-44e00a84eeb8">
+                    <propertyInstance
+                      Id="a3e5abcf-b413-4241-ba72-84a3c7c99cbc"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="Laboras22Model.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="dce6dbac-18a5-44b0-87e6-3d713b9251ee"
+            name="CourseId"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="d065cb0c-dcf9-4812-aa07-28573f233d1f"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FE:%2FMy docs%2FC%2523%2FLaboras22%2FLaboras22%2Fbin%2FDebug%2FLaboras22.exe&quot; Namespace%3DLaboras22.Models.Assignments Type%3DAssignment Member%3DCourseId"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c52abaf2-5efc-4399-9c1e-5ea15c2c8dfa"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c6a96839-f497-4b4e-8711-8cc98a12c093">
+                    <propertyInstance
+                      Id="f8ea7a82-0037-45ce-8e10-ebe8978bb7c6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="40c06d38-d6fd-4047-964c-e596a71c9f28">
+                    <propertyInstance
+                      Id="ae26b6d9-9785-4723-bb68-a8c162b06ca1"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d7979ab2-df9d-484c-91ce-9273e5879359">
+                    <propertyInstance
+                      Id="e6e0229e-02e8-452e-b69d-bf011581466b"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aa5aefa0-2be1-4f11-a86a-0f80e4a8dca4">
+                    <propertyInstance
+                      Id="521b8f91-fd27-49bb-a5c1-d3ba1e7a5b84"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="157d2351-c368-49cd-b1fe-f637e2186772">
+                    <propertyInstance
+                      Id="7b89649e-94ec-4dc4-bdd7-ae7b506f0735"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="751b6c9c-6d79-4bbc-b948-543c1d6ad2e2">
+                    <propertyInstance
+                      Id="fd4413f4-5c3d-4d84-ae41-503e93ec77b2"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7f3d9b96-475d-48c6-a835-5bee46266350">
+                    <propertyInstance
+                      Id="b7ce0932-89de-412e-8bd9-19ed31b3c6c0"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="Laboras22Model.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="b4e76c21-441d-4066-980f-7c8da2d8ac26"
+            name="Difficulty"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="dec5e594-0d00-41a2-8418-40aab490c922"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FE:%2FMy docs%2FC%2523%2FLaboras22%2FLaboras22%2Fbin%2FDebug%2FLaboras22.exe&quot; Namespace%3DLaboras22.Models.Assignments Type%3DAssignment Member%3DDifficulty"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="dd0fd7f5-aa20-4dac-aa2c-03b6b8659d56"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f62ab4ab-b22d-421c-8940-09e0db5f21fb">
+                    <propertyInstance
+                      Id="97f88b5b-b39f-4c22-a794-cf2658af8eb0"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6cdb861b-ddae-42e1-9be5-71bdb9e86fa3">
+                    <propertyInstance
+                      Id="4a6ff5ca-0b0f-4754-9e0d-12a7a478724b"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ac826c26-e340-424e-825d-2cdecbea14a2">
+                    <propertyInstance
+                      Id="24a84e62-6c03-41ff-90f2-5c9f7c838536"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b9a8ba48-fccc-46e1-a5ca-ba8f733ac507">
+                    <propertyInstance
+                      Id="84a1dce8-73e8-4daa-b18a-0fccac98b237"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="82e46cbb-dfe7-45aa-b71b-6c6aa2a3c05e">
+                    <propertyInstance
+                      Id="2f5eec2b-d100-44cc-9704-35cfeb245387"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f569d441-e45f-4caa-a336-aa1d3ebead57">
+                    <propertyInstance
+                      Id="4a918e87-d3b7-4d6c-8ec8-63cecb31f336"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="47ba2c61-ed52-47f4-9fc0-eab9bc65d913">
+                    <propertyInstance
+                      Id="bb5ccb54-2585-4699-9e67-73d928c7ea1a"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="Laboras22Model.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="29218392-0b21-49ef-bfe8-ac35d7094d9f"
+            name="LecturerId"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="42a5788d-87ee-49df-befb-5ca4d771cc18"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FE:%2FMy docs%2FC%2523%2FLaboras22%2FLaboras22%2Fbin%2FDebug%2FLaboras22.exe&quot; Namespace%3DLaboras22.Models.Assignments Type%3DAssignment Member%3DLecturerId"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8819b838-68e6-49db-bd98-e75f6b5f5a70"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="01d2b00d-fef3-47ad-b3ec-9b34ba87a00d">
+                    <propertyInstance
+                      Id="fd1f9578-6a3d-444e-9c0c-ee9250ac1872"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="69e4334d-f2ed-40af-a8d3-da8207d93583">
+                    <propertyInstance
+                      Id="ee55023d-f2e3-4284-aaa1-54d884aaf126"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cf782fc4-fddf-43a0-96f7-93688f90a786">
+                    <propertyInstance
+                      Id="68679efe-ee9f-4aa9-9df1-06d7575691f3"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="65fba39b-7add-4cde-b3b4-56114c6c1b60">
+                    <propertyInstance
+                      Id="15ba32c7-d03d-45cc-aadd-79a5bd96b91e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d094d845-49b1-4910-aa45-fe39372fbf3a">
+                    <propertyInstance
+                      Id="37ab8d8c-7166-4695-8d04-c0dfd3764088"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6c44e708-c756-4d4e-a23c-e7cffb0a77b1">
+                    <propertyInstance
+                      Id="51cc6b24-ab96-4f2c-bb84-e384f2662385"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6e185baf-3f8f-4ead-b968-ac7db2cbff8c">
+                    <propertyInstance
+                      Id="85c34b19-025e-4fed-8ca8-eb9da17a58fe"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="Laboras22Model.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="d39ab399-a588-4624-a5ac-980b2317cf5d"
+            name="Assignment"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="5ce86793-47d1-498a-9fed-0bdd5d60e30d"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FMy docs%2FC%2523%2FLaboras22%2FLaboras22%2Fbin%2FDebug%2FLaboras22.exe&quot; Namespace%3DLaboras22.Models.Assignments Type%3DAssignment Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f8190e41-f4e7-414d-9044-258372419bf1"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8e0ef518-50c4-4d2f-816f-816ffc42173b">
+                    <propertyInstance
+                      Id="72a27e5d-62a9-4008-848b-5f11ee1b13d0"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="85bd32da-80ca-4e4a-87e9-8628c6f86a37">
+                    <propertyInstance
+                      Id="248fc9c9-c9bc-4cd1-8a93-c542625a87b6"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3e03ee56-03db-4597-86c9-ecc1307b0bd0">
+                    <propertyInstance
+                      Id="b67a7354-43ed-462d-b346-0d3b063b6dfb"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8f95b61c-4702-48d0-82b7-3087c7e6ce5e">
+                    <propertyInstance
+                      Id="799b0037-e3d2-4bde-b7ef-6318f4fe9495"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0ea3706f-a1cd-4cf3-aba6-676bb1e215d8">
+                    <propertyInstance
+                      Id="74294345-4d73-4d5b-99eb-c71e39fc697c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="483a8840-6bd6-4aec-9968-0d323329fa73">
+                    <propertyInstance
+                      Id="79282c6f-2824-423e-ab35-3ba8f1ee79e3"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2ec5fdf3-ddad-4bc7-a5cf-47a4e0603332"
+        name="Course"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="99aa1b2b-5740-4642-a14f-440bee478cae"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FE:%2FMy docs%2FC%2523%2FLaboras22%2FLaboras22%2Fbin%2FDebug%2FLaboras22.exe&quot; Namespace%3DLaboras22.Models.Assignments Type%3DCourse"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="a2f69438-7bfb-4a25-8741-640523171b6c"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d0de967f-2bcb-4b66-aa59-c4686d7bae03">
+                <propertyInstance
+                  Id="53590838-c1cf-44b3-be82-20e733181ecf"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a95d3ec8-6e36-4edc-b8ef-4908d19e54c9">
+                <propertyInstance
+                  Id="c61efc03-ad10-4530-8eb8-fae9abc0bf82"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="06deb1b5-cdaa-4c3a-a3ed-e81f880a5b5e">
+                <propertyInstance
+                  Id="7f6f969c-81e1-400f-a26c-a6e7413f3ecb"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="42ad5804-13ff-4a91-9275-a9c58fb2eb18">
+                <propertyInstance
+                  Id="da52da36-0546-467a-95b7-1d10737e5458"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e9e06626-c28d-4b48-9b92-b3e0063b94a5">
+                <propertyInstance
+                  Id="f810697a-11c4-4031-972e-8657878eb0e6"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="afeec4e3-2c29-49d1-b33d-147a152ee890">
+            <interfaceMoniker
+              Id="e9cce9f3-2686-451a-bdb7-f8a2c83a39af"
+              LastKnownName="IDataItem"
+              LastKnownLocation="Package4_2347.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="23255bc4-626c-4369-8b91-07a8e4dd4fac"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="18d19bd0-a6c7-4312-a450-c210b609d0c8"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FE:%2FMy docs%2FC%2523%2FLaboras22%2FLaboras22%2Fbin%2FDebug%2FLaboras22.exe&quot; Namespace%3DLaboras22.Models.Assignments Type%3DCourse Member%3DId"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7192fc6e-c16c-4f7b-9caa-80d6fe8a3d16"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bcbba6e6-ecb1-48a6-8489-35e55dc840a8">
+                    <propertyInstance
+                      Id="2f74a48f-509a-4441-9f3f-1ef7b358199c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="254d36f1-491c-4325-ac39-0036dc190580">
+                    <propertyInstance
+                      Id="41eaaad5-d0d3-41cd-93b6-6885902a94cf"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="35694f1e-62a1-42cf-b37c-adb7f681d7af">
+                    <propertyInstance
+                      Id="f2745f42-76b4-4b7b-83b4-2ff2d880f88a"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eeeb2214-550f-48f0-ba17-a2967eb80758">
+                    <propertyInstance
+                      Id="f9dba242-64a8-427e-953f-981f9ee19ee7"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="caad8cf2-5c40-4c2e-a932-e323b3d95ca1">
+                    <propertyInstance
+                      Id="cf4fa419-b811-42b3-b1ec-e27e20d5a585"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dcb081d7-3b40-48b4-b430-22844c594de4">
+                    <propertyInstance
+                      Id="ec3c3a76-9011-4d6b-ae74-4d1426259e48"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0c96459e-6813-4275-a6fd-458fddb3674f">
+                    <propertyInstance
+                      Id="b8828886-465b-4ff7-af20-3ac89537d147"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="Laboras22Model.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="dbcd6649-49ed-4e02-af11-e6675c9cb355"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="822087bd-c1d7-47fa-a432-0635a49a06fa"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FE:%2FMy docs%2FC%2523%2FLaboras22%2FLaboras22%2Fbin%2FDebug%2FLaboras22.exe&quot; Namespace%3DLaboras22.Models.Assignments Type%3DCourse Member%3DName"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2f983e05-5113-4331-89a1-3e226f77b1ae"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6a5518c0-2c01-4a7e-b4f7-b731e27ecb1c">
+                    <propertyInstance
+                      Id="ce45c08c-4f43-4170-8911-18eaeca296d3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="19894e07-d365-48aa-b0fd-e762761c2847">
+                    <propertyInstance
+                      Id="a56181b7-431e-43ec-a1d1-666e85a1da92"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="94ada799-a689-4ab9-840b-d137f10eebf3">
+                    <propertyInstance
+                      Id="6af0e4eb-2ae1-4e61-b056-04f8af796a09"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8224e73c-8cbe-4303-8734-60e3d5151af5">
+                    <propertyInstance
+                      Id="bf3e4007-fd5e-4ab2-84a3-9f88d9df76d9"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d9150325-007d-4b29-9077-f5dd7eb202aa">
+                    <propertyInstance
+                      Id="0e3157a9-78f7-4b38-81c5-467b8420b9f9"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5d1e4150-706e-44ba-91e6-207c49664acc">
+                    <propertyInstance
+                      Id="68760bfe-8901-4f1d-affb-918acf13ef57"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="51fa8ced-aa5b-43ae-a096-1c1203460bca">
+                    <propertyInstance
+                      Id="a497f189-a998-471d-98df-02a448883d67"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="Laboras22Model.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="db8c2056-cf4d-4eae-a17c-fb010371eb94"
+            name="FacultyDepartmentId"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="241683d8-989f-44c6-a914-ccbfad7114e1"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FE:%2FMy docs%2FC%2523%2FLaboras22%2FLaboras22%2Fbin%2FDebug%2FLaboras22.exe&quot; Namespace%3DLaboras22.Models.Assignments Type%3DCourse Member%3DFacultyDepartmentId"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b691b800-0664-4bcd-a475-a76903e2ce55"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="99f8ef00-2745-4ede-9f9f-9b913d07612a">
+                    <propertyInstance
+                      Id="81d485d3-a027-4ad0-96de-c8becceb6509"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5f98a4e6-0f69-4cdb-ba42-bbb211a06249">
+                    <propertyInstance
+                      Id="3bbb2e24-8517-4e00-bcf5-d44d4c8ad2a9"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ba00705b-c5f4-4cbe-9c11-484608b89af3">
+                    <propertyInstance
+                      Id="c0549eb8-b879-47a5-810e-7140a587471b"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a5ff3505-7b29-47c9-80bb-5de07a3c8281">
+                    <propertyInstance
+                      Id="45307e27-4c07-4cce-9791-9b27673e00a6"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1bf92f49-8995-4960-987b-c2e84d396633">
+                    <propertyInstance
+                      Id="5697ee38-88ea-4386-9a42-b865189342f3"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8a131fbf-f10c-481d-8ca8-325b6eb9f374">
+                    <propertyInstance
+                      Id="67c8e8d0-5223-47ee-8cd4-b31834590150"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="00d42ccb-47b1-48bd-90cb-8c3201cb58e4">
+                    <propertyInstance
+                      Id="afab3a69-e02a-4e2c-b682-c2775c13aed0"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="Laboras22Model.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="26275681-4ada-48e1-bbdd-f540aa1b1cd8"
+            name="OwnerId"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="c9132200-748b-4d13-b82e-443193d3a179"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FE:%2FMy docs%2FC%2523%2FLaboras22%2FLaboras22%2Fbin%2FDebug%2FLaboras22.exe&quot; Namespace%3DLaboras22.Models.Assignments Type%3DCourse Member%3DOwnerId"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ed18c545-7d0b-4a43-b2e4-1c8b7f899474"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e2e26894-3d16-4d17-b191-9726146d8e17">
+                    <propertyInstance
+                      Id="e83d037d-c48e-4a34-8bb8-7061822512e7"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b83216bb-41a5-4d38-b1c3-54779a89522f">
+                    <propertyInstance
+                      Id="cc3a027a-8b9a-49ab-89f9-9844e9d679b7"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1a4ec315-e2d1-4f0f-94cf-62456ad8814c">
+                    <propertyInstance
+                      Id="f3ac1434-184a-4874-981a-c000fe71faa9"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e4d66769-2aa9-4859-879d-6ed8bbd6f3cc">
+                    <propertyInstance
+                      Id="bf02b2ee-8b78-45c8-ac26-4f800194c754"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5904cd84-4e5a-49ca-b28f-2a20fec743fc">
+                    <propertyInstance
+                      Id="d65cf5e3-e0c3-4360-a25c-e00fd8173ac0"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d2afc5ca-499e-44cb-8f8a-8ecef6a0d5ab">
+                    <propertyInstance
+                      Id="855debeb-4ae8-4f43-8531-156ff61b3fe4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dfda14f5-23c4-4091-8469-7a07b5a61457">
+                    <propertyInstance
+                      Id="cd7b1e95-5911-4105-abaf-2be5f9af1eca"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="Laboras22Model.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="eb9a70bd-21a1-412c-a8c1-ba23ab2704a2"
+            name="SchoolYear"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="4f644358-0b17-4c7c-9184-84f957321b12"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FE:%2FMy docs%2FC%2523%2FLaboras22%2FLaboras22%2Fbin%2FDebug%2FLaboras22.exe&quot; Namespace%3DLaboras22.Models.Assignments Type%3DCourse Member%3DSchoolYear"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a180a8cb-b43b-4ece-8ca8-761b24863da2"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="04bec0e0-064e-43f2-8871-b68342980f06">
+                    <propertyInstance
+                      Id="b6187d87-2ff3-4d81-84f0-74e9dd414605"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cd70266e-c520-4703-a635-580cb5358442">
+                    <propertyInstance
+                      Id="55322e17-340a-4445-b8ff-8a0d7046cd99"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bb3791b5-f676-4354-9a49-716fdcbb629b">
+                    <propertyInstance
+                      Id="619dce68-c8cb-4837-b906-50b6c4737a5d"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9ccd0501-571e-4aea-8b48-e838dd094a59">
+                    <propertyInstance
+                      Id="1386e3fe-e065-4ee0-a3ae-6d1651bad143"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cd531cb0-b37d-4bad-8762-3320442e6fce">
+                    <propertyInstance
+                      Id="cfa53d8b-3837-471a-9dc5-83d9f8bcbb3e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2f87e9b0-9df6-4b1b-9ea7-cd766b4ee05d">
+                    <propertyInstance
+                      Id="58a574c4-2646-4500-aa85-52a320bd67f1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bc8dd3e6-6eca-4e73-aca3-c0e01d0f7e12">
+                    <propertyInstance
+                      Id="6f8312f5-59e0-4932-98f0-7426c673f80f"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="Laboras22Model.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="5d8ff89b-b84a-499f-a511-7207c1b1fd1e"
+            name="Course"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a126b7f8-32e1-4667-a996-1db7f9098543"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FMy docs%2FC%2523%2FLaboras22%2FLaboras22%2Fbin%2FDebug%2FLaboras22.exe&quot; Namespace%3DLaboras22.Models.Assignments Type%3DCourse Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f3e25ac0-9389-48af-b559-37b19e2079bc"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a6deb437-c695-4c30-bfa9-50eb7a60a414">
+                    <propertyInstance
+                      Id="dcf3e6c0-d316-4b53-9384-8802c15948f2"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3a0bc6a6-4490-4706-b4ba-bd81fdeb1e09">
+                    <propertyInstance
+                      Id="7e3eb206-6f43-40d3-9bd8-8fff09fc2c35"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d399ef47-6bd6-4d4a-aea4-8e3dd1e12e5e">
+                    <propertyInstance
+                      Id="8200a99f-83c6-45be-a5b9-2f5e10a4e730"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1742b037-f529-4a41-b38d-74124643dca7">
+                    <propertyInstance
+                      Id="76fd86fd-d0ab-4ef8-aafa-0c2c81f2a2ce"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b9956791-965f-4ad4-b76d-23c0ea2ba89e">
+                    <propertyInstance
+                      Id="08fdc7f5-7373-4f29-90d9-2ce0e38d977e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="96f09190-b263-4ac0-847f-caa752fa4cd1">
+                    <propertyInstance
+                      Id="0cbb3860-f3ef-4796-9e37-dee32af817f4"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a7db820f-7f41-486d-bd58-8448d0406d52"
+        name="FacultyDepartment"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="0a202275-f5a6-4883-a463-2bef4b172d5f"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FE:%2FMy docs%2FC%2523%2FLaboras22%2FLaboras22%2Fbin%2FDebug%2FLaboras22.exe&quot; Namespace%3DLaboras22.Models.Assignments Type%3DFacultyDepartment"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="10fb57d4-e201-4a08-aa45-050917565f3f"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="04f7317b-8386-4e61-8fec-08d40b02b81c">
+                <propertyInstance
+                  Id="d0dda111-1d53-4655-9225-1e82c0226fe2"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a43baef5-4aa7-4580-83bd-1ae04f727300">
+                <propertyInstance
+                  Id="6359e149-7c33-42a9-82f5-64f7ec387e96"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a3c6b8ea-0c7f-44bf-b830-1b8a32a4cff9">
+                <propertyInstance
+                  Id="22f1718c-4d7a-46e5-aa02-0f727a1973a7"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="393276ee-652a-4d5a-9c36-bfb92a46b9b2">
+                <propertyInstance
+                  Id="c0168021-8744-4639-be48-1aa4f5094fb7"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0b5b244d-0cbb-44c1-a2e4-80801c1c439c">
+                <propertyInstance
+                  Id="fe3a2c57-4abc-463e-b48f-0ad1b6db6204"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="8ca8467e-a5bb-44db-abc5-4989164377d4">
+            <interfaceMoniker
+              Id="e9cce9f3-2686-451a-bdb7-f8a2c83a39af"
+              LastKnownName="IDataItem"
+              LastKnownLocation="Package4_2347.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="4230f92d-f8b7-443f-89be-0d4009b31f1d"
+            name="Description"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="18af4593-51b2-430b-8b9f-88ed47d2adbb"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FE:%2FMy docs%2FC%2523%2FLaboras22%2FLaboras22%2Fbin%2FDebug%2FLaboras22.exe&quot; Namespace%3DLaboras22.Models.Assignments Type%3DFacultyDepartment Member%3DDescription"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5b9650c2-80f1-4c8a-8af4-3080e3d4f5dd"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="baf80389-261e-41b0-a696-484525d7a546">
+                    <propertyInstance
+                      Id="92614bb9-a603-4c9e-86f1-c149f9281966"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="33bde447-042f-4ca4-ab00-8f5806907ab8">
+                    <propertyInstance
+                      Id="cf5c5be7-c8b7-4085-b936-3c40b72a4ba0"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ecf522a2-7c20-4209-829d-5535a1673149">
+                    <propertyInstance
+                      Id="d3c09d48-5aa7-4f2b-9a3b-b3ffa8f65339"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7934ceea-9782-4ef7-8b7f-dc86b5553c3c">
+                    <propertyInstance
+                      Id="bc8ce0aa-acbf-46c2-ac9a-bd1247a6356e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="283b2ebd-7591-472c-b07e-5fd791c28621">
+                    <propertyInstance
+                      Id="43d598e2-0e61-4fe3-b9f8-d51e80d32fea"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="044646e9-1318-4289-b949-f6255a48d9d2">
+                    <propertyInstance
+                      Id="d0ec244e-443d-431f-a271-ce89bdad7511"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3df85fdb-f633-47bc-bf90-ac1eb9ebc527">
+                    <propertyInstance
+                      Id="77c935a2-98d1-436b-ac62-ea88ac58ab6b"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="Laboras22Model.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="1e34b849-a9a8-4040-be8a-900ddc9a636f"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="91965e4c-7ac3-4756-a6fa-1ab91868b9c8"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FE:%2FMy docs%2FC%2523%2FLaboras22%2FLaboras22%2Fbin%2FDebug%2FLaboras22.exe&quot; Namespace%3DLaboras22.Models.Assignments Type%3DFacultyDepartment Member%3DId"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="45ea6cae-8623-47e5-b642-414db2698a51"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dc152d31-c068-45a8-91ee-68aa9b11f48a">
+                    <propertyInstance
+                      Id="8b2cbf20-c0e9-43c2-8d5c-72572491bd54"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b2711310-7bae-48c2-a3d4-3f5e283f5bd7">
+                    <propertyInstance
+                      Id="0d494629-3b6e-40a7-ae96-085551a446bd"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="60cec704-56a9-4d64-91c3-4bad977192df">
+                    <propertyInstance
+                      Id="9bd2928f-2f43-489e-8278-1a9bb6a39d5f"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="47e6e9dd-d654-4ca1-ac97-e61a0bc8a5b1">
+                    <propertyInstance
+                      Id="90b7f8c9-003b-4f03-bef0-3c1e1aa56c77"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3d64906f-8b18-4e6e-b193-31666fb75304">
+                    <propertyInstance
+                      Id="ce3bb965-b939-4e60-8000-c95448ec09d4"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b5f71001-2e92-4aed-a6fd-ff8e7eeee54e">
+                    <propertyInstance
+                      Id="6e5bf5f6-b3ad-4fe1-a83a-49ee1c225cd3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4a3c6116-50ab-4fcc-9846-01aedd8fc1c6">
+                    <propertyInstance
+                      Id="66d90b7b-31bd-4d29-a7a1-c705d026334a"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="Laboras22Model.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="d4fd9fd7-b5cd-4b5f-8ca3-cffe6542b530"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="8233b037-db8b-4a63-84e7-ca29aa76c155"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FE:%2FMy docs%2FC%2523%2FLaboras22%2FLaboras22%2Fbin%2FDebug%2FLaboras22.exe&quot; Namespace%3DLaboras22.Models.Assignments Type%3DFacultyDepartment Member%3DName"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6a7200ad-39ff-4008-a698-37d1a02aeace"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3749f59c-c994-4efc-90e7-e9f5c8a480f8">
+                    <propertyInstance
+                      Id="d7c5c5d8-0550-418f-b7e6-8ad942cb0ec6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4a0c02f8-c53b-4bf5-8725-4cdad88f0bbd">
+                    <propertyInstance
+                      Id="bbdc434b-e2cc-4edb-afbe-4b8188fecfc4"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="86dbb904-70d7-4c0f-b8ae-1e18f9d73e39">
+                    <propertyInstance
+                      Id="41ab82a1-211b-42c0-a199-dc187735b9e9"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f12b329f-4552-4520-88d5-10bd65107bfc">
+                    <propertyInstance
+                      Id="de76b8f8-e56e-49fb-836a-1deb4d24a91d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="144171c2-c1f0-4329-95c5-55f69caeb0d6">
+                    <propertyInstance
+                      Id="01ffeb41-111e-4351-b8e3-f4e181cf5eea"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9cf0d0f6-aa87-4015-9e63-d453267bd059">
+                    <propertyInstance
+                      Id="8b22ed15-a02e-463b-a00e-97078ca79295"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cbd6cf0a-4043-43d4-be1f-1746029a307b">
+                    <propertyInstance
+                      Id="6a98c422-2c3b-49f5-b0a0-95c70a13d323"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="Laboras22Model.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="b02f995c-27c7-4da7-ad60-ee9f6dbb6a43"
+            name="FacultyId"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="6c2dd196-a84d-40f8-a98a-03651bf5f339"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FE:%2FMy docs%2FC%2523%2FLaboras22%2FLaboras22%2Fbin%2FDebug%2FLaboras22.exe&quot; Namespace%3DLaboras22.Models.Assignments Type%3DFacultyDepartment Member%3DFacultyId"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a999f198-a925-4621-9438-316f96ea82b5"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e8b1c809-f0a9-4169-ae2a-b7050438e61b">
+                    <propertyInstance
+                      Id="15f2bf49-ac30-4566-90c1-6bb4a813cf49"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a62727a1-14c2-4ca3-b66d-67f97a2c8167">
+                    <propertyInstance
+                      Id="393755ba-2677-46ff-b815-5920aa2c2f36"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f684dbdb-406a-4802-bdcc-cb3b3c346bb1">
+                    <propertyInstance
+                      Id="a42430df-6952-4d11-b067-300fa2cd3d0c"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3cfe5746-58cb-48a9-9086-72e7e04f57f8">
+                    <propertyInstance
+                      Id="eb4ad30e-b4f5-439c-9987-78ae4d6dddeb"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a25887f1-bbe1-4e40-80d6-3809aeceffce">
+                    <propertyInstance
+                      Id="f07ba26e-560f-47bc-b3d1-c9f30adf71bb"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="903b0c1d-5d3f-4911-8255-2e84da36a38b">
+                    <propertyInstance
+                      Id="1c2db666-ddd7-4df5-9b62-10c25d28b6a4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7b3002d1-f239-478b-9b3d-5b60fd9cc5db">
+                    <propertyInstance
+                      Id="d2dbfb24-0a9d-45c6-9c1c-1b14df532c2c"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="Laboras22Model.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="b9c2f3d8-2f2c-4e0c-8810-a9d9a71f84d5"
+            name="HeadId"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="32bbaafb-a820-47d0-918d-864672f7aa5f"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FE:%2FMy docs%2FC%2523%2FLaboras22%2FLaboras22%2Fbin%2FDebug%2FLaboras22.exe&quot; Namespace%3DLaboras22.Models.Assignments Type%3DFacultyDepartment Member%3DHeadId"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d652a8f6-1043-4c02-92da-539375ecdafe"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7684f32a-cc86-440d-9b75-bfbb37425dee">
+                    <propertyInstance
+                      Id="6483f5f6-5386-472d-b96c-3b74e5be9ed7"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="40fa93f9-b944-4a76-9648-902aa8907d3f">
+                    <propertyInstance
+                      Id="7da63f05-db3e-4bc9-896d-04bca9e55bc6"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ca240751-5d7f-49ec-bded-80cd8af9b899">
+                    <propertyInstance
+                      Id="5170ccc8-85ce-4369-a9ab-e18b842284a3"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c8ed9c36-789b-4dc4-ac02-18cd605378dc">
+                    <propertyInstance
+                      Id="40b2786c-91d2-4834-b308-b6475254b492"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6352230b-c992-4cd7-a27e-8cd786055364">
+                    <propertyInstance
+                      Id="3caf5660-d629-473f-9d4a-9dc3b309e784"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="baae9b1f-a77f-4464-b984-91098420fa7d">
+                    <propertyInstance
+                      Id="f6f1233f-575a-4b4f-9cb2-db58a1ec34aa"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3afdd5ce-ede9-4e3a-8a71-7161016d4c1e">
+                    <propertyInstance
+                      Id="c57d57bb-340f-45ac-961e-816f1c1e943b"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="Laboras22Model.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="49eedc6e-ed1c-4b19-89e1-01e52cc6c62c"
+            name="FacultyDepartment"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="b7c6e1f0-67b5-4c20-b771-411c6799d117"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FMy docs%2FC%2523%2FLaboras22%2FLaboras22%2Fbin%2FDebug%2FLaboras22.exe&quot; Namespace%3DLaboras22.Models.Assignments Type%3DFacultyDepartment Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a964ca9b-8b6d-470d-ab03-29d71c0741c0"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2102b2f0-d4df-4073-b448-069dd153b987">
+                    <propertyInstance
+                      Id="bd3d7260-5402-4ee6-968c-a53f587b042a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fdfff358-86ae-4b87-930a-bc05e0fb0cc2">
+                    <propertyInstance
+                      Id="f879cf27-3c7f-4e8a-b671-411d98e9b0b7"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ddf40f05-4c8f-4c24-aa2e-dc8f84a2cc67">
+                    <propertyInstance
+                      Id="3382d3e9-e17c-4f20-afe8-6e59d6ff1c2a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3ca3e2de-5956-4bab-81d0-0593f8f13264">
+                    <propertyInstance
+                      Id="f2073465-9e06-4fdf-9385-43e6a9e20507"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="18fb4808-626f-4df7-be60-b698aa0b558b">
+                    <propertyInstance
+                      Id="dda8f616-415c-4f1c-83e4-5f408195f68f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9c898d89-99fb-45ba-8e87-873e712cfa09">
+                    <propertyInstance
+                      Id="6d230a7e-1fa2-42a5-9e62-c7f3034a6f2e"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="782930e8-5b2f-4a14-b945-da8c68d8e08b"
+        name="Faculty"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="8a2e17f6-1664-45ac-83da-90b385d05d65"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FE:%2FMy docs%2FC%2523%2FLaboras22%2FLaboras22%2Fbin%2FDebug%2FLaboras22.exe&quot; Namespace%3DLaboras22.Models.Assignments Type%3DFaculty"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="1321cdcf-6588-4bea-8ed6-047a743a8177"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fd0df53e-d363-49be-a8ec-27b0fad2169c">
+                <propertyInstance
+                  Id="09971c85-0f8b-4311-acf7-d4b4be85d9a5"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0462b9b0-0e7a-4b5f-9191-b743ca1951f8">
+                <propertyInstance
+                  Id="fde9efdf-10f7-4f72-b176-1dbd38574883"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9c1b3d9d-c283-4208-a8ae-3f46fd677ca7">
+                <propertyInstance
+                  Id="b9edf73b-dd0b-418f-8b22-0f9241cac22c"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="07100294-cef9-4b10-8164-5e707fc8cb1a">
+                <propertyInstance
+                  Id="13290a28-958c-436d-9ab9-63154928fbb8"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4739f664-0592-4481-88f8-1086b0ded109">
+                <propertyInstance
+                  Id="95eb793b-7014-4345-aaa2-ef1c209d0b6e"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="8455f1a0-62a5-4810-bc4d-14f9b70fdc5c">
+            <interfaceMoniker
+              Id="e9cce9f3-2686-451a-bdb7-f8a2c83a39af"
+              LastKnownName="IDataItem"
+              LastKnownLocation="Package4_2347.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="c4c66d3c-ba45-4038-b201-7c6e7cdd1f5a"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="d01424bc-6c20-4482-bb24-d426cc31db4c"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FE:%2FMy docs%2FC%2523%2FLaboras22%2FLaboras22%2Fbin%2FDebug%2FLaboras22.exe&quot; Namespace%3DLaboras22.Models.Assignments Type%3DFaculty Member%3DId"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8b7a4c63-2919-4f23-bac8-5c4d6a9224a3"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1e2a48f3-83fc-4708-8693-a05d09c714f3">
+                    <propertyInstance
+                      Id="6a2aac7b-3c16-43c7-9154-3a64b6b4c97f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e5af4de4-2f30-4f84-b101-1a18531221c0">
+                    <propertyInstance
+                      Id="a81406c4-5b20-4e59-9ed0-b73d4500d36d"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b1623089-82b7-403d-9514-2edf57d881c9">
+                    <propertyInstance
+                      Id="a0f46c7e-6af8-4b60-8335-f7a5716a363a"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7d383100-b9e6-44d1-a62b-72f93863153e">
+                    <propertyInstance
+                      Id="c2a39c17-c0fe-4947-b4f8-ef816e1c1460"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="009dfa8d-05a0-47ac-971d-12c52c30b790">
+                    <propertyInstance
+                      Id="231aae86-3f84-4cbc-b5e6-dce86260d250"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1d477d4f-11e3-46c9-9b6f-140a0cdf7b50">
+                    <propertyInstance
+                      Id="4cbe6861-5ad8-4d8b-ac40-2c92dd8a1e85"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0892c6f6-cf75-4acd-9567-103d89918a99">
+                    <propertyInstance
+                      Id="edfd5c65-f625-470e-9a63-0db40a5559e2"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="Laboras22Model.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="13e95390-360f-40a1-b0e2-aab57ab4e353"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="2860d918-c641-46bc-a308-2e7c9d4e178c"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FE:%2FMy docs%2FC%2523%2FLaboras22%2FLaboras22%2Fbin%2FDebug%2FLaboras22.exe&quot; Namespace%3DLaboras22.Models.Assignments Type%3DFaculty Member%3DName"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2820716d-87e8-4b76-b6e2-bdb062817615"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2b66b90f-db93-4c61-8378-6a62cbf4a14e">
+                    <propertyInstance
+                      Id="53fe0c24-8ab2-4dbf-afff-a622b904df3f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f3e2a81e-51ea-4f6e-a9d7-942d14d0b488">
+                    <propertyInstance
+                      Id="2922943d-d6d6-49fc-b626-7acee10bd3fe"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f03d1b62-bc01-4a64-a7a1-e2086f1408b0">
+                    <propertyInstance
+                      Id="be730f34-8cac-4c8b-88f5-b3a4060ca554"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="44001b8a-d439-4c98-98e0-c3014a4af788">
+                    <propertyInstance
+                      Id="75eb40a8-0a43-4e2a-aa7a-82cdfd242745"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="06eb8419-9928-4d47-a2b4-dbf815f09274">
+                    <propertyInstance
+                      Id="1472d08e-7354-4036-982f-944ca56062c2"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9fa88863-3b3c-4ed5-957c-5eddde71b7c7">
+                    <propertyInstance
+                      Id="7a80ce6f-7737-4e53-a157-f096dbae3909"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="62b055b3-833a-49f2-b342-a5f9e382e179">
+                    <propertyInstance
+                      Id="2c4ccb9b-895d-4621-b05e-57720ac7b64c"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="Laboras22Model.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="1f7b5848-02c2-4559-a4f0-4bfa2a0f1cff"
+            name="Address"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="50dc3a85-8603-4d85-99c8-3492d960163c"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FE:%2FMy docs%2FC%2523%2FLaboras22%2FLaboras22%2Fbin%2FDebug%2FLaboras22.exe&quot; Namespace%3DLaboras22.Models.Assignments Type%3DFaculty Member%3DAddress"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7d7a6339-d6df-4063-8de4-1a4254ca8a56"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ecbfa5c9-59d1-43b0-a47d-daa71c49b5d8">
+                    <propertyInstance
+                      Id="b27c3f01-3ba2-4889-a533-4741fbae7e4f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a36c2d4c-f610-460e-be19-c67ec9758e7a">
+                    <propertyInstance
+                      Id="df6b3258-8c4f-429f-ba31-5c3c09be4ef3"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8d46b56e-fb34-4733-b3ef-3819409af544">
+                    <propertyInstance
+                      Id="c0f37e63-d54b-4d44-946f-f22b1839d122"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="813c7814-db3e-4d73-8508-b20dbcd767dd">
+                    <propertyInstance
+                      Id="3d900b08-6e4b-4625-b34d-05fcbaa64957"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9335e6e2-6be2-46ec-b2ac-38b081a33cfb">
+                    <propertyInstance
+                      Id="a0632fa5-7820-40a5-bcf4-e12a5888b195"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cd2e68f5-0c18-448e-ad69-00d132b8e367">
+                    <propertyInstance
+                      Id="12ca2c92-65c5-492d-bbef-49b409e73c78"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ba90299c-0197-42a2-9ceb-e36bdc9894f9">
+                    <propertyInstance
+                      Id="35e2cc27-76ea-40f8-9326-0b49f42a7d0c"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="Laboras22Model.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="121bb492-4e30-484f-a921-f0babe2f2035"
+            name="DeanId"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="eee2b712-7a0c-4ead-b51e-25513c44a621"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FE:%2FMy docs%2FC%2523%2FLaboras22%2FLaboras22%2Fbin%2FDebug%2FLaboras22.exe&quot; Namespace%3DLaboras22.Models.Assignments Type%3DFaculty Member%3DDeanId"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="292cf556-ff44-4a0b-b992-5c3c954bdea5"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="194883f1-3d67-4abe-b37a-158237a5575f">
+                    <propertyInstance
+                      Id="ebcc4cd0-126a-4011-a105-7489e2dab330"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3d45ec22-71a7-46d3-a379-3d93750e084d">
+                    <propertyInstance
+                      Id="786f1dc8-2edc-43f6-85cf-b71df789666f"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d8ebf3a4-fe59-48a7-8b62-676d549cc9c8">
+                    <propertyInstance
+                      Id="042867db-2941-498a-a05e-4297e5e930bc"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a104b798-5ea8-469e-b8ac-7d30e684ec56">
+                    <propertyInstance
+                      Id="f887752b-5422-450e-adec-06d7b20d6046"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="516e93c4-b088-4210-919f-c53f4359f6e4">
+                    <propertyInstance
+                      Id="aef9fa06-f811-4782-af23-0644195be9bd"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c4a5c43a-14db-4dea-b0f0-04affba0aa85">
+                    <propertyInstance
+                      Id="a9623670-0c3f-4028-9876-516b489fc184"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="89f378ee-8ed9-49e8-a14c-a8bf21fe1041">
+                    <propertyInstance
+                      Id="3541b4b4-6cf5-411d-acd3-1477e18edf07"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="Laboras22Model.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="754859e4-97a8-4615-842e-979aa2f6ff08"
+            name="UniversityId"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="51a36812-6049-4662-818a-6e87447ccc88"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FE:%2FMy docs%2FC%2523%2FLaboras22%2FLaboras22%2Fbin%2FDebug%2FLaboras22.exe&quot; Namespace%3DLaboras22.Models.Assignments Type%3DFaculty Member%3DUniversityId"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6a228085-6b67-4c2b-aa6b-e80fc81661bb"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9b52521c-1f7f-4957-ae9e-3c14510f82ee">
+                    <propertyInstance
+                      Id="91786a96-6f52-4717-84e8-88e7255588d8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="35798334-7999-4d83-ab55-f27cab3d737a">
+                    <propertyInstance
+                      Id="42e40a04-9abb-43ee-8102-c74c3cacfe21"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="97dc3e6c-d92e-4085-9bb4-8c7582892cb3">
+                    <propertyInstance
+                      Id="bcded1b2-7ec5-480a-9cb3-30ff002172a5"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="599c7587-188d-4f79-9115-63433eaa3cb3">
+                    <propertyInstance
+                      Id="e7967dea-e7ba-46f6-b107-cafa5f447457"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c55b2a14-5fc4-47ad-b8b6-db9e8971e6aa">
+                    <propertyInstance
+                      Id="e4ebaeef-6e6b-403d-bb26-264f20e453ff"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1f2b54d6-d89e-4161-9605-c4ae33763f33">
+                    <propertyInstance
+                      Id="e1b7de7d-ea41-4cb6-8c78-95caf095e074"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6b86d365-6044-4907-9b6e-7b4bdd73b8e8">
+                    <propertyInstance
+                      Id="0013e3c9-1c22-4917-980f-9037cab29a31"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="Laboras22Model.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="a54e768b-c589-41f5-88ba-f567861b4561"
+            name="Faculty"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1ed3a242-8002-48bb-a5cb-7cf261d60c99"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FMy docs%2FC%2523%2FLaboras22%2FLaboras22%2Fbin%2FDebug%2FLaboras22.exe&quot; Namespace%3DLaboras22.Models.Assignments Type%3DFaculty Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ed855d5e-10de-47fb-9f83-f85f1a6a7723"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b152ea94-a574-4854-b531-df19601f3e70">
+                    <propertyInstance
+                      Id="fcad033a-e1b7-429b-9c7b-60c294b97a60"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="75a19285-0a19-40ca-9903-6e442de57888">
+                    <propertyInstance
+                      Id="7bdcaefa-9f81-4e74-9e47-e15f866f35d5"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="167a1300-60a6-4afd-8f78-a50a640a2079">
+                    <propertyInstance
+                      Id="65a3ab5b-1667-496a-b4e5-48adf950960f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6840606c-240d-40d7-8e6e-ff7c94d81531">
+                    <propertyInstance
+                      Id="045f77be-8177-42db-9ec5-0939bea55908"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="71f0a5f5-f5c4-4126-9bb2-6972565e75c2">
+                    <propertyInstance
+                      Id="f8491879-af65-45fa-9f3e-6e6a4035b91a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a0357580-04d8-4244-8308-7dbd08c48cea">
+                    <propertyInstance
+                      Id="e1964d19-394e-44e1-912c-a82964dd99dd"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a9a5f927-dd8f-484e-9c98-93d153b62767"
+        name="University"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="f564a256-8554-4ac8-b64b-965fe8938fef"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FE:%2FMy docs%2FC%2523%2FLaboras22%2FLaboras22%2Fbin%2FDebug%2FLaboras22.exe&quot; Namespace%3DLaboras22.Models.Assignments Type%3DUniversity"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="d54dd8bb-ead8-4033-97a0-0d5f50ec0bb3"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0d8c5218-ac12-43cd-aba0-fdc62ed75b6d">
+                <propertyInstance
+                  Id="42fab7ab-6c21-41bd-9ddc-7f0c68d4fdd9"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ab16e5d0-3f02-4293-bc4b-7d8fc195cdb9">
+                <propertyInstance
+                  Id="0c434df4-049f-470f-82bf-90440dfc10d7"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="451234e6-a1fd-456f-95f6-2af7a278e13b">
+                <propertyInstance
+                  Id="99b2e234-c06f-4d15-aa81-b67799b7820c"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="929ad77c-4a88-44cd-9e5f-873a57d90e1a">
+                <propertyInstance
+                  Id="7bb0a6c5-b71f-443f-b3b2-aebe3e79cce0"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="aa89e966-d115-4ba4-8d52-4b5e35516a4a">
+                <propertyInstance
+                  Id="7b5b29ba-1455-4bd5-96d2-575d17948110"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="458b7cd6-58d4-4583-9c98-cddd91a8d387">
+            <interfaceMoniker
+              Id="e9cce9f3-2686-451a-bdb7-f8a2c83a39af"
+              LastKnownName="IDataItem"
+              LastKnownLocation="Package4_2347.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="bfdc1877-0b42-4645-bc3e-397b780b7eb6"
+            name="Description"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="1122270d-acfa-4d64-82f1-dba8fbf32d9b"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FE:%2FMy docs%2FC%2523%2FLaboras22%2FLaboras22%2Fbin%2FDebug%2FLaboras22.exe&quot; Namespace%3DLaboras22.Models.Assignments Type%3DUniversity Member%3DDescription"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1cde7067-6e37-4579-9f3b-a2e5f1ede55b"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9b5cd1f4-f20a-4c52-ad84-8e1d8ad63549">
+                    <propertyInstance
+                      Id="2f7a77c6-2a59-447e-9014-03dea8a396db"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d1653be0-0969-4b03-be06-041771b72bec">
+                    <propertyInstance
+                      Id="d29dfae8-2ba0-46ec-a7da-0ec2cfc5a705"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ec2c8306-1085-418a-bf22-0cce75fb8a81">
+                    <propertyInstance
+                      Id="cef33f6f-0638-4400-9dc3-44db7802457d"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e2465d52-96f6-4bf7-baec-8d5a5048eb8a">
+                    <propertyInstance
+                      Id="ec62b616-2c68-4a66-9674-1d7dc33f2192"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3ddcd4d4-bc51-4bce-b5c1-e9a7b5733002">
+                    <propertyInstance
+                      Id="983fd570-2c87-4a54-84e0-d7461bd06c20"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3c2ab90e-c153-4ba4-9ef8-129e4791b7e8">
+                    <propertyInstance
+                      Id="50e9550a-e7f9-4ac2-a610-a9339cbe1158"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f103b8b8-ebcd-44ca-9e25-42d5685b1130">
+                    <propertyInstance
+                      Id="c62fd22a-c085-457e-86a8-c827e1046428"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="Laboras22Model.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="c59979de-8b4a-4682-88fe-a1996b6b0ea1"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="0b26b73f-b5ce-499a-adb4-986ca33177b6"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FE:%2FMy docs%2FC%2523%2FLaboras22%2FLaboras22%2Fbin%2FDebug%2FLaboras22.exe&quot; Namespace%3DLaboras22.Models.Assignments Type%3DUniversity Member%3DId"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e087afc3-6cc7-4167-ac96-007b0cb42507"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c56258e2-a432-4677-a516-9a9847e1b791">
+                    <propertyInstance
+                      Id="e5573c99-c9fa-40b8-9f3b-3eadff6a3c11"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="da51b33c-8f99-4318-8c02-8141ae136630">
+                    <propertyInstance
+                      Id="2898d909-1fc7-48ed-a57d-b240661b4517"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2e59a8a1-4037-46fa-ab3c-f40a978c249d">
+                    <propertyInstance
+                      Id="59f1f6d4-5fa2-42b2-9336-d8f8d30249c5"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="76affd89-8fc1-4f87-9517-990ac6e29ae6">
+                    <propertyInstance
+                      Id="9cdee644-0806-430a-ab72-9f0303ab3ab9"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a70ca75c-55f8-4e0c-af7c-63cd3e2b8547">
+                    <propertyInstance
+                      Id="30522ed3-9284-4066-8e59-c8ed911235f1"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c952cf0d-79b0-4a61-9415-051a47f1272d">
+                    <propertyInstance
+                      Id="bc0c1eaa-be10-4469-9e1d-b10c2438b0d3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5b40b8cf-9538-4810-866e-465bf24d6b3e">
+                    <propertyInstance
+                      Id="47fa2d41-f1d4-4d06-a51c-07f124b4d04c"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="Laboras22Model.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="484aa0fb-d5dd-4f8f-a62f-265ae1f59376"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="77add98e-d422-4a1a-9603-102d9c99abb4"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FE:%2FMy docs%2FC%2523%2FLaboras22%2FLaboras22%2Fbin%2FDebug%2FLaboras22.exe&quot; Namespace%3DLaboras22.Models.Assignments Type%3DUniversity Member%3DName"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="121729c3-21d7-46b6-aa3f-9271cfebc6cd"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5889d2be-7ae7-40c6-ab34-37841a876ff1">
+                    <propertyInstance
+                      Id="5cd4d81d-ef39-4063-bf98-2b0f04bf9885"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fda68f90-8ad2-496d-b3fb-fb5824154288">
+                    <propertyInstance
+                      Id="9a7e50da-f04c-43c9-a6f7-fde69b8f3422"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6811f296-f688-48f9-bd72-de12f3c00203">
+                    <propertyInstance
+                      Id="7a6b8a03-36a3-4c04-8510-232aaed7cb2b"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="401aa1bd-a9a8-45a8-863a-a6651ec950d2">
+                    <propertyInstance
+                      Id="427808da-6b27-46ac-ac3c-6b4296340bdc"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6188d499-8551-4f79-8917-f8c24e21038b">
+                    <propertyInstance
+                      Id="59262e8f-b10e-4485-84ea-5c5d0a1f5fe9"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9e523b83-b5f3-4f0b-9d0e-d8418b5e82fc">
+                    <propertyInstance
+                      Id="068d20f2-2220-4826-95dd-aac71a6dae13"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aaf106c4-168d-4ec2-9ce4-c05b7fd6fa5b">
+                    <propertyInstance
+                      Id="da68ac7c-23f5-47b2-ba13-378f6af3df37"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="Laboras22Model.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="6e542451-65da-4991-bd47-b76f6f341a9f"
+            name="RectorId"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="59b64b90-b8d8-4087-93f4-75a2a5fae017"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FE:%2FMy docs%2FC%2523%2FLaboras22%2FLaboras22%2Fbin%2FDebug%2FLaboras22.exe&quot; Namespace%3DLaboras22.Models.Assignments Type%3DUniversity Member%3DRectorId"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="bbec9b70-7c0e-4240-86e6-4f930e70b88f"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6eebb89d-3037-4c7e-93db-0ada8183741c">
+                    <propertyInstance
+                      Id="dc43a847-1feb-4d15-bc15-ae9494f1c23d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cced4e15-d4ef-4f8f-9207-264e846fdf0a">
+                    <propertyInstance
+                      Id="365a76af-bac4-4f0a-b92c-6a9610993b4d"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c6e09aef-8f0c-455e-a312-d2d20b4af6e2">
+                    <propertyInstance
+                      Id="081aa975-40d7-4e1a-a821-6efbce1e0d90"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="70b7d7fa-51d4-4aef-b563-79710be8b0c3">
+                    <propertyInstance
+                      Id="22ec44a9-35e8-401e-9840-313fec65a46c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ae9efc2b-9727-4379-b299-679f2cd4875b">
+                    <propertyInstance
+                      Id="81677e64-32db-42ce-a342-fd2d6972e797"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="df608555-f8e1-43d0-b655-bb36ab360cde">
+                    <propertyInstance
+                      Id="5fe7faaa-1a00-461b-ae71-352b67c60038"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c146b0fb-83fa-44ab-beb6-44b18c41da90">
+                    <propertyInstance
+                      Id="dab2a258-fa92-4c7f-9d35-6c11d80df980"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="Laboras22Model.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="8d685ff9-8798-442a-adc5-cab99ddc07c1"
+            name="YearFounded"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="590c1750-587f-4308-be1b-fbeb7194e1e7"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FE:%2FMy docs%2FC%2523%2FLaboras22%2FLaboras22%2Fbin%2FDebug%2FLaboras22.exe&quot; Namespace%3DLaboras22.Models.Assignments Type%3DUniversity Member%3DYearFounded"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7e20f8ea-d166-4ca7-94be-ac11d249ec77"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f727773f-2337-42e0-85fe-24abaa942d1d">
+                    <propertyInstance
+                      Id="cd9a40d2-1424-4dd4-8154-f98823388811"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="232eb876-0227-48f6-95a0-fca442f14bae">
+                    <propertyInstance
+                      Id="36e4acbb-9dda-4906-8a25-f1e972fc9a80"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="17ad6f58-552c-4c08-a77b-1d42675bd95f">
+                    <propertyInstance
+                      Id="acc11dac-ef4e-4637-8eae-f69412fb2292"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3c3eebf2-8dcb-48e8-b8d3-e7c8d8e752c7">
+                    <propertyInstance
+                      Id="21489299-0fb0-48d9-80e9-c993a582fc5a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8e6d6306-7ec3-4e79-9521-568319641479">
+                    <propertyInstance
+                      Id="c6a07d69-1530-4eb7-be2f-7afccc56129b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="79a6270f-1990-4c89-a99f-9a9e018e1da7">
+                    <propertyInstance
+                      Id="ef6bda01-c70b-476f-90c0-23811a747b0e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8b74999d-e13a-46fd-a24e-b349bf6be677">
+                    <propertyInstance
+                      Id="c6ae68c6-b04a-46a8-9eeb-be024b729bc0"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="Laboras22Model.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="af536d90-ec8f-4013-b280-a21a311a331c"
+            name="University"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="f35bd779-b095-4036-bdd5-d966f9f85464"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FE:%2FMy docs%2FC%2523%2FLaboras22%2FLaboras22%2Fbin%2FDebug%2FLaboras22.exe&quot; Namespace%3DLaboras22.Models.Assignments Type%3DUniversity Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d35d3260-c26e-495c-a220-2216daae64ac"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cf92150d-a098-441e-9974-45f0c469749f">
+                    <propertyInstance
+                      Id="89c6abff-9001-429a-a3a6-947071202bb4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="031c8e8a-d310-4507-b415-bc6072c9658e">
+                    <propertyInstance
+                      Id="3254a18e-15f3-485e-a2a5-1e0ff3bade2e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6f44a5f0-2dc5-46cb-aa29-430885bf020f">
+                    <propertyInstance
+                      Id="1c604478-7a5e-4be9-ad32-2aa086dbf40e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="171ce25b-3ba1-48fc-bcf9-a6a7cdbe71d1">
+                    <propertyInstance
+                      Id="5d6c2f55-fabc-4978-9b28-50b53da44c97"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="45f4ea53-eb45-4362-8186-79558eda5a0a">
+                    <propertyInstance
+                      Id="ff42259a-6444-4623-8eb8-885bdfd6bb9e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b5f9611f-63bd-4245-a68f-48be797731e8">
+                    <propertyInstance
+                      Id="2ac7006b-c864-4132-a3c1-ee76db1fd177"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
