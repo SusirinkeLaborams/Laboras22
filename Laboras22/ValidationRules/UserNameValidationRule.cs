@@ -11,7 +11,16 @@ namespace Laboras22.ValidationRules
     {
         public override ValidationResult Validate(object value, System.Globalization.CultureInfo cultureInfo)
         {
-            throw new NotImplementedException();
+            var userName = (string)value;
+
+            if (userName.Length > 5)
+            {
+                return new ValidationResult(true, null);
+            }
+            else
+            {
+                return new ValidationResult(false, "User name length has to be at least 6 symbols long.");
+            }
         }
     }
 }
