@@ -21,7 +21,7 @@ namespace Laboras22.Views
     {
         public AssignmentPage()
         {
-
+            InitializeComponent();
         }
     }
 }

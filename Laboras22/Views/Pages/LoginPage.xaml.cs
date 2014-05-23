@@ -21,7 +21,7 @@ namespace Laboras22.Views
     {
         public LoginPage()
         {
-
+            InitializeComponent();
         }
     }
 }

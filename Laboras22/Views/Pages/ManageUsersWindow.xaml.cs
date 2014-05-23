@@ -21,6 +21,7 @@ namespace Laboras22.Views
     {
         public ManageUsersPage()
         {
+            InitializeComponent();
         }
     }
 }
