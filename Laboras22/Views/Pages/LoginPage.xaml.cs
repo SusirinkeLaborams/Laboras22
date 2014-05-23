@@ -15,13 +15,24 @@ using System.Windows.Shapes;
 namespace Laboras22.Views
 {
     /// <summary>
-    /// Interaction logic for RegisterWindow.xaml
+    /// Interaction logic for LoginPage.xaml
     /// </summary>
-    public partial class RegisterWindow : Window
+    public partial class LoginPage : Page
     {
-        public RegisterWindow()
+        public LoginPage()
         {
             InitializeComponent();
+        }
+        
+        private void LoginButton_Click_1(object sender, RoutedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void RegisterButton_Click_1(object sender, RoutedEventArgs e)
+        {
+            var registerWindow = new RegisterWindow();
+            registerWindow.ShowDialog();
         }
     }
 }

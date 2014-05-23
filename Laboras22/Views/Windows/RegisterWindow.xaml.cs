@@ -11,17 +11,23 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using MahApps.Metro.Controls;
 
 namespace Laboras22.Views
 {
     /// <summary>
-    /// Interaction logic for ManageUsersWindow.xaml
+    /// Interaction logic for RegisterWindow.xaml
     /// </summary>
-    public partial class ManageUsersWindow : Window
+    public partial class RegisterWindow : MetroWindow
     {
-        public ManageUsersWindow()
+        public RegisterWindow()
         {
             InitializeComponent();
+        }
+        
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            throw new NotImplementedException();
         }
     }
 }

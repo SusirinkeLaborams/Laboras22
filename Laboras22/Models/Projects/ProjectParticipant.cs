@@ -7,11 +7,10 @@ using System.Threading.Tasks;
 
 namespace Laboras22.Models.Projects
 {
-    public class Project : IDataItem
+    class ProjectParticipant : IDataItem
     {
         public int Id { get; set; }
-        public string Name { get; set; }
-        public int Assignment { get; set; }
-        public int Owner { get; set; }
+        public int Project { get; set; }
+        public int Student { get; set; }
     }
 }

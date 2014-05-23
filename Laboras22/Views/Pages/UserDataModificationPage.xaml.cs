@@ -1,7 +1,4 @@
-﻿using Laboras22.Classes;
-using Laboras22.Interfaces;
-using MahApps.Metro.Controls;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,21 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Laboras22.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for UserDataModificationPage.xaml
     /// </summary>
-    public partial class MainWindow : MetroWindow
+    public partial class UserDataModificationPage : Page
     {
-        public MainWindow()
+        public UserDataModificationPage()
         {
             InitializeComponent();
-
-            DataProvider<IDataItem>.Connect();
         }
     }
 }
