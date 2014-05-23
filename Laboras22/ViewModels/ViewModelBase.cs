@@ -3,6 +3,7 @@ using Laboras22.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -107,6 +108,29 @@ namespace Laboras22.ViewModels
             EnsureDataProviderExists();
 
             return await Create(await dataProvider.LookupAsync(id));
+        }
+
+        public static async Task<IEnumerable<ViewModelType>> Where(Expression<Func<ModelType, bool>> predicate)
+        {
+            var predicateMethod = predicate.Compile();
+            var cached = dataCache.Where(x => predicateMethod(x.Value.model));
+
+            if (cached.Count() > 0)
+            {
+                return cached.Select(x => x.Value);
+            }
+
+            EnsureDataProviderExists();
+
+            var tasks = (await dataProvider.Where(predicate).ToEnumerableAsync()).Select(x => Create(x));
+            var viewModels = new List<ViewModelType>();
+
+            foreach (var task in tasks)
+            {
+                viewModels.Add(await task);
+            }
+
+            return viewModels;
         }
 
         protected abstract Task RefreshFields();
