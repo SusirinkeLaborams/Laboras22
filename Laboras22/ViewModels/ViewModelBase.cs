@@ -54,7 +54,7 @@ namespace Laboras22.ViewModels
             await RefreshFields();
         }
 
-        public static ViewModelType Create(ModelType model = null)
+        public static async Task<ViewModelType> Create(ModelType model = null)
         {
             if (model == null)
             {
@@ -73,6 +73,7 @@ namespace Laboras22.ViewModels
                 dataCache[model.Id] = viewModel;
             }
 
+            await viewModel.RefreshFields();
             return viewModel;
         }
 
@@ -81,10 +82,16 @@ namespace Laboras22.ViewModels
             EnsureDataProviderExists();
 
             var viewModels = new List<ViewModelType>();
-
+            var tasks = new List<Task<ViewModelType>>();
+            
             foreach (var model in await dataProvider.Enumerate())
             {
-                viewModels.Add(Create(model));
+                tasks.Add(Create(model));
+            }
+
+            foreach (var task in tasks)
+            {
+                viewModels.Add(await task);
             }
 
             return viewModels;
@@ -99,7 +106,7 @@ namespace Laboras22.ViewModels
 
             EnsureDataProviderExists();
 
-            return Create(await dataProvider.LookupAsync(id));
+            return await Create(await dataProvider.LookupAsync(id));
         }
 
         protected abstract Task RefreshFields();
