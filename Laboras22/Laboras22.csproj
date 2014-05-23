@@ -96,9 +96,11 @@
     <Compile Include="ViewModels\Assignments\FacultyDepartmentViewModel.cs" />
     <Compile Include="ViewModels\Assignments\FacultyViewModel.cs" />
     <Compile Include="ViewModels\Assignments\UniversityViewModel.cs" />
+    <Compile Include="ViewModels\Projects\GradeViewModel.cs" />
     <Compile Include="ViewModels\Projects\ProjectContentViewModel.cs" />
     <Compile Include="ViewModels\Projects\ProjectParticipantViewModel.cs" />
     <Compile Include="ViewModels\Projects\ProjectViewModel.cs" />
+    <Compile Include="ViewModels\Projects\RatingViewModel.cs" />
     <Compile Include="ViewModels\Users\UserViewModel.cs" />
     <Compile Include="ViewModels\ViewModelBase.cs" />
     <Compile Include="Views\Pages\AssignmentPage.xaml.cs">
