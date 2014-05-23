@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Laboras22.ViewModels.Users;
 
 namespace Laboras22.Views
 {
@@ -19,14 +20,17 @@ namespace Laboras22.Views
     /// </summary>
     public partial class LoginPage : Page
     {
+        private LoginViewModel m_LoginViewModel;
         public LoginPage()
         {
             InitializeComponent();
+            m_LoginViewModel = new LoginViewModel();
+            m_LayoutRoot.DataContext = m_LoginViewModel;
         }
         
         private void LoginButton_Click_1(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            m_LoginViewModel.Login(m_PasswordBox.Password);
         }
 
         private void RegisterButton_Click_1(object sender, RoutedEventArgs e)

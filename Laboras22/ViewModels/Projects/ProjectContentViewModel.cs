@@ -12,9 +12,10 @@ namespace Laboras22.ViewModels.Projects
         public int Project { get { return model.Project; } set { model.Project = value; } }
         public string URL { get { return model.URL; } set { model.URL = value; } }
 
+#pragma warning disable 1998
         protected override async Task RefreshFields()
         {
-            throw new NotImplementedException();
         }
+#pragma warning restore 1998
     }
 }
