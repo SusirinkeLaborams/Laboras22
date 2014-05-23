@@ -15,13 +15,12 @@ using System.Windows.Shapes;
 namespace Laboras22.Views
 {
     /// <summary>
-    /// Interaction logic for UserDataModificationWindow.xaml
+    /// Interaction logic for UserDataModificationPage.xaml
     /// </summary>
-    public partial class UserDataModificationWindow : Window
+    public partial class UserDataModificationPage : Page
     {
-        public UserDataModificationWindow()
+        public UserDataModificationPage()
         {
-            InitializeComponent();
         }
     }
 }

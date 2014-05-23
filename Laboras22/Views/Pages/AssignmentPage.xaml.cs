@@ -15,13 +15,13 @@ using System.Windows.Shapes;
 namespace Laboras22.Views
 {
     /// <summary>
-    /// Interaction logic for ManageUsersWindow.xaml
+    /// Interaction logic for AssignmentWindow.xaml
     /// </summary>
-    public partial class ManageUsersWindow : Window
+    public partial class AssignmentPage : Page
     {
-        public ManageUsersWindow()
+        public AssignmentPage()
         {
-            InitializeComponent();
+
         }
     }
 }
