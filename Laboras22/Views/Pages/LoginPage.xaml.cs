@@ -23,5 +23,16 @@ namespace Laboras22.Views
         {
             InitializeComponent();
         }
+        
+        private void LoginButton_Click_1(object sender, RoutedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void RegisterButton_Click_1(object sender, RoutedEventArgs e)
+        {
+            var registerWindow = new RegisterWindow();
+            registerWindow.ShowDialog();
+        }
     }
 }

@@ -24,5 +24,10 @@ namespace Laboras22.Views
         {
             InitializeComponent();
         }
+        
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

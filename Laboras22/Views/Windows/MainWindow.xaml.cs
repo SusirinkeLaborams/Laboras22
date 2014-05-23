@@ -26,7 +26,7 @@ namespace Laboras22.Views
         public MainWindow()
         {
             InitializeComponent();
-
+            m_Frame.Content = new LoginPage();
             DataProvider<IDataItem>.Connect();
         }
     }

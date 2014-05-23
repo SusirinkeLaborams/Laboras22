@@ -3,18 +3,33 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:Metro="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         Title="RegisterWindow" Height="300" Width="300">
-    <StackPanel>
-        <TextBlock x:Name="UserNameTextBlock" Text="User name" />
-        <TextBox x:Name="UserNameTextBox" />
-        <TextBlock x:Name="PasswordTextBlock" Text="Password" />
-        <TextBox x:Name="PasswordTextBox" />
-        <TextBlock x:Name="EmailTextBlock" Text="Email" />
-        <TextBox x:Name="EmailTextBox" />
-        <TextBlock x:Name="UserTypeTextBlock" Text="User type" />
-        <ComboBox x:Name="UserTypeComboBox">
-            <ComboBoxItem x:Name="StudentUserType" Content="Student" />
-            <ComboBoxItem x:Name="LecturerUserType" Content="Lecturer" />
+    <Grid Margin="10, 0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="User name" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10, 0"/>
+        <TextBox Text="{Binding UserName, Mode=TwoWay}" Grid.Column="1" Grid.Row="0" Height="25"/>
+        <TextBlock Text="Password" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10, 0"/>
+        <PasswordBox x:Name="PasswordBox" Grid.Column="1" Grid.Row="1" Height="25"/>
+        <TextBlock Text="Email" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10, 0"/>
+        <TextBox Text="{Binding Email, Mode=TwoWay}" Grid.Column="1" Grid.Row="2" Height="25"/>
+        <TextBlock Text="User type" Grid.Column="0" Grid.Row="3" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10, 0"/>
+        <ComboBox SelectedIndex="{Binding UserType, Mode=TwoWay}" Grid.Column="1" Grid.Row="3" Height="25">
+            <ComboBoxItem Content="Student" />
+            <ComboBoxItem Content="Lecturer" />
         </ComboBox>
-        <Button x:Name="RegisterButton" Content="Register" />
-    </StackPanel>
+        <TextBlock Text="Alias" Grid.Column="0" Grid.Row="4" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10, 0"/>
+        <TextBox Text="{Binding Alias, Mode=TwoWay}" Grid.Column="1" Grid.Row="4" Height="25"/>
+        <Button Content="Register" HorizontalAlignment="Center" Grid.ColumnSpan="2" Grid.Row="5" Click="Button_Click_1"/>
+    </Grid>
 </Metro:MetroWindow>
