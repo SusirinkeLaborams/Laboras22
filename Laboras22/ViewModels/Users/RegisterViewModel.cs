@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using System.Security;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -15,9 +16,13 @@ namespace Laboras22.ViewModels.Users
 
         private string m_UserName;
         private string m_Email;
+        private string m_FirstName;
+        private string m_LastName;
         private UserTypeEnum m_UserType;
         private string m_Alias;
 
+        private SecureString m_Password;
+        private SecureString m_ConfirmPassword;
 
         public string UserName
         {
@@ -32,6 +37,58 @@ namespace Laboras22.ViewModels.Users
             }
         }
 
+        public SecureString Password
+        {
+            get
+            {
+                return m_Password;
+            }
+            set
+            {
+                m_Password = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public SecureString ConfirmPassword
+        {
+            get
+            {
+                return m_ConfirmPassword;
+            }
+            set
+            {
+                m_ConfirmPassword = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public string FirstName
+        {
+            get
+            {
+                return m_FirstName;
+            }
+            set
+            {
+                m_FirstName = value;
+                OnPropertyChanged();
+            }
+        }
+        
+        public string LastName
+        {
+            get
+            {
+                return m_LastName;
+            }
+            set
+            {
+                m_LastName = value;
+                OnPropertyChanged();
+            }
+        }
+        
         public string Email
         {
             get
@@ -88,7 +145,7 @@ namespace Laboras22.ViewModels.Users
             }
         }
 
-        public void Register(string password)
+        public void Register()
         {
             throw new NotImplementedException();
         }

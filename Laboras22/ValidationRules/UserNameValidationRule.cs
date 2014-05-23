@@ -9,17 +9,19 @@ namespace Laboras22.ValidationRules
 {
     class UserNameValidationRule : ValidationRule
     {
+        public string FieldName { get; set; }
+
         public override ValidationResult Validate(object value, System.Globalization.CultureInfo cultureInfo)
         {
             var userName = (string)value;
 
-            if (userName.Length > 5)
+            if (userName.Length < 6)
             {
-                return new ValidationResult(true, null);
+                return new ValidationResult(false, FieldName + " length has to be at least 6 symbols long.");
             }
             else
             {
-                return new ValidationResult(false, "User name length has to be at least 6 symbols long.");
+                return new ValidationResult(true, null);
             }
         }
     }

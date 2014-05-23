@@ -91,6 +91,10 @@
     <Compile Include="Models\Projects\ProjectParticipant.cs" />
     <Compile Include="Models\Projects\Rating.cs" />
     <Compile Include="Models\Users\User.cs" />
+    <Compile Include="ValidationRules\ConfirmPasswordValidationRule.cs" />
+    <Compile Include="ValidationRules\EmailValidationRule.cs" />
+    <Compile Include="ValidationRules\PasswordValidationRule.cs" />
+    <Compile Include="ValidationRules\RealNameValidationRule.cs" />
     <Compile Include="ValidationRules\UserNameValidationRule.cs" />
     <Compile Include="ViewModels\Assignments\AssignmentViewModel.cs" />
     <Compile Include="ViewModels\Assignments\CourseViewModel.cs" />
