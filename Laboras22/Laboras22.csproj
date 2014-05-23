@@ -85,7 +85,11 @@
     <Compile Include="Models\Assignments\Faculty.cs" />
     <Compile Include="Models\Assignments\FacultyDepartment.cs" />
     <Compile Include="Models\Assignments\University.cs" />
+    <Compile Include="Models\Projects\Grade.cs" />
     <Compile Include="Models\Projects\Project.cs" />
+    <Compile Include="Models\Projects\ProjectContent.cs" />
+    <Compile Include="Models\Projects\ProjectParticipant.cs" />
+    <Compile Include="Models\Projects\Rating.cs" />
     <Compile Include="Models\Users\User.cs" />
     <Compile Include="ViewModels\Assignments\AssignmentViewModel.cs" />
     <Compile Include="ViewModels\Assignments\CourseViewModel.cs" />
