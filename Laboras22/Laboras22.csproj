@@ -102,6 +102,7 @@
     <Compile Include="ViewModels\Projects\ProjectParticipantViewModel.cs" />
     <Compile Include="ViewModels\Projects\ProjectViewModel.cs" />
     <Compile Include="ViewModels\Projects\RatingViewModel.cs" />
+    <Compile Include="ViewModels\Users\LoginViewModel.cs" />
     <Compile Include="ViewModels\Users\RegisterViewModel.cs" />
     <Compile Include="ViewModels\Users\UserViewModel.cs" />
     <Compile Include="ViewModels\ViewModelBase.cs" />
