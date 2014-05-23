@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:Metro="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         Title="RegisterWindow" Height="300" Width="300">
-    <Grid Margin="10, 0">
+    <Grid x:Name="m_LayoutRoot" Margin="10, 0">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
@@ -20,7 +20,7 @@
         <TextBlock Text="User name" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10, 0"/>
         <TextBox Text="{Binding UserName, Mode=TwoWay}" Grid.Column="1" Grid.Row="0" Height="25"/>
         <TextBlock Text="Password" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10, 0"/>
-        <PasswordBox x:Name="PasswordBox" Grid.Column="1" Grid.Row="1" Height="25"/>
+        <PasswordBox x:Name="m_PasswordBox" Grid.Column="1" Grid.Row="1" Height="25"/>
         <TextBlock Text="Email" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10, 0"/>
         <TextBox Text="{Binding Email, Mode=TwoWay}" Grid.Column="1" Grid.Row="2" Height="25"/>
         <TextBlock Text="User type" Grid.Column="0" Grid.Row="3" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10, 0"/>
@@ -28,8 +28,8 @@
             <ComboBoxItem Content="Student" />
             <ComboBoxItem Content="Lecturer" />
         </ComboBox>
-        <TextBlock Text="Alias" Grid.Column="0" Grid.Row="4" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10, 0"/>
-        <TextBox Text="{Binding Alias, Mode=TwoWay}" Grid.Column="1" Grid.Row="4" Height="25"/>
+        <TextBlock Text="Alias" Grid.Column="0" Grid.Row="4" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10, 0" Visibility="{Binding AliasVisibility}"/>
+        <TextBox Text="{Binding Alias, Mode=TwoWay}" Grid.Column="1" Grid.Row="4" Height="25" Visibility="{Binding AliasVisibility}"/>
         <Button Content="Register" HorizontalAlignment="Center" Grid.ColumnSpan="2" Grid.Row="5" Click="Button_Click_1"/>
     </Grid>
 </Metro:MetroWindow>

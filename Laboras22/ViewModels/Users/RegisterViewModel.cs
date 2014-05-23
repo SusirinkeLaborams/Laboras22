@@ -5,15 +5,15 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace Laboras22.ViewModels.Users
 {
-    class RegisterWindowViewModel : INotifyPropertyChanged
+    class RegisterViewModel : INotifyPropertyChanged
     {
-        private enum UserTypeEnum { Lecturer = 0, Student = 1 }
+        private enum UserTypeEnum { Student = 0, Lecturer = 1 }
 
         private string m_UserName;
-        private string m_Password;
         private string m_Email;
         private UserTypeEnum m_UserType;
         private string m_Alias;
@@ -55,6 +55,7 @@ namespace Laboras22.ViewModels.Users
             {
                 m_UserType = (UserTypeEnum) value;
                 OnPropertyChanged();
+                OnPropertyChanged("AliasVisibility");
             }
         }
 
@@ -71,11 +72,11 @@ namespace Laboras22.ViewModels.Users
             }
         }
 
-        public bool AliasVisibility
+        public Visibility AliasVisibility
         {
             get
             {
-                return m_UserType == UserTypeEnum.Student;
+                return m_UserType == UserTypeEnum.Student ? Visibility.Visible : Visibility.Collapsed;
             }
         }
 

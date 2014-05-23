@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Laboras22.ViewModels.Users;
 using MahApps.Metro.Controls;
 
 namespace Laboras22.Views
@@ -20,14 +21,17 @@ namespace Laboras22.Views
     /// </summary>
     public partial class RegisterWindow : MetroWindow
     {
+        private RegisterViewModel m_RegisterViewModel;
         public RegisterWindow()
         {
             InitializeComponent();
+            m_RegisterViewModel = new RegisterViewModel();
+            m_LayoutRoot.DataContext = m_RegisterViewModel;
         }
         
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            m_RegisterViewModel.Register(m_PasswordBox.Password);
         }
     }
 }
