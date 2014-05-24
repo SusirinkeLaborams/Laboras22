@@ -7,7 +7,7 @@ using System.Windows.Controls;
 
 namespace Laboras22.ValidationRules
 {
-    class ConfirmPasswordValidationRule : ValidationRule
+    class ConfirmPasswordValidationRule : ValidationRulesBase
     {
         private PasswordBox m_OriginalPasswordBox;
 
@@ -22,7 +22,7 @@ namespace Laboras22.ValidationRules
 
             if (password != m_OriginalPasswordBox.Password)
             {
-                return new ValidationResult(false, "Passwords must match");
+                return new ValidationResult(false, "Passwords must match.");
             }
 
             return new ValidationResult(true, null);

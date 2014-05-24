@@ -99,9 +99,11 @@
     <Compile Include="Models\Users\UserLogin.cs" />
     <Compile Include="ValidationRules\ConfirmPasswordValidationRule.cs" />
     <Compile Include="ValidationRules\EmailValidationRule.cs" />
+    <Compile Include="ValidationRules\NotEmptyValidationRule.cs" />
     <Compile Include="ValidationRules\PasswordValidationRule.cs" />
     <Compile Include="ValidationRules\RealNameValidationRule.cs" />
     <Compile Include="ValidationRules\UserNameValidationRule.cs" />
+    <Compile Include="ValidationRules\ValidationRulesBase.cs" />
     <Compile Include="ViewModels\Assignments\AssignmentViewModel.cs" />
     <Compile Include="ViewModels\Assignments\CourseViewModel.cs" />
     <Compile Include="ViewModels\Assignments\FacultyDepartmentViewModel.cs" />

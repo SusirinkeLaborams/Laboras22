@@ -7,25 +7,20 @@ using System.Windows.Controls;
 
 namespace Laboras22.ValidationRules
 {
-    class RealNameValidationRule : ValidationRulesBase
+    class NotEmptyValidationRule : ValidationRulesBase
     {
         public string FieldName { get; set; }
-
+        
         public override ValidationResult Validate(object value, System.Globalization.CultureInfo cultureInfo)
         {
-            var name = (string)value;
-            
-            if (string.IsNullOrEmpty(name))
+            if (value == null)
             {
                 return new ValidationResult(false, FieldName + " cannot be empty.");
             }
-
-            if (name.Any(x => !char.IsLetter(x) && x != ' ' && x != '\''))
+            else
             {
-                return new ValidationResult(false, FieldName + " may only contain letters, spaces and apostrophes.");
+                return new ValidationResult(true, null);
             }
-
-            return new ValidationResult(true, null);
         }
     }
 }

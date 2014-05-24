@@ -9,7 +9,7 @@ using System.Windows.Controls;
 
 namespace Laboras22.ValidationRules
 {
-    class EmailValidationRule : ValidationRule
+    class EmailValidationRule : ValidationRulesBase
     {
         bool failedValidation;
 
@@ -20,7 +20,7 @@ namespace Laboras22.ValidationRules
             
             if (string.IsNullOrEmpty(email))
             {
-                return new ValidationResult(false, "Specified invalid email address.");
+                return new ValidationResult(false, "Specified email address is not valid.");
             }
  
             try
@@ -34,7 +34,7 @@ namespace Laboras22.ValidationRules
 
             if (failedValidation)
             {
-                return new ValidationResult(false, "Specified invalid email address.");
+                return new ValidationResult(false, "Specified email address is not valid.");
             }
 
             try
@@ -51,7 +51,7 @@ namespace Laboras22.ValidationRules
             
             if (failedValidation)
             {
-                return new ValidationResult(false, "Specified email address is not valid");
+                return new ValidationResult(false, "Specified email address is not valid.");
             }
 
             return new ValidationResult(true, null);            
