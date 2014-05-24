@@ -13,7 +13,7 @@ namespace Laboras22.ViewModels.Assignments
     {
         #region Settable properties
 
-        public string Name { get { return model.Name; } set { model.Name = value; } }
+        public string Name { get { return model.CourseName; } set { model.CourseName = value; } }
 
         public FacultyDepartmentViewModel FacultyDepartment
         {

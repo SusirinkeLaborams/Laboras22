@@ -81,6 +81,7 @@
     <Compile Include="Classes\AzureService.cs" />
     <Compile Include="Classes\Key.cs" />
     <Compile Include="Classes\PasswordUtils.cs" />
+    <Compile Include="Classes\ThirdParty\GridViewColumnResizer.cs" />
     <Compile Include="Interfaces\IDataItem.cs" />
     <Compile Include="Models\Assignments\Assignment.cs" />
     <Compile Include="Models\Assignments\Course.cs" />
@@ -105,6 +106,7 @@
     <Compile Include="ValidationRules\RealNameValidationRule.cs" />
     <Compile Include="ValidationRules\UserNameValidationRule.cs" />
     <Compile Include="ValidationRules\ValidationRulesBase.cs" />
+    <Compile Include="ViewModels\Assignments\AssignmentListViewModel.cs" />
     <Compile Include="ViewModels\Assignments\AssignmentViewModel.cs" />
     <Compile Include="ViewModels\Assignments\CourseViewModel.cs" />
     <Compile Include="ViewModels\Assignments\FacultyDepartmentViewModel.cs" />
