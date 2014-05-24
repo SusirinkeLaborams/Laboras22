@@ -13,7 +13,6 @@ namespace Laboras22.Views
     public partial class MainWindow : MetroWindow
     {
         private Stack<Page> pages = new Stack<Page>();
-        public SessionViewModel Session { get; set; }
         public MainWindow()
         {
             InitializeComponent();
