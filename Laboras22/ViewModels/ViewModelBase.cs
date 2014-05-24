@@ -31,7 +31,7 @@ namespace Laboras22.ViewModels
             dataCache[model.Id] = (ViewModelType)this;
         }
 
-        public async Task Update()
+        public virtual async Task Update()
         {
             EnsureDataProviderExists();
 
