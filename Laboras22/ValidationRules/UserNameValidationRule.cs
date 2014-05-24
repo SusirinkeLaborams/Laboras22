@@ -7,13 +7,18 @@ using System.Windows.Controls;
 
 namespace Laboras22.ValidationRules
 {
-    class UserNameValidationRule : ValidationRule
+    class UserNameValidationRule : ValidationRulesBase
     {
         public string FieldName { get; set; }
 
         public override ValidationResult Validate(object value, System.Globalization.CultureInfo cultureInfo)
         {
             var userName = (string)value;
+
+            if (string.IsNullOrEmpty(userName))
+            {
+                return new ValidationResult(false, FieldName + " cannot be empty.");
+            }
 
             if (userName.Length < 6)
             {

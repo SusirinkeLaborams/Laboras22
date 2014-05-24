@@ -18,7 +18,7 @@ namespace Laboras22.ViewModels.Users
 {
     class RegisterViewModel : INotifyPropertyChanged
     {
-        private enum UserTypeEnum { Student = 0, Lecturer = 1 }
+        public enum UserTypeEnum { Student = 0, Lecturer = 1 }
 
         private string m_UserName;
         private string m_Email;
@@ -111,7 +111,7 @@ namespace Laboras22.ViewModels.Users
                 OnPropertyChanged();
             }
         }
-
+        
         public SecureString Password
         {
             get
@@ -177,7 +177,7 @@ namespace Laboras22.ViewModels.Users
             }
         }
 
-        public int UserType
+        public int UserTypeValue
         {
             get
             {
@@ -191,6 +191,8 @@ namespace Laboras22.ViewModels.Users
                 OnPropertyChanged("FacultyVisibility");
             }
         }
+
+        public UserTypeEnum UserType { get { return m_UserType; } }
 
         public string Alias
         {

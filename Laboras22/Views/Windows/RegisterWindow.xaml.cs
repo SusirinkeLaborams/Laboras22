@@ -35,16 +35,32 @@ namespace Laboras22.Views
 
             m_RegisterViewModel = new RegisterViewModel();
             m_LayoutRoot.DataContext = m_RegisterViewModel;
+
             SetupPasswordValidation();
             LoadUniversities();
         }
-
                 
         private async void RegisterButton_Click(object sender, RoutedEventArgs e)
         {
-            if (!IsUserInputValid())
+            switch (m_RegisterViewModel.UserType)
             {
-                return;
+                case RegisterViewModel.UserTypeEnum.Student:
+                    {
+                        if (!IsStudentInputValid())
+                        {
+                            return;
+                        }
+                    }
+                    break;
+
+                case RegisterViewModel.UserTypeEnum.Lecturer:
+                    {
+                        if (!IsLecturerInputValid())
+                        {
+                            return;
+                        }
+                    }
+                    break;
             }
 
             m_RegisterButton.IsEnabled = false;
@@ -57,7 +73,7 @@ namespace Laboras22.Views
             }
         }
         
-        private bool IsUserInputValid()
+        private bool IsStudentInputValid()
         {
             return !Validation.GetHasError(m_UserNameTextBox) &&
                    !Validation.GetHasError(m_PasswordBox) &&
@@ -66,6 +82,19 @@ namespace Laboras22.Views
                    !Validation.GetHasError(m_FirstNameTextBox) &&
                    !Validation.GetHasError(m_LastNameTextBox) &&
                    !Validation.GetHasError(m_AliasTextBox);
+        }
+
+        private bool IsLecturerInputValid()
+        {
+            return !Validation.GetHasError(m_UserNameTextBox) &&
+                   !Validation.GetHasError(m_PasswordBox) &&
+                   !Validation.GetHasError(m_ConfirmPasswordBox) &&
+                   !Validation.GetHasError(m_EmailTextBox) &&
+                   !Validation.GetHasError(m_FirstNameTextBox) &&
+                   !Validation.GetHasError(m_LastNameTextBox) &&
+                   !Validation.GetHasError(m_UniversityComboBox) &&
+                   !Validation.GetHasError(m_FacultyComboBox) &&
+                   !Validation.GetHasError(m_DepartmentComboBox);
         }
 
         private void SetupPasswordValidation()
@@ -82,6 +111,9 @@ namespace Laboras22.Views
             validationBinding = new Binding { Source = m_ConfirmPasswordBox, Path = new PropertyPath("Tag") };
             validationBinding.UpdateSourceTrigger = UpdateSourceTrigger.PropertyChanged;
             BindingOperations.SetBinding(m_ConfirmPasswordBox, PasswordBox.PasswordCharProperty, validationBinding);
+
+            PasswordBox_PasswordChanged(this, null);
+            ConfirmPasswordBox_PasswordChanged(this, null);
         }
 
         private void PasswordBox_PasswordChanged(object sender, RoutedEventArgs e)
@@ -99,6 +131,8 @@ namespace Laboras22.Views
                 var validationError = new ValidationError(m_PasswordValidationRule, bindingExpression, validationResult.ErrorContent, null);
                 Validation.MarkInvalid(bindingExpression, validationError);
             }
+
+            ConfirmPasswordBox_PasswordChanged(sender, e);
         }
 
         private void ConfirmPasswordBox_PasswordChanged(object sender, RoutedEventArgs e)
