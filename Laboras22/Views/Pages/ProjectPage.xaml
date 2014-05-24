@@ -9,5 +9,8 @@
         <ListView ItemsSource="{Binding Participants}">
             <TextBlock Text="{Binding Name}"/>
         </ListView>
+        <ListView ItemsSource="{Binding Contents}">
+            <TextBlock Text="{Binding URL}"/>
+        </ListView>
     </StackPanel>
 </Laboras22:PageBase>
