@@ -23,5 +23,11 @@ namespace Laboras22.ViewModels.Projects
             Contents = await ProjectContentViewModel.Where(c => c.Project == model.Id);
             Assignment = await AssignmentViewModel.Get(model.Assignment);
         }
+        public static new async Task<ProjectViewModel> Create(Project model = null)
+        {
+            var created = await ViewModelBase<Project, ProjectViewModel>.Create(model);
+            await created.RefreshFields();
+            return created;
+        }
     }
 }
