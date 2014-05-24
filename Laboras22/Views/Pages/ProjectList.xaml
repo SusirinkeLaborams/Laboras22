@@ -7,8 +7,8 @@
       d:DesignHeight="300" d:DesignWidth="300"
 	Title="ProjectList">
 
-    <Grid>
-        <ListView ItemsSource="{Binding Projects}">
+    <Grid x:Name="root">
+        <ListView ItemsSource="{Binding Projects}" PreviewMouseLeftButtonUp="ItemClick">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Width="140" Header="Assignemnt"

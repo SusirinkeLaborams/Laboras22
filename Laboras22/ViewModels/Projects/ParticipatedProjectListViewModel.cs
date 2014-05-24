@@ -6,17 +6,16 @@ using System.Threading.Tasks;
 
 namespace Laboras22.ViewModels.Projects
 {
-    class ParticipatedProjectListViewModel
+    class ParticipatedProjectListViewModel : ProjectListViewModel
     {
-        public IEnumerable<ProjectViewModel> Projects { get; private set; }
-        private ParticipatedProjectListViewModel(IEnumerable<ProjectViewModel> projects)
+        protected ParticipatedProjectListViewModel(IEnumerable<ProjectViewModel> projects) : base(projects)
         {
-            Projects = projects;
         }
         public static async Task<ParticipatedProjectListViewModel> Create(int studentId)
         {
             var tmp = await ProjectParticipantViewModel.Where(x => x.StudentId == studentId);
-            var projects = await ProjectViewModel.Where(p => tmp.Any(a => a.Project.Id == p.Id));
+            var projects = tmp.Select(a => a.Project);
+            projects = projects.Union(new List<ProjectViewModel>() { await ProjectViewModel.Create()});
             return new ParticipatedProjectListViewModel(projects);
         }
     }
