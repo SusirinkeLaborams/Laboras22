@@ -128,6 +128,7 @@
     <Compile Include="Views\Pages\ManageUsersPage.xaml.cs">
       <DependentUpon>ManageUsersPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Pages\PageBase.cs" />
     <Compile Include="Views\Pages\ProjectList.xaml.cs">
       <DependentUpon>ProjectList.xaml</DependentUpon>
     </Compile>
