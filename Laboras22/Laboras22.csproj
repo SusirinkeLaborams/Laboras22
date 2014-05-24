@@ -109,6 +109,7 @@
     <Compile Include="ViewModels\Assignments\UniversityViewModel.cs" />
     <Compile Include="ViewModels\Projects\GradeViewModel.cs" />
     <Compile Include="ViewModels\Projects\ProjectContentViewModel.cs" />
+    <Compile Include="ViewModels\Projects\ProjectListViewModel.cs" />
     <Compile Include="ViewModels\Projects\ProjectParticipantViewModel.cs" />
     <Compile Include="ViewModels\Projects\ProjectViewModel.cs" />
     <Compile Include="ViewModels\Projects\RatingViewModel.cs" />
@@ -125,6 +126,9 @@
     </Compile>
     <Compile Include="Views\Pages\ManageUsersPage.xaml.cs">
       <DependentUpon>ManageUsersPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\ProjectList.xaml.cs">
+      <DependentUpon>ProjectList.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Pages\ProjectPage.xaml.cs">
       <DependentUpon>ProjectPage.xaml</DependentUpon>
@@ -143,6 +147,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Pages\LoginPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pages\ProjectList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
