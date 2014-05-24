@@ -15,6 +15,8 @@
             </ResourceDictionary.MergedDictionaries>
             <Style TargetType="Button" BasedOn="{StaticResource MetroAccentButton}"/>
             <Style TargetType="TextBox" BasedOn="{StaticResource MetroTextBox}" />
+            <SolidColorBrush x:Key="TextBrush" Color="White" />
+            <SolidColorBrush x:Key="LabelTextBrush" Color="White" />
             <Style x:Key="ValidatedTextBoxStyle" TargetType="TextBox" BasedOn="{StaticResource MetroTextBox}">
                 <Style.Triggers>
                     <Trigger Property="Validation.HasError" Value="true">

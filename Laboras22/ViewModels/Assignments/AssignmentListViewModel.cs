@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Laboras22.ViewModels.Assignments
 {
-    class AssignmentListViewModel : INotifyPropertyChanged
+    class AssignmentListViewModel : NotifyPropertyChangedBase
     {
         private bool m_OnlyOwnAssignments;
         public IEnumerable<AssignmentViewModel> Assignments { get; private set; }
@@ -32,15 +32,5 @@ namespace Laboras22.ViewModels.Assignments
 
             OnPropertyChanged("Assignments");
         }
-
-        private void OnPropertyChanged([CallerMemberName] string property = "")
-        {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(property));
-            }
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
     }
 }

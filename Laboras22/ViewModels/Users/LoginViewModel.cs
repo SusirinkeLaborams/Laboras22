@@ -9,7 +9,7 @@ using Laboras22.Models.Users;
 
 namespace Laboras22.ViewModels.Users
 {
-    class LoginViewModel : ViewModelBase<UserLogin, LoginViewModel>, INotifyPropertyChanged
+    class LoginViewModel : ViewModelBase<UserLogin, LoginViewModel>
     {
         public string UserName
         {
@@ -68,20 +68,10 @@ namespace Laboras22.ViewModels.Users
         {
         }
 #pragma warning restore 1998
-
-        public void OnPropertyChanged([CallerMemberName] string property = "")
-        {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(property));
-            }
-        }
-
+        
         public void Login(string password)
         {
             throw new NotImplementedException();
         }
-
-        public event PropertyChangedEventHandler PropertyChanged;
     }
 }

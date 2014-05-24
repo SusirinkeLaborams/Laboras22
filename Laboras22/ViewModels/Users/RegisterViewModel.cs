@@ -17,7 +17,7 @@ using Laboras22.Classes;
 
 namespace Laboras22.ViewModels.Users
 {
-    class RegisterViewModel : INotifyPropertyChanged
+    class RegisterViewModel : NotifyPropertyChangedBase
     {
         public enum UserTypeEnum { Student = 0, Lecturer = 1 }
 
@@ -263,21 +263,13 @@ namespace Laboras22.ViewModels.Users
             }
         }
 
-        private void OnPropertyChanged([CallerMemberName] string property = "")
-        {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(property));
-            }
-        }
-
         public async Task<bool> Register()
         {
             var userNameUnique = (await LoginViewModel.Where(x => UserName == x.UserName)).Count() == 0;
 
             if (!userNameUnique)
             {
-                new StyledMessageDialog("User name already exists", "Error registering", MessageBoxButton.OK).ShowDialog();
+                new StyledMessageDialog("User name already exists. Please choose another one.", "Error registering", MessageBoxButton.OK).ShowDialog();
                 return false;
             }
 
@@ -325,8 +317,6 @@ namespace Laboras22.ViewModels.Users
             await userLogin.Insert();
 
             return userLogin;
-        }        
-
-        public event PropertyChangedEventHandler PropertyChanged;
+        }
     }
 }

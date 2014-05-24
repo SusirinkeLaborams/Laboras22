@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 
 namespace Laboras22.ViewModels.Projects
 {
-    abstract class ProjectCreationViewModel : INotifyPropertyChanged
+    abstract class ProjectCreationViewModel : NotifyPropertyChangedBase
     {
-        public event PropertyChangedEventHandler PropertyChanged;
     }
 }

@@ -3,6 +3,10 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Width="200">
     <Grid x:Name="m_LayoutRoot" VerticalAlignment="Center">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="41*"/>
+            <ColumnDefinition Width="59*"/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
@@ -10,11 +14,11 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <TextBlock x:Name="m_UserNameTextBlock" Text="User name" Grid.Row="0" FontSize="24"/>
-        <TextBox x:Name="m_UserNameTextBox" Text="{Binding UserName, Mode=TwoWay}" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" Width="200" Height="25"/>
-        <TextBlock x:Name="m_PasswordTextBlock" Text="Password" Grid.Row="2" FontSize="24"/>
-        <PasswordBox x:Name="m_PasswordBox" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Top" Width="200" Height="25"/>
-        <Grid Grid.Row="4" Margin="0,25,0,0">
+        <TextBlock x:Name="m_UserNameTextBlock" Text="User name" Grid.Row="0" FontSize="24" Grid.ColumnSpan="2" Foreground="White"/>
+        <TextBox x:Name="m_UserNameTextBox" Text="{Binding UserName, Mode=TwoWay}" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" Width="200" Height="25" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="m_PasswordTextBlock" Text="Password" Grid.Row="2" FontSize="24" Foreground="White" Grid.ColumnSpan="2"/>
+        <PasswordBox x:Name="m_PasswordBox" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Top" Width="200" Height="25" Grid.ColumnSpan="2"/>
+        <Grid Grid.Row="4" Margin="0,25,0,0" Grid.ColumnSpan="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
@@ -22,5 +26,5 @@
             <Button x:Name="m_LoginButton" Content="Login" Grid.Column="0" HorizontalAlignment="Right" Margin="5,0" Click="LoginButton_Click_1"/>
             <Button x:Name="m_RegisterButton" Content="Register" Grid.Column="1" HorizontalAlignment="Left" Margin="5,0" Click="RegisterButton_Click_1"/>
         </Grid>
-    </Grid> 
+    </Grid>
 </Page>

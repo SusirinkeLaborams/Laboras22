@@ -4,12 +4,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Laboras22.ViewModels
 {
-    public abstract class ViewModelBase<ModelType, ViewModelType>
+    abstract class ViewModelBase<ModelType, ViewModelType> : NotifyPropertyChangedBase
         where ModelType : class, IDataItem, new() 
         where ViewModelType : ViewModelBase<ModelType, ViewModelType>, new()
     {
