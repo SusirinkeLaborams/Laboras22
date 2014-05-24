@@ -36,7 +36,9 @@ namespace Laboras22.Views
             m_RegisterViewModel = new RegisterViewModel();
             m_LayoutRoot.DataContext = m_RegisterViewModel;
             SetupPasswordValidation();
+            LoadUniversities();
         }
+
                 
         private async void RegisterButton_Click(object sender, RoutedEventArgs e)
         {
@@ -124,6 +126,11 @@ namespace Laboras22.Views
         private async void m_UniversityComboBox_Selected_1(object sender, RoutedEventArgs e)
         {
             await m_RegisterViewModel.LoadFaculties();
+        }
+
+        private async void LoadUniversities()
+        {
+            await m_RegisterViewModel.LoadUniversities();
         }
     }
 }

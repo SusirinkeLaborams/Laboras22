@@ -12,7 +12,7 @@ namespace Laboras22.ViewModels.Assignments
     {
         #region Settable properties
 
-        public string Name { get { return model.Name; } set { model.Name = value; } }
+        public string Name { get { return model.DepartmentName; } set { model.DepartmentName = value; } }
        
         public FacultyViewModel Faculty 
         {
@@ -56,6 +56,11 @@ namespace Laboras22.ViewModels.Assignments
         {
             faculty = await FacultyViewModel.Get(model.FacultyId);
             head = await LecturerViewModel.Get(model.HeadId);
+        }
+
+        public override string ToString()
+        {
+            return Name;
         }
     }
 }

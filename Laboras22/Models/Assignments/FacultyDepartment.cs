@@ -10,7 +10,7 @@ namespace Laboras22.Models.Assignments
     public class FacultyDepartment : IDataItem
     {
         public int Id { get; set; }
-        public string Name { get; set; }
+        public string DepartmentName { get; set; }
         public int FacultyId { get; set; }
         public int HeadId { get; set; }
         public string Description { get; set; }

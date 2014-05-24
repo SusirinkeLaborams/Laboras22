@@ -12,7 +12,7 @@ namespace Laboras22.ViewModels.Assignments
     {
         #region Settable properties
 
-        public string Name { get { return model.Name; } set { model.Name = value; } }
+        public string Name { get { return model.UniversityName; } set { model.UniversityName = value; } }
         public string Description { get { return model.Description; } set { model.Description = value; } }
         public int YearFounded { get { return model.YearFounded; } set { model.YearFounded = value; } }
 
@@ -43,6 +43,11 @@ namespace Laboras22.ViewModels.Assignments
         protected override async Task RefreshFields()
         {
             rector = await LecturerViewModel.Get(model.RectorId);
+        }
+
+        public override string ToString()
+        {
+            return Name;
         }
     }
 }

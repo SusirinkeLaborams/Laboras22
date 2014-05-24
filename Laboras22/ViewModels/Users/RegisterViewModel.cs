@@ -40,14 +40,12 @@ namespace Laboras22.ViewModels.Users
 
         public async Task LoadFaculties()
         {
-            m_Faculties = await FacultyViewModel.Where(x => m_University.Id == x.UniversityId);
-            OnPropertyChanged("Faculties");
+            Faculties = await FacultyViewModel.Where(x => m_University.Id == x.UniversityId);
         }
 
         public async Task LoadFacultyDepartments()
         {
-            m_FacultyDepartments = await FacultyDepartmentViewModel.Where(x => m_Faculty.Id == x.FacultyId);
-            OnPropertyChanged("FacultyDepartments");
+            FacultyDepartments = await FacultyDepartmentViewModel.Where(x => m_Faculty.Id == x.FacultyId);
         }
 
         public IEnumerable<UniversityViewModel> Universities
@@ -298,7 +296,16 @@ namespace Laboras22.ViewModels.Users
                     return true;
 
                 case UserTypeEnum.Lecturer:
-                    throw new NotImplementedException();
+                    {
+                        var lecturer = await LecturerViewModel.Create();
+                        lecturer.FacultyDepartment = Department;
+                        lecturer.Email = m_Email;
+                        lecturer.FirstName = m_FirstName;
+                        lecturer.LastName = m_LastName;
+                        lecturer.LoginId = userLoginTask.Id;
+                        await lecturer.Insert();
+                    }
+                    return true;
 
                 default:
                     throw new NotSupportedException();
