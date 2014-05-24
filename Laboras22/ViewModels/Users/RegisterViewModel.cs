@@ -7,6 +7,7 @@ using System.Security;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using Laboras22.Models.Users;
 
 namespace Laboras22.ViewModels.Users
 {
@@ -145,8 +146,25 @@ namespace Laboras22.ViewModels.Users
             }
         }
 
-        public void Register()
+        public async Task<bool> Register()
         {
+            var userNameUnique = (await LoginViewModel.Where(x => UserName == x.UserName)).Count() == 0;
+            if (!userNameUnique)
+            {
+                throw new NotImplementedException();
+                return false;
+            }
+            User user = null;
+            switch (m_UserType)
+            {
+             //   case UserTypeEnum.Student:
+              //      user = new Student();
+
+            }
+            user.Email = m_Email;
+            user.FirstName = m_FirstName;
+            user.LastName = m_LastName;
+            
             throw new NotImplementedException();
         }
 
