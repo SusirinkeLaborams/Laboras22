@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:Metro="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         xmlns:ValidationRules="clr-namespace:Laboras22.ValidationRules"
-        Title="RegisterWindow" Height="425" Width="400" ResizeMode="NoResize">
+        Title="Registration Window" Height="425" Width="400" ResizeMode="NoResize">
     <Grid x:Name="m_LayoutRoot" Margin="10,0">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
