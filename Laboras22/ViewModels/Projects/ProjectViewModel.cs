@@ -1,4 +1,5 @@
 ﻿using Laboras22.Models.Projects;
+using Laboras22.ViewModels.Users;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,12 +12,14 @@ namespace Laboras22.ViewModels.Projects
     {
         public string Name { get { return model.Name; } set { model.Name = value; } }
         public int Assignment { get { return model.Assignment; } set { model.Assignment = value; } }
-        public int Owner { get { return model.Owner; } set { model.Owner = value; } }
-        public List<ProjectParticipantViewModel> Participants { get; set; }
-        public List<ProjectContentViewModel> Contents { get; set; }
+        public UserViewModel Owner { get; private set; }
+        public IEnumerable<ProjectParticipantViewModel> Participants { get; set; }
+        public IEnumerable<ProjectContentViewModel> Contents { get; set; }
         protected override async Task RefreshFields()
         {
-            throw new NotImplementedException();
+            Owner = await UserViewModel.Get(model.Owner);
+            Participants = await ProjectParticipantViewModel.Where(p => p.Project == model.Id);
+            Contents = await ProjectContentViewModel.Where(c => c.Project == model.Id);
         }
     }
 }

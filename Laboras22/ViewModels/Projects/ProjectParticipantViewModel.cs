@@ -1,4 +1,5 @@
 ﻿using Laboras22.Models.Projects;
+using Laboras22.ViewModels.Users;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,8 +10,7 @@ namespace Laboras22.ViewModels.Projects
 {
     class ProjectParticipantViewModel : ViewModelBase<ProjectParticipant, ProjectParticipantViewModel>
     {
-        public int Project { get { return model.Project; } set { model.Project = value; } }
-        public int Student { get { return model.Student; } set { model.Student = value; } }
+        public UserViewModel Student { get; set; }
         public RatingViewModel Rating { set; get; }
         public GradeViewModel Grade { set; get; }
         public int? GradeValue { get { return Grade != null ? (int?)Grade.Value : null; } }
@@ -18,7 +18,9 @@ namespace Laboras22.ViewModels.Projects
         public string RatingComment { get { return Rating != null ? Rating.Comment : null; } }
         protected override async Task RefreshFields()
         {
-            throw new NotImplementedException();
+            Student = await UserViewModel.Get(model.Student);
+            Grade = (await GradeViewModel.Where(g => g.Participant == model.Id)).Single();
+            Rating = (await RatingViewModel.Where(r => r.Participant == model.Id)).Single();
         }
     }
 }

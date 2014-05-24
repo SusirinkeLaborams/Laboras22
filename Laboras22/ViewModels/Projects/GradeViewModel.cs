@@ -9,7 +9,6 @@ namespace Laboras22.ViewModels.Projects
 {
     class GradeViewModel : ViewModelBase<Grade, GradeViewModel>
     {
-        public int Participant { get { return model.Participant; } set { model.Participant = value; } }
         public int Value { get { return model.Value; } set { model.Value = value; } }
 
 #pragma warning disable 1998
