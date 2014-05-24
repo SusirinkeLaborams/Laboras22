@@ -117,6 +117,7 @@
     <Compile Include="ViewModels\Projects\ProjectViewModel.cs" />
     <Compile Include="ViewModels\Projects\RatingViewModel.cs" />
     <Compile Include="ViewModels\Users\AdministratorViewModel.cs" />
+    <Compile Include="ViewModels\Users\IUserViewModel.cs" />
     <Compile Include="ViewModels\Users\UserViewModel.cs" />
     <Compile Include="ViewModels\Users\LecturerViewModel.cs" />
     <Compile Include="ViewModels\Users\LoginViewModel.cs" />
@@ -130,6 +131,7 @@
     <Compile Include="Views\Pages\ManageUsersPage.xaml.cs">
       <DependentUpon>ManageUsersPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Pages\PageBase.cs" />
     <Compile Include="Views\Pages\ProjectList.xaml.cs">
       <DependentUpon>ProjectList.xaml</DependentUpon>
     </Compile>

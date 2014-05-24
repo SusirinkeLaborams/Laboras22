@@ -7,22 +7,32 @@ using Laboras22.Models.Users;
 
 namespace Laboras22.ViewModels.Users
 {
-    class SessionsViewModel : ViewModelBase<Sessions, SessionsViewModel>
+    class SessionViewModel : ViewModelBase<Sessions, SessionViewModel>
     {
-        public LoginViewModel User
+        public enum UserTypeEnum { Student = 0, Lecturer = 1, Administrator = 2 }
+
+        private LoginViewModel m_UserLogin;
+
+        public LoginViewModel UserLogin
         {
             get
             {
-                return m_User;
+                return m_UserLogin;
             }
             set
             {
-                m_User = value;
+                m_UserLogin = value;
                 model.UserId = value.Id;
             }
         }
 
-        private LoginViewModel m_User;
+        public DateTime Time { get; set; }
+
+        public IUserViewModel User { get; set; }
+        public UserTypeEnum UserType { get; set; }
+
+
+
 
 
 #pragma warning disable 1998

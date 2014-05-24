@@ -1,4 +1,5 @@
 ﻿using Laboras22.ViewModels.Projects;
+using Laboras22.Views.Pages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,11 +19,11 @@ namespace Laboras22.Views
     /// <summary>
     /// Interaction logic for ProjectWindow.xaml
     /// </summary>
-    public partial class ProjectPage : Page
+    public partial class ProjectPage : PageBase
     {
         private ProjectViewModel viewModel;
         private int projectId;
-        public ProjectPage(int projectId)
+        public ProjectPage(MainWindow window, int projectId) : base(window)
         {
             this.projectId = projectId;
             InitializeComponent();
