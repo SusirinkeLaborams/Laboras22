@@ -3,9 +3,12 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:Metro="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         xmlns:ValidationRules="clr-namespace:Laboras22.ValidationRules"
-        Title="RegisterWindow" Height="425" Width="400" ResizeMode="NoResize">
+        Title="RegisterWindow" Height="425" Width="400" ResizeMode="NoResize"
+        Initialized="MetroWindow_Initialized_1">
     <Grid x:Name="m_LayoutRoot" Margin="10,0">
         <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
@@ -87,7 +90,16 @@
                 </Binding>
             </TextBox.Text>
         </TextBox>
-        
-        <Button Content="Register" HorizontalAlignment="Center" Grid.ColumnSpan="2" Grid.Row="8" Click="Button_Click_1"/>
+
+        <TextBlock Text="University" Grid.Column="0" Grid.Row="7" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0" Visibility="{Binding FacultyVisibility}"/>
+        <ComboBox x:Name="m_UniversityComboBox" ItemsSource="{Binding Universities, Mode=TwoWay}" SelectedIndex="{Binding University, Mode=TwoWay}" Grid.Column="1" Grid.Row="7" Height="25" Visibility="{Binding FacultyVisibility}" SelectionChanged ="m_UniversityComboBox_Selected_1"/>
+
+        <TextBlock Text="Faculty" Grid.Column="0" Grid.Row="8" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0" Visibility="{Binding FacultyVisibility}"/>
+        <ComboBox x:Name="m_FacultyComboBox" ItemsSource="{Binding Faculties, Mode=TwoWay}" SelectedIndex="{Binding Faculty, Mode=TwoWay}" Grid.Column="1" Grid.Row="8" Height="25" Visibility="{Binding FacultyVisibility}" SelectionChanged ="m_FacultyComboBox_Selected_1"/>
+
+        <TextBlock Text="Department" Grid.Column="0" Grid.Row="9" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0" Visibility="{Binding FacultyVisibility}"/>
+        <ComboBox x:Name="m_DepartmentComboBox" ItemsSource="{Binding Departments, Mode=TwoWay}" SelectedIndex="{Binding Department, Mode=TwoWay}" Grid.Column="1" Grid.Row="9" Height="25" Visibility="{Binding FacultyVisibility}"/>
+
+        <Button Content="Register" HorizontalAlignment="Center" Grid.ColumnSpan="2" Grid.Row="10" Click="Button_Click_1"/>
     </Grid>
 </Metro:MetroWindow>
