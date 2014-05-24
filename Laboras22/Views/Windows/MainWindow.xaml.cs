@@ -18,7 +18,7 @@ namespace Laboras22.Views
             InitializeComponent();
             AzureService.Connect();
             
-            m_Frame.Content = new LoginPage();
+            PushPage(new LoginPage());
         }
         public void PushPage(Page page)
         {
@@ -27,8 +27,17 @@ namespace Laboras22.Views
         }
         public void PopPage()
         {
-            pages.Pop();
-            m_Frame.Content = pages.Count != 0 ? pages.Peek() : null;
+            if(pages.Count > 1)
+            {
+                pages.Pop();
+                m_Frame.Content = pages.Peek();
+            }
+        }
+        protected override void OnKeyUp(System.Windows.Input.KeyEventArgs e)
+        {
+            base.OnKeyUp(e);
+            if (e.Key == System.Windows.Input.Key.Back)
+                PopPage();
         }
     }
 }

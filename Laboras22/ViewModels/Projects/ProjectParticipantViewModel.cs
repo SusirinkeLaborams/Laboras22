@@ -10,6 +10,7 @@ namespace Laboras22.ViewModels.Projects
 {
     class ProjectParticipantViewModel : ViewModelBase<ProjectParticipant, ProjectParticipantViewModel>
     {
+        public string Name { get { return Student.Name; } }
         public StudentViewModel Student { get; private set; }
         public ProjectViewModel Project { get; private set; }
         protected override async Task RefreshFields()
