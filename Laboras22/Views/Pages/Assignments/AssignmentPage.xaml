@@ -1,4 +1,5 @@
-﻿<Page x:Class="Laboras22.Views.Pages.Assignments.AssignmentPage"
+﻿<Laboras22:PageBase x:Class="Laboras22.Views.Pages.Assignments.AssignmentPage"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-</Page>
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Laboras22="clr-namespace:Laboras22.Views.Pages">
+</Laboras22:PageBase>
