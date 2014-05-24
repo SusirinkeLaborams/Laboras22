@@ -10,7 +10,7 @@ namespace Laboras22.ViewModels.Projects
 {
     class ProjectParticipantViewModel : ViewModelBase<ProjectParticipant, ProjectParticipantViewModel>
     {
-        public UserViewModel Student { get; set; }
+        public StudentViewModel Student { get; set; }
         public RatingViewModel Rating { set; get; }
         public GradeViewModel Grade { set; get; }
         public int? GradeValue { get { return Grade != null ? (int?)Grade.Value : null; } }
@@ -18,7 +18,7 @@ namespace Laboras22.ViewModels.Projects
         public string RatingComment { get { return Rating != null ? Rating.Comment : null; } }
         protected override async Task RefreshFields()
         {
-            Student = await UserViewModel.Get(model.Student);
+            Student = await StudentViewModel.Get(model.Student);
             Grade = (await GradeViewModel.Where(g => g.Participant == model.Id)).Single();
             Rating = (await RatingViewModel.Where(r => r.Participant == model.Id)).Single();
         }
