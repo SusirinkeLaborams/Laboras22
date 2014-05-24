@@ -3,10 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="ProjectWindow" Height="300" Width="300">
     <StackPanel>
-        <TextBlock x:Name="AssignmentName" Text="Assignment Name"/>
-        <Button x:Name="AddContentButton" Content="Add Content"/>
-        <Button x:Name="AddParticipantsButton" Content="Add Participants"/>
-        <Button x:Name="SubmitButton" Content="Submit For Review" />
-        <Button x:Name="DeleteProject" Content="Delete Project"/>
+        <TextBlock Text="{Binding AssignmentName}"/>
+        <TextBlock Text="{Binding Name}"/>
     </StackPanel>
 </Page>
