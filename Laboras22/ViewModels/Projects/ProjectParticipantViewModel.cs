@@ -19,8 +19,8 @@ namespace Laboras22.ViewModels.Projects
         protected override async Task RefreshFields()
         {
             Student = await StudentViewModel.Get(model.Student);
-            Grade = (await GradeViewModel.Where(g => g.Participant == model.Id)).Single();
-            Rating = (await RatingViewModel.Where(r => r.Participant == model.Id)).Single();
+            Grade = (await GradeViewModel.Where(g => g.Participant == model.Id)).SingleOrDefault(null);
+            Rating = (await RatingViewModel.Where(r => r.Participant == model.Id)).SingleOrDefault(null);
         }
     }
 }
