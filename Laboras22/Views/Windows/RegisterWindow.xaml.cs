@@ -37,12 +37,8 @@ namespace Laboras22.Views
             m_LayoutRoot.DataContext = m_RegisterViewModel;
             SetupPasswordValidation();
         }
-
-        protected void OnInitialized()
-        {
-            m_RegisterViewModel.LoadUniversities();
-        }
-
+                
+        private async void RegisterButton_Click(object sender, RoutedEventArgs e)
         {
             if (!IsUserInputValid())
             {
@@ -128,11 +124,6 @@ namespace Laboras22.Views
         private async void m_UniversityComboBox_Selected_1(object sender, RoutedEventArgs e)
         {
             await m_RegisterViewModel.LoadFaculties();
-        }
-
-        private void MetroWindow_Initialized_1(object sender, EventArgs e)
-        {
-
         }
     }
 }

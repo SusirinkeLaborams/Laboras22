@@ -12,10 +12,11 @@ using Laboras22.Models.Users;
 using Laboras22.Views.Windows;
 using System.Security.Cryptography;
 using System.Runtime.InteropServices;
+using Laboras22.ViewModels.Assignments;
 
 namespace Laboras22.ViewModels.Users
 {
-    public class RegisterViewModel : INotifyPropertyChanged
+    class RegisterViewModel : INotifyPropertyChanged
     {
         private enum UserTypeEnum { Student = 0, Lecturer = 1 }
 
@@ -33,9 +34,9 @@ namespace Laboras22.ViewModels.Users
         private SecureString m_Password;
         private SecureString m_ConfirmPassword;
 
-        public IEnumerable<UniversityViewModel> m_Universities;
-        public IEnumerable<FacultyViewModel> m_Faculties;
-        public IEnumerable<FacultyDepartmentViewModel> m_FacultyDepartments;
+        private IEnumerable<UniversityViewModel> m_Universities;
+        private IEnumerable<FacultyViewModel> m_Faculties;
+        private IEnumerable<FacultyDepartmentViewModel> m_FacultyDepartments;
 
         public async Task LoadFaculties()
         {
