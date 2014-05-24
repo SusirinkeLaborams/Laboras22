@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Laboras22.ViewModels.Projects;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,18 @@ namespace Laboras22.Views.Pages
     /// </summary>
     public partial class ProjectList : Page
     {
-        public ProjectList()
+        private ProjectListViewModel viewModel;
+        private int userId;
+        public ProjectList(int userId)
         {
+            this.userId = userId;
             InitializeComponent();
+        }
+        protected override async void OnInitialized(EventArgs e)
+        {
+            base.OnInitialized(e);
+            viewModel = await ParticipatedProjectListViewModel.Create(userId);
+            root.DataContext = viewModel;
         }
     }
 }

@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 
 namespace Laboras22.ViewModels.Projects
 {
-    class ParticipatedProjectListViewModel
+    class ParticipatedProjectListViewModel : ProjectListViewModel
     {
-        public IEnumerable<ProjectViewModel> Projects { get; private set; }
-        private ParticipatedProjectListViewModel(IEnumerable<ProjectViewModel> projects)
+        protected ParticipatedProjectListViewModel(IEnumerable<ProjectViewModel> projects) : base(projects)
         {
-            Projects = projects;
         }
         public static async Task<ParticipatedProjectListViewModel> Create(int studentId)
         {
