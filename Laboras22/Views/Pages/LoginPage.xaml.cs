@@ -12,16 +12,19 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Laboras22.ViewModels.Users;
+using Laboras22.Views.Pages;
 
 namespace Laboras22.Views
 {
     /// <summary>
     /// Interaction logic for LoginPage.xaml
     /// </summary>
-    public partial class LoginPage : Page
+    public partial class LoginPage : PageBase
     {
         private LoginViewModel m_LoginViewModel;
-        public LoginPage()
+        
+        public LoginPage(MainWindow parent) : 
+            base(parent)
         {
             InitializeComponent();
         }
@@ -34,9 +37,15 @@ namespace Laboras22.Views
             m_LayoutRoot.DataContext = m_LoginViewModel;
         }
         
-        private void LoginButton_Click_1(object sender, RoutedEventArgs e)
+        private async void LoginButton_Click_1(object sender, RoutedEventArgs e)
         {
-            m_LoginViewModel.Login(m_PasswordBox.Password);
+            window.Session = await m_LoginViewModel.Login(m_PasswordBox.SecurePassword);
+            if (window.Session == null)
+            {
+                //TODO do more stuff
+                var dialog = new Windows.StyledMessageDialog("Failed to login", "Error", MessageBoxButton.OK);
+                dialog.Show();
+            }
         }
 
         private void RegisterButton_Click_1(object sender, RoutedEventArgs e)

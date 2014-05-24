@@ -7,7 +7,7 @@ using Laboras22.Interfaces;
 
 namespace Laboras22.Models.Users
 {
-    public class User : IDataItem
+    class User : IDataItem
     {
         public int Id { get; set; }
         public String Email {get; set;}

@@ -26,7 +26,29 @@ namespace Laboras22.ViewModels.Users
             }
         }
 
-        public DateTime Time { get; set; }
+        public DateTime Time 
+        {
+            get
+            {
+                return model.Time;
+            }
+            set
+            {
+                model.Time = value;
+            }
+        }
+
+        public string IP
+        {
+            get
+            {
+                return model.IP;
+            }
+            set
+            {
+                model.IP = value;
+            }
+        }
 
         public IUserViewModel User { get; set; }
         public UserTypeEnum UserType { get; set; }

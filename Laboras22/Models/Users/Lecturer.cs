@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Laboras22.Models.Users
 {
-    public class Lecturer : User
+    class Lecturer : User
     {
         public int FacultyDepartmentId { get; set; }
     }

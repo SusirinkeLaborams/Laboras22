@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Net;
 using System.Runtime.CompilerServices;
+using System.Security;
 using System.Text;
 using System.Threading.Tasks;
+using Laboras22.Classes;
 using Laboras22.Models.Users;
 
 namespace Laboras22.ViewModels.Users
@@ -77,10 +80,50 @@ namespace Laboras22.ViewModels.Users
             }
         }
 
-        public void Login(string password)
+        public async Task<SessionViewModel> Login(SecureString password)
         {
-            throw new NotImplementedException();
+            var userList = await LoginViewModel.Where(x => UserName == x.UserName);
+            if (userList.Count() == 0)
+            {
+                return null;
+            }
+            var user = userList.First();
+            string hash = PasswordUtils.ComputePassword(password, user.Salt);
+            if (hash != user.PasswordHash)
+            {
+                return null;
+            }
+            var session = await SessionViewModel.Create();
+            session.Time = DateTime.Now;
+            session.UserLogin = user;
+            session.IP = new WebClient().DownloadString("http://icanhazip.com");
+
+            var student = (await StudentViewModel.Where(x => x.LoginId == user.Id)).FirstOrDefault();
+            if (student != null)
+            {
+                session.UserType = SessionViewModel.UserTypeEnum.Student;
+                session.User = student;
+                return session;
+            }
+            var lecturer = (await LecturerViewModel.Where(x => x.LoginId == user.Id)).FirstOrDefault();
+            if(lecturer != null)
+            {
+                session.UserType = SessionViewModel.UserTypeEnum.Lecturer;
+                session.User = lecturer;
+                return session;
+            }
+            
+            var administrator = (await AdministratorViewModel.Where(x => x.LoginId == user.Id)).FirstOrDefault();
+            if(administrator != null)
+            {
+                session.UserType = SessionViewModel.UserTypeEnum.Administrator;
+                session.User = administrator;
+                return session;
+            }
+            throw new NotSupportedException();
         }
+
+        
 
         public event PropertyChangedEventHandler PropertyChanged;
     }

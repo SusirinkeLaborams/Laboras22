@@ -10,7 +10,7 @@ namespace Laboras22.Views
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : MetroWindow
+    partial class MainWindow : MetroWindow
     {
         private Stack<Page> pages = new Stack<Page>();
         public MainWindow()
@@ -18,7 +18,7 @@ namespace Laboras22.Views
             InitializeComponent();
             AzureService.Connect();
             
-            m_Frame.Content = new LoginPage();
+            m_Frame.Content = new LoginPage(this);
         }
         public void PushPage(Page page)
         {
@@ -30,5 +30,7 @@ namespace Laboras22.Views
             pages.Pop();
             m_Frame.Content = pages.Count != 0 ? pages.Peek() : null;
         }
+
+        internal SessionViewModel Session { get; set; }
     }
 }
