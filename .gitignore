@@ -157,3 +157,6 @@ $RECYCLE.BIN/
 /packages
 
 Laboras22/Classes/Key.cs
+.nuget/NuGet.Config
+.nuget/NuGet.exe
+.nuget/NuGet.targets
