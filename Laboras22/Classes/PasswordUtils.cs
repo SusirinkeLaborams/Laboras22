@@ -11,7 +11,7 @@ namespace Laboras22.Classes
 {
     static class PasswordUtils
     {
-        public static string ComputePassword(SecureString password, String salt)
+        public static string ComputePassword(SecureString password, string salt)
         {
             var saltedPassword = password.Copy();
             foreach (var saltChar in salt)
@@ -37,6 +37,8 @@ namespace Laboras22.Classes
 
             byte[] hashedPassword = sha.ComputeHash(passwordBytes);
             sha.Clear();
+            for (int i = 0; i < passwordBytes.Length; i++) passwordBytes[i] = 0;
+
             return Convert.ToBase64String(hashedPassword);
         }
 
