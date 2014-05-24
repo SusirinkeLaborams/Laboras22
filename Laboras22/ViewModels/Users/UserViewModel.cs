@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Laboras22.ViewModels.Users
 {
-    abstract class UserViewModel<ModelType, ViewModelType> : ViewModelBase<ModelType, ViewModelType>
+    abstract class UserViewModel<ModelType, ViewModelType> : ViewModelBase<ModelType, ViewModelType>, IUserViewModel
         where ModelType : User, new()
         where ViewModelType : ViewModelBase<ModelType, ViewModelType>, new()
     {

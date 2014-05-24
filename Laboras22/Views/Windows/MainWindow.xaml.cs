@@ -1,4 +1,5 @@
 ﻿using Laboras22.Classes;
+using Laboras22.ViewModels.Users;
 using MahApps.Metro.Controls;
 
 namespace Laboras22.Views
@@ -8,6 +9,7 @@ namespace Laboras22.Views
     /// </summary>
     public partial class MainWindow : MetroWindow
     {
+        public SessionViewModel Session { get; set; }
         public MainWindow()
         {
             InitializeComponent();

@@ -115,6 +115,7 @@
     <Compile Include="ViewModels\Projects\ProjectViewModel.cs" />
     <Compile Include="ViewModels\Projects\RatingViewModel.cs" />
     <Compile Include="ViewModels\Users\AdministratorViewModel.cs" />
+    <Compile Include="ViewModels\Users\IUserViewModel.cs" />
     <Compile Include="ViewModels\Users\UserViewModel.cs" />
     <Compile Include="ViewModels\Users\LecturerViewModel.cs" />
     <Compile Include="ViewModels\Users\LoginViewModel.cs" />
