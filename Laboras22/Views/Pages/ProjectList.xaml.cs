@@ -19,11 +19,11 @@ namespace Laboras22.Views.Pages
     /// <summary>
     /// Interaction logic for ProjectList.xaml
     /// </summary>
-    public partial class ProjectList : Page
+    public partial class ProjectList : PageBase
     {
         private ProjectListViewModel viewModel;
         private int userId;
-        public ProjectList(int userId)
+        public ProjectList(MainWindow window, int userId) : base(window)
         {
             this.userId = userId;
             InitializeComponent();
@@ -36,10 +36,10 @@ namespace Laboras22.Views.Pages
         }
         private void ItemClick(object sender, RoutedEventArgs e)
         {
-            var item = (sender as ListView).SelectedItem;
+            var item = (sender as ListView).SelectedItem as ProjectViewModel;
             if (item != null)
             {
-                //open shit
+                window.PushPage(new ProjectPage(window, item.Id));
             }
         }
     }
