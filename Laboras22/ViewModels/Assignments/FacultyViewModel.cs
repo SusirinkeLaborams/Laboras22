@@ -24,7 +24,7 @@ namespace Laboras22.ViewModels.Assignments
             }
         }
 
-        public UserViewModel Dean 
+        public LecturerViewModel Dean 
         {
             get { return dean; }
             set
@@ -48,14 +48,14 @@ namespace Laboras22.ViewModels.Assignments
         #region Fields
 
         private UniversityViewModel university;
-        private UserViewModel dean;
+        private LecturerViewModel dean;
 
         #endregion
 
         protected override async Task RefreshFields()
         {
             university = await UniversityViewModel.Get(model.UniversityId);
-            dean = await UserViewModel.Get(model.DeanId);
+            dean = await LecturerViewModel.Get(model.DeanId);
         }
     }
 }

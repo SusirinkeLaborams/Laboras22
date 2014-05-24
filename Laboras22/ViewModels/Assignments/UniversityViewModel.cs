@@ -16,7 +16,7 @@ namespace Laboras22.ViewModels.Assignments
         public string Description { get { return model.Description; } set { model.Description = value; } }
         public int YearFounded { get { return model.YearFounded; } set { model.YearFounded = value; } }
 
-        public UserViewModel Rector 
+        public LecturerViewModel Rector 
         {
             get { return rector; }
             set
@@ -36,13 +36,13 @@ namespace Laboras22.ViewModels.Assignments
 
         #region Fields
 
-        private UserViewModel rector;
+        private LecturerViewModel rector;
 
         #endregion
 
         protected override async Task RefreshFields()
         {
-            rector = await UserViewModel.Get(model.RectorId);
+            rector = await LecturerViewModel.Get(model.RectorId);
         }
     }
 }

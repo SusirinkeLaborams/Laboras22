@@ -24,7 +24,7 @@ namespace Laboras22.ViewModels.Assignments
             }
         }
 
-        public UserViewModel Head 
+        public LecturerViewModel Head 
         {
             get { return head; }
             set
@@ -48,14 +48,14 @@ namespace Laboras22.ViewModels.Assignments
         #region Fields
 
         private FacultyViewModel faculty;
-        private UserViewModel head;
+        private LecturerViewModel head;
 
         #endregion
 
         protected override async Task RefreshFields()
         {
             faculty = await FacultyViewModel.Get(model.FacultyId);
-            head = await UserViewModel.Get(model.HeadId);
+            head = await LecturerViewModel.Get(model.HeadId);
         }
     }
 }

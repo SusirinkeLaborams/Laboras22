@@ -25,7 +25,7 @@ namespace Laboras22.ViewModels.Assignments
             }
         }
 
-        public UserViewModel Lecturer
+        public LecturerViewModel Lecturer
         {
             get { return lecturer; }
             set
@@ -49,14 +49,14 @@ namespace Laboras22.ViewModels.Assignments
         #region Fields
 
         private CourseViewModel course;
-        private UserViewModel lecturer;
+        private LecturerViewModel lecturer;
 
         #endregion
 
         protected override async Task RefreshFields()
         {
             course = await CourseViewModel.Get(model.CourseId);
-            lecturer = await UserViewModel.Get(model.LecturerId);
+            lecturer = await LecturerViewModel.Get(model.LecturerId);
         }
     }
 }

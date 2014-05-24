@@ -10,7 +10,7 @@ using System.Windows;
 
 namespace Laboras22.ViewModels.Users
 {
-    class RegisterViewModel : INotifyPropertyChanged
+    public class RegisterViewModel : INotifyPropertyChanged
     {
         private enum UserTypeEnum { Student = 0, Lecturer = 1 }
 

@@ -1,25 +1,18 @@
-﻿using Laboras22.Interfaces;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Laboras22.Interfaces;
 
 namespace Laboras22.Models.Users
 {
-    public enum UserType
-    {
-        Student = 0,
-        Lecturer,
-        Administrator
-    }
-
     public class User : IDataItem
     {
         public int Id { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string Email { get; set; }
-        public UserType UserType { get; set; }
+        public String Email {get; set;}
+        public String FirstName { get; set; }
+        public String LastName { get; set; }
+        public int LoginID { get; set; }
     }
 }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Laboras22.ViewModels.Users
 {
-    class LoginViewModel : INotifyPropertyChanged
+    public class LoginViewModel : INotifyPropertyChanged
     {
         private string m_UserName;
 

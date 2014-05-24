@@ -25,7 +25,7 @@ namespace Laboras22.ViewModels.Assignments
             }
         }
 
-        public UserViewModel Owner
+        public LecturerViewModel Owner
         {
             get { return owner; }
             set
@@ -49,14 +49,14 @@ namespace Laboras22.ViewModels.Assignments
         #region Fields
 
         private FacultyDepartmentViewModel facultyDepartment;
-        private UserViewModel owner;
+        private LecturerViewModel owner;
 
         #endregion
 
         protected override async Task RefreshFields()
         {
             facultyDepartment = await FacultyDepartmentViewModel.Get(model.FacultyDepartmentId);
-            owner = await UserViewModel.Get(model.OwnerId);
+            owner = await LecturerViewModel.Get(model.OwnerId);
         }
     }
 }
