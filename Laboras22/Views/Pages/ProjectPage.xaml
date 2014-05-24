@@ -1,4 +1,4 @@
-﻿<Window x:Class="Laboras22.Views.ProjectWindow"
+﻿<Page x:Class="Laboras22.Views.ProjectPage"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="ProjectWindow" Height="300" Width="300">
@@ -9,4 +9,4 @@
         <Button x:Name="SubmitButton" Content="Submit For Review" />
         <Button x:Name="DeleteProject" Content="Delete Project"/>
     </StackPanel>
-</Window>
+</Page>

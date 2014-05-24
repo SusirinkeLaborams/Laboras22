@@ -125,11 +125,17 @@
     <Compile Include="Views\Pages\ManageUsersPage.xaml.cs">
       <DependentUpon>ManageUsersPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Pages\ProjectPage.xaml.cs">
+      <DependentUpon>ProjectPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Windows\RegisterWindow.xaml.cs">
       <DependentUpon>RegisterWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Pages\UserDataModificationPage.xaml.cs">
       <DependentUpon>UserDataModificationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Windows\StyledMessageDialog.xaml.cs">
+      <DependentUpon>StyledMessageDialog.xaml</DependentUpon>
     </Compile>
     <Page Include="Views\Pages\AssignmentPage.xaml">
       <SubType>Designer</SubType>
@@ -138,6 +144,10 @@
     <Page Include="Views\Pages\LoginPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pages\ProjectPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\Windows\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -166,6 +176,10 @@
     <Page Include="Views\Pages\UserDataModificationPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Windows\StyledMessageDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>

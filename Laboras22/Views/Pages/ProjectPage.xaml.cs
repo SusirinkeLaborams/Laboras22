@@ -17,9 +17,9 @@ namespace Laboras22.Views
     /// <summary>
     /// Interaction logic for ProjectWindow.xaml
     /// </summary>
-    public partial class ProjectWindow : Window
+    public partial class ProjectPage : Page
     {
-        public ProjectWindow()
+        public ProjectPage()
         {
             InitializeComponent();
         }
