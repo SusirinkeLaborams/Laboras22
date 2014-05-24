@@ -34,5 +34,13 @@ namespace Laboras22.Views.Pages
             viewModel = await ParticipatedProjectListViewModel.Create(userId);
             root.DataContext = viewModel;
         }
+        private void ItemClick(object sender, RoutedEventArgs e)
+        {
+            var item = (sender as ListView).SelectedItem;
+            if (item != null)
+            {
+                //open shit
+            }
+        }
     }
 }

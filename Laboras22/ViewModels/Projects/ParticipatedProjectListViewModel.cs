@@ -14,7 +14,8 @@ namespace Laboras22.ViewModels.Projects
         public static async Task<ParticipatedProjectListViewModel> Create(int studentId)
         {
             var tmp = await ProjectParticipantViewModel.Where(x => x.StudentId == studentId);
-            var projects = await ProjectViewModel.Where(p => tmp.Any(a => a.Project.Id == p.Id));
+            var projects = tmp.Select(a => a.Project);
+            projects = projects.Union(new List<ProjectViewModel>() { await ProjectViewModel.Create()});
             return new ParticipatedProjectListViewModel(projects);
         }
     }
