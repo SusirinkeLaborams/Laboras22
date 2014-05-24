@@ -13,17 +13,6 @@ namespace Laboras22.Models.Users
         public String Email {get; set;}
         public String FirstName { get; set; }
         public String LastName { get; set; }
-        public int LoginID { get; set; }
-        public int UserId 
-        { 
-            get
-            {
-                return LoginID;
-            }
-            set
-            {
-                LoginID = value;
-            }
-        }
+        public int LoginId { get; set; }
     }
 }

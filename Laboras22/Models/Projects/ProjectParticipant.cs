@@ -10,7 +10,7 @@ namespace Laboras22.Models.Projects
     class ProjectParticipant : IDataItem
     {
         public int Id { get; set; }
-        public int Project { get; set; }
-        public int Student { get; set; }
+        public int ProjectId { get; set; }
+        public int StudentId { get; set; }
     }
 }

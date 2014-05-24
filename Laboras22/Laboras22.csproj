@@ -78,6 +78,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Classes\AzureService.cs" />
     <Compile Include="Classes\Key.cs" />
     <Compile Include="Interfaces\IDataItem.cs" />
     <Compile Include="Models\Assignments\Assignment.cs" />
@@ -112,7 +113,7 @@
     <Compile Include="ViewModels\Projects\ProjectViewModel.cs" />
     <Compile Include="ViewModels\Projects\RatingViewModel.cs" />
     <Compile Include="ViewModels\Users\AdministratorViewModel.cs" />
-    <Compile Include="ViewModels\Users\IUserViewModel.cs" />
+    <Compile Include="ViewModels\Users\UserViewModel.cs" />
     <Compile Include="ViewModels\Users\LecturerViewModel.cs" />
     <Compile Include="ViewModels\Users\LoginViewModel.cs" />
     <Compile Include="ViewModels\Users\RegisterViewModel.cs" />

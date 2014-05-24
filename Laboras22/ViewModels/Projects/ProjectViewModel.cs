@@ -12,22 +12,18 @@ namespace Laboras22.ViewModels.Projects
     class ProjectViewModel : ViewModelBase<Project, ProjectViewModel>
     {
         public string Name { get { return model.Name; } set { model.Name = value; } }
+        public string AssignmentName { get { return Assignment.Name; } }
         public AssignmentViewModel Assignment { get; private set; }
         public StudentViewModel Owner { get; private set; }
         public IEnumerable<ProjectParticipantViewModel> Participants { get; private set; }
         public IEnumerable<ProjectContentViewModel> Contents { get; private set; }
+        
         protected override async Task RefreshFields()
         {
-            Owner = await StudentViewModel.Get(model.Owner);
-            Participants = await ProjectParticipantViewModel.Where(p => p.Project == model.Id);
-            Contents = await ProjectContentViewModel.Where(c => c.Project == model.Id);
-            Assignment = await AssignmentViewModel.Get(model.Assignment);
-        }
-        public static new async Task<ProjectViewModel> Create(Project model = null)
-        {
-            var created = await ViewModelBase<Project, ProjectViewModel>.Create(model);
-            await created.RefreshFields();
-            return created;
+            Owner = await StudentViewModel.Get(model.OwnerId);
+            Participants = await ProjectParticipantViewModel.Where(p => p.ProjectId == model.Id);
+            Contents = await ProjectContentViewModel.Where(c => c.ProjectId == model.Id);
+            Assignment = await AssignmentViewModel.Get(model.AssignmentId);
         }
     }
 }

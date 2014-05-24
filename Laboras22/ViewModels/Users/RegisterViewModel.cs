@@ -9,7 +9,9 @@ using System.Threading.Tasks;
 using System.Windows;
 using Laboras22.Models.Assignments;
 using Laboras22.Models.Users;
-using Laboras22.ViewModels.Assignments;
+using Laboras22.Views.Windows;
+using System.Security.Cryptography;
+using System.Runtime.InteropServices;
 
 namespace Laboras22.ViewModels.Users
 {
@@ -270,23 +272,85 @@ namespace Laboras22.ViewModels.Users
         public async Task<bool> Register()
         {
             var userNameUnique = (await LoginViewModel.Where(x => UserName == x.UserName)).Count() == 0;
+
             if (!userNameUnique)
             {
-                throw new NotImplementedException();
+                new StyledMessageDialog("User name already exists", "Error registering", MessageBoxButton.OK).ShowDialog();
                 return false;
             }
-            User user = null;
+
+            var userLoginTask = await RegisterUserLogin();
+            
             switch (m_UserType)
             {
-                //   case UserTypeEnum.Student:
-                //      user = new Student();
 
+                case UserTypeEnum.Student:
+                    {
+                        var student = await StudentViewModel.Create();
+                        student.Alias = Alias;
+                        student.Email = m_Email;
+                        student.FirstName = m_FirstName;
+                        student.LastName = m_LastName;
+                        student.LoginId = userLoginTask.Id;
+                        await student.Insert();
+                    }
+                    return true;
+
+                case UserTypeEnum.Lecturer:
+                    throw new NotImplementedException();
+
+                default:
+                    throw new NotSupportedException();
+            }   
+        }
+
+        private async Task<LoginViewModel> RegisterUserLogin()
+        {
+            var userLogin = await LoginViewModel.Create();
+
+            userLogin.UserName = UserName;
+            userLogin.Salt = GetSalt();
+
+            var saltedPassword = Password.Copy();
+            foreach (var saltChar in userLogin.Salt)
+            {
+                saltedPassword.AppendChar(saltChar);
             }
-            user.Email = m_Email;
-            user.FirstName = m_FirstName;
-            user.LastName = m_LastName;
 
-            throw new NotImplementedException();
+            saltedPassword.MakeReadOnly();
+
+            var passwordBytes = new byte[saltedPassword.Length * 2];
+            var sha = new SHA512Managed();
+            var nativeString = IntPtr.Zero;
+
+            try
+            {
+                nativeString = Marshal.SecureStringToBSTR(saltedPassword);
+                Marshal.Copy(nativeString, passwordBytes, 0, passwordBytes.Length);
+            }
+            finally
+            {
+                Marshal.ZeroFreeBSTR(nativeString);
+            }
+
+            byte[] hashedPassword = sha.ComputeHash(passwordBytes);
+            sha.Clear();
+
+            userLogin.PasswordHash = Convert.ToBase64String(hashedPassword);
+            await userLogin.Insert();
+
+            return userLogin;
+        }
+
+        private const int SaltLength = 16;
+
+        private string GetSalt()
+        {
+            var random = new RNGCryptoServiceProvider();
+            var salt = new byte[SaltLength];
+
+            random.GetBytes(salt);
+            return Convert.ToBase64String(salt);
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

@@ -38,20 +38,25 @@ namespace Laboras22.Views
             SetupPasswordValidation();
         }
 
-
         protected void OnInitialized()
         {
             m_RegisterViewModel.LoadUniversities();
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             if (!IsUserInputValid())
             {
                 return;
             }
 
-            m_RegisterViewModel.Register();
+            m_RegisterButton.IsEnabled = false;
+            bool succeeded = await m_RegisterViewModel.Register();
+            m_RegisterButton.IsEnabled = true;
+
+            if (succeeded)
+            {
+                Close();
+            }
         }
         
         private bool IsUserInputValid()

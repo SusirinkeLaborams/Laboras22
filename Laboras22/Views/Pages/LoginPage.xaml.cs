@@ -24,7 +24,13 @@ namespace Laboras22.Views
         public LoginPage()
         {
             InitializeComponent();
-            m_LoginViewModel = new LoginViewModel();
+        }
+        
+        protected override async void OnInitialized(EventArgs e)
+        {
+            base.OnInitialized(e);
+
+            m_LoginViewModel = await LoginViewModel.Create();
             m_LayoutRoot.DataContext = m_LoginViewModel;
         }
         

@@ -11,6 +11,6 @@ namespace Laboras22.Models.Projects
     {
         public int Id { get; set; }
         public int Value { get; set; }
-        public int Participant { get; set; }
+        public int ParticipantId { get; set; }
     }
 }

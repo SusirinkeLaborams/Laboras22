@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Laboras22.ViewModels.Assignments
 {
-    public class FacultyDepartmentViewModel : ViewModelBase<FacultyDepartment, FacultyDepartmentViewModel>
+    class FacultyDepartmentViewModel : ViewModelBase<FacultyDepartment, FacultyDepartmentViewModel>
     {
         #region Settable properties
 

@@ -7,14 +7,9 @@ using Laboras22.Models.Users;
 
 namespace Laboras22.ViewModels.Users
 {
-    public class StudentViewModel : ViewModelBase<Student, StudentViewModel>, IUserViewModel
+    class StudentViewModel : UserViewModel<Student, StudentViewModel>
     {
-        public string FirstName { get { return model.FirstName; } set { model.FirstName = value; } }
-        public string LastName { get { return model.LastName; } set { model.LastName = value; } }
-        public string Email { get { return model.Email; } set { model.Email = value; } }
         public string Alias { get { return model.Alias; } set { model.Alias = value; } }
-
-        public string Name { get { return FirstName + " " + LastName; } }
 
 #pragma warning disable 1998
         protected override async Task RefreshFields()
