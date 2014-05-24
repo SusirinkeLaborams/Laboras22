@@ -8,12 +8,8 @@ using Laboras22.ViewModels.Assignments;
 
 namespace Laboras22.ViewModels.Users
 {
-    public class LecturerViewModel : ViewModelBase<Lecturer, LecturerViewModel>, IUserViewModel
+    class LecturerViewModel : UserViewModel<Lecturer, LecturerViewModel>
     {
-
-        public string FirstName { get { return model.FirstName; } set { model.FirstName = value; } }
-        public string LastName { get { return model.LastName; } set { model.LastName = value; } }
-        public string Email { get { return model.Email; } set { model.Email = value; } }
         public FacultyDepartmentViewModel FacultyDepartment
         {
             get
@@ -22,18 +18,18 @@ namespace Laboras22.ViewModels.Users
             }
             set
             {
-                model.FacultyDepartment = value.Id;
+                model.FacultyDepartmentId = value.Id;
                 m_FacultyDepartmentViewModel = value;
             }
         }
-        public string FacultyDepartmentName { get { return FacultyDepartment.Name; } }
-        public string Name { get { return FirstName + " " + LastName; } }
 
-        FacultyDepartmentViewModel m_FacultyDepartmentViewModel;
+        public string FacultyDepartmentName { get { return FacultyDepartment.Name; } }
+
+        private FacultyDepartmentViewModel m_FacultyDepartmentViewModel;
 
         protected override async Task RefreshFields()
         {
-            FacultyDepartment = await FacultyDepartmentViewModel.Get(model.FacultyDepartment);
+            FacultyDepartment = await FacultyDepartmentViewModel.Get(model.FacultyDepartmentId);
         }
     }
 }

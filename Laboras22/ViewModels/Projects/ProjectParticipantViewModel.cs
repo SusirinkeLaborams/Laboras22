@@ -18,9 +18,9 @@ namespace Laboras22.ViewModels.Projects
         public string RatingComment { get { return Rating != null ? Rating.Comment : null; } }
         protected override async Task RefreshFields()
         {
-            Student = await StudentViewModel.Get(model.Student);
-            Grade = (await GradeViewModel.Where(g => g.Participant == model.Id)).SingleOrDefault(null);
-            Rating = (await RatingViewModel.Where(r => r.Participant == model.Id)).SingleOrDefault(null);
+            Student = await StudentViewModel.Get(model.StudentId);
+            Grade = (await GradeViewModel.Where(g => g.ParticipantId == model.Id)).SingleOrDefault(null);
+            Rating = (await RatingViewModel.Where(r => r.ParticipantId == model.Id)).SingleOrDefault(null);
         }
     }
 }

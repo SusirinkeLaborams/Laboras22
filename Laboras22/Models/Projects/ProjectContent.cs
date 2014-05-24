@@ -10,7 +10,7 @@ namespace Laboras22.Models.Projects
     class ProjectContent : IDataItem
     {
         public int Id { get; set; }
-        public int Project { get; set; }
+        public int ProjectId { get; set; }
         public string URL { get; set; }
     }
 }

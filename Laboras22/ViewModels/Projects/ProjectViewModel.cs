@@ -18,10 +18,10 @@ namespace Laboras22.ViewModels.Projects
         public IEnumerable<ProjectContentViewModel> Contents { get; private set; }
         protected override async Task RefreshFields()
         {
-            Owner = await StudentViewModel.Get(model.Owner);
-            Participants = await ProjectParticipantViewModel.Where(p => p.Project == model.Id);
-            Contents = await ProjectContentViewModel.Where(c => c.Project == model.Id);
-            Assignment = await AssignmentViewModel.Get(model.Assignment);
+            Owner = await StudentViewModel.Get(model.OwnerId);
+            Participants = await ProjectParticipantViewModel.Where(p => p.ProjectId == model.Id);
+            Contents = await ProjectContentViewModel.Where(c => c.ProjectId == model.Id);
+            Assignment = await AssignmentViewModel.Get(model.AssignmentId);
         }
     }
 }

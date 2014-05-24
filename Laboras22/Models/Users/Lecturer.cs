@@ -8,6 +8,6 @@ namespace Laboras22.Models.Users
 {
     public class Lecturer : User
     {
-        public int FacultyDepartment { get; set; }
+        public int FacultyDepartmentId { get; set; }
     }
 }

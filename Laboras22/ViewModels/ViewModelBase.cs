@@ -122,7 +122,8 @@ namespace Laboras22.ViewModels
 
             EnsureDataProviderExists();
 
-            var tasks = (await dataProvider.Where(predicate).ToEnumerableAsync()).Select(x => Create(x));
+            var matchingModels = await dataProvider.Where(predicate).ToEnumerableAsync();
+            var tasks = matchingModels.Select(x => Create(x));
             var viewModels = new List<ViewModelType>();
 
             foreach (var task in tasks)
