@@ -12,10 +12,10 @@ namespace Laboras22.ViewModels.Projects
     class ProjectViewModel : ViewModelBase<Project, ProjectViewModel>
     {
         public string Name { get { return model.Name; } set { model.Name = value; } }
-        public AssignmentViewModel Assignment { get; set; }
+        public AssignmentViewModel Assignment { get; private set; }
         public StudentViewModel Owner { get; private set; }
-        public IEnumerable<ProjectParticipantViewModel> Participants { get; set; }
-        public IEnumerable<ProjectContentViewModel> Contents { get; set; }
+        public IEnumerable<ProjectParticipantViewModel> Participants { get; private set; }
+        public IEnumerable<ProjectContentViewModel> Contents { get; private set; }
         protected override async Task RefreshFields()
         {
             Owner = await StudentViewModel.Get(model.Owner);

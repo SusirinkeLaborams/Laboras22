@@ -10,9 +10,9 @@ namespace Laboras22.ViewModels.Projects
 {
     class ProjectParticipantViewModel : ViewModelBase<ProjectParticipant, ProjectParticipantViewModel>
     {
-        public StudentViewModel Student { get; set; }
-        public RatingViewModel Rating { set; get; }
-        public GradeViewModel Grade { set; get; }
+        public StudentViewModel Student { get; private set; }
+        public RatingViewModel Rating { get; private set; }
+        public GradeViewModel Grade { get; private set; }
         public int? GradeValue { get { return Grade != null ? (int?)Grade.Value : null; } }
         public int? RatingValue { get { return Rating != null ? (int?)Rating.Value : null; } }
         public string RatingComment { get { return Rating != null ? Rating.Comment : null; } }
