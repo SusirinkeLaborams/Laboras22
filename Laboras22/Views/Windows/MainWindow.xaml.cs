@@ -27,10 +27,10 @@ namespace Laboras22.Views
         }
         public void PopPage()
         {
-            if(pages.Count > 0)
+            if(pages.Count > 1)
             {
                 pages.Pop();
-                m_Frame.Content = pages.Count != 0 ? pages.Peek() : null;
+                m_Frame.Content = pages.Peek();
             }
         }
         protected override void OnKeyUp(System.Windows.Input.KeyEventArgs e)
