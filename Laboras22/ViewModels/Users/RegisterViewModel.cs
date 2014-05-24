@@ -284,7 +284,6 @@ namespace Laboras22.ViewModels.Users
             
             switch (m_UserType)
             {
-
                 case UserTypeEnum.Student:
                     {
                         var student = await StudentViewModel.Create();

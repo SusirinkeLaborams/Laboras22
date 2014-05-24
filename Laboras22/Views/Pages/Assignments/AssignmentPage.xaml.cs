@@ -12,11 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace Laboras22.Views
+namespace Laboras22.Views.Pages.Assignments
 {
-    /// <summary>
-    /// Interaction logic for AssignmentWindow.xaml
-    /// </summary>
     public partial class AssignmentPage : Page
     {
         public AssignmentPage()
