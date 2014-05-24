@@ -13,6 +13,7 @@ using Laboras22.Views.Windows;
 using System.Security.Cryptography;
 using System.Runtime.InteropServices;
 using Laboras22.ViewModels.Assignments;
+using Laboras22.Classes;
 
 namespace Laboras22.ViewModels.Users
 {
@@ -319,49 +320,13 @@ namespace Laboras22.ViewModels.Users
             var userLogin = await LoginViewModel.Create();
 
             userLogin.UserName = UserName;
-            userLogin.Salt = GetSalt();
+            userLogin.Salt = PasswordUtils.CreateSalt();
 
-            var saltedPassword = Password.Copy();
-            foreach (var saltChar in userLogin.Salt)
-            {
-                saltedPassword.AppendChar(saltChar);
-            }
-
-            saltedPassword.MakeReadOnly();
-
-            var passwordBytes = new byte[saltedPassword.Length * 2];
-            var sha = new SHA512Managed();
-            var nativeString = IntPtr.Zero;
-
-            try
-            {
-                nativeString = Marshal.SecureStringToBSTR(saltedPassword);
-                Marshal.Copy(nativeString, passwordBytes, 0, passwordBytes.Length);
-            }
-            finally
-            {
-                Marshal.ZeroFreeBSTR(nativeString);
-            }
-
-            byte[] hashedPassword = sha.ComputeHash(passwordBytes);
-            sha.Clear();
-
-            userLogin.PasswordHash = Convert.ToBase64String(hashedPassword);
+            userLogin.PasswordHash = PasswordUtils.ComputePassword(Password, userLogin.Salt);
             await userLogin.Insert();
 
             return userLogin;
-        }
-
-        private const int SaltLength = 16;
-
-        private string GetSalt()
-        {
-            var random = new RNGCryptoServiceProvider();
-            var salt = new byte[SaltLength];
-
-            random.GetBytes(salt);
-            return Convert.ToBase64String(salt);
-        }
+        }        
 
         public event PropertyChangedEventHandler PropertyChanged;
     }

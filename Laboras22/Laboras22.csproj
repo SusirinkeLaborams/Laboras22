@@ -80,6 +80,7 @@
     </ApplicationDefinition>
     <Compile Include="Classes\AzureService.cs" />
     <Compile Include="Classes\Key.cs" />
+    <Compile Include="Classes\PasswordUtils.cs" />
     <Compile Include="Interfaces\IDataItem.cs" />
     <Compile Include="Models\Assignments\Assignment.cs" />
     <Compile Include="Models\Assignments\Course.cs" />
