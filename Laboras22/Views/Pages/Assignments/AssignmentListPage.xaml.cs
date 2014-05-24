@@ -6,9 +6,6 @@ using System.Threading.Tasks;
 
 namespace Laboras22.Views.Pages.Assignments
 {
-    /// <summary>
-    /// Interaction logic for AssignmentListPage.xaml
-    /// </summary>
     public partial class AssignmentListPage : PageBase
     {
         public AssignmentListPage(MainWindow parentWindow) :

@@ -1,9 +1,16 @@
 ﻿<Laboras22:PageBase x:Class="Laboras22.Views.Pages.Assignments.AssignmentListPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:Metro="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
       xmlns:Laboras22="clr-namespace:Laboras22.Views.Pages">
     
-    <Grid>
+    <TabControl Margin="20">
+        <TabItem Header="All assignments">
+            <TextBlock Text="0" />
+        </TabItem>
         
-    </Grid>
+        <TabItem Header="My assignments">
+            <TextBlock Text="1" />
+        </TabItem>
+    </TabControl>
 </Laboras22:PageBase>
