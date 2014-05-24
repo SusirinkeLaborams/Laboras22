@@ -6,5 +6,8 @@
     <StackPanel x:Name="root">
         <TextBlock Text="{Binding AssignmentName}"/>
         <TextBlock Text="{Binding Name}"/>
+        <ListView ItemsSource="{Binding Participants}">
+            <TextBlock Text="{Binding Name}"/>
+        </ListView>
     </StackPanel>
 </Laboras22:PageBase>
