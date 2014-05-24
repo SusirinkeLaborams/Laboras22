@@ -70,11 +70,11 @@ namespace Laboras22.ViewModels
             viewModel.model = model;
 
             if (model.Id != 0)
-            {                
+            {
                 dataCache[model.Id] = viewModel;
+                await viewModel.RefreshFields();
             }
 
-            await viewModel.RefreshFields();
             return viewModel;
         }
 
