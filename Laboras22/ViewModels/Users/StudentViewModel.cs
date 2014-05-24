@@ -15,9 +15,11 @@ namespace Laboras22.ViewModels.Users
         public string Alias { get { return model.Alias; } set { model.Alias = value; } }
 
         public string Name { get { return FirstName + " " + LastName; } }
-        protected override Task RefreshFields()
+
+#pragma warning disable 1998
+        protected override async Task RefreshFields()
         {
-            throw new NotImplementedException();
         }
+#pragma warning restore 1998
     }
 }

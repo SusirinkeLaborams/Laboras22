@@ -13,10 +13,12 @@ namespace Laboras22.ViewModels.Users
         public string LastName { get { return model.LastName; } set { model.LastName = value; } }
         public string Email { get { return model.Email; } set { model.Email = value; } }
         public string Name { get { return FirstName + " " + LastName; } }
+        public int UserId { get { return model.UserId; } set { model.UserId = value; } }
 
+#pragma warning disable 1998
         protected override async Task RefreshFields()
         {
-            throw new NotImplementedException();
         }
+#pragma warning restore 1998
     }
 }

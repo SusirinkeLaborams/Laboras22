@@ -14,5 +14,16 @@ namespace Laboras22.Models.Users
         public String FirstName { get; set; }
         public String LastName { get; set; }
         public int LoginID { get; set; }
+        public int UserId 
+        { 
+            get
+            {
+                return LoginID;
+            }
+            set
+            {
+                LoginID = value;
+            }
+        }
     }
 }

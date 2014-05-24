@@ -5,25 +5,30 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using Laboras22.Models.Users;
 
 namespace Laboras22.ViewModels.Users
 {
-    public class LoginViewModel : INotifyPropertyChanged
+    class LoginViewModel : ViewModelBase<UserLogin, LoginViewModel>, INotifyPropertyChanged
     {
-        private string m_UserName;
-
         public string UserName
         {
             get
             {
-                return m_UserName;
+                return model.UserName;
             }
             set
             {
-                m_UserName = value;
+                model.UserName = value;
                 OnPropertyChanged();
             }
         }
+
+#pragma warning disable 1998
+        protected override async Task RefreshFields()
+        {
+        }
+#pragma warning restore 1998
 
         public void OnPropertyChanged([CallerMemberName] string property = "")
         {

@@ -91,9 +91,11 @@
     <Compile Include="Models\Projects\ProjectParticipant.cs" />
     <Compile Include="Models\Projects\Rating.cs" />
     <Compile Include="Models\Users\Administrator.cs" />
+    <Compile Include="Models\Users\Sessions.cs" />
     <Compile Include="Models\Users\User.cs" />
     <Compile Include="Models\Users\Lecturer.cs" />
     <Compile Include="Models\Users\Student.cs" />
+    <Compile Include="Models\Users\UserLogin.cs" />
     <Compile Include="ValidationRules\ConfirmPasswordValidationRule.cs" />
     <Compile Include="ValidationRules\EmailValidationRule.cs" />
     <Compile Include="ValidationRules\PasswordValidationRule.cs" />
@@ -114,6 +116,7 @@
     <Compile Include="ViewModels\Users\LecturerViewModel.cs" />
     <Compile Include="ViewModels\Users\LoginViewModel.cs" />
     <Compile Include="ViewModels\Users\RegisterViewModel.cs" />
+    <Compile Include="ViewModels\Users\SessionViewModel.cs" />
     <Compile Include="ViewModels\Users\StudentViewModel.cs" />
     <Compile Include="ViewModels\ViewModelBase.cs" />
     <Compile Include="Views\Pages\AssignmentPage.xaml.cs">
