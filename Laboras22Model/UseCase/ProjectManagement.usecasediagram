@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="27379f19-ab72-4e2e-b803-c5539fb729da" name="ProjectManagement" linkedPackageId="bd9cfdc4-184b-418c-9b45-91af8a41defe" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="27379f19-ab72-4e2e-b803-c5539fb729da" name="ProjectManagement" linkedPackageId="bd9cfdc4-184b-418c-9b45-91af8a41defe" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
   <packagedElements>
     <useCaseModelRootHasTypes>
       <actor Id="291471d4-2d59-4530-af4c-f5ec417a2aa2" name="Student" isAbstract="false" isLeaf="false">
@@ -377,6 +377,22 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="d664eb7b-25f9-4f49-bb2a-40946e0edae5" />
           </association>
+          <association Id="fec17ebb-3ff3-42e3-89a7-62358c6d42a5" isDerived="false" sourceEndRoleName="Lecturer" targetEndRoleName="Create assignment" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="9c2d72ea-7f35-42d4-b0db-6fc48c980567" LastKnownName="Create assignment" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bfb46a27-a99a-46c4-b1e6-1d66ccbe6dcd" name="Lecturer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3da11111-2632-454f-bc2c-7d2b7684bb37" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1e9dc34f-375b-447d-b695-68eb1ae2f9e9" name="Create assignment" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="99ceb50a-ab21-4e89-8a5b-841c81c0b7d0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="519c1318-bbc1-4ce9-b863-5a8d594af55d" />
+          </association>
         </targetEnds>
       </actor>
     </useCaseModelRootHasTypes>
@@ -388,29 +404,15 @@
     <useCaseModelRootHasTypes>
       <useCase Id="9c2d72ea-7f35-42d4-b0db-6fc48c980567" name="Create assignment" isAbstract="false" isLeaf="false">
         <elementDefinition Id="5ab02d09-9fd4-4653-8f6e-6b7be6f3e169" />
-        <extendedCases>
-          <extend Id="1c6969b2-4ccc-42c9-8883-e5cb42e335ed">
-            <useCaseMoniker Id="39952455-40e0-4114-9144-2b4284dc37ad" LastKnownName="Manage own assignments" />
-            <elementDefinition Id="72115aaf-1e9f-4d6f-b42b-21845cf94941" />
-          </extend>
-          <extend Id="c4f2f9b1-e9eb-4ac0-93e6-5273b041d629">
-            <useCaseMoniker Id="81ff1275-39d6-4ad7-b97f-616853a520d4" LastKnownName="Manage all assignments" />
-            <elementDefinition Id="e8705ba4-517f-462d-9b18-b4644b29cfd8" />
-          </extend>
-        </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
       <useCase Id="f0504df9-1c20-499c-8493-cec7f2f49564" name="Delete assignment" isAbstract="false" isLeaf="false">
         <elementDefinition Id="246322c5-6c71-49c3-9e78-38c76fa47be1" />
         <extendedCases>
-          <extend Id="ebc5a224-2c6a-4275-aec8-30feefb37ef6">
-            <useCaseMoniker Id="39952455-40e0-4114-9144-2b4284dc37ad" LastKnownName="Manage own assignments" />
-            <elementDefinition Id="05acce9b-941d-4e58-a9c8-53f45c67bf71" />
-          </extend>
-          <extend Id="7744709f-d765-4cd2-b8c0-55b57f5ae144">
-            <useCaseMoniker Id="81ff1275-39d6-4ad7-b97f-616853a520d4" LastKnownName="Manage all assignments" />
-            <elementDefinition Id="fa9b63d8-02db-46d2-be2f-6ea8bb4305d0" />
+          <extend Id="52269181-ea19-4840-abcc-c0ccf3918ce5">
+            <useCaseMoniker Id="a1ac1de2-128e-4707-a911-68c1701ee54c" LastKnownName="View assignment details" />
+            <elementDefinition Id="6210bf23-262c-4618-90d7-6aafde55269f" />
           </extend>
         </extendedCases>
       </useCase>
@@ -426,16 +428,16 @@
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="a1ac1de2-128e-4707-a911-68c1701ee54c" name="View assignment statistics" isAbstract="false" isLeaf="false">
+      <useCase Id="a1ac1de2-128e-4707-a911-68c1701ee54c" name="View assignment details" isAbstract="false" isLeaf="false">
         <elementDefinition Id="e375276d-2459-416c-88d3-0f04fec0e11b" />
         <extendedCases>
           <extend Id="559324d0-c798-42f6-9aa3-92d565dd9758">
             <useCaseMoniker Id="39952455-40e0-4114-9144-2b4284dc37ad" LastKnownName="Manage own assignments" />
             <elementDefinition Id="134afaab-d6e0-4c23-ac4f-77fc831959b2" />
           </extend>
-          <extend Id="79d9f800-38b9-43f0-865a-fc05a7c30529">
+          <extend Id="c576aa28-8b87-4a3f-b0c4-395542291ada">
             <useCaseMoniker Id="81ff1275-39d6-4ad7-b97f-616853a520d4" LastKnownName="Manage all assignments" />
-            <elementDefinition Id="2de6633b-5a0e-43c5-81ed-89d78e987a97" />
+            <elementDefinition Id="d29cf893-a680-42f6-9fc7-26095a62f039" />
           </extend>
         </extendedCases>
       </useCase>

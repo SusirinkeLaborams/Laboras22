@@ -1,5 +1,6 @@
 ﻿using Laboras22.ViewModels.Users;
 using Laboras22.Views.Pages.Assignments;
+using Laboras22.Views.Pages.Projects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,6 +32,7 @@ namespace Laboras22.Views.Pages
             InitializeComponent();
 
             AddTab(new AssignmentListPage(window, false), "All assignments");
+            AddTab(new ProjectCreationPage(window), "Do shit");
 
             if (window.Session.UserType == SessionViewModel.UserTypeEnum.Lecturer)
             {
@@ -54,6 +56,14 @@ namespace Laboras22.Views.Pages
 
             m_TabControl.Items.Add(tab);
             m_TabsContents.Add(page);
+        }
+
+        public override void OnDisplay()
+        {
+            if (m_TabControl.SelectedIndex > -1)
+            {
+                m_TabsContents[m_TabControl.SelectedIndex].OnDisplay();
+            }
         }
 
         private void TabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)

@@ -1,4 +1,6 @@
-﻿using Laboras22.ViewModels.Projects;
+﻿using Laboras22.ViewModels.Assignments;
+using Laboras22.ViewModels.Projects;
+using Laboras22.ViewModels.Users;
 using Laboras22.Views.Pages;
 using System;
 using System.Collections.Generic;
@@ -23,14 +25,16 @@ namespace Laboras22.Views.Pages.Projects
     public partial class ProjectCreationPage : PageBase
     {
         private ProjectCreationViewModel model;
-        public ProjectCreationPage(MainWindow window) : base(window) 
+        private AssignmentViewModel assignment;
+        internal ProjectCreationPage(MainWindow window, AssignmentViewModel assignment = null) : base(window) 
         {
+            this.assignment = assignment;
             InitializeComponent();
         }
         protected override async void OnInitialized(EventArgs e)
         {
             base.OnInitialized(e);
-            model = new ProjectCreationViewModel();
+            model = await ProjectCreationViewModel.Create(assignment, window.Session.User as StudentViewModel);
             root.DataContext = model;
             await model.LoadUniversities();
         }
@@ -58,6 +62,16 @@ namespace Laboras22.Views.Pages.Projects
         private void AssignmentComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
+        }
+
+        private void CancelButton_Click(object sender, RoutedEventArgs e)
+        {
+            window.PopPage();
+        }
+
+        private void CreateButton_Click(object sender, RoutedEventArgs e)
+        {
+            //dunno, lol
         }
     }
 }

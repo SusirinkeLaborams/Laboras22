@@ -5,95 +5,122 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:ValidationRules="clr-namespace:Laboras22.ValidationRules"
       xmlns:Laboras22="clr-namespace:Laboras22.Views.Pages"
-      mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="300"
-	Title="Page1">
-
-    <Grid x:Name="root">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="2*"/>
-            <ColumnDefinition Width="3*"/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
-        <TextBlock Text="University" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0"/>
-        <ComboBox x:Name="UniversityComboBox" ItemsSource="{Binding Universities, Mode=OneWay}" 
+      mc:Ignorable="d">
+    <StackPanel>
+        <Grid x:Name="root" Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="University" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0" Foreground="White"/>
+            <ComboBox x:Name="UniversityComboBox" ItemsSource="{Binding Universities, Mode=OneWay}" 
                   Grid.Column="1" 
                   Grid.Row="0" 
                   Height="25" 
                   SelectionChanged="UniversityComboBox_SelectionChanged">
-            <ComboBox.SelectedItem>
-                <Binding Path="University" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
-                    <Binding.ValidationRules>
-                        <ValidationRules:NotEmptyValidationRule FieldName="University" />
-                    </Binding.ValidationRules>
-                </Binding>
-            </ComboBox.SelectedItem>
-        </ComboBox>
-        <TextBlock Text="Faculty" Grid.Column="0" Grid.Row="1"  HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0"/>
-        <ComboBox x:Name="FacultyComboBox" 
+                <ComboBox.SelectedItem>
+                    <Binding Path="University" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
+                        <Binding.ValidationRules>
+                            <ValidationRules:NotEmptyValidationRule FieldName="University" />
+                        </Binding.ValidationRules>
+                    </Binding>
+                </ComboBox.SelectedItem>
+            </ComboBox>
+            <TextBlock Text="Faculty" Grid.Column="0" Grid.Row="1"  HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0" Foreground="White"/>
+            <ComboBox x:Name="FacultyComboBox" 
                   ItemsSource="{Binding Faculties, Mode=OneWay}" 
                   Grid.Column="1" 
                   Grid.Row="1" 
                   Height="25" 
                   SelectionChanged="FacultyComboBox_SelectionChanged">
-            <ComboBox.SelectedItem>
-                <Binding Path="Faculty" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
-                    <Binding.ValidationRules>
-                        <ValidationRules:NotEmptyValidationRule FieldName="Faculty" />
-                    </Binding.ValidationRules>
-                </Binding>
-            </ComboBox.SelectedItem>
-        </ComboBox>
-        <TextBlock Text="Faculty department" Grid.Column="0" Grid.Row="2"  HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0"/>
-        <ComboBox x:Name="DepartmentComboBox" 
+                <ComboBox.SelectedItem>
+                    <Binding Path="Faculty" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
+                        <Binding.ValidationRules>
+                            <ValidationRules:NotEmptyValidationRule FieldName="Faculty" />
+                        </Binding.ValidationRules>
+                    </Binding>
+                </ComboBox.SelectedItem>
+            </ComboBox>
+            <TextBlock Text="Faculty department" Grid.Column="0" Grid.Row="2"  HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0" Foreground="White"/>
+            <ComboBox x:Name="DepartmentComboBox" 
                   ItemsSource="{Binding Departments, Mode=OneWay}" 
                   Grid.Column="1" 
                   Grid.Row="2" 
                   Height="25" 
                   SelectionChanged="DepartmentComboBox_SelectionChanged">
-            <ComboBox.SelectedItem>
-                <Binding Path="Department" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
-                    <Binding.ValidationRules>
-                        <ValidationRules:NotEmptyValidationRule FieldName="Department" />
-                    </Binding.ValidationRules>
-                </Binding>
-            </ComboBox.SelectedItem>
-        </ComboBox>
-        <TextBlock Text="Course" Grid.Column="0" Grid.Row="3"  HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0"/>
-        <ComboBox x:Name="CourceComboBox" 
+                <ComboBox.SelectedItem>
+                    <Binding Path="Department" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
+                        <Binding.ValidationRules>
+                            <ValidationRules:NotEmptyValidationRule FieldName="Department" />
+                        </Binding.ValidationRules>
+                    </Binding>
+                </ComboBox.SelectedItem>
+            </ComboBox>
+            <TextBlock Text="Course" Grid.Column="0" Grid.Row="3"  HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0" Foreground="White"/>
+            <ComboBox x:Name="CourceComboBox" 
                   ItemsSource="{Binding Courses, Mode=OneWay}" 
                   Grid.Column="1" 
                   Grid.Row="3" 
                   Height="25" 
                   SelectionChanged="CourceComboBox_SelectionChanged">
-            <ComboBox.SelectedItem>
-                <Binding Path="Course" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
-                    <Binding.ValidationRules>
-                        <ValidationRules:NotEmptyValidationRule FieldName="Course" />
-                    </Binding.ValidationRules>
-                </Binding>
-            </ComboBox.SelectedItem>
-        </ComboBox>
-        <TextBlock Text="Assignment" Grid.Column="0" Grid.Row="4"  HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0"/>
-        <ComboBox x:Name="AssignmentComboBox" 
+                <ComboBox.SelectedItem>
+                    <Binding Path="Course" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
+                        <Binding.ValidationRules>
+                            <ValidationRules:NotEmptyValidationRule FieldName="Course" />
+                        </Binding.ValidationRules>
+                    </Binding>
+                </ComboBox.SelectedItem>
+            </ComboBox>
+            <TextBlock Text="Assignment" Grid.Column="0" Grid.Row="4"  HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0" Foreground="White"/>
+            <ComboBox x:Name="AssignmentComboBox" 
                   ItemsSource="{Binding Assignments, Mode=OneWay}" 
                   Grid.Column="1" 
                   Grid.Row="4" 
                   Height="25" 
                   SelectionChanged="AssignmentComboBox_SelectionChanged">
-            <ComboBox.SelectedItem>
-                <Binding Path="Assignemnt" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
-                    <Binding.ValidationRules>
-                        <ValidationRules:NotEmptyValidationRule FieldName="Assignemnt" />
-                    </Binding.ValidationRules>
-                </Binding>
-            </ComboBox.SelectedItem>
-        </ComboBox>
-    </Grid>
+                <ComboBox.SelectedItem>
+                    <Binding Path="Assignment" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
+                        <Binding.ValidationRules>
+                            <ValidationRules:NotEmptyValidationRule FieldName="Assignemnt" />
+                        </Binding.ValidationRules>
+                    </Binding>
+                </ComboBox.SelectedItem>
+            </ComboBox>
+            <TextBlock Text="Project name" Grid.Column="0" Grid.Row="5"  HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0" Foreground="White"/>
+            <TextBox x:Name="ProjectNameTextBox" Grid.Column="1" Grid.Row="5" Height="25" Style="{StaticResource ValidatedTextBoxStyle}">
+                <TextBox.Text>
+                    <Binding Path="ProjectName" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
+                        <Binding.ValidationRules>
+                            <ValidationRules:RealNameValidationRule FieldName="ProjectName" />
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
+        </Grid>
+        <Grid Margin="10 0 10 10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition Width="150" />
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Content="Create project" Width="150" x:Name="CreateButton" HorizontalAlignment="Center" Click="CreateButton_Click"/>
+            <Button Grid.Column="1" Content="Cancel" Width="150" x:Name="CancelButton" HorizontalAlignment="Center" Click="CancelButton_Click"/>
+        </Grid>
+    </StackPanel>
+
+
 </Laboras22:PageBase>

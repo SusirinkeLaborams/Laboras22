@@ -135,6 +135,9 @@
     <Compile Include="Views\Pages\Assignments\AssignmentCreationPage.xaml.cs">
       <DependentUpon>AssignmentCreationPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Pages\Assignments\AssignmentDetailsPage.xaml.cs">
+      <DependentUpon>AssignmentDetailsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Pages\MainMenuPage.xaml.cs">
       <DependentUpon>MainMenuPage.xaml</DependentUpon>
     </Compile>
@@ -167,6 +170,10 @@
       <DependentUpon>StyledMessageDialog.xaml</DependentUpon>
     </Compile>
     <Page Include="Views\Pages\Assignments\AssignmentCreationPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pages\Assignments\AssignmentDetailsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

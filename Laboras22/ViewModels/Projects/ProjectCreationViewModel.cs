@@ -1,4 +1,5 @@
 ﻿using Laboras22.ViewModels.Assignments;
+using Laboras22.ViewModels.Users;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,9 +10,14 @@ using System.Threading.Tasks;
 
 namespace Laboras22.ViewModels.Projects
 {
-    class ProjectCreationViewModel : ProjectViewModel
+    class ProjectCreationViewModel : NotifyPropertyChangedBase
     {
+        private ProjectViewModel model;
         private IEnumerable<UniversityViewModel> universities;
+        protected ProjectCreationViewModel(ProjectViewModel model)
+        {
+            this.model = model;
+        }
         public IEnumerable<UniversityViewModel> Universities 
         {
             get
@@ -128,15 +134,27 @@ namespace Laboras22.ViewModels.Projects
                 OnPropertyChanged();
             }
         }
-        public override AssignmentViewModel Assignment
+        public AssignmentViewModel Assignment
         {
             get
             {
-                return base.Assignment;
+                return model.Assignment;
             }
             set
             {
-                base.Assignment = value;
+                model.Assignment = value;
+                OnPropertyChanged();
+            }
+        }
+        public string ProjectName
+        {
+            get
+            {
+                return model.Name;
+            }
+            set
+            {
+                model.Name = value;
                 OnPropertyChanged();
             }
         }
@@ -159,6 +177,27 @@ namespace Laboras22.ViewModels.Projects
         public async Task LoadAssignments()
         {
             Assignments = await AssignmentViewModel.Where(x => x.CourseId == course.Id);
+        }
+        public static async Task<ProjectCreationViewModel> Create(AssignmentViewModel assignment = null, StudentViewModel student = null)
+        {
+            var tmp = await ProjectViewModel.Create();
+            var instance = new ProjectCreationViewModel(tmp);
+            if (tmp.Owner == null)
+                tmp.Owner = student;
+            if(assignment != null)
+            {
+                tmp.Assignment = assignment;
+                instance.Course = assignment.Course;
+                instance.Department = instance.Course.FacultyDepartment;
+                instance.Faculty = instance.Department.Faculty;
+                instance.University = instance.Faculty.University;
+                await instance.LoadUniversities();
+                await instance.LoadFaculties();
+                await instance.LoadDepartments();
+                await instance.LoadCourses();
+                await instance.LoadAssignments();
+            }
+            return instance;
         }
     }
 }
