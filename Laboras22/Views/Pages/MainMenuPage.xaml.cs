@@ -14,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Laboras22.Views.Pages.Users;
 
 namespace Laboras22.Views.Pages
 {
@@ -34,6 +35,11 @@ namespace Laboras22.Views.Pages
             if (window.Session.UserType == SessionViewModel.UserTypeEnum.Lecturer)
             {
                 AddTab(new AssignmentListPage(window, true), "My assignments");
+            }
+
+            if (window.Session.UserType == SessionViewModel.UserTypeEnum.Administrator)
+            {
+                AddTab(new ManageUsersPage(window), "Users");
             }
         }
 
