@@ -50,6 +50,11 @@ namespace Laboras22.Views.Pages
             m_TabsContents.Add(page);
         }
 
+        public override void OnDisplay()
+        {
+            m_TabsContents[m_TabControl.SelectedIndex].OnDisplay();
+        }
+
         private void TabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             m_TabsContents[m_TabControl.SelectedIndex].OnDisplay();
