@@ -35,6 +35,7 @@ namespace Laboras22.Views
                 m_Frame.Content = pages.Peek();
             }
         }
+
         /*protected override void OnKeyUp(System.Windows.Input.KeyEventArgs e)
         {
             base.OnKeyUp(e);
