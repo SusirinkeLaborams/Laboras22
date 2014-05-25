@@ -73,7 +73,12 @@ namespace Laboras22.Views.Pages.Projects
         {
             if (!IsValid())
                 return;
+            CreateButton.IsEnabled = false;
             await model.ViewModel.Insert();
+            window.PopPage();
+            window.PushPage(new ProjectPage(window, model.ViewModel.Id));
+            CreateButton.IsEnabled = true;
+
         }
         private bool IsValid()
         {
