@@ -18,6 +18,14 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <TextBlock Text="University" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0" Foreground="White"/>
             <ComboBox x:Name="UniversityComboBox" ItemsSource="{Binding Universities, Mode=OneWay}" 
@@ -93,6 +101,16 @@
                     </Binding>
                 </ComboBox.SelectedItem>
             </ComboBox>
+            <TextBlock Text="Project name" Grid.Column="0" Grid.Row="5"  HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0" Foreground="White"/>
+            <TextBox x:Name="ProjectNameTextBox" Grid.Column="1" Grid.Row="5" Height="25" Style="{StaticResource ValidatedTextBoxStyle}">
+                <TextBox.Text>
+                    <Binding Path="ProjectName" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
+                        <Binding.ValidationRules>
+                            <ValidationRules:RealNameValidationRule FieldName="ProjectName" />
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
         </Grid>
         <Grid Margin="10 0 10 10">
             <Grid.ColumnDefinitions>
