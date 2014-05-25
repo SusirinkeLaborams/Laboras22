@@ -6,6 +6,7 @@ using Laboras22.Views.Pages.Users;
 using MahApps.Metro.Controls;
 using System.Collections.Generic;
 using System.Windows.Controls;
+using System.Windows.Navigation;
 
 namespace Laboras22.Views
 {
@@ -15,6 +16,8 @@ namespace Laboras22.Views
     partial class MainWindow : MetroWindow
     {
         private Stack<PageBase> pages = new Stack<PageBase>();
+        internal SessionViewModel Session { get; set; }
+
         public MainWindow()
         {
             InitializeComponent();
@@ -43,13 +46,9 @@ namespace Laboras22.Views
             }
         }
 
-        /*protected override void OnKeyUp(System.Windows.Input.KeyEventArgs e)
+        private void Frame_Navigated(object sender, NavigationEventArgs e)
         {
-            base.OnKeyUp(e);
-            if (e.Key == System.Windows.Input.Key.Back)
-                PopPage();
-        }*/
-
-        internal SessionViewModel Session { get; set; }
+            m_Frame.NavigationService.RemoveBackEntry();
+        }
     }
 }
