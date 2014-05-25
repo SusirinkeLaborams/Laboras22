@@ -19,7 +19,11 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <TextBlock Text="University" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0"/>
-        <ComboBox ItemsSource="{Binding Universities, Mode=OneWay}" Grid.Column="1" Grid.Row="0" Height="25" Style="{StaticResource ValidatedTextBoxStyle}">
+        <ComboBox x:Name="UniversityComboBox" ItemsSource="{Binding Universities, Mode=OneWay}" 
+                  Grid.Column="1" 
+                  Grid.Row="0" 
+                  Height="25" 
+                  SelectionChanged="UniversityComboBox_SelectionChanged">
             <ComboBox.SelectedItem>
                 <Binding Path="University" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
                     <Binding.ValidationRules>
@@ -29,7 +33,12 @@
             </ComboBox.SelectedItem>
         </ComboBox>
         <TextBlock Text="Faculty" Grid.Column="0" Grid.Row="1"  HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0"/>
-        <ComboBox ItemsSource="{Binding Faculties, Mode=OneWay}" Grid.Column="1" Grid.Row="1" Height="25" Style="{StaticResource ValidatedTextBoxStyle}">
+        <ComboBox x:Name="FacultyComboBox" 
+                  ItemsSource="{Binding Faculties, Mode=OneWay}" 
+                  Grid.Column="1" 
+                  Grid.Row="1" 
+                  Height="25" 
+                  SelectionChanged="FacultyComboBox_SelectionChanged">
             <ComboBox.SelectedItem>
                 <Binding Path="Faculty" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
                     <Binding.ValidationRules>
