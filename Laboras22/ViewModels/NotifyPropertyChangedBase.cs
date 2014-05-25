@@ -18,6 +18,14 @@ namespace Laboras22.ViewModels
             }
         }
 
+        public void NotifyAllPropertiesChanged()
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(""));
+            }
+        }
+
         public event PropertyChangedEventHandler PropertyChanged;
     }
 }

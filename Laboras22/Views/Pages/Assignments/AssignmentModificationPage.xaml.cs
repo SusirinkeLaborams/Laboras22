@@ -53,7 +53,7 @@ namespace Laboras22.Views.Pages.Assignments
             DataContext = m_ViewModel;
         }
 
-        private async void CreateButton_Click(object sender, RoutedEventArgs e)
+        private async void SubmitButton_Click(object sender, RoutedEventArgs e)
         {
             if (!IsInputValid())
             {

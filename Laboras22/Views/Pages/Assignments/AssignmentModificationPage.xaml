@@ -70,7 +70,7 @@
         </Grid>
 
         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button Content="Submit" x:Name="m_CreateButton" HorizontalAlignment="Center" Click="CreateButton_Click" Margin="10,10,0,10" VerticalAlignment="Center" />
+            <Button Content="Submit" x:Name="m_SubmitButton" HorizontalAlignment="Center" Click="SubmitButton_Click" Margin="10,10,0,10" VerticalAlignment="Center" />
             <Button Content="Cancel" x:Name="m_CancelButton" HorizontalAlignment="Center" Click="CancelButton_Click" Margin="10,10,0,10" VerticalAlignment="Center" />
         </StackPanel>
     </Grid>
