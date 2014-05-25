@@ -18,6 +18,7 @@ namespace Laboras22.ViewModels.Assignments
         public AssignmentListViewModel(bool onlyOwnAssignments, SessionViewModel session)
         {
             m_OnlyOwnAssignments = onlyOwnAssignments;
+            m_Session = session;
             LoadAssignments();
         }
 
@@ -28,15 +29,12 @@ namespace Laboras22.ViewModels.Assignments
                 switch (m_Session.UserType)
                 {
                     case SessionViewModel.UserTypeEnum.Lecturer:
-
+                        Assignments = await AssignmentViewModel.Where(x => x.LecturerId == m_Session.User.Id);
                         break;
 
-                    case SessionViewModel.UserTypeEnum.Student:
-
-                        break;
+                    default:
+                        throw new NotSupportedException("Only lecturers can have own assignments.");
                 }
-
-                //Assignments = await AssignmentViewModel.Where(x => x.
             }
             else
             {

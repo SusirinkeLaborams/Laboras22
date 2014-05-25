@@ -4,21 +4,15 @@
       xmlns:Metro="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
       xmlns:Laboras22="clr-namespace:Laboras22.Views.Pages"
       xmlns:ThirdParty="clr-namespace:Laboras22.Classes.ThirdParty">
-    
-    <TabControl x:Name="m_TabControl" Margin="20">
-        <TabControl.ContentTemplate>
-            <DataTemplate>
-                <ListView ItemsSource="{Binding Assignments}" HorizontalAlignment="Stretch" ThirdParty:GridViewColumnResize.Enabled="True">
-                    <ListView.View>
-                        <GridView>
-                            <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}" ThirdParty:GridViewColumnResize.Width="*" />
-                            <GridViewColumn Header="Course" DisplayMemberBinding="{Binding CourseName}" ThirdParty:GridViewColumnResize.Width="*" />
-                            <GridViewColumn Header="Lecturer" DisplayMemberBinding="{Binding LecturerName}" ThirdParty:GridViewColumnResize.Width="*" />
-                            <GridViewColumn Header="Difficulty" DisplayMemberBinding="{Binding Difficulty}" ThirdParty:GridViewColumnResize.Width="*" />
-                        </GridView>
-                    </ListView.View>
-                </ListView>
-            </DataTemplate>
-        </TabControl.ContentTemplate>
-    </TabControl>
+
+    <ListView ItemsSource="{Binding Assignments}" HorizontalAlignment="Stretch" ThirdParty:GridViewColumnResize.Enabled="True">
+        <ListView.View>
+            <GridView>
+                <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}" ThirdParty:GridViewColumnResize.Width="*" />
+                <GridViewColumn Header="Course" DisplayMemberBinding="{Binding CourseName}" ThirdParty:GridViewColumnResize.Width="*" />
+                <GridViewColumn Header="Lecturer" DisplayMemberBinding="{Binding LecturerName}" ThirdParty:GridViewColumnResize.Width="*" />
+                <GridViewColumn Header="Difficulty" DisplayMemberBinding="{Binding Difficulty}" ThirdParty:GridViewColumnResize.Width="*" />
+            </GridView>
+        </ListView.View>
+    </ListView>
 </Laboras22:PageBase>

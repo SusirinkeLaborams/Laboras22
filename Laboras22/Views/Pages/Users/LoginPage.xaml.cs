@@ -51,7 +51,7 @@ namespace Laboras22.Views.Pages.Users
             }
             else
             {
-                window.PushPage(new AssignmentListPage(window));
+                window.PushPage(new MainMenuPage(window));
             }
         }
 

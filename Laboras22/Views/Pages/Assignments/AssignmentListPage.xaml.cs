@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Laboras22.ViewModels.Assignments;
+using Laboras22.ViewModels.Users;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,21 +11,14 @@ namespace Laboras22.Views.Pages.Assignments
 {
     public partial class AssignmentListPage : PageBase
     {
-        TabItem m_AllAssignmentsTab;
-        TabItem m_MyAssignmentsTab;
+        private AssignmentListViewModel m_Assignments;
 
-        public AssignmentListPage(MainWindow parentWindow) :
+        public AssignmentListPage(MainWindow parentWindow, bool onlyOwnAssignments) :
             base(parentWindow)
         {
             InitializeComponent();
 
-            m_AllAssignmentsTab = new TabItem();
-            m_AllAssignmentsTab.Header = "All assignments";
-            m_TabControl.Items.Add(m_AllAssignmentsTab);
-
-            m_MyAssignmentsTab = new TabItem();
-            m_MyAssignmentsTab.Header = "My assignments";
-            m_TabControl.Items.Add(m_MyAssignmentsTab);
+            DataContext = m_Assignments = new AssignmentListViewModel(onlyOwnAssignments, window.Session);
         }
     }
 }
