@@ -7,9 +7,10 @@ using System.Windows.Controls;
 
 namespace Laboras22.ValidationRules
 {
-    class UserNameValidationRule : ValidationRulesBase
+    class MinimumLengthValidationRule : ValidationRulesBase
     {
         public string FieldName { get; set; }
+        public int MinimumLength { get; set; }
 
         public override ValidationResult Validate(object value, System.Globalization.CultureInfo cultureInfo)
         {
@@ -20,9 +21,9 @@ namespace Laboras22.ValidationRules
                 return new ValidationResult(false, FieldName + " cannot be empty.");
             }
 
-            if (userName.Length < 6)
+            if (userName.Length < MinimumLength)
             {
-                return new ValidationResult(false, FieldName + " length has to be at least 6 symbols long.");
+                return new ValidationResult(false, FieldName + " length has to be at least " + MinimumLength + " symbols long.");
             }
             else
             {

@@ -4,53 +4,78 @@
       xmlns:Laboras22="clr-namespace:Laboras22.Views.Pages"
       xmlns:ValidationRules="clr-namespace:Laboras22.ValidationRules">
 
-    <Grid x:Name="m_LayoutRoot" Margin="10,0" Height="200">
+    <Grid x:Name="m_LayoutRoot" Margin="10,30">
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="2*"/>
-            <ColumnDefinition Width="3*"/>
-        </Grid.ColumnDefinitions>
+        
+        <Grid Grid.Row="0" Margin="0,10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="37.5"/>
+                <RowDefinition Height="37.5"/>
+                <RowDefinition Height="37.5"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
 
-        <TextBlock Text="Assignment name" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0" Foreground="White" />
-        <TextBox x:Name="m_AssignmentNameTextBox" Grid.Column="1" Grid.Row="0" Height="25" Style="{StaticResource ValidatedTextBoxStyle}">
-            <TextBox.Text>
-                <Binding Path="AssignmentName" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
-                    <Binding.ValidationRules>
-                        <ValidationRules:UserNameValidationRule FieldName="Assignment name" />
-                    </Binding.ValidationRules>
-                </Binding>
-            </TextBox.Text>
-        </TextBox>
+            <TextBlock Text="Assignment name" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0" Foreground="White" />
+            <TextBox x:Name="m_AssignmentNameTextBox" Grid.Column="1" Grid.Row="0" Height="25" Style="{StaticResource ValidatedTextBoxStyle}">
+                <TextBox.Text>
+                    <Binding Path="AssignmentName" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
+                        <Binding.ValidationRules>
+                            <ValidationRules:MinimumLengthValidationRule FieldName="Assignment name" MinimumLength="5" />
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
 
-        <TextBlock Text="Course" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0" Foreground="White" />
-        <ComboBox x:Name="m_CourseComboBox" ItemsSource="{Binding Courses}" Grid.Column="1" Grid.Row="1" Height="25">
-            <ComboBox.SelectedItem>
-                <Binding Path="Course" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
-                    <Binding.ValidationRules>
-                        <ValidationRules:NotEmptyValidationRule FieldName="Course" />
-                    </Binding.ValidationRules>
-                </Binding>
-            </ComboBox.SelectedItem>
-        </ComboBox>
+            <TextBlock Text="Course" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0" Foreground="White" />
+            <ComboBox x:Name="m_CourseComboBox" ItemsSource="{Binding Courses}" Grid.Column="1" Grid.Row="1" Height="25">
+                <ComboBox.SelectedItem>
+                    <Binding Path="Course" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
+                        <Binding.ValidationRules>
+                            <ValidationRules:NotEmptyValidationRule FieldName="Course" />
+                        </Binding.ValidationRules>
+                    </Binding>
+                </ComboBox.SelectedItem>
+            </ComboBox>
 
-        <TextBlock Text="Difficulty" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0" Foreground="White" />
-        <TextBox x:Name="m_DifficultyTextBox" Grid.Column="1" Grid.Row="2" Height="25" Style="{StaticResource ValidatedTextBoxStyle}">
-            <TextBox.Text>
-                <Binding Path="Difficulty" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
-                    <Binding.ValidationRules>
-                        <ValidationRules:IntValidationRule FieldName="First name" Min="1" Max="10" />
-                    </Binding.ValidationRules>
-                </Binding>
-            </TextBox.Text>
-        </TextBox>
+            <TextBlock Text="Difficulty" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0" Foreground="White" />
+            <TextBox x:Name="m_DifficultyTextBox" Grid.Column="1" Grid.Row="2" Height="25" Style="{StaticResource ValidatedTextBoxStyle}">
+                <TextBox.Text>
+                    <Binding Path="Difficulty" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
+                        <Binding.ValidationRules>
+                            <ValidationRules:IntValidationRule FieldName="First name" Min="1" Max="10" />
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
 
-        <Button Grid.Row="4" Grid.Column="0" Content="Create assignment" x:Name="m_CreateButton" HorizontalAlignment="Center" Click="CreateButton_Click"/>
-        <Button Grid.Row="4" Grid.Column="1" Content="Cancel" x:Name="m_CancelButton" HorizontalAlignment="Center" Click="CancelButton_Click"/>
+            <TextBlock Text="Task" Grid.Column="0" Grid.Row="3" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0" Foreground="White" />
+            <Border Grid.Column="1" Grid.Row="3" BorderThickness="0" x:Name="m_TaskTextBoxBorder" Margin="0.5" VerticalAlignment="Stretch">
+                <TextBox x:Name="m_TaskTextBox" Height="{Binding ActualHeight, ElementName=m_TaskTextBoxBorder}" AcceptsReturn="True" ScrollViewer.VerticalScrollBarVisibility="Auto" Style="{StaticResource ValidatedTextBoxStyle}" TextWrapping="Wrap">
+                    <TextBox.Text>
+                        <Binding Path="Task" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
+                            <Binding.ValidationRules>
+                                <ValidationRules:MinimumLengthValidationRule FieldName="Task" MinimumLength="20" />
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+            </Border>
+        </Grid>       
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Content="Create assignment" Width="150" x:Name="m_CreateButton" HorizontalAlignment="Center" Click="CreateButton_Click"/>
+            <Button Grid.Column="1" Content="Cancel" Width="150" x:Name="m_CancelButton" HorizontalAlignment="Center" Click="CancelButton_Click"/>
+        </Grid>
     </Grid>
 </Laboras22:PageBase>

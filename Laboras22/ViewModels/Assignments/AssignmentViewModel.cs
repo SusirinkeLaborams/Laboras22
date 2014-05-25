@@ -14,6 +14,7 @@ namespace Laboras22.ViewModels.Assignments
         #region Settable properties
 
         public string AssignmentName { get { return model.AssignmentName; } set { model.AssignmentName = value; } }
+        public string Task { get { return model.Task; } set { model.Task = value; } }
 
         public CourseViewModel Course 
         {

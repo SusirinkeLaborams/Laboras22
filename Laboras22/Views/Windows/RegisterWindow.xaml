@@ -29,7 +29,7 @@
             <TextBox.Text>
                 <Binding Path="UserName" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
                     <Binding.ValidationRules>
-                        <ValidationRules:UserNameValidationRule FieldName="User name" />
+                        <ValidationRules:MinimumLengthValidationRule FieldName="User name" MinimumLength="6" />
                     </Binding.ValidationRules>
                 </Binding>
             </TextBox.Text>
@@ -86,7 +86,7 @@
             <TextBox.Text>
                 <Binding Path="Alias" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
                     <Binding.ValidationRules>
-                        <ValidationRules:UserNameValidationRule FieldName="Alias" />
+                        <ValidationRules:MinimumLengthValidationRule FieldName="Alias" MinimumLength="6" />
                     </Binding.ValidationRules>
                 </Binding>
             </TextBox.Text>

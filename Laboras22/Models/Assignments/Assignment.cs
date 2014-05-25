@@ -11,6 +11,7 @@ namespace Laboras22.Models.Assignments
     {
         public int Id { get; set; }
         public string AssignmentName { get; set; }
+        public string Task { get; set; }
         public int CourseId { get; set; }
         public int LecturerId { get; set; }
         public int Difficulty { get; set; }
