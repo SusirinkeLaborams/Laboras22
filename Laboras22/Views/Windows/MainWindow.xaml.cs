@@ -14,7 +14,7 @@ namespace Laboras22.Views
     /// </summary>
     partial class MainWindow : MetroWindow
     {
-        private Stack<Page> pages = new Stack<Page>();
+        private Stack<PageBase> pages = new Stack<PageBase>();
         public MainWindow()
         {
             InitializeComponent();
@@ -22,17 +22,24 @@ namespace Laboras22.Views
 
             PushPage(new LoginPage(this));
         }
-        public void PushPage(Page page)
+
+        public void PushPage(PageBase page)
         {
             pages.Push(page);
-            m_Frame.Content = pages.Peek();
+
+            m_Frame.Content = page;
+            page.OnDisplay();            
         }
+
         public void PopPage()
         {
             if(pages.Count > 1)
             {
-            pages.Pop();
-                m_Frame.Content = pages.Peek();
+                pages.Pop();
+
+                var page = pages.Peek();
+                m_Frame.Content = page;
+                page.OnDisplay();
             }
         }
 

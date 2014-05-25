@@ -18,16 +18,13 @@ using Laboras22.Views.Windows;
 
 namespace Laboras22.Views.Pages.Users
 {
-    /// <summary>
-    /// Interaction logic for LoginPage.xaml
-    /// </summary>
-    public partial class LoginPage
+    public partial class LoginPage : PageBase
     {
         private LoginViewModel m_LoginViewModel;
-        private MainWindow window;
-        public LoginPage(MainWindow parent)
+
+        public LoginPage(MainWindow parent) :
+            base(parent)
         {
-            window = parent;
             InitializeComponent();
         }
         

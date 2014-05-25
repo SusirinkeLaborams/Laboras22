@@ -19,10 +19,9 @@ namespace Laboras22.ViewModels.Assignments
         {
             m_OnlyOwnAssignments = onlyOwnAssignments;
             m_Session = session;
-            LoadAssignments();
         }
-
-        private async void LoadAssignments()
+        
+        public async Task LoadAssignments()
         {
             if (m_OnlyOwnAssignments)
             {

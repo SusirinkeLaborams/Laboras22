@@ -28,5 +28,10 @@ namespace Laboras22.Views.Pages.Assignments
         {
             window.PushPage(new AssignmentCreationPage(window));
         }
+
+        public override async void OnDisplay()
+        {
+            await m_Assignments.LoadAssignments();
+        }
     }
 }

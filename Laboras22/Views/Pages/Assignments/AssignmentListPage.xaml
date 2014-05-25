@@ -13,7 +13,7 @@
         <ListView Grid.Row="0" ItemsSource="{Binding Assignments}" HorizontalAlignment="Stretch" ThirdParty:GridViewColumnResize.Enabled="True">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}" ThirdParty:GridViewColumnResize.Width="*" />
+                    <GridViewColumn Header="Name" DisplayMemberBinding="{Binding AssignmentName}" ThirdParty:GridViewColumnResize.Width="*" />
                     <GridViewColumn Header="Course" DisplayMemberBinding="{Binding CourseName}" ThirdParty:GridViewColumnResize.Width="*" />
                     <GridViewColumn Header="Lecturer" DisplayMemberBinding="{Binding LecturerName}" ThirdParty:GridViewColumnResize.Width="*" />
                     <GridViewColumn Header="Difficulty" DisplayMemberBinding="{Binding Difficulty}" ThirdParty:GridViewColumnResize.Width="*" />

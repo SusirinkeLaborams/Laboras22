@@ -36,6 +36,7 @@ namespace Laboras22.Views.Pages.Assignments
             DataContext = m_ViewModel = await AssignmentViewModel.Create();
 
             var lecturer = await lecturerGetTask;
+            m_ViewModel.Lecturer = lecturer;
             m_ViewModel.LoadCourses(lecturer.FacultyDepartment.Id);
 
             base.OnInitialized(e);

@@ -42,7 +42,7 @@ namespace Laboras22.ViewModels.Assignments
         #region Read-only properties
 
         public string CourseName { get { return Course != null ? Course.Name : null; } }
-        public string LecturerName { get { return Lecturer.LastName; } }
+        public string LecturerName { get { return Lecturer.Name; } }
         public IEnumerable<CourseViewModel> Courses { get { return m_Courses; } }
 
         #endregion

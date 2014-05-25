@@ -215,7 +215,7 @@ namespace Laboras22.Classes.ThirdParty
                     var gv = _element.View as GridView;
                     if (gv != null)
                     {
-                        double allowedSpace = totalWidth - GetAllocatedSpace(gv);
+                        double allowedSpace = totalWidth - GetAllocatedSpace(gv) - 2;
                         double totalPercentage = GridViewColumnResizeBehaviors(gv).Sum(x => x.Percentage);
                         foreach (GridViewColumnResizeBehavior behavior in GridViewColumnResizeBehaviors(gv))
                         {

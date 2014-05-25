@@ -10,9 +10,14 @@ namespace Laboras22.Views.Pages
     public abstract class PageBase : Page
     {
         protected MainWindow window;
+
         protected PageBase(MainWindow window)
         {
             this.window = window;
+        }
+
+        public virtual void OnDisplay()
+        {
         }
     }
 }

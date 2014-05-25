@@ -22,6 +22,8 @@ namespace Laboras22.Views.Pages
     /// </summary>
     public partial class MainMenuPage : PageBase
     {
+        List<PageBase> m_TabsContents = new List<PageBase>();
+
         public MainMenuPage(MainWindow window) :
             base(window)
         {
@@ -35,7 +37,7 @@ namespace Laboras22.Views.Pages
             }
         }
 
-        void AddTab(Page page, string header)
+        void AddTab(PageBase page, string header)
         {
             var frame = new Frame();
             var tab = new TabItem();
@@ -45,6 +47,12 @@ namespace Laboras22.Views.Pages
             tab.Content = frame;
 
             m_TabControl.Items.Add(tab);
+            m_TabsContents.Add(page);
+        }
+
+        private void TabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            m_TabsContents[m_TabControl.SelectedIndex].OnDisplay();
         }
     }
 }

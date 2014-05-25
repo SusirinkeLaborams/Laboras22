@@ -42,7 +42,7 @@
         <TextBlock Text="Difficulty" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0"/>
         <TextBox x:Name="m_DifficultyTextBox" Grid.Column="1" Grid.Row="2" Height="25" Style="{StaticResource ValidatedTextBoxStyle}">
             <TextBox.Text>
-                <Binding Path="FirstName" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
+                <Binding Path="Difficulty" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
                     <Binding.ValidationRules>
                         <ValidationRules:IntValidationRule FieldName="First name" Min="1" Max="10" />
                     </Binding.ValidationRules>
