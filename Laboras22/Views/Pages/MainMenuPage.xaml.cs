@@ -35,14 +35,17 @@ namespace Laboras22.Views.Pages
             AddTab(new AssignmentListPage(window, false), "All assignments");
             AddTab(new ProjectList(window, new AllProjectListViewModel()), "All projects");
 
-            if (window.Session.UserType == SessionViewModel.UserTypeEnum.Lecturer)
+            switch(window.Session.UserType)
             {
-                AddTab(new AssignmentListPage(window, true), "My assignments");
-            }
-
-            if (window.Session.UserType == SessionViewModel.UserTypeEnum.Administrator)
-            {
-                AddTab(new ManageUsersPage(window), "Users");
+                case SessionViewModel.UserTypeEnum.Administrator:
+                    AddTab(new ManageUsersPage(window), "Users");
+                    break;
+                case SessionViewModel.UserTypeEnum.Lecturer:
+                    AddTab(new AssignmentListPage(window, true), "My assignments");
+                    break;
+                case SessionViewModel.UserTypeEnum.Student:
+                    AddTab(new ProjectList(window, new ParticipatedProjectListViewModel(window.Session.User.Id)), "My projects");
+                    break;
             }
         }
 
