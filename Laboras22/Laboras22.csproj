@@ -114,6 +114,7 @@
     <Compile Include="ViewModels\Assignments\FacultyViewModel.cs" />
     <Compile Include="ViewModels\Assignments\UniversityViewModel.cs" />
     <Compile Include="ViewModels\NotifyPropertyChangedBase.cs" />
+    <Compile Include="ViewModels\Projects\AllProjectListViewModel.cs" />
     <Compile Include="ViewModels\Projects\GradeViewModel.cs" />
     <Compile Include="ViewModels\Projects\ProjectContentViewModel.cs" />
     <Compile Include="ViewModels\Projects\ParticipatedProjectListViewModel.cs" />
