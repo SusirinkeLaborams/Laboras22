@@ -1,4 +1,5 @@
-﻿using Laboras22.ViewModels.Users;
+﻿using Laboras22.ViewModels.Projects;
+using Laboras22.ViewModels.Users;
 using Laboras22.Views.Pages.Assignments;
 using Laboras22.Views.Pages.Projects;
 using System;
@@ -15,6 +16,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Laboras22.Views.Pages.Users;
 
 namespace Laboras22.Views.Pages
 {
@@ -32,10 +34,16 @@ namespace Laboras22.Views.Pages
 
             AddTab(new AssignmentListPage(window, false), "All assignments");
             AddTab(new ProjectCreationPage(window), "Do shit");
+            AddTab(new ProjectList(window, new AllProjectListViewModel()), "All projects");
 
             if (window.Session.UserType == SessionViewModel.UserTypeEnum.Lecturer)
             {
                 AddTab(new AssignmentListPage(window, true), "My assignments");
+            }
+
+            if (window.Session.UserType == SessionViewModel.UserTypeEnum.Administrator)
+            {
+                AddTab(new ManageUsersPage(window), "Users");
             }
         }
 

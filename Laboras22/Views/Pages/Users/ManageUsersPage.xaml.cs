@@ -11,17 +11,66 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Laboras22.ViewModels.Users;
 
 namespace Laboras22.Views.Pages.Users
 {
     /// <summary>
     /// Interaction logic for ManageUsersPage.xaml
     /// </summary>
-    public partial class ManageUsersPage : Page
+    public partial class ManageUsersPage : PageBase
     {
-        public ManageUsersPage()
+        private ManageUsersViewModel m_ViewModel;
+        public ManageUsersPage(MainWindow parent) : base(parent)
         {
             InitializeComponent();
+            
+        }
+
+        protected override async void OnInitialized(EventArgs e)
+        {
+            base.OnInitialized(e);
+            m_ViewModel = new ManageUsersViewModel();
+            m_Root.DataContext = m_ViewModel;
+            await m_ViewModel.LoadUsers();
+        }
+
+        private void CreateUserButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ShowStudents(object sender, RoutedEventArgs e)
+        {
+            m_UserList.Visibility = Visibility.Collapsed;
+            m_LecturerList.Visibility = Visibility.Collapsed;
+            m_AdministratorList.Visibility = Visibility.Collapsed;
+            m_StudentList.Visibility = Visibility.Visible;
+        }
+
+        private void ShowAdministrators(object sender, RoutedEventArgs e)
+        {
+            m_StudentList.Visibility = Visibility.Collapsed;
+            m_UserList.Visibility = Visibility.Collapsed;
+            m_LecturerList.Visibility = Visibility.Collapsed;
+            m_AdministratorList.Visibility = Visibility.Visible;
+        }
+
+        private void ShowLecturers(object sender, RoutedEventArgs e)
+        {
+            m_StudentList.Visibility = Visibility.Collapsed;
+            m_UserList.Visibility = Visibility.Collapsed;
+            m_AdministratorList.Visibility = Visibility.Collapsed;
+            m_LecturerList.Visibility = Visibility.Visible;
+        }
+
+        private void ShowAll(object sender, RoutedEventArgs e)
+        {
+            m_StudentList.Visibility = Visibility.Collapsed;
+             m_LecturerList.Visibility = Visibility.Collapsed;
+            m_AdministratorList.Visibility = Visibility.Collapsed;
+
+            m_UserList.Visibility = Visibility.Visible;
         }
     }
 }

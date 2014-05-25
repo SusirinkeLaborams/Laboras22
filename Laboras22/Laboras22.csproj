@@ -114,6 +114,7 @@
     <Compile Include="ViewModels\Assignments\FacultyViewModel.cs" />
     <Compile Include="ViewModels\Assignments\UniversityViewModel.cs" />
     <Compile Include="ViewModels\NotifyPropertyChangedBase.cs" />
+    <Compile Include="ViewModels\Projects\AllProjectListViewModel.cs" />
     <Compile Include="ViewModels\Projects\GradeViewModel.cs" />
     <Compile Include="ViewModels\Projects\ProjectContentViewModel.cs" />
     <Compile Include="ViewModels\Projects\ParticipatedProjectListViewModel.cs" />
@@ -124,6 +125,7 @@
     <Compile Include="ViewModels\Projects\RatingViewModel.cs" />
     <Compile Include="ViewModels\Users\AdministratorViewModel.cs" />
     <Compile Include="ViewModels\Users\IUserViewModel.cs" />
+    <Compile Include="ViewModels\Users\ManageUsersViewModel.cs" />
     <Compile Include="ViewModels\Users\UserViewModel.cs" />
     <Compile Include="ViewModels\Users\LecturerViewModel.cs" />
     <Compile Include="ViewModels\Users\LoginViewModel.cs" />

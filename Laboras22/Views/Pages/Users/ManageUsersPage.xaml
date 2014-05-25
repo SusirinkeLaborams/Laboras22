@@ -1,4 +1,72 @@
-﻿<Page x:Class="Laboras22.Views.Pages.Users.ManageUsersPage"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-</Page>
+﻿<Laboras22:PageBase x:Class="Laboras22.Views.Pages.Users.ManageUsersPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:Metro="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+      xmlns:Laboras22="clr-namespace:Laboras22.Views.Pages"
+      xmlns:ThirdParty="clr-namespace:Laboras22.Classes.ThirdParty">
+
+    <Grid x:Name="m_Root">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <ListView Grid.Row="0" x:Name="m_UserList" ItemsSource="{Binding Users}" HorizontalAlignment="Stretch" ThirdParty:GridViewColumnResize.Enabled="True">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="First Name" DisplayMemberBinding="{Binding FirstName}" ThirdParty:GridViewColumnResize.Width="*" />
+                    <GridViewColumn Header="Last Name" DisplayMemberBinding="{Binding LastName}" ThirdParty:GridViewColumnResize.Width="*" />
+                    <GridViewColumn Header="Email" DisplayMemberBinding="{Binding Email}" ThirdParty:GridViewColumnResize.Width="*" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <ListView Grid.Row="0" x:Name="m_StudentList" ItemsSource="{Binding Students}" HorizontalAlignment="Stretch" ThirdParty:GridViewColumnResize.Enabled="True" Visibility="Collapsed">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="First Name" DisplayMemberBinding="{Binding FirstName}" ThirdParty:GridViewColumnResize.Width="*" />
+                    <GridViewColumn Header="Last Name" DisplayMemberBinding="{Binding LastName}" ThirdParty:GridViewColumnResize.Width="*" />
+                    <GridViewColumn Header="Email" DisplayMemberBinding="{Binding Email}" ThirdParty:GridViewColumnResize.Width="*" />
+                    <GridViewColumn Header="Alias" DisplayMemberBinding="{Binding Alias}" ThirdParty:GridViewColumnResize.Width="*" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <ListView Grid.Row="0" x:Name="m_LecturerList" ItemsSource="{Binding Lecturers}" HorizontalAlignment="Stretch" ThirdParty:GridViewColumnResize.Enabled="True"  Visibility="Collapsed">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="First Name" DisplayMemberBinding="{Binding FirstName}" ThirdParty:GridViewColumnResize.Width="*" />
+                    <GridViewColumn Header="Last Name" DisplayMemberBinding="{Binding LastName}" ThirdParty:GridViewColumnResize.Width="*" />
+                    <GridViewColumn Header="Email" DisplayMemberBinding="{Binding Email}" ThirdParty:GridViewColumnResize.Width="*" />
+                    <GridViewColumn Header="Department" DisplayMemberBinding="{Binding FacultyDepartmentName}" ThirdParty:GridViewColumnResize.Width="*" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <ListView Grid.Row="0" x:Name="m_AdministratorList" ItemsSource="{Binding Administrators}" HorizontalAlignment="Stretch" ThirdParty:GridViewColumnResize.Enabled="True"  Visibility="Collapsed">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="First Name" DisplayMemberBinding="{Binding FirstName}" ThirdParty:GridViewColumnResize.Width="*" />
+                    <GridViewColumn Header="Last Name" DisplayMemberBinding="{Binding LastName}" ThirdParty:GridViewColumnResize.Width="*" />
+                    <GridViewColumn Header="Email" DisplayMemberBinding="{Binding Email}" ThirdParty:GridViewColumnResize.Width="*" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Button Content="Create new user" Click="CreateUserButton_Click" Margin="5, 10" Grid.Column="0" />
+            <Button Content="Show students" Click="ShowStudents" Margin="5, 10" Grid.Column="1"/>
+            <Button Content="Show lecturers" Click="ShowLecturers" Margin="5, 10" Grid.Column="2"/>
+            <Button Content="Show administrators" Click="ShowAdministrators" Margin="5, 10" Grid.Column="3"/>
+            <Button Content="Show all users" Click="ShowAll" Margin="5, 10" Grid.Column="4"/>            
+        </Grid>
+    </Grid>
+</Laboras22:PageBase>
