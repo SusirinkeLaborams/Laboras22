@@ -7,10 +7,18 @@
         <TextBlock Text="{Binding AssignmentName}"/>
         <TextBlock Text="{Binding Name}"/>
         <ListView ItemsSource="{Binding Participants}">
-            <TextBlock Text="{Binding Name}"/>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Name}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
         </ListView>
         <ListView ItemsSource="{Binding Contents}">
-            <TextBlock Text="{Binding URL}"/>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding URL}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
         </ListView>
     </StackPanel>
 </Laboras22:PageBase>

@@ -8,13 +8,14 @@ namespace Laboras22.ViewModels.Projects
 {
     class ParticipatedProjectListViewModel : ProjectListViewModel
     {
+        private int sId;
         public ParticipatedProjectListViewModel(int sId)
         {
-            LoadProjects(sId);
+            this.sId = sId;
         }
-        public async void LoadProjects(int studentId)
+        public override async Task LoadProjects()
         {
-            var tmp = await ProjectParticipantViewModel.Where(x => x.StudentId == studentId);
+            var tmp = await ProjectParticipantViewModel.Where(x => x.StudentId == sId);
             Projects = tmp.Select(a => a.Project);
         }
     }

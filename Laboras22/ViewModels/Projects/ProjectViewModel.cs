@@ -13,8 +13,32 @@ namespace Laboras22.ViewModels.Projects
     {
         public string Name { get { return model.ProjectName; } set { model.ProjectName = value; } }
         public string AssignmentName { get { return Assignment.AssignmentName; } }
-        public virtual AssignmentViewModel Assignment { get; set; }
-        public virtual StudentViewModel Owner { get; set; }
+        private AssignmentViewModel assignment;
+        public AssignmentViewModel Assignment 
+        {
+            get
+            {
+                return assignment;
+            }
+            set
+            {
+                assignment = value;
+                model.AssignmentId = value.Id;
+            }
+        }
+        private StudentViewModel owner;
+        public StudentViewModel Owner 
+        {
+            get
+            {
+                return owner;
+            }
+            set
+            {
+                owner = value;
+                model.OwnerId = value.Id;
+            }
+        }
         public IEnumerable<ProjectParticipantViewModel> Participants { get; private set; }
         public IEnumerable<ProjectContentViewModel> Contents { get; private set; }
         protected override async Task RefreshFields()

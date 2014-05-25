@@ -6,8 +6,21 @@ using System.Threading.Tasks;
 
 namespace Laboras22.ViewModels.Projects
 {
-    abstract class ProjectListViewModel
+    abstract class ProjectListViewModel : NotifyPropertyChangedBase
     {
-        public IEnumerable<ProjectViewModel> Projects { get; protected set; }
+        private IEnumerable<ProjectViewModel> projects;
+        public IEnumerable<ProjectViewModel> Projects 
+        {
+            get
+            {
+                return projects;
+            }
+            protected set
+            {
+                projects = value;
+                OnPropertyChanged();
+            }
+        }
+        public abstract Task LoadProjects();
     }
 }
