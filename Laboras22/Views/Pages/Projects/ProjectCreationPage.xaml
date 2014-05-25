@@ -86,7 +86,7 @@
                   Height="25" 
                   SelectionChanged="AssignmentComboBox_SelectionChanged">
                 <ComboBox.SelectedItem>
-                    <Binding Path="Assignemnt" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
+                    <Binding Path="Assignment" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
                         <Binding.ValidationRules>
                             <ValidationRules:NotEmptyValidationRule FieldName="Assignemnt" />
                         </Binding.ValidationRules>
