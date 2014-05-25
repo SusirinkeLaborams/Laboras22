@@ -59,5 +59,15 @@ namespace Laboras22.Views.Pages.Projects
         {
 
         }
+
+        private void CancelButton_Click(object sender, RoutedEventArgs e)
+        {
+            window.PopPage();
+        }
+
+        private void CreateButton_Click(object sender, RoutedEventArgs e)
+        {
+            //dunno, lol
+        }
     }
 }
