@@ -22217,6 +22217,45 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="c028d477-7e50-4f25-9762-7f7c30efd6d3"
+            isDerived="false"
+            sourceEndRoleName="Student"
+            targetEndRoleName="Register users"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="40b959bc-af9e-4ec3-b810-b89fa170edfb"
+              LastKnownName="Register users"
+              LastKnownLocation="Laboras22Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="74d03d84-0f31-4478-b3aa-439b033a82d3"
+                  name="Student"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8aae3f05-8f0a-40e0-90c8-63a53d92e956"
+                  name="Register users"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
       </actor>
     </packageHasNamedElement>
@@ -22852,6 +22891,45 @@
                 <memberEnd
                   Id="99ceb50a-ab21-4e89-8a5b-841c81c0b7d0"
                   name="Create assignment"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="7ed61080-d15b-48b1-97a1-df82f1ab76a1"
+            isDerived="false"
+            sourceEndRoleName="Lecturer"
+            targetEndRoleName="Register users"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="40b959bc-af9e-4ec3-b810-b89fa170edfb"
+              LastKnownName="Register users"
+              LastKnownLocation="Laboras22Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d61f1e6b-4619-49a5-b047-5912c5b77e9e"
+                  name="Lecturer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="733a6a01-d3b4-42fc-ac19-bf109145c6ab"
+                  name="Register users"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"

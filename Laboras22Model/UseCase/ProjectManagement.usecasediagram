@@ -85,6 +85,22 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="e1a00a17-046b-4fc4-8d93-e43c013d893f" />
           </association>
+          <association Id="faac89ec-b143-46e8-a976-0ad3377fafb3" isDerived="false" sourceEndRoleName="Student" targetEndRoleName="Register users" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="5b9c274d-38a7-425a-9aee-7dc2ccf0682b" LastKnownName="Register users" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="00af7eb3-531f-4feb-b6b2-75642d6cd738" name="Student" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="74d03d84-0f31-4478-b3aa-439b033a82d3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="30f10589-a5ba-4612-8dfd-440a537aee62" name="Register users" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8aae3f05-8f0a-40e0-90c8-63a53d92e956" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c028d477-7e50-4f25-9762-7f7c30efd6d3" />
+          </association>
         </targetEnds>
       </actor>
     </useCaseModelRootHasTypes>
@@ -191,22 +207,6 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="7db1db4b-270e-4bbe-ae85-dfe16be68417" />
-          </association>
-          <association Id="70ae00b0-3a99-40bc-98f2-2a2f26ecb872" isDerived="false" sourceEndRoleName="Administrator" targetEndRoleName="Remove users" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="299b3294-1fea-492a-900b-6b04ed5aaa64" LastKnownName="Remove users" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="0294fcaf-88a5-485b-a461-cfb47890e99b" name="Administrator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="6f94a1a7-f84f-4929-95b1-255bf40b8ace" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="ea42d177-e2dc-4cf2-98c7-95498ebe5d35" name="Remove users" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="e6129c51-12fb-41bb-aab4-caf469922b49" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="42b48f6f-1214-41ad-89e3-575761b38484" />
           </association>
           <association Id="5780eee0-d2db-43b8-806b-905a1568ba5e" isDerived="false" sourceEndRoleName="Administrator" targetEndRoleName="Modify user data" isLeaf="false" isAbstract="false">
             <useCaseMoniker Id="12ef931f-fe66-4fa7-ad69-c059045f06fb" LastKnownName="Modify user data" />
@@ -393,6 +393,22 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="519c1318-bbc1-4ce9-b863-5a8d594af55d" />
           </association>
+          <association Id="03d79053-0dbc-4f4c-ad7d-f9c35330a465" isDerived="false" sourceEndRoleName="Lecturer" targetEndRoleName="Register users" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="5b9c274d-38a7-425a-9aee-7dc2ccf0682b" LastKnownName="Register users" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="506e4750-e8db-4ff5-8ace-177236eca97b" name="Lecturer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d61f1e6b-4619-49a5-b047-5912c5b77e9e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="06587417-64c2-4a97-8d3c-8b6221efa4e1" name="Register users" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="733a6a01-d3b4-42fc-ac19-bf109145c6ab" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7ed61080-d15b-48b1-97a1-df82f1ab76a1" />
+          </association>
         </targetEnds>
       </actor>
     </useCaseModelRootHasTypes>
@@ -445,11 +461,6 @@
     <useCaseModelRootHasTypes>
       <useCase Id="023367aa-739e-4d5d-9b75-349ae705c00c" name="Log in" isAbstract="false" isLeaf="false">
         <elementDefinition Id="6343fd8c-f8ce-40cc-b78e-e654d1f75efa" />
-      </useCase>
-    </useCaseModelRootHasTypes>
-    <useCaseModelRootHasTypes>
-      <useCase Id="299b3294-1fea-492a-900b-6b04ed5aaa64" name="Remove users" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="f984551b-9ea9-4a24-89c7-b9e0b5aae7ad" />
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
