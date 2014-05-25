@@ -130,6 +130,9 @@
     <Compile Include="ViewModels\Users\SessionViewModel.cs" />
     <Compile Include="ViewModels\Users\StudentViewModel.cs" />
     <Compile Include="ViewModels\ViewModelBase.cs" />
+    <Compile Include="Views\Pages\Assignments\AssignmentCreationPage.xaml.cs">
+      <DependentUpon>AssignmentCreationPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Pages\MainMenuPage.xaml.cs">
       <DependentUpon>MainMenuPage.xaml</DependentUpon>
     </Compile>
@@ -161,6 +164,10 @@
     <Compile Include="Views\Windows\StyledMessageDialog.xaml.cs">
       <DependentUpon>StyledMessageDialog.xaml</DependentUpon>
     </Compile>
+    <Page Include="Views\Pages\Assignments\AssignmentCreationPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Pages\MainMenuPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

@@ -1,0 +1,9 @@
+﻿<Laboras22:PageBase x:Class="Laboras22.Views.Pages.Assignments.AssignmentCreationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:Laboras22="clr-namespace:Laboras22.Views.Pages">
+
+    <Grid>
+        
+    </Grid>
+</Laboras22:PageBase>
