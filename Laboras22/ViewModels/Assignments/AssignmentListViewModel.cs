@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Laboras22.ViewModels.Users;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -11,9 +12,10 @@ namespace Laboras22.ViewModels.Assignments
     class AssignmentListViewModel : NotifyPropertyChangedBase
     {
         private bool m_OnlyOwnAssignments;
+        private SessionViewModel m_Session;
         public IEnumerable<AssignmentViewModel> Assignments { get; private set; }
         
-        public AssignmentListViewModel(bool onlyOwnAssignments)
+        public AssignmentListViewModel(bool onlyOwnAssignments, SessionViewModel session)
         {
             m_OnlyOwnAssignments = onlyOwnAssignments;
             LoadAssignments();
@@ -23,6 +25,17 @@ namespace Laboras22.ViewModels.Assignments
         {
             if (m_OnlyOwnAssignments)
             {
+                switch (m_Session.UserType)
+                {
+                    case SessionViewModel.UserTypeEnum.Lecturer:
+
+                        break;
+
+                    case SessionViewModel.UserTypeEnum.Student:
+
+                        break;
+                }
+
                 //Assignments = await AssignmentViewModel.Where(x => x.
             }
             else
