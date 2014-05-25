@@ -26,7 +26,7 @@ namespace Laboras22.Views.Pages.Assignments
 
         private void CreateNewAssignmentButton_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-
+            window.PushPage(new AssignmentCreationPage(window));
         }
     }
 }

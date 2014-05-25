@@ -58,5 +58,10 @@ namespace Laboras22.ViewModels.Assignments
             facultyDepartment = await FacultyDepartmentViewModel.Get(model.FacultyDepartmentId);
             owner = await LecturerViewModel.Get(model.OwnerId);
         }
+
+        public override string ToString()
+        {
+            return Name;
+        }
     }
 }

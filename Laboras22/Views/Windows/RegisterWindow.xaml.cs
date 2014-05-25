@@ -152,12 +152,12 @@ namespace Laboras22.Views
             }
         }
 
-        private async void m_FacultyComboBox_Selected_1(object sender, RoutedEventArgs e)
+        private async void FacultyComboBox_Selected_1(object sender, RoutedEventArgs e)
         {
             await m_RegisterViewModel.LoadFacultyDepartments();
         }
 
-        private async void m_UniversityComboBox_Selected_1(object sender, RoutedEventArgs e)
+        private async void UniversityComboBox_Selected_1(object sender, RoutedEventArgs e)
         {
             await m_RegisterViewModel.LoadFaculties();
         }

@@ -13,25 +13,25 @@ namespace Laboras22.ViewModels.Assignments
     {
         #region Settable properties
 
-        public string Name { get { return model.AssignmentName; } set { model.AssignmentName = value; } }
+        public string AssignmentName { get { return model.AssignmentName; } set { model.AssignmentName = value; } }
 
         public CourseViewModel Course 
         {
-            get { return course; }
+            get { return m_Course; }
             set 
             {
-                course = value;
-                model.CourseId = course.Id;
+                m_Course = value;
+                model.CourseId = m_Course.Id;
             }
         }
 
         public LecturerViewModel Lecturer
         {
-            get { return lecturer; }
+            get { return m_Lecturer; }
             set
             {
-                lecturer = value;
-                model.LecturerId = lecturer.Id;
+                m_Lecturer = value;
+                model.LecturerId = m_Lecturer.Id;
             }
         }
 
@@ -43,20 +43,28 @@ namespace Laboras22.ViewModels.Assignments
 
         public string CourseName { get { return Course != null ? Course.Name : null; } }
         public string LecturerName { get { return Lecturer.LastName; } }
+        public IEnumerable<CourseViewModel> Courses { get { return m_Courses; } }
 
         #endregion
 
         #region Fields
 
-        private CourseViewModel course;
-        private LecturerViewModel lecturer;
+        private CourseViewModel m_Course;
+        private LecturerViewModel m_Lecturer;
+        private IEnumerable<CourseViewModel> m_Courses;
 
         #endregion
 
         protected override async Task RefreshFields()
         {
-            course = await CourseViewModel.Get(model.CourseId);
-            lecturer = await LecturerViewModel.Get(model.LecturerId);
+            m_Course = await CourseViewModel.Get(model.CourseId);
+            m_Lecturer = await LecturerViewModel.Get(model.LecturerId);
+        }
+
+        public async void LoadCourses(int facultyDepartmentId)
+        {
+            m_Courses = await CourseViewModel.Where(x => x.FacultyDepartmentId == facultyDepartmentId);
+            OnPropertyChanged("Courses");
         }
     }
 }

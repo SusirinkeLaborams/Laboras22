@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Laboras22.ViewModels.Assignments;
+using Laboras22.ViewModels.Users;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,10 +22,46 @@ namespace Laboras22.Views.Pages.Assignments
     /// </summary>
     public partial class AssignmentCreationPage : PageBase
     {
+        AssignmentViewModel m_ViewModel;
+
         public AssignmentCreationPage(MainWindow parentWindow) :
             base(parentWindow)
         {
             InitializeComponent();
+        }
+
+        protected override async void OnInitialized(EventArgs e)
+        {
+            var lecturerGetTask = LecturerViewModel.Get(window.Session.User.Id);
+            DataContext = m_ViewModel = await AssignmentViewModel.Create();
+
+            var lecturer = await lecturerGetTask;
+            m_ViewModel.LoadCourses(lecturer.FacultyDepartment.Id);
+
+            base.OnInitialized(e);
+        }
+
+        private async void CreateButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (!IsInputValid())
+            {
+                return;
+            }
+
+            await m_ViewModel.Insert();
+            window.PopPage();
+        }
+
+        private void CancelButton_Click(object sender, RoutedEventArgs e)
+        {
+            window.PopPage();
+        }
+
+        private bool IsInputValid()
+        {
+            return !Validation.GetHasError(m_AssignmentNameTextBox) &&
+                   !Validation.GetHasError(m_CourseComboBox) &&
+                   !Validation.GetHasError(m_DifficultyTextBox);
         }
     }
 }

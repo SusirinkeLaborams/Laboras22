@@ -101,6 +101,7 @@
     <Compile Include="Models\Users\UserLogin.cs" />
     <Compile Include="ValidationRules\ConfirmPasswordValidationRule.cs" />
     <Compile Include="ValidationRules\EmailValidationRule.cs" />
+    <Compile Include="ValidationRules\IntValidationRule.cs" />
     <Compile Include="ValidationRules\NotEmptyValidationRule.cs" />
     <Compile Include="ValidationRules\PasswordValidationRule.cs" />
     <Compile Include="ValidationRules\RealNameValidationRule.cs" />
