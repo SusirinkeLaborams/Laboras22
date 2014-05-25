@@ -9,8 +9,8 @@
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
-        
-        <ListView Grid.Row="0" ItemsSource="{Binding Assignments}" HorizontalAlignment="Stretch" ThirdParty:GridViewColumnResize.Enabled="True">
+
+        <ListView Grid.Row="0" ItemsSource="{Binding Assignments}" HorizontalAlignment="Stretch" PreviewMouseLeftButtonUp="Assignment_Click" ThirdParty:GridViewColumnResize.Enabled="True">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Name" DisplayMemberBinding="{Binding AssignmentName}" ThirdParty:GridViewColumnResize.Width="*" />

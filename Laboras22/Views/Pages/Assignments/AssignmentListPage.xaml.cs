@@ -5,7 +5,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 
 namespace Laboras22.Views.Pages.Assignments
 {
@@ -24,7 +26,7 @@ namespace Laboras22.Views.Pages.Assignments
                 : System.Windows.Visibility.Collapsed;
         }
 
-        private void CreateNewAssignmentButton_Click(object sender, System.Windows.RoutedEventArgs e)
+        private void CreateNewAssignmentButton_Click(object sender, RoutedEventArgs e)
         {
             window.PushPage(new AssignmentCreationPage(window));
         }
@@ -32,6 +34,15 @@ namespace Laboras22.Views.Pages.Assignments
         public override async void OnDisplay()
         {
             await m_Assignments.LoadAssignments();
+        }
+
+        private void Assignment_Click(object sender, MouseButtonEventArgs e)
+        {
+            var assignment = (sender as ListView).SelectedItem as AssignmentViewModel;
+            if (assignment != null)
+            {
+                window.PushPage(new AssignmentDetailsPage(window, assignment));
+            }
         }
     }
 }
