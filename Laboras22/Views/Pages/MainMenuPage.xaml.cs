@@ -52,7 +52,10 @@ namespace Laboras22.Views.Pages
 
         public override void OnDisplay()
         {
-            m_TabsContents[m_TabControl.SelectedIndex].OnDisplay();
+            if (m_TabControl.SelectedIndex > -1)
+            {
+                m_TabsContents[m_TabControl.SelectedIndex].OnDisplay();
+            }
         }
 
         private void TabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
