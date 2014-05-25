@@ -62,6 +62,11 @@ namespace Laboras22.ViewModels.Assignments
             m_Lecturer = await LecturerViewModel.Get(model.LecturerId);
         }
 
+        public override string ToString()
+        {
+            return AssignmentName;
+        }
+
         public async void LoadCourses(int facultyDepartmentId)
         {
             m_Courses = await CourseViewModel.Where(x => x.FacultyDepartmentId == facultyDepartmentId);
