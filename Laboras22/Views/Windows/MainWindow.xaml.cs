@@ -1,6 +1,7 @@
 ﻿using Laboras22.Classes;
 using Laboras22.ViewModels.Users;
 using Laboras22.Views.Pages;
+using Laboras22.Views.Pages.Users;
 using MahApps.Metro.Controls;
 using System.Collections.Generic;
 using System.Windows.Controls;
