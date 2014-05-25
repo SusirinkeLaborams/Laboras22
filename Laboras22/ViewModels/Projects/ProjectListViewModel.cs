@@ -9,9 +9,5 @@ namespace Laboras22.ViewModels.Projects
     abstract class ProjectListViewModel
     {
         public IEnumerable<ProjectViewModel> Projects { get; protected set; }
-        protected ProjectListViewModel(IEnumerable<ProjectViewModel> projects)
-        {
-            Projects = projects;
-        }
     }
 }

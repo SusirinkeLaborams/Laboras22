@@ -114,6 +114,7 @@
     <Compile Include="ViewModels\Assignments\FacultyViewModel.cs" />
     <Compile Include="ViewModels\Assignments\UniversityViewModel.cs" />
     <Compile Include="ViewModels\NotifyPropertyChangedBase.cs" />
+    <Compile Include="ViewModels\Projects\AllProjectListViewModel.cs" />
     <Compile Include="ViewModels\Projects\GradeViewModel.cs" />
     <Compile Include="ViewModels\Projects\ProjectContentViewModel.cs" />
     <Compile Include="ViewModels\Projects\ParticipatedProjectListViewModel.cs" />
@@ -169,6 +170,10 @@
     <Compile Include="Views\Windows\StyledMessageDialog.xaml.cs">
       <DependentUpon>StyledMessageDialog.xaml</DependentUpon>
     </Compile>
+    <Page Include="Resources\Icons.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Views\Pages\Assignments\AssignmentCreationPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -262,11 +267,17 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
+    <Resource Include="Resources\Entypo.ttf" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Resources\WindowsIcons-license.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Entypo-license.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.10\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.10\tools\Microsoft.Bcl.Build.targets')" />
   <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">

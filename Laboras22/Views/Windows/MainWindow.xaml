@@ -2,14 +2,20 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:Metro="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
-        Title="Laboras22" Height="500" Width="750">
+        Title="Laboras22" Height="500" Width="750" MinWidth="750" MinHeight="500">
     
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-        <Button Style="{StaticResource MetroCircleButtonStyle}" IsEnabled="{Binding IsBackButtonEnabled}" Click="BackButton_Click" Grid.Column="0" Width="50" Height="50" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <Button Style="{DynamicResource MetroCircleButtonStyle}" IsEnabled="{Binding IsBackButtonEnabled}" Click="BackButton_Click" Grid.Column="0" Width="50" Height="50" VerticalAlignment="Top" HorizontalAlignment="Left">
+            <Rectangle Width="20" Height="20">
+                <Rectangle.Fill>
+                    <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_arrow_left}" />
+                </Rectangle.Fill>
+            </Rectangle>
+        </Button>
         <Frame Grid.Column="1" x:Name="m_Frame" NavigationUIVisibility="Hidden" Navigated="Frame_Navigated" />
     </Grid>
     

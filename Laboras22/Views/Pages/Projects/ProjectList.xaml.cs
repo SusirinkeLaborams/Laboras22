@@ -22,17 +22,12 @@ namespace Laboras22.Views.Pages.Projects
     public partial class ProjectList : PageBase
     {
         private ProjectListViewModel viewModel;
-        private int userId;
-        public ProjectList(MainWindow window, int userId) : base(window)
+        internal ProjectList(MainWindow window, ProjectListViewModel viewModel) : base(window)
         {
-            this.userId = userId;
             InitializeComponent();
-        }
-        protected override async void OnInitialized(EventArgs e)
-        {
-            base.OnInitialized(e);
-            viewModel = await ParticipatedProjectListViewModel.Create(userId);
-            root.DataContext = viewModel;
+
+            this.viewModel = viewModel;
+            DataContext = viewModel;
         }
         private void ItemClick(object sender, RoutedEventArgs e)
         {
@@ -41,6 +36,11 @@ namespace Laboras22.Views.Pages.Projects
             {
                 window.PushPage(new ProjectPage(window, item.Id));
             }
+        }
+
+        private void CreateNewProjectButton_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

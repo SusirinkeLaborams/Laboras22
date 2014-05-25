@@ -1,18 +1,13 @@
 ﻿using Laboras22.ViewModels.Assignments;
+using Laboras22.ViewModels.Users;
+using Laboras22.Views.Pages.Projects;
+using Laboras22.Views.Windows;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Laboras22.Views.Pages.Assignments
 {
@@ -26,6 +21,42 @@ namespace Laboras22.Views.Pages.Assignments
         {
             InitializeComponent();
             DataContext = assignment;
+
+            m_CreateProjectButton.Visibility = (window.Session.UserType == SessionViewModel.UserTypeEnum.Student)
+                ? System.Windows.Visibility.Visible
+                : System.Windows.Visibility.Collapsed;
+
+            m_EditAssignmentButton.Visibility = m_DeleteAssignmentButton.Visibility =
+                (window.Session.UserLogin.Id == assignment.Lecturer.LoginId || window.Session.UserType == SessionViewModel.UserTypeEnum.Administrator)
+                ? System.Windows.Visibility.Visible
+                : System.Windows.Visibility.Collapsed;
+        }
+
+        private void CreateProjectButton_Click(object sender, RoutedEventArgs e)
+        {
+            window.PushPage(new ProjectCreationPage(window, (AssignmentViewModel)DataContext));
+        }
+
+        private void EditAssignmentButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private async void DeleteAssignmentButton_Click(object sender, RoutedEventArgs e)
+        {
+            var result = StyledMessageDialog.Show("Do you really want to delete this assignment? If you proceed, all projects associated with this assignment will be deleted as well.",
+                "Delete assignment", MessageBoxButton.YesNo);
+
+            if (result.HasValue && result.Value)
+            {
+                var assignment = (AssignmentViewModel)DataContext;
+
+                m_EditAssignmentButton.IsEnabled = false;
+                m_DeleteAssignmentButton.IsEnabled = false;
+
+                await assignment.Delete();
+                window.PopPage();
+            }
         }
     }
 }
