@@ -40,7 +40,7 @@ namespace Laboras22.Views.Pages.Projects
 
         private void CreateNewProjectButton_Click(object sender, RoutedEventArgs e)
         {
-
+            window.PushPage(new ProjectCreationPage(window));
         }
     }
 }

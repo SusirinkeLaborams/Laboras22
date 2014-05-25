@@ -33,7 +33,6 @@ namespace Laboras22.Views.Pages
             InitializeComponent();
 
             AddTab(new AssignmentListPage(window, false), "All assignments");
-            AddTab(new ProjectCreationPage(window), "Do shit");
             AddTab(new ProjectList(window, new AllProjectListViewModel()), "All projects");
 
             if (window.Session.UserType == SessionViewModel.UserTypeEnum.Lecturer)
