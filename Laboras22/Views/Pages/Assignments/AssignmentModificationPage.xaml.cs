@@ -17,41 +17,58 @@ using System.Windows.Shapes;
 
 namespace Laboras22.Views.Pages.Assignments
 {
-    /// <summary>
-    /// Interaction logic for AssignmentCreationPage.xaml
-    /// </summary>
-    public partial class AssignmentCreationPage : PageBase
+    public partial class AssignmentModificationPage : PageBase
     {
         AssignmentViewModel m_ViewModel;
+        bool m_CreateNewAssignment;
 
-        public AssignmentCreationPage(MainWindow parentWindow) :
+        internal AssignmentModificationPage(MainWindow parentWindow, AssignmentViewModel viewModel = null) :
             base(parentWindow)
         {
+            m_ViewModel = viewModel;
+            m_CreateNewAssignment = m_ViewModel == null;
+
             InitializeComponent();
         }
 
         protected override async void OnInitialized(EventArgs e)
         {
-            var lecturerGetTask = LecturerViewModel.Get(window.Session.User.Id);
-            var viewModelCreationTask = AssignmentViewModel.Create();
-
             base.OnInitialized(e);
 
-            DataContext = m_ViewModel = await viewModelCreationTask;
-            var lecturer = await lecturerGetTask;
+            LecturerViewModel lecturer;
 
-            m_ViewModel.Lecturer = lecturer;
+            if (m_ViewModel == null)
+            {
+                lecturer = await LecturerViewModel.Get(window.Session.User.Id);
+
+                m_ViewModel = await AssignmentViewModel.Create();
+                m_ViewModel.Lecturer = lecturer;
+            }
+            else
+            {
+                lecturer = m_ViewModel.Lecturer;
+            }            
+
             m_ViewModel.LoadCourses(lecturer.FacultyDepartment.Id);
+            DataContext = m_ViewModel;
         }
 
-        private async void CreateButton_Click(object sender, RoutedEventArgs e)
+        private async void SubmitButton_Click(object sender, RoutedEventArgs e)
         {
             if (!IsInputValid())
             {
                 return;
             }
 
-            await m_ViewModel.Insert();
+            if (m_CreateNewAssignment)
+            {
+                await m_ViewModel.Insert();
+            }
+            else
+            {
+                await m_ViewModel.Update();
+            }
+
             window.PopPage();
         }
 

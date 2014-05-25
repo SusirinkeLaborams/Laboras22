@@ -37,7 +37,11 @@ namespace Laboras22.Views.Pages.Projects
                 window.PushPage(new ProjectPage(window, item.Id));
             }
         }
-
+        public async override void OnDisplay()
+        {
+            base.OnDisplay();
+            await viewModel.LoadProjects();
+        }
         private void CreateNewProjectButton_Click(object sender, RoutedEventArgs e)
         {
             window.PushPage(new ProjectCreationPage(window));

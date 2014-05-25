@@ -12,11 +12,15 @@ namespace Laboras22.ViewModels.Projects
 {
     class ProjectCreationViewModel : NotifyPropertyChangedBase
     {
-        private ProjectViewModel model;
+        public ProjectViewModel ViewModel
+        {
+            get;
+            private set;
+        }
         private IEnumerable<UniversityViewModel> universities;
         protected ProjectCreationViewModel(ProjectViewModel model)
         {
-            this.model = model;
+            ViewModel = model;
         }
         public IEnumerable<UniversityViewModel> Universities 
         {
@@ -138,11 +142,11 @@ namespace Laboras22.ViewModels.Projects
         {
             get
             {
-                return model.Assignment;
+                return ViewModel.Assignment;
             }
             set
             {
-                model.Assignment = value;
+                ViewModel.Assignment = value;
                 OnPropertyChanged();
             }
         }
@@ -150,11 +154,11 @@ namespace Laboras22.ViewModels.Projects
         {
             get
             {
-                return model.Name;
+                return ViewModel.Name;
             }
             set
             {
-                model.Name = value;
+                ViewModel.Name = value;
                 OnPropertyChanged();
             }
         }

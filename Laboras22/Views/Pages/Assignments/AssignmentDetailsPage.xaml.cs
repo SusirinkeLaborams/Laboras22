@@ -20,6 +20,7 @@ namespace Laboras22.Views.Pages.Assignments
             base(parentWindow)
         {
             InitializeComponent();
+
             DataContext = assignment;
 
             m_CreateProjectButton.Visibility = (window.Session.UserType == SessionViewModel.UserTypeEnum.Student)
@@ -39,7 +40,15 @@ namespace Laboras22.Views.Pages.Assignments
 
         private void EditAssignmentButton_Click(object sender, RoutedEventArgs e)
         {
+            window.PushPage(new AssignmentModificationPage(window, (AssignmentViewModel)DataContext));
+        }
 
+        public override void OnDisplay()
+        {
+            if (DataContext != null)
+            {
+                ((AssignmentViewModel)DataContext).NotifyAllPropertiesChanged();
+            }
         }
 
         private async void DeleteAssignmentButton_Click(object sender, RoutedEventArgs e)
