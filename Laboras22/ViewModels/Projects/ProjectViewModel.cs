@@ -13,8 +13,8 @@ namespace Laboras22.ViewModels.Projects
     {
         public string Name { get { return model.ProjectName; } set { model.ProjectName = value; } }
         public string AssignmentName { get { return Assignment.AssignmentName; } }
-        public AssignmentViewModel Assignment { get; private set; }
-        public StudentViewModel Owner { get; private set; }
+        public virtual AssignmentViewModel Assignment { get; set; }
+        public virtual StudentViewModel Owner { get; private set; }
         public IEnumerable<ProjectParticipantViewModel> Participants { get; private set; }
         public IEnumerable<ProjectContentViewModel> Contents { get; private set; }
         

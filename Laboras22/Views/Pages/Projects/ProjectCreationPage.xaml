@@ -17,6 +17,9 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <TextBlock Text="University" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0"/>
         <ComboBox x:Name="UniversityComboBox" ItemsSource="{Binding Universities, Mode=OneWay}" 
@@ -43,6 +46,51 @@
                 <Binding Path="Faculty" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
                     <Binding.ValidationRules>
                         <ValidationRules:NotEmptyValidationRule FieldName="Faculty" />
+                    </Binding.ValidationRules>
+                </Binding>
+            </ComboBox.SelectedItem>
+        </ComboBox>
+        <TextBlock Text="Faculty department" Grid.Column="0" Grid.Row="2"  HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0"/>
+        <ComboBox x:Name="DepartmentComboBox" 
+                  ItemsSource="{Binding Departments, Mode=OneWay}" 
+                  Grid.Column="1" 
+                  Grid.Row="2" 
+                  Height="25" 
+                  SelectionChanged="DepartmentComboBox_SelectionChanged">
+            <ComboBox.SelectedItem>
+                <Binding Path="Department" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
+                    <Binding.ValidationRules>
+                        <ValidationRules:NotEmptyValidationRule FieldName="Department" />
+                    </Binding.ValidationRules>
+                </Binding>
+            </ComboBox.SelectedItem>
+        </ComboBox>
+        <TextBlock Text="Course" Grid.Column="0" Grid.Row="3"  HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0"/>
+        <ComboBox x:Name="CourceComboBox" 
+                  ItemsSource="{Binding Courses, Mode=OneWay}" 
+                  Grid.Column="1" 
+                  Grid.Row="3" 
+                  Height="25" 
+                  SelectionChanged="CourceComboBox_SelectionChanged">
+            <ComboBox.SelectedItem>
+                <Binding Path="Course" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
+                    <Binding.ValidationRules>
+                        <ValidationRules:NotEmptyValidationRule FieldName="Course" />
+                    </Binding.ValidationRules>
+                </Binding>
+            </ComboBox.SelectedItem>
+        </ComboBox>
+        <TextBlock Text="Assignment" Grid.Column="0" Grid.Row="4"  HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0"/>
+        <ComboBox x:Name="AssignmentComboBox" 
+                  ItemsSource="{Binding Assignments, Mode=OneWay}" 
+                  Grid.Column="1" 
+                  Grid.Row="4" 
+                  Height="25" 
+                  SelectionChanged="AssignmentComboBox_SelectionChanged">
+            <ComboBox.SelectedItem>
+                <Binding Path="Assignemnt" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
+                    <Binding.ValidationRules>
+                        <ValidationRules:NotEmptyValidationRule FieldName="Assignemnt" />
                     </Binding.ValidationRules>
                 </Binding>
             </ComboBox.SelectedItem>

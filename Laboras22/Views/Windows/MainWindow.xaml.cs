@@ -1,6 +1,7 @@
 ﻿using Laboras22.Classes;
 using Laboras22.ViewModels.Users;
 using Laboras22.Views.Pages;
+using Laboras22.Views.Pages.Projects;
 using Laboras22.Views.Pages.Users;
 using MahApps.Metro.Controls;
 using System.Collections.Generic;
@@ -18,7 +19,7 @@ namespace Laboras22.Views
         {
             InitializeComponent();
             AzureService.Connect();
-            
+
             PushPage(new LoginPage(this));
         }
         public void PushPage(Page page)

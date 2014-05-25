@@ -3,12 +3,13 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Laboras22.ViewModels.Projects
 {
-    class ProjectCreationViewModel : NotifyPropertyChangedBase
+    class ProjectCreationViewModel : ProjectViewModel
     {
         private IEnumerable<UniversityViewModel> universities;
         public IEnumerable<UniversityViewModel> Universities 
@@ -62,6 +63,83 @@ namespace Laboras22.ViewModels.Projects
                 OnPropertyChanged();
             }
         }
+        private IEnumerable<FacultyDepartmentViewModel> departments;
+        public IEnumerable<FacultyDepartmentViewModel> Departments
+        {
+            get
+            {
+                return departments;
+            }
+            private set
+            {
+                departments = value;
+                OnPropertyChanged();
+            }
+        }
+        private FacultyDepartmentViewModel department;
+        public FacultyDepartmentViewModel Department
+        {
+            get
+            {
+                return department;
+            }
+            set
+            {
+                department = value;
+                OnPropertyChanged();
+            }
+        }
+        private IEnumerable<CourseViewModel> courses;
+        public IEnumerable<CourseViewModel> Courses
+        {
+            get
+            {
+                return courses;
+            }
+            private set
+            {
+                courses = value;
+                OnPropertyChanged();
+            }
+        }
+        private CourseViewModel course;
+        public CourseViewModel Course
+        {
+            get
+            {
+                return course;
+            }
+            set
+            {
+                course = value;
+                OnPropertyChanged();
+            }
+        }
+        private IEnumerable<AssignmentViewModel> assignments;
+        public IEnumerable<AssignmentViewModel> Assignments
+        {
+            get
+            {
+                return assignments;
+            }
+            private set
+            {
+                assignments = value;
+                OnPropertyChanged();
+            }
+        }
+        public override AssignmentViewModel Assignment
+        {
+            get
+            {
+                return base.Assignment;
+            }
+            set
+            {
+                base.Assignment = value;
+                OnPropertyChanged();
+            }
+        }
         public async Task LoadUniversities()
         {
             Universities = await UniversityViewModel.Enumerate();
@@ -69,6 +147,18 @@ namespace Laboras22.ViewModels.Projects
         public async Task LoadFaculties()
         {
             Faculties = await FacultyViewModel.Where(x => x.UniversityId == university.Id);
+        }
+        public async Task LoadDepartments()
+        {
+            Departments = await FacultyDepartmentViewModel.Where(x => x.FacultyId == faculty.Id);
+        }
+        public async Task LoadCourses()
+        {
+            Courses = await CourseViewModel.Where(x => x.FacultyDepartmentId == department.Id);
+        }
+        public async Task LoadAssignments()
+        {
+            Assignments = await AssignmentViewModel.Where(x => x.CourseId == course.Id);
         }
     }
 }

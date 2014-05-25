@@ -40,8 +40,24 @@ namespace Laboras22.Views.Pages.Projects
             await model.LoadFaculties();
         }
 
-        private void FacultyComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private async void FacultyComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            await model.LoadDepartments();
+        }
+
+        private async void DepartmentComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            await model.LoadCourses();
+        }
+
+        private async void CourceComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            await model.LoadAssignments();
+        }
+
+        private void AssignmentComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }
