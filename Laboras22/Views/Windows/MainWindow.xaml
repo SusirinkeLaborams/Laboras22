@@ -9,7 +9,13 @@
             <ColumnDefinition Width="Auto" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-        <Button Style="{StaticResource MetroCircleButtonStyle}" IsEnabled="{Binding IsBackButtonEnabled}" Click="BackButton_Click" Grid.Column="0" Width="50" Height="50" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <Button Style="{DynamicResource MetroCircleButtonStyle}" IsEnabled="{Binding IsBackButtonEnabled}" Click="BackButton_Click" Grid.Column="0" Width="50" Height="50" VerticalAlignment="Top" HorizontalAlignment="Left">
+            <Rectangle Width="20" Height="20">
+                <Rectangle.Fill>
+                    <VisualBrush Stretch="Fill" Visual="{StaticResource appbar_arrow_left}" />
+                </Rectangle.Fill>
+            </Rectangle>
+        </Button>
         <Frame Grid.Column="1" x:Name="m_Frame" NavigationUIVisibility="Hidden" Navigated="Frame_Navigated" />
     </Grid>
     
