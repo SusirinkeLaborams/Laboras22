@@ -46,8 +46,7 @@ namespace Laboras22.Views.Pages.Users
             if (window.Session == null)
             {
                 //TODO do more stuff
-                var dialog = new Windows.StyledMessageDialog("Failed to login", "Error", MessageBoxButton.OK);
-                dialog.Show();
+                Windows.StyledMessageDialog.Show("Failed to login", "Error");              
             }
             else
             {
