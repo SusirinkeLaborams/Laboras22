@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
   dslVersion="1.0.0.0"
   Id="c536aa51-794c-4276-85bd-a9b858d12991"
   name="Laboras22Model" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -22847,13 +22847,6 @@
               LastKnownName="Manage own assignments"
               LastKnownLocation="Laboras22Model.uml" />
           </extend>
-          <extend
-            Id="e8705ba4-517f-462d-9b18-b4644b29cfd8">
-            <useCaseMoniker
-              Id="93abd728-63e5-4e1f-97d1-f5175da2bf65"
-              LastKnownName="Manage all assignments"
-              LastKnownLocation="Laboras22Model.uml" />
-          </extend>
         </extendedCases>
       </useCase>
     </packageHasNamedElement>
@@ -22865,17 +22858,10 @@
         isLeaf="false">
         <extendedCases>
           <extend
-            Id="05acce9b-941d-4e58-a9c8-53f45c67bf71">
+            Id="6210bf23-262c-4618-90d7-6aafde55269f">
             <useCaseMoniker
-              Id="d487bb82-fc32-40ba-8cb6-c17afc3849b5"
-              LastKnownName="Manage own assignments"
-              LastKnownLocation="Laboras22Model.uml" />
-          </extend>
-          <extend
-            Id="fa9b63d8-02db-46d2-be2f-6ea8bb4305d0">
-            <useCaseMoniker
-              Id="93abd728-63e5-4e1f-97d1-f5175da2bf65"
-              LastKnownName="Manage all assignments"
+              Id="e375276d-2459-416c-88d3-0f04fec0e11b"
+              LastKnownName="View assignment details"
               LastKnownLocation="Laboras22Model.uml" />
           </extend>
         </extendedCases>
@@ -22898,7 +22884,7 @@
     <packageHasNamedElement>
       <useCase
         Id="e375276d-2459-416c-88d3-0f04fec0e11b"
-        name="View assignment statistics"
+        name="View assignment details"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
@@ -22910,7 +22896,7 @@
               LastKnownLocation="Laboras22Model.uml" />
           </extend>
           <extend
-            Id="2de6633b-5a0e-43c5-81ed-89d78e987a97">
+            Id="d29cf893-a680-42f6-9fc7-26095a62f039">
             <useCaseMoniker
               Id="93abd728-63e5-4e1f-97d1-f5175da2bf65"
               LastKnownName="Manage all assignments"
