@@ -35,12 +35,12 @@ namespace Laboras22.Views
                 m_Frame.Content = pages.Peek();
             }
         }
-        protected override void OnKeyUp(System.Windows.Input.KeyEventArgs e)
+        /*protected override void OnKeyUp(System.Windows.Input.KeyEventArgs e)
         {
             base.OnKeyUp(e);
             if (e.Key == System.Windows.Input.Key.Back)
                 PopPage();
-        }
+        }*/
 
         internal SessionViewModel Session { get; set; }
     }
