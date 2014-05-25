@@ -4,6 +4,13 @@
         xmlns:Metro="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         Title="Laboras22" Height="500" Width="750">
     
-        <Frame x:Name="m_Frame" NavigationUIVisibility="Hidden" Navigated="Frame_Navigated" />
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Button Style="{StaticResource MetroCircleButtonStyle}" IsEnabled="{Binding IsBackButtonEnabled}" Click="BackButton_Click" Grid.Column="0" Width="50" Height="50" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <Frame Grid.Column="1" x:Name="m_Frame" NavigationUIVisibility="Hidden" Navigated="Frame_Navigated" />
+    </Grid>
     
 </Metro:MetroWindow>
