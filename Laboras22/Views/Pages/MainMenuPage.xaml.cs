@@ -1,5 +1,6 @@
 ﻿using Laboras22.ViewModels.Users;
 using Laboras22.Views.Pages.Assignments;
+using Laboras22.Views.Pages.Projects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,6 +31,7 @@ namespace Laboras22.Views.Pages
             InitializeComponent();
 
             AddTab(new AssignmentListPage(window, false), "All assignments");
+            AddTab(new ProjectCreationPage(window), "Do shit");
 
             if (window.Session.UserType == SessionViewModel.UserTypeEnum.Lecturer)
             {
