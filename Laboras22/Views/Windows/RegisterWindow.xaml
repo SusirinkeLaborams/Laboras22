@@ -92,7 +92,7 @@
         </TextBox>
 
         <TextBlock Text="University" Grid.Column="0" Grid.Row="7" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0" Visibility="{Binding FacultyVisibility}"/>
-        <ComboBox x:Name="m_UniversityComboBox" ItemsSource="{Binding Universities}" Grid.Column="1" Grid.Row="7" Height="25" Visibility="{Binding FacultyVisibility}" SelectionChanged ="m_UniversityComboBox_Selected_1">
+        <ComboBox x:Name="m_UniversityComboBox" ItemsSource="{Binding Universities}" Grid.Column="1" Grid.Row="7" Height="25" Visibility="{Binding FacultyVisibility}" SelectionChanged ="UniversityComboBox_Selected_1">
             <ComboBox.SelectedItem>
                 <Binding Path="University" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
                     <Binding.ValidationRules>
@@ -103,7 +103,7 @@
         </ComboBox>
 
         <TextBlock Text="Faculty" Grid.Column="0" Grid.Row="8" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0" Visibility="{Binding FacultyVisibility}"/>
-        <ComboBox x:Name="m_FacultyComboBox" ItemsSource="{Binding Faculties}" Grid.Column="1" Grid.Row="8" Height="25" Visibility="{Binding FacultyVisibility}" SelectionChanged ="m_FacultyComboBox_Selected_1">
+        <ComboBox x:Name="m_FacultyComboBox" ItemsSource="{Binding Faculties}" Grid.Column="1" Grid.Row="8" Height="25" Visibility="{Binding FacultyVisibility}" SelectionChanged ="FacultyComboBox_Selected_1">
             <ComboBox.SelectedItem>
                 <Binding Path="Faculty" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
                     <Binding.ValidationRules>

@@ -1,0 +1,56 @@
+﻿<Laboras22:PageBase x:Class="Laboras22.Views.Pages.Assignments.AssignmentCreationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:Laboras22="clr-namespace:Laboras22.Views.Pages"
+      xmlns:ValidationRules="clr-namespace:Laboras22.ValidationRules">
+
+    <Grid x:Name="m_LayoutRoot" Margin="10,0" Height="200">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="Assignment name" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0"/>
+        <TextBox x:Name="m_AssignmentNameTextBox" Grid.Column="1" Grid.Row="0" Height="25" Style="{StaticResource ValidatedTextBoxStyle}">
+            <TextBox.Text>
+                <Binding Path="AssignmentName" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
+                    <Binding.ValidationRules>
+                        <ValidationRules:UserNameValidationRule FieldName="Assignment name" />
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+        </TextBox>
+
+        <TextBlock Text="Course" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0"/>
+        <ComboBox x:Name="m_CourseComboBox" ItemsSource="{Binding Courses}" Grid.Column="1" Grid.Row="1" Height="25">
+            <ComboBox.SelectedItem>
+                <Binding Path="Course" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
+                    <Binding.ValidationRules>
+                        <ValidationRules:NotEmptyValidationRule FieldName="Course" />
+                    </Binding.ValidationRules>
+                </Binding>
+            </ComboBox.SelectedItem>
+        </ComboBox>
+
+        <TextBlock Text="Difficulty" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0"/>
+        <TextBox x:Name="m_DifficultyTextBox" Grid.Column="1" Grid.Row="2" Height="25" Style="{StaticResource ValidatedTextBoxStyle}">
+            <TextBox.Text>
+                <Binding Path="FirstName" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
+                    <Binding.ValidationRules>
+                        <ValidationRules:IntValidationRule FieldName="First name" Min="1" Max="10" />
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+        </TextBox>
+
+        <Button Grid.Row="4" Grid.Column="0" Content="Create assignment" x:Name="m_CreateButton" HorizontalAlignment="Center" Click="CreateButton_Click"/>
+        <Button Grid.Row="4" Grid.Column="1" Content="Cancel" x:Name="m_CancelButton" HorizontalAlignment="Center" Click="CancelButton_Click"/>
+    </Grid>
+</Laboras22:PageBase>
