@@ -28,7 +28,7 @@ namespace Laboras22.Views.Pages.Assignments
 
         private void CreateNewAssignmentButton_Click(object sender, RoutedEventArgs e)
         {
-            window.PushPage(new AssignmentCreationPage(window));
+            window.PushPage(new AssignmentModificationPage(window));
         }
 
         public override async void OnDisplay()
