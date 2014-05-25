@@ -10,9 +10,9 @@
             <RowDefinition Height="60" />
         </Grid.RowDefinitions>
         <TextBlock Grid.Row="0" Name="messageTextBlock" HorizontalAlignment="Left" VerticalAlignment="Center" TextWrapping="Wrap" Margin="12,15" />
-        <Button Grid.Row="1" x:Name="buttonOK" Content="OK" Click="ButtonOK_Click" Width="90" Height="30" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="12,15" />
+        <Button Grid.Row="1" x:Name="buttonOK" Content="OK" IsDefault="True" Click="ButtonOK_Click" Width="90" Height="30" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="12,15" />
         <Button Grid.Row="1" x:Name="buttonYes" Content="Yes" Click="ButtonYes_Click" Width="90" Height="30" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,167,15" />
-        <Button Grid.Row="1" x:Name="buttonNo" Content="No" Click="ButtonNo_Click" Width="90" Height="30" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="12,15" />
+        <Button Grid.Row="1" x:Name="buttonNo" Content="No" IsDefault="True" Click="ButtonNo_Click" Width="90" Height="30" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="12,15" />
         <VisualStateManager.VisualStateGroups>
             <VisualStateGroup>
                 <VisualState Name="StateOK">

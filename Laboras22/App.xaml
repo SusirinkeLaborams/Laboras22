@@ -25,6 +25,10 @@
                     </Trigger>
                 </Style.Triggers>
             </Style>
+            
+            <Style TargetType="Frame">
+                <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+            </Style>
 
             <Style TargetType="TabItem" BasedOn="{StaticResource MetroTabItem}">
                 <Setter Property="Template">
