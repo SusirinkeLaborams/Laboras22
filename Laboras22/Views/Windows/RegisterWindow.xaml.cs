@@ -29,13 +29,20 @@ namespace Laboras22.Views
         private PasswordValidationRule m_PasswordValidationRule;
         private ConfirmPasswordValidationRule m_ConfirmPasswordValidationRule;
 
-        public RegisterWindow()
+        public RegisterWindow(bool allowAdmins)
         {
             InitializeComponent();
 
             m_RegisterViewModel = new RegisterViewModel();
             m_LayoutRoot.DataContext = m_RegisterViewModel;
-
+            if (allowAdmins == true)
+            {
+                m_UserTypes.ItemsSource = new string[] {"Student", "Lecturer", "Administrator"};
+            }
+            else
+            {
+                m_UserTypes.ItemsSource = new string[] {"Student", "Lecturer"};
+            }
             SetupPasswordValidation();
             LoadUniversities();
         }

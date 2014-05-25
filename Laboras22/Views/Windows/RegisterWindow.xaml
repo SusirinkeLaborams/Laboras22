@@ -75,11 +75,7 @@
         </TextBox>
         
         <TextBlock Text="User type" Grid.Column="0" Grid.Row="6" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0"/>
-        <ComboBox SelectedIndex="{Binding UserTypeValue, Mode=TwoWay}" Grid.Column="1" Grid.Row="6" Height="25">
-            <ComboBoxItem Content="Student" />
-            <ComboBoxItem Content="Lecturer" />
-            <!--<ComboBoxItem Content="Administrator" />-->
-        </ComboBox>
+        <ComboBox x:Name="m_UserTypes" SelectedIndex="{Binding UserTypeValue, Mode=TwoWay}" Grid.Column="1" Grid.Row="6" Height="25"/>
         
         <TextBlock Text="Alias" Grid.Column="0" Grid.Row="7" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0" Visibility="{Binding AliasVisibility}" />
         <TextBox x:Name="m_AliasTextBox" Grid.Column="1" Grid.Row="7" Height="25" Visibility="{Binding AliasVisibility}" Style="{StaticResource ValidatedTextBoxStyle}">

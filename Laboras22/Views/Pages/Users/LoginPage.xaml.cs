@@ -60,7 +60,7 @@ namespace Laboras22.Views.Pages.Users
         {
             m_LoginButton.IsEnabled = false;
             m_RegisterButton.IsEnabled = false;
-            var registerWindow = new RegisterWindow();
+            var registerWindow = new RegisterWindow(false);
             registerWindow.ShowDialog();
             m_LoginButton.IsEnabled = true;
             m_RegisterButton.IsEnabled = true;

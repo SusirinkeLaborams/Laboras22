@@ -35,9 +35,10 @@ namespace Laboras22.Views.Pages.Users
             await m_ViewModel.LoadUsers();
         }
 
-        private void CreateUserButton_Click(object sender, RoutedEventArgs e)
+        private async void CreateUserButton_Click(object sender, RoutedEventArgs e)
         {
-
+            (new RegisterWindow(true)).ShowDialog();
+            await m_ViewModel.LoadUsers();
         }
 
         private void ShowStudents(object sender, RoutedEventArgs e)
