@@ -25,7 +25,7 @@
                 <TextBlock Text="{Binding AssignmentName}" Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" Foreground="White" />
 
                 <TextBlock Text="Project name" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0" Foreground="White" />
-                <TextBlock Text="{Binding Name}" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" Foreground="White" />
+                <TextBox Text="{Binding Name}" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" Foreground="White" />
 
                 <TextBlock Text="Task" Grid.Column="0" Grid.Row="3" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0" Foreground="White" />
                 <Border Grid.Column="1" Grid.Row="3" BorderThickness="0" Margin="0.5" VerticalAlignment="Stretch">

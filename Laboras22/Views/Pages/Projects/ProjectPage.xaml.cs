@@ -35,14 +35,14 @@ namespace Laboras22.Views.Pages.Projects
             DataContext = viewModel;
         }
 
-        private void ApplyButton_Click(object sender, RoutedEventArgs e)
+        private async void ApplyButton_Click(object sender, RoutedEventArgs e)
         {
-
+            await viewModel.Update();
         }
 
-        private void CancelButton_Click(object sender, RoutedEventArgs e)
+        private async void CancelButton_Click(object sender, RoutedEventArgs e)
         {
-
+            await viewModel.Revert();
         }
 
         private void DeleteProjectButton_Click(object sender, RoutedEventArgs e)
