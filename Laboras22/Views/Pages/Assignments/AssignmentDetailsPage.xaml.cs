@@ -24,11 +24,26 @@ namespace Laboras22.Views.Pages.Assignments
             m_CreateProjectButton.Visibility = (window.Session.UserType == SessionViewModel.UserTypeEnum.Student)
                 ? System.Windows.Visibility.Visible
                 : System.Windows.Visibility.Collapsed;
+
+            m_EditAssignmentButton.Visibility = m_DeleteAssignmentButton.Visibility =
+                (window.Session.UserLogin.Id == assignment.Lecturer.LoginId || window.Session.UserType == SessionViewModel.UserTypeEnum.Administrator)
+                ? System.Windows.Visibility.Visible
+                : System.Windows.Visibility.Collapsed;
         }
 
         private void CreateProjectButton_Click(object sender, RoutedEventArgs e)
         {
             window.PushPage(new ProjectCreationPage(window, (AssignmentViewModel)DataContext));
+        }
+
+        private void EditAssignmentButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void DeleteAssignmentButton_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

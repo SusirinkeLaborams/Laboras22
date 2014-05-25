@@ -29,7 +29,11 @@
         <Border Grid.Column="1" Grid.Row="3" BorderThickness="0" Margin="0.5" VerticalAlignment="Stretch">
             <TextBox Text="{Binding Task}" Height="{Binding ActualHeight, ElementName=m_TaskTextBoxBorder}" AcceptsReturn="True" ScrollViewer.VerticalScrollBarVisibility="Auto" TextWrapping="Wrap" IsReadOnly="True" />
         </Border>
-        
-        <Button x:Name="m_CreateProjectButton" Content="Create project" Click="CreateProjectButton_Click" Grid.ColumnSpan="2" Grid.Row="4" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center" />
+
+        <StackPanel Grid.ColumnSpan="2" Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button x:Name="m_CreateProjectButton" Content="Create project" Click="CreateProjectButton_Click" Margin="10,10,0,10" VerticalAlignment="Center" />
+            <Button x:Name="m_EditAssignmentButton" Content="Edit assignment" Click="EditAssignmentButton_Click" Margin="10,10,0,10" VerticalAlignment="Center" />
+            <Button x:Name="m_DeleteAssignmentButton" Content="Delete assignment" Click="DeleteAssignmentButton_Click" Margin="10,10,0,10" VerticalAlignment="Center" />
+        </StackPanel>
     </Grid>
 </Laboras22:PageBase>
