@@ -15,8 +15,9 @@ namespace Laboras22.ViewModels.Projects
         }
         public override async Task LoadProjects()
         {
-            var tmp = await ProjectParticipantViewModel.Where(x => x.StudentId == sId);
-            Projects = tmp.Select(a => a.Project);
+            var tmp = ProjectParticipantViewModel.Where(x => x.StudentId == sId);
+            var otherTmp = ProjectViewModel.Where(x => x.OwnerId == sId);
+            Projects = (await tmp).Select(a => a.Project).Union(await otherTmp);
         }
     }
 }

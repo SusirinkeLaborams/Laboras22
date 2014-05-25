@@ -1,5 +1,6 @@
 ﻿using Laboras22.ViewModels.Projects;
 using Laboras22.Views.Pages;
+using Laboras22.Views.Windows;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -37,17 +38,52 @@ namespace Laboras22.Views.Pages.Projects
 
         private async void ApplyButton_Click(object sender, RoutedEventArgs e)
         {
+            EnableAll(false);
             await viewModel.Update();
+            EnableAll(true);
+        }
+
+        public async override void OnPop()
+        {
+            base.OnPop();
+            if (viewModel != null)
+            {
+                await viewModel.Revert();
+            }
         }
 
         private async void CancelButton_Click(object sender, RoutedEventArgs e)
         {
+            EnableAll(false);
             await viewModel.Revert();
+            viewModel.NotifyAllPropertiesChanged();
+            EnableAll(true);
         }
 
-        private void DeleteProjectButton_Click(object sender, RoutedEventArgs e)
+        private async void DeleteProjectButton_Click(object sender, RoutedEventArgs e)
         {
+            EnableAll(false);
+            var result = StyledMessageDialog.Show("You sure?", "Delete project", MessageBoxButton.YesNo);
+            if(result.GetValueOrDefault(false))
+            {
+                await viewModel.Delete();
+                viewModel = null;
+                window.PopPage();
+            }
+            EnableAll(true);
+        }
+        private void EnableAll(bool maybe)
+        {
+            CancelButton.IsEnabled = maybe;
+            ApplyButton.IsEnabled = maybe;
+            DeleteProjectButton.IsEnabled = maybe;
+        }
 
+        private async void AddButton_Click(object sender, RoutedEventArgs e)
+        {
+            EnableAll(false);
+            await viewModel.AddContent();
+            EnableAll(true);
         }
     }
 }

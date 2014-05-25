@@ -10,11 +10,23 @@ namespace Laboras22.ViewModels.Projects
     class ProjectContentViewModel : ViewModelBase<ProjectContent, ProjectContentViewModel>
     {
         public string URL { get { return model.URL; } set { model.URL = value; } }
+        private ProjectViewModel project;
+        public ProjectViewModel Project 
+        {
+            get
+            {
+                return project;
+            }
+            set
+            {
+                project = value;
+                model.ProjectId = value.Id;
+            }
+        }
 
-#pragma warning disable 1998
         protected override async Task RefreshFields()
         {
+            project = await ProjectViewModel.Get(model.ProjectId);
         }
-#pragma warning restore 1998
     }
 }
