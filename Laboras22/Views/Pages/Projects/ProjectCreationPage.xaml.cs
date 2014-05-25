@@ -30,7 +30,7 @@ namespace Laboras22.Views.Pages.Projects
         protected override async void OnInitialized(EventArgs e)
         {
             base.OnInitialized(e);
-            model = new ProjectCreationViewModel();
+            model = await ProjectCreationViewModel.Create();
             root.DataContext = model;
             await model.LoadUniversities();
         }
