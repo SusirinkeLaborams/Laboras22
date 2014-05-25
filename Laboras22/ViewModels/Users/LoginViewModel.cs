@@ -95,6 +95,7 @@ namespace Laboras22.ViewModels.Users
             {
                 session.UserType = SessionViewModel.UserTypeEnum.Student;
                 session.User = student;
+                await session.Insert();
                 return session;
             }
             var lecturer = (await LecturerViewModel.Where(x => x.LoginId == user.Id)).FirstOrDefault();
@@ -102,14 +103,16 @@ namespace Laboras22.ViewModels.Users
             {
                 session.UserType = SessionViewModel.UserTypeEnum.Lecturer;
                 session.User = lecturer;
+                await session.Insert();
                 return session;
             }
             
             var administrator = (await AdministratorViewModel.Where(x => x.LoginId == user.Id)).FirstOrDefault();
             if(administrator != null)
-        {
+            {
                 session.UserType = SessionViewModel.UserTypeEnum.Administrator;
-                session.User = administrator;
+                session.User = administrator; 
+                await session.Insert();
                 return session;
             }
             throw new NotSupportedException();
