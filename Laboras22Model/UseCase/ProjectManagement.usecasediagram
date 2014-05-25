@@ -423,12 +423,16 @@
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="f0504df9-1c20-499c-8493-cec7f2f49564" name="Delete assignment" isAbstract="false" isLeaf="false">
+      <useCase Id="f0504df9-1c20-499c-8493-cec7f2f49564" name="Edit assignment" isAbstract="false" isLeaf="false">
         <elementDefinition Id="246322c5-6c71-49c3-9e78-38c76fa47be1" />
         <extendedCases>
-          <extend Id="52269181-ea19-4840-abcc-c0ccf3918ce5">
-            <useCaseMoniker Id="a1ac1de2-128e-4707-a911-68c1701ee54c" LastKnownName="View assignment details" />
-            <elementDefinition Id="6210bf23-262c-4618-90d7-6aafde55269f" />
+          <extend Id="2b43a66c-5660-4532-a166-c0ab6f3187a8">
+            <useCaseMoniker Id="81ff1275-39d6-4ad7-b97f-616853a520d4" LastKnownName="Manage all assignments" />
+            <elementDefinition Id="7a100276-c25c-4ddf-85a7-9234f500a780" />
+          </extend>
+          <extend Id="c38e0f9c-2e73-4f9a-8023-c7345e8e9be7">
+            <useCaseMoniker Id="39952455-40e0-4114-9144-2b4284dc37ad" LastKnownName="Manage own assignments" />
+            <elementDefinition Id="8682a7bd-cc93-40d6-8416-d92990266832" />
           </extend>
         </extendedCases>
       </useCase>
@@ -444,7 +448,7 @@
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="a1ac1de2-128e-4707-a911-68c1701ee54c" name="View assignment details" isAbstract="false" isLeaf="false">
+      <useCase Id="a1ac1de2-128e-4707-a911-68c1701ee54c" name="Delete assignment" isAbstract="false" isLeaf="false">
         <elementDefinition Id="e375276d-2459-416c-88d3-0f04fec0e11b" />
         <extendedCases>
           <extend Id="559324d0-c798-42f6-9aa3-92d565dd9758">

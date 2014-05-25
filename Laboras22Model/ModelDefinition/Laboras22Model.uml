@@ -22960,15 +22960,22 @@
     <packageHasNamedElement>
       <useCase
         Id="246322c5-6c71-49c3-9e78-38c76fa47be1"
-        name="Delete assignment"
+        name="Edit assignment"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
           <extend
-            Id="6210bf23-262c-4618-90d7-6aafde55269f">
+            Id="7a100276-c25c-4ddf-85a7-9234f500a780">
             <useCaseMoniker
-              Id="e375276d-2459-416c-88d3-0f04fec0e11b"
-              LastKnownName="View assignment details"
+              Id="93abd728-63e5-4e1f-97d1-f5175da2bf65"
+              LastKnownName="Manage all assignments"
+              LastKnownLocation="Laboras22Model.uml" />
+          </extend>
+          <extend
+            Id="8682a7bd-cc93-40d6-8416-d92990266832">
+            <useCaseMoniker
+              Id="d487bb82-fc32-40ba-8cb6-c17afc3849b5"
+              LastKnownName="Manage own assignments"
               LastKnownLocation="Laboras22Model.uml" />
           </extend>
         </extendedCases>
@@ -22991,7 +22998,7 @@
     <packageHasNamedElement>
       <useCase
         Id="e375276d-2459-416c-88d3-0f04fec0e11b"
-        name="View assignment details"
+        name="Delete assignment"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
