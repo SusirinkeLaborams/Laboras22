@@ -224,21 +224,21 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="93e0b0c8-1a7a-452d-95c5-dcf2e6572d88" />
           </association>
-          <association Id="17c31ff7-b97b-4e13-abf1-3fbb72d46cfc" isDerived="false" sourceEndRoleName="Administrator" targetEndRoleName="Register users" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="5b9c274d-38a7-425a-9aee-7dc2ccf0682b" LastKnownName="Register" />
+          <association Id="b4d3198d-e1f1-4157-8fd0-c04db78d381d" isDerived="false" sourceEndRoleName="Administrator" targetEndRoleName="Register other users" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="24ad6d69-4805-4a5b-b079-443310bca6ab" LastKnownName="Register other users" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="103320e8-e790-41e9-969c-e9bb0215390a" name="Administrator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="edaf2f70-d282-405a-b0b3-26616f8386e1" />
+                <memberEnd Id="3654f034-12b2-42b5-a430-cbbe6de0d8ec" name="Administrator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7525daae-e793-47db-ae34-6ccb31003cb7" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="6b3b9e77-25fa-4059-abc1-8f2d016a471d" name="Register users" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="977bc3f6-1416-44f6-939b-577e39fea186" />
+                <memberEnd Id="e5d2d512-0ca8-4208-8d75-f84fd63805e4" name="Register other users" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="44a96254-a2d6-4a9e-b6ce-22fe0ba66a4b" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
-            <elementDefinition Id="124a1799-28a0-4505-a768-3bb4a19af065" />
+            <elementDefinition Id="4693685f-bebe-4abb-bc98-755017198bc8" />
           </association>
         </targetEnds>
       </actor>
@@ -471,6 +471,11 @@
     <useCaseModelRootHasTypes>
       <useCase Id="5b9c274d-38a7-425a-9aee-7dc2ccf0682b" name="Register" isAbstract="false" isLeaf="false">
         <elementDefinition Id="40b959bc-af9e-4ec3-b810-b89fa170edfb" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="24ad6d69-4805-4a5b-b079-443310bca6ab" name="Register other users" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="86f27d48-bd36-4589-be41-bcf0aa1f2455" />
       </useCase>
     </useCaseModelRootHasTypes>
   </packagedElements>

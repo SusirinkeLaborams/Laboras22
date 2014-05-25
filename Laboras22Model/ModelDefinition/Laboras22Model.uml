@@ -22556,20 +22556,20 @@
             </relationshipOwnedElementsInternal>
           </association>
           <association
-            Id="124a1799-28a0-4505-a768-3bb4a19af065"
+            Id="4693685f-bebe-4abb-bc98-755017198bc8"
             isDerived="false"
             sourceEndRoleName="Administrator"
-            targetEndRoleName="Register users"
+            targetEndRoleName="Register other users"
             isLeaf="false"
             isAbstract="false">
             <useCaseMoniker
-              Id="40b959bc-af9e-4ec3-b810-b89fa170edfb"
-              LastKnownName="Register"
+              Id="86f27d48-bd36-4589-be41-bcf0aa1f2455"
+              LastKnownName="Register other users"
               LastKnownLocation="Laboras22Model.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="edaf2f70-d282-405a-b0b3-26616f8386e1"
+                  Id="7525daae-e793-47db-ae34-6ccb31003cb7"
                   name="Administrator"
                   isLeaf="false"
                   isStatic="false"
@@ -22582,8 +22582,8 @@
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="977bc3f6-1416-44f6-939b-577e39fea186"
-                  name="Register users"
+                  Id="44a96254-a2d6-4a9e-b6ce-22fe0ba66a4b"
+                  name="Register other users"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -33390,6 +33390,13 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="86f27d48-bd36-4589-be41-bcf0aa1f2455"
+        name="Register other users"
+        isAbstract="false"
+        isLeaf="false" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
