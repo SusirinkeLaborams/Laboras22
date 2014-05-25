@@ -14,6 +14,7 @@ using System.Windows.Shapes;
 using Laboras22.ViewModels.Users;
 using Laboras22.Views.Pages;
 using Laboras22.Views.Pages.Assignments;
+using Laboras22.Views.Windows;
 
 namespace Laboras22.Views.Pages.Users
 {
@@ -46,8 +47,7 @@ namespace Laboras22.Views.Pages.Users
             if (window.Session == null)
             {
                 //TODO do more stuff
-                var dialog = new Windows.StyledMessageDialog("Failed to login", "Error", MessageBoxButton.OK);
-                dialog.Show();
+                StyledMessageDialog.Show("Failed to login", "Error", MessageBoxButton.OK);
             }
             else
             {
