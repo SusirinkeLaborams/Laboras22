@@ -19,6 +19,14 @@ namespace Laboras22.Views.Pages.Assignments
             InitializeComponent();
 
             DataContext = m_Assignments = new AssignmentListViewModel(onlyOwnAssignments, window.Session);
+            m_CreateNewAssignmentButton.Visibility = (window.Session.UserType == SessionViewModel.UserTypeEnum.Lecturer) 
+                ? System.Windows.Visibility.Visible
+                : System.Windows.Visibility.Collapsed;
+        }
+
+        private void CreateNewAssignmentButton_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+
         }
     }
 }

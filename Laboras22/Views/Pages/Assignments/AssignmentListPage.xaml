@@ -5,14 +5,23 @@
       xmlns:Laboras22="clr-namespace:Laboras22.Views.Pages"
       xmlns:ThirdParty="clr-namespace:Laboras22.Classes.ThirdParty">
 
-    <ListView ItemsSource="{Binding Assignments}" HorizontalAlignment="Stretch" ThirdParty:GridViewColumnResize.Enabled="True">
-        <ListView.View>
-            <GridView>
-                <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}" ThirdParty:GridViewColumnResize.Width="*" />
-                <GridViewColumn Header="Course" DisplayMemberBinding="{Binding CourseName}" ThirdParty:GridViewColumnResize.Width="*" />
-                <GridViewColumn Header="Lecturer" DisplayMemberBinding="{Binding LecturerName}" ThirdParty:GridViewColumnResize.Width="*" />
-                <GridViewColumn Header="Difficulty" DisplayMemberBinding="{Binding Difficulty}" ThirdParty:GridViewColumnResize.Width="*" />
-            </GridView>
-        </ListView.View>
-    </ListView>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        
+        <ListView Grid.Row="0" ItemsSource="{Binding Assignments}" HorizontalAlignment="Stretch" ThirdParty:GridViewColumnResize.Enabled="True">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}" ThirdParty:GridViewColumnResize.Width="*" />
+                    <GridViewColumn Header="Course" DisplayMemberBinding="{Binding CourseName}" ThirdParty:GridViewColumnResize.Width="*" />
+                    <GridViewColumn Header="Lecturer" DisplayMemberBinding="{Binding LecturerName}" ThirdParty:GridViewColumnResize.Width="*" />
+                    <GridViewColumn Header="Difficulty" DisplayMemberBinding="{Binding Difficulty}" ThirdParty:GridViewColumnResize.Width="*" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <Button Grid.Row="1" x:Name="m_CreateNewAssignmentButton" Content="Create new assignment" Click="CreateNewAssignmentButton_Click" Margin="0,10,0,0" />
+    </Grid>
 </Laboras22:PageBase>
