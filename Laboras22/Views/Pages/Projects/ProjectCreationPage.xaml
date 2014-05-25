@@ -96,7 +96,7 @@
                 <ComboBox.SelectedItem>
                     <Binding Path="Assignment" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
                         <Binding.ValidationRules>
-                            <ValidationRules:NotEmptyValidationRule FieldName="Assignemnt" />
+                            <ValidationRules:NotEmptyValidationRule FieldName="Assignment" />
                         </Binding.ValidationRules>
                     </Binding>
                 </ComboBox.SelectedItem>

@@ -25,8 +25,9 @@ namespace Laboras22.Views.Pages.Projects
         internal ProjectList(MainWindow window, ProjectListViewModel viewModel) : base(window)
         {
             InitializeComponent();
+
             this.viewModel = viewModel;
-            root.DataContext = viewModel;
+            DataContext = viewModel;
         }
         private void ItemClick(object sender, RoutedEventArgs e)
         {
@@ -35,6 +36,11 @@ namespace Laboras22.Views.Pages.Projects
             {
                 window.PushPage(new ProjectPage(window, item.Id));
             }
+        }
+
+        private void CreateNewProjectButton_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
