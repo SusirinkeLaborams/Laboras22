@@ -14,7 +14,7 @@ using System.Windows.Shapes;
 using Laboras22.ViewModels.Users;
 using Laboras22.Views.Pages;
 
-namespace Laboras22.Views
+namespace Laboras22.Views.Pages.Users
 {
     /// <summary>
     /// Interaction logic for LoginPage.xaml

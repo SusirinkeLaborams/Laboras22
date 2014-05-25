@@ -12,14 +12,14 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace Laboras22.Views
+namespace Laboras22.Views.Pages.Users
 {
     /// <summary>
-    /// Interaction logic for ManageUsersPage.xaml
+    /// Interaction logic for UserDataModificationPage.xaml
     /// </summary>
-    public partial class ManageUsersPage : Page
+    public partial class UserDataModificationPage : Page
     {
-        public ManageUsersPage()
+        public UserDataModificationPage()
         {
             InitializeComponent();
         }
