@@ -8,6 +8,7 @@ namespace Laboras22.ViewModels.Users
 {
     interface IUserViewModel
     {
+        int Id { get; }
         int LoginId { get; }
         string FirstName { get; }
         string LastName { get; }
