@@ -1,18 +1,12 @@
 ﻿using Laboras22.ViewModels.Assignments;
+using Laboras22.ViewModels.Users;
+using Laboras22.Views.Pages.Projects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Laboras22.Views.Pages.Assignments
 {
@@ -26,6 +20,15 @@ namespace Laboras22.Views.Pages.Assignments
         {
             InitializeComponent();
             DataContext = assignment;
+
+            m_CreateProjectButton.Visibility = (window.Session.UserType == SessionViewModel.UserTypeEnum.Student)
+                ? System.Windows.Visibility.Visible
+                : System.Windows.Visibility.Collapsed;
+        }
+
+        private void CreateProjectButton_Click(object sender, RoutedEventArgs e)
+        {
+            window.PushPage(new ProjectCreationPage(window, (AssignmentViewModel)DataContext));
         }
     }
 }

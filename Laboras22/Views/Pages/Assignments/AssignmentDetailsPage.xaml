@@ -9,6 +9,7 @@
             <RowDefinition Height="37.5"/>
             <RowDefinition Height="37.5"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="150"/>
@@ -28,5 +29,7 @@
         <Border Grid.Column="1" Grid.Row="3" BorderThickness="0" Margin="0.5" VerticalAlignment="Stretch">
             <TextBox Text="{Binding Task}" Height="{Binding ActualHeight, ElementName=m_TaskTextBoxBorder}" AcceptsReturn="True" ScrollViewer.VerticalScrollBarVisibility="Auto" TextWrapping="Wrap" IsReadOnly="True" />
         </Border>
+        
+        <Button x:Name="m_CreateProjectButton" Content="Create project" Click="CreateProjectButton_Click" Grid.ColumnSpan="2" Grid.Row="4" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center" />
     </Grid>
 </Laboras22:PageBase>

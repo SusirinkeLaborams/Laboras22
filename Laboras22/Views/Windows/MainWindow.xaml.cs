@@ -36,7 +36,8 @@ namespace Laboras22.Views
             pages.Push(page);
 
             m_Frame.Content = page;
-            page.OnDisplay();            
+            page.OnDisplay();
+            OnPropertyChanged("IsBackButtonEnabled");
         }
 
         public void PopPage()
@@ -48,6 +49,7 @@ namespace Laboras22.Views
                 var page = pages.Peek();
                 m_Frame.Content = page;
                 page.OnDisplay();
+                OnPropertyChanged("IsBackButtonEnabled");
             }
         }
 
