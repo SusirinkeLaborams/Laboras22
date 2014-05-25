@@ -1,4 +1,5 @@
 ﻿using Laboras22.ViewModels.Assignments;
+using Laboras22.ViewModels.Users;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -145,6 +146,18 @@ namespace Laboras22.ViewModels.Projects
                 OnPropertyChanged();
             }
         }
+        public string ProjectName
+        {
+            get
+            {
+                return model.Name;
+            }
+            set
+            {
+                model.Name = value;
+                OnPropertyChanged();
+            }
+        }
         public async Task LoadUniversities()
         {
             Universities = await UniversityViewModel.Enumerate();
@@ -165,10 +178,12 @@ namespace Laboras22.ViewModels.Projects
         {
             Assignments = await AssignmentViewModel.Where(x => x.CourseId == course.Id);
         }
-        public static async Task<ProjectCreationViewModel> Create(AssignmentViewModel assignment = null)
+        public static async Task<ProjectCreationViewModel> Create(AssignmentViewModel assignment = null, StudentViewModel student = null)
         {
             var tmp = await ProjectViewModel.Create();
             var instance = new ProjectCreationViewModel(tmp);
+            if (tmp.Owner == null)
+                tmp.Owner = student;
             if(assignment != null)
             {
                 tmp.Assignment = assignment;
