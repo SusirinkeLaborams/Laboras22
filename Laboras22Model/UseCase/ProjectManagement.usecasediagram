@@ -86,7 +86,7 @@
             <elementDefinition Id="e1a00a17-046b-4fc4-8d93-e43c013d893f" />
           </association>
           <association Id="faac89ec-b143-46e8-a976-0ad3377fafb3" isDerived="false" sourceEndRoleName="Student" targetEndRoleName="Register users" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="5b9c274d-38a7-425a-9aee-7dc2ccf0682b" LastKnownName="Register users" />
+            <useCaseMoniker Id="5b9c274d-38a7-425a-9aee-7dc2ccf0682b" LastKnownName="Register" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="00af7eb3-531f-4feb-b6b2-75642d6cd738" name="Student" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -225,7 +225,7 @@
             <elementDefinition Id="93e0b0c8-1a7a-452d-95c5-dcf2e6572d88" />
           </association>
           <association Id="17c31ff7-b97b-4e13-abf1-3fbb72d46cfc" isDerived="false" sourceEndRoleName="Administrator" targetEndRoleName="Register users" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="5b9c274d-38a7-425a-9aee-7dc2ccf0682b" LastKnownName="Register users" />
+            <useCaseMoniker Id="5b9c274d-38a7-425a-9aee-7dc2ccf0682b" LastKnownName="Register" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="103320e8-e790-41e9-969c-e9bb0215390a" name="Administrator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -394,7 +394,7 @@
             <elementDefinition Id="519c1318-bbc1-4ce9-b863-5a8d594af55d" />
           </association>
           <association Id="03d79053-0dbc-4f4c-ad7d-f9c35330a465" isDerived="false" sourceEndRoleName="Lecturer" targetEndRoleName="Register users" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="5b9c274d-38a7-425a-9aee-7dc2ccf0682b" LastKnownName="Register users" />
+            <useCaseMoniker Id="5b9c274d-38a7-425a-9aee-7dc2ccf0682b" LastKnownName="Register" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="506e4750-e8db-4ff5-8ace-177236eca97b" name="Lecturer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -469,7 +469,7 @@
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="5b9c274d-38a7-425a-9aee-7dc2ccf0682b" name="Register users" isAbstract="false" isLeaf="false">
+      <useCase Id="5b9c274d-38a7-425a-9aee-7dc2ccf0682b" name="Register" isAbstract="false" isLeaf="false">
         <elementDefinition Id="40b959bc-af9e-4ec3-b810-b89fa170edfb" />
       </useCase>
     </useCaseModelRootHasTypes>

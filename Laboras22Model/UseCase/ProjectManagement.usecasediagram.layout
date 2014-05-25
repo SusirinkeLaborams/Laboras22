@@ -306,7 +306,7 @@
       </nodes>
     </useCaseAssociationConnector>
     <useCaseShape Id="0e7d0b89-ef9a-4199-acf5-c7040906d960" absoluteBounds="5, 15.875, 1, 0.5" customColor="128, 128, 255" heightOffset="0">
-      <useCaseMoniker Id="5b9c274d-38a7-425a-9aee-7dc2ccf0682b" LastKnownName="Register users" />
+      <useCaseMoniker Id="5b9c274d-38a7-425a-9aee-7dc2ccf0682b" LastKnownName="Register" />
       <relativeChildShapes />
     </useCaseShape>
     <useCaseAssociationConnector edgePoints="[(11.75 : 16.125); (6 : 16.125)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">

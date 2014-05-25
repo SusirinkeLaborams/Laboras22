@@ -22226,7 +22226,7 @@
             isAbstract="false">
             <useCaseMoniker
               Id="40b959bc-af9e-4ec3-b810-b89fa170edfb"
-              LastKnownName="Register users"
+              LastKnownName="Register"
               LastKnownLocation="Laboras22Model.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -22564,7 +22564,7 @@
             isAbstract="false">
             <useCaseMoniker
               Id="40b959bc-af9e-4ec3-b810-b89fa170edfb"
-              LastKnownName="Register users"
+              LastKnownName="Register"
               LastKnownLocation="Laboras22Model.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -22910,7 +22910,7 @@
             isAbstract="false">
             <useCaseMoniker
               Id="40b959bc-af9e-4ec3-b810-b89fa170edfb"
-              LastKnownName="Register users"
+              LastKnownName="Register"
               LastKnownLocation="Laboras22Model.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -23036,7 +23036,7 @@
     <packageHasNamedElement>
       <useCase
         Id="40b959bc-af9e-4ec3-b810-b89fa170edfb"
-        name="Register users"
+        name="Register"
         isAbstract="false"
         isLeaf="false" />
     </packageHasNamedElement>
