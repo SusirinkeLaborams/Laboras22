@@ -32,7 +32,22 @@ namespace Laboras22.Views.Pages.Projects
         {
             base.OnInitialized(e);
             viewModel = await ProjectViewModel.Get(projectId);
-            root.DataContext = viewModel;
+            DataContext = viewModel;
+        }
+
+        private void ApplyButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CancelButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void DeleteProjectButton_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
