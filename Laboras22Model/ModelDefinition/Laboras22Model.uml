@@ -22823,6 +22823,45 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="519c1318-bbc1-4ce9-b863-5a8d594af55d"
+            isDerived="false"
+            sourceEndRoleName="Lecturer"
+            targetEndRoleName="Create assignment"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="5ab02d09-9fd4-4653-8f6e-6b7be6f3e169"
+              LastKnownName="Create assignment"
+              LastKnownLocation="Laboras22Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3da11111-2632-454f-bc2c-7d2b7684bb37"
+                  name="Lecturer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="99ceb50a-ab21-4e89-8a5b-841c81c0b7d0"
+                  name="Create assignment"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
       </actor>
     </packageHasNamedElement>
@@ -22838,17 +22877,7 @@
         Id="5ab02d09-9fd4-4653-8f6e-6b7be6f3e169"
         name="Create assignment"
         isAbstract="false"
-        isLeaf="false">
-        <extendedCases>
-          <extend
-            Id="72115aaf-1e9f-4d6f-b42b-21845cf94941">
-            <useCaseMoniker
-              Id="d487bb82-fc32-40ba-8cb6-c17afc3849b5"
-              LastKnownName="Manage own assignments"
-              LastKnownLocation="Laboras22Model.uml" />
-          </extend>
-        </extendedCases>
-      </useCase>
+        isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
