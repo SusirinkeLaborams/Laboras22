@@ -81,6 +81,7 @@
     <Compile Include="Classes\AzureService.cs" />
     <Compile Include="Classes\Key.cs" />
     <Compile Include="Classes\PasswordUtils.cs" />
+    <Compile Include="Classes\ThirdParty\GridViewColumnResizer.cs" />
     <Compile Include="Interfaces\IDataItem.cs" />
     <Compile Include="Models\Assignments\Assignment.cs" />
     <Compile Include="Models\Assignments\Course.cs" />
@@ -105,14 +106,17 @@
     <Compile Include="ValidationRules\RealNameValidationRule.cs" />
     <Compile Include="ValidationRules\UserNameValidationRule.cs" />
     <Compile Include="ValidationRules\ValidationRulesBase.cs" />
+    <Compile Include="ViewModels\Assignments\AssignmentListViewModel.cs" />
     <Compile Include="ViewModels\Assignments\AssignmentViewModel.cs" />
     <Compile Include="ViewModels\Assignments\CourseViewModel.cs" />
     <Compile Include="ViewModels\Assignments\FacultyDepartmentViewModel.cs" />
     <Compile Include="ViewModels\Assignments\FacultyViewModel.cs" />
     <Compile Include="ViewModels\Assignments\UniversityViewModel.cs" />
+    <Compile Include="ViewModels\NotifyPropertyChangedBase.cs" />
     <Compile Include="ViewModels\Projects\GradeViewModel.cs" />
     <Compile Include="ViewModels\Projects\ProjectContentViewModel.cs" />
     <Compile Include="ViewModels\Projects\ParticipatedProjectListViewModel.cs" />
+    <Compile Include="ViewModels\Projects\ProjectCreationViewModel.cs" />
     <Compile Include="ViewModels\Projects\ProjectListViewModel.cs" />
     <Compile Include="ViewModels\Projects\ProjectParticipantViewModel.cs" />
     <Compile Include="ViewModels\Projects\ProjectViewModel.cs" />
@@ -126,6 +130,9 @@
     <Compile Include="ViewModels\Users\SessionViewModel.cs" />
     <Compile Include="ViewModels\Users\StudentViewModel.cs" />
     <Compile Include="ViewModels\ViewModelBase.cs" />
+    <Compile Include="Views\Pages\Projects\ProjectCreationPage.xaml.cs">
+      <DependentUpon>ProjectCreationPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Pages\Assignments\AssignmentListPage.xaml.cs">
       <DependentUpon>AssignmentListPage.xaml</DependentUpon>
     </Compile>
@@ -136,10 +143,10 @@
       <DependentUpon>ManageUsersPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Pages\PageBase.cs" />
-    <Compile Include="Views\Pages\ProjectList.xaml.cs">
+    <Compile Include="Views\Pages\Projects\ProjectList.xaml.cs">
       <DependentUpon>ProjectList.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Pages\ProjectPage.xaml.cs">
+    <Compile Include="Views\Pages\Projects\ProjectPage.xaml.cs">
       <DependentUpon>ProjectPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Windows\RegisterWindow.xaml.cs">
@@ -151,6 +158,10 @@
     <Compile Include="Views\Windows\StyledMessageDialog.xaml.cs">
       <DependentUpon>StyledMessageDialog.xaml</DependentUpon>
     </Compile>
+    <Page Include="Views\Pages\Projects\ProjectCreationPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Pages\Assignments\AssignmentListPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -163,11 +174,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Pages\ProjectList.xaml">
+    <Page Include="Views\Pages\Projects\ProjectList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Pages\ProjectPage.xaml">
+    <Page Include="Views\Pages\Projects\ProjectPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -233,7 +244,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Views\Pages\Projects\" />
     <Folder Include="Views\Pages\Users\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

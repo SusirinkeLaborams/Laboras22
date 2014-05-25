@@ -10,7 +10,7 @@ namespace Laboras22.Models.Assignments
     public class Course : IDataItem
     {
         public int Id { get; set; }
-        public string Name { get; set; }
+        public string CourseName { get; set; }
         public int FacultyDepartmentId { get; set; }
         public int OwnerId { get; set; }
         public int SchoolYear { get; set; }

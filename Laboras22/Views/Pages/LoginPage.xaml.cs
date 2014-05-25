@@ -19,14 +19,14 @@ namespace Laboras22.Views
     /// <summary>
     /// Interaction logic for LoginPage.xaml
     /// </summary>
-    public partial class LoginPage : PageBase
+    public partial class LoginPage
     {
         private LoginViewModel m_LoginViewModel;
-        
-        public LoginPage(MainWindow parent) : 
-            base(parent)
+        private MainWindow window;
+        public LoginPage(MainWindow parent)
         {
             InitializeComponent();
+            window = parent;
         }
         
         protected override async void OnInitialized(EventArgs e)

@@ -12,7 +12,7 @@ using Laboras22.Models.Users;
 
 namespace Laboras22.ViewModels.Users
 {
-    class LoginViewModel : ViewModelBase<UserLogin, LoginViewModel>, INotifyPropertyChanged
+    class LoginViewModel : ViewModelBase<UserLogin, LoginViewModel>
     {
         public string UserName
         {
@@ -72,14 +72,6 @@ namespace Laboras22.ViewModels.Users
         }
 #pragma warning restore 1998
 
-        public void OnPropertyChanged([CallerMemberName] string property = "")
-        {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(property));
-            }
-        }
-
         public async Task<SessionViewModel> Login(SecureString password)
         {
             var userList = await LoginViewModel.Where(x => UserName == x.UserName);
@@ -115,16 +107,12 @@ namespace Laboras22.ViewModels.Users
             
             var administrator = (await AdministratorViewModel.Where(x => x.LoginId == user.Id)).FirstOrDefault();
             if(administrator != null)
-            {
+        {
                 session.UserType = SessionViewModel.UserTypeEnum.Administrator;
                 session.User = administrator;
                 return session;
             }
             throw new NotSupportedException();
         }
-
-        
-
-        public event PropertyChangedEventHandler PropertyChanged;
     }
 }

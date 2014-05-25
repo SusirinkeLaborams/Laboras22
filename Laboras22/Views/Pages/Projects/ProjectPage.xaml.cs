@@ -14,7 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace Laboras22.Views
+namespace Laboras22.Views.Pages.Projects
 {
     /// <summary>
     /// Interaction logic for ProjectWindow.xaml

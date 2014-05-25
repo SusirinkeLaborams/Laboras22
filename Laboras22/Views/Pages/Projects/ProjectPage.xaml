@@ -1,4 +1,4 @@
-﻿<Laboras22:PageBase x:Class="Laboras22.Views.ProjectPage"
+﻿<Laboras22:PageBase x:Class="Laboras22.Views.Pages.Projects.ProjectPage"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:Laboras22="clr-namespace:Laboras22.Views.Pages"
@@ -6,5 +6,11 @@
     <StackPanel x:Name="root">
         <TextBlock Text="{Binding AssignmentName}"/>
         <TextBlock Text="{Binding Name}"/>
+        <ListView ItemsSource="{Binding Participants}">
+            <TextBlock Text="{Binding Name}"/>
+        </ListView>
+        <ListView ItemsSource="{Binding Contents}">
+            <TextBlock Text="{Binding URL}"/>
+        </ListView>
     </StackPanel>
 </Laboras22:PageBase>
