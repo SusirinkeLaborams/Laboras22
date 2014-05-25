@@ -33,7 +33,7 @@ namespace Laboras22.Views.Pages.Assignments
         protected override async void OnInitialized(EventArgs e)
         {
             var lecturerGetTask = LecturerViewModel.Get(window.Session.User.Id);
-            var viewModelCreationTask = await AssignmentViewModel.Create();
+            var viewModelCreationTask = AssignmentViewModel.Create();
 
             base.OnInitialized(e);
 
