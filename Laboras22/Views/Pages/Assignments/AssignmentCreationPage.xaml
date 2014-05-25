@@ -17,7 +17,7 @@
             <ColumnDefinition Width="3*"/>
         </Grid.ColumnDefinitions>
 
-        <TextBlock Text="Assignment name" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0"/>
+        <TextBlock Text="Assignment name" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0" Foreground="White" />
         <TextBox x:Name="m_AssignmentNameTextBox" Grid.Column="1" Grid.Row="0" Height="25" Style="{StaticResource ValidatedTextBoxStyle}">
             <TextBox.Text>
                 <Binding Path="AssignmentName" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
@@ -28,7 +28,7 @@
             </TextBox.Text>
         </TextBox>
 
-        <TextBlock Text="Course" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0"/>
+        <TextBlock Text="Course" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0" Foreground="White" />
         <ComboBox x:Name="m_CourseComboBox" ItemsSource="{Binding Courses}" Grid.Column="1" Grid.Row="1" Height="25">
             <ComboBox.SelectedItem>
                 <Binding Path="Course" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
@@ -39,7 +39,7 @@
             </ComboBox.SelectedItem>
         </ComboBox>
 
-        <TextBlock Text="Difficulty" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0"/>
+        <TextBlock Text="Difficulty" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0" Foreground="White" />
         <TextBox x:Name="m_DifficultyTextBox" Grid.Column="1" Grid.Row="2" Height="25" Style="{StaticResource ValidatedTextBoxStyle}">
             <TextBox.Text>
                 <Binding Path="Difficulty" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">

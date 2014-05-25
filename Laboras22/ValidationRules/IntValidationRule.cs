@@ -8,7 +8,7 @@ using System.Windows.Controls;
 
 namespace Laboras22.ValidationRules
 {
-    class IntValidationRule : ValidationRule
+    class IntValidationRule : ValidationRulesBase
     {
         public int Min { get; set; }
         public int Max { get; set; }
