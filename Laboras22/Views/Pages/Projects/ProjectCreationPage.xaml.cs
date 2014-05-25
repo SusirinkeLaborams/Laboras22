@@ -69,9 +69,21 @@ namespace Laboras22.Views.Pages.Projects
             window.PopPage();
         }
 
-        private void CreateButton_Click(object sender, RoutedEventArgs e)
+        private async void CreateButton_Click(object sender, RoutedEventArgs e)
         {
-            //dunno, lol
+            if (!IsValid())
+                return;
+            await model.ViewModel.Insert();
+        }
+        private bool IsValid()
+        {
+            return 
+                !Validation.GetHasError(UniversityComboBox) &&
+                !Validation.GetHasError(FacultyComboBox) &&
+                !Validation.GetHasError(DepartmentComboBox) &&
+                !Validation.GetHasError(CourceComboBox) &&
+                !Validation.GetHasError(AssignmentComboBox) &&
+                !Validation.GetHasError(ProjectNameTextBox);
         }
     }
 }

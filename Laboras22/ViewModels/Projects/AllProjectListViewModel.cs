@@ -10,9 +10,8 @@ namespace Laboras22.ViewModels.Projects
     {
         public AllProjectListViewModel()
         {
-            LoadProjects();
         }
-        public async void LoadProjects()
+        public override async Task LoadProjects()
         {
             Projects = await ProjectViewModel.Enumerate();
         }
