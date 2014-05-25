@@ -35,6 +35,10 @@ namespace Laboras22.Views.Pages.Users
             await m_ViewModel.LoadUsers();
         }
 
+        public override async void OnDisplay()
+        {
+            await m_ViewModel.LoadUsers();
+        }
         private async void CreateUserButton_Click(object sender, RoutedEventArgs e)
         {
             (new RegisterWindow(true)).ShowDialog();
@@ -72,6 +76,15 @@ namespace Laboras22.Views.Pages.Users
             m_AdministratorList.Visibility = Visibility.Collapsed;
 
             m_UserList.Visibility = Visibility.Visible;
+        }
+
+        private void UserClicked(object sender, MouseButtonEventArgs e)
+        {
+            var user = (sender as ListView).SelectedItem as IUserViewModel;
+            if (user != null)
+            {
+                window.PushPage(new UserDataModificationPage(window, user));
+            }
         }
     }
 }

@@ -19,5 +19,9 @@ namespace Laboras22.Views.Pages
         public virtual void OnDisplay()
         {
         }
+
+        public virtual void OnPop()
+        {
+        }
     }
 }

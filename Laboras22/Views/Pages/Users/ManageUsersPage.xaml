@@ -11,7 +11,7 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
-        <ListView Grid.Row="0" x:Name="m_UserList" ItemsSource="{Binding Users}" HorizontalAlignment="Stretch" ThirdParty:GridViewColumnResize.Enabled="True">
+        <ListView Grid.Row="0" x:Name="m_UserList" ItemsSource="{Binding Users}" PreviewMouseLeftButtonUp="UserClicked" HorizontalAlignment="Stretch" ThirdParty:GridViewColumnResize.Enabled="True">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="First Name" DisplayMemberBinding="{Binding FirstName}" ThirdParty:GridViewColumnResize.Width="*" />
@@ -21,7 +21,7 @@
             </ListView.View>
         </ListView>
 
-        <ListView Grid.Row="0" x:Name="m_StudentList" ItemsSource="{Binding Students}" HorizontalAlignment="Stretch" ThirdParty:GridViewColumnResize.Enabled="True" Visibility="Collapsed">
+        <ListView Grid.Row="0" x:Name="m_StudentList" ItemsSource="{Binding Students}" PreviewMouseLeftButtonUp="UserClicked" HorizontalAlignment="Stretch" ThirdParty:GridViewColumnResize.Enabled="True" Visibility="Collapsed">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="First Name" DisplayMemberBinding="{Binding FirstName}" ThirdParty:GridViewColumnResize.Width="*" />
@@ -32,7 +32,7 @@
             </ListView.View>
         </ListView>
 
-        <ListView Grid.Row="0" x:Name="m_LecturerList" ItemsSource="{Binding Lecturers}" HorizontalAlignment="Stretch" ThirdParty:GridViewColumnResize.Enabled="True"  Visibility="Collapsed">
+        <ListView Grid.Row="0" x:Name="m_LecturerList" ItemsSource="{Binding Lecturers}" PreviewMouseLeftButtonUp="UserClicked" HorizontalAlignment="Stretch" ThirdParty:GridViewColumnResize.Enabled="True"  Visibility="Collapsed">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="First Name" DisplayMemberBinding="{Binding FirstName}" ThirdParty:GridViewColumnResize.Width="*" />
@@ -43,7 +43,7 @@
             </ListView.View>
         </ListView>
 
-        <ListView Grid.Row="0" x:Name="m_AdministratorList" ItemsSource="{Binding Administrators}" HorizontalAlignment="Stretch" ThirdParty:GridViewColumnResize.Enabled="True"  Visibility="Collapsed">
+        <ListView Grid.Row="0" x:Name="m_AdministratorList" ItemsSource="{Binding Administrators}" PreviewMouseLeftButtonUp="UserClicked" HorizontalAlignment="Stretch" ThirdParty:GridViewColumnResize.Enabled="True"  Visibility="Collapsed">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="First Name" DisplayMemberBinding="{Binding FirstName}" ThirdParty:GridViewColumnResize.Width="*" />

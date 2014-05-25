@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Laboras22.ViewModels.Users
 {
-    interface IUserViewModel
+    public interface IUserViewModel
     {
         int Id { get; }
         int LoginId { get; }
-        string FirstName { get; }
-        string LastName { get; }
-        string Email { get; }
+        string FirstName { get; set;  }
+        string LastName { get; set; }
+        string Email { get; set;  }
         string Name { get; }
     }
 }

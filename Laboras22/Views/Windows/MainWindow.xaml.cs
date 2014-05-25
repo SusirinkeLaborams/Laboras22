@@ -44,6 +44,7 @@ namespace Laboras22.Views
         {
             if(pages.Count > 1)
             {
+                pages.Peek().OnPop();
                 pages.Pop();
 
                 var page = pages.Peek();
