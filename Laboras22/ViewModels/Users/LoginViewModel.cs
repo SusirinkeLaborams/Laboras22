@@ -74,6 +74,9 @@ namespace Laboras22.ViewModels.Users
 
         public async Task<SessionViewModel> Login(SecureString password)
         {
+            var ip = new WebClient().DownloadStringTaskAsync("http://icanhazip.com");
+            
+
             var userList = await LoginViewModel.Where(x => UserName == x.UserName);
             if (userList.Count() == 0)
             {
@@ -88,7 +91,7 @@ namespace Laboras22.ViewModels.Users
             var session = await SessionViewModel.Create();
             session.Time = DateTime.Now;
             session.UserLogin = user;
-            session.IP = new WebClient().DownloadString("http://icanhazip.com");
+            session.IP = await ip;
 
             var student = (await StudentViewModel.Where(x => x.LoginId == user.Id)).FirstOrDefault();
             if (student != null)

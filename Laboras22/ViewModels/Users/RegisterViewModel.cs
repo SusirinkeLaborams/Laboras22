@@ -19,7 +19,7 @@ namespace Laboras22.ViewModels.Users
 {
     class RegisterViewModel : NotifyPropertyChangedBase
     {
-        public enum UserTypeEnum { Student = 0, Lecturer = 1 }
+        public enum UserTypeEnum { Student = 0, Lecturer = 1, Administrator = 2 }
 
         private string m_UserName;
         private string m_Email;
@@ -300,7 +300,16 @@ namespace Laboras22.ViewModels.Users
                         await lecturer.Insert();
                     }
                     return true;
-
+                case UserTypeEnum.Administrator:
+                    {
+                        var administrator = await AdministratorViewModel.Create();
+                        administrator.Email = m_Email;
+                        administrator.FirstName = m_FirstName;
+                        administrator.LastName = m_LastName;
+                        administrator.LoginId = userLoginTask.Id;
+                        await administrator.Insert();
+                    }
+                    return true;
                 default:
                     throw new NotSupportedException();
             }   

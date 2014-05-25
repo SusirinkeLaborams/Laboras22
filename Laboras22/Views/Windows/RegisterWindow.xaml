@@ -78,6 +78,7 @@
         <ComboBox SelectedIndex="{Binding UserTypeValue, Mode=TwoWay}" Grid.Column="1" Grid.Row="6" Height="25">
             <ComboBoxItem Content="Student" />
             <ComboBoxItem Content="Lecturer" />
+            <!--<ComboBoxItem Content="Administrator" />-->
         </ComboBox>
         
         <TextBlock Text="Alias" Grid.Column="0" Grid.Row="7" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0" Visibility="{Binding AliasVisibility}" />
