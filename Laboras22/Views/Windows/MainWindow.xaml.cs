@@ -6,6 +6,7 @@ using Laboras22.Views.Pages.Users;
 using MahApps.Metro.Controls;
 using System.Collections.Generic;
 using System.Windows.Controls;
+using System.Windows.Input;
 using System.Windows.Navigation;
 
 namespace Laboras22.Views
@@ -43,6 +44,20 @@ namespace Laboras22.Views
                 var page = pages.Peek();
                 m_Frame.Content = page;
                 page.OnDisplay();
+            }
+        }
+
+        protected override void OnKeyUp(System.Windows.Input.KeyEventArgs e)
+        {
+            base.OnKeyUp(e);
+            if (e.Key == System.Windows.Input.Key.Back)
+            {
+                var focusedControl = Keyboard.FocusedElement;
+
+                if (!(focusedControl is TextBox) && !(focusedControl is PasswordBox))
+                {
+                    PopPage();
+                }
             }
         }
 
