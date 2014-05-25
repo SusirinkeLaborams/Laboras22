@@ -77,6 +77,14 @@ namespace Laboras22.Views.Pages.Assignments
             window.PopPage();
         }
 
+        public override async void OnPop()
+        {
+            if (!m_CreateNewAssignment)
+            {
+                await m_ViewModel.Revert();
+            }
+        }
+
         private bool IsInputValid()
         {
             return !Validation.GetHasError(m_AssignmentNameTextBox) &&
