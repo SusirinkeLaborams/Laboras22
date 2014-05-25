@@ -23,7 +23,7 @@
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            <Button x:Name="m_LoginButton" Content="Login" Grid.Column="0" HorizontalAlignment="Right" Margin="5,0" Click="LoginButton_Click_1"/>
+            <Button x:Name="m_LoginButton" IsDefault="True" Content="Login" Grid.Column="0" HorizontalAlignment="Right" Margin="5,0" Click="LoginButton_Click_1"/>
             <Button x:Name="m_RegisterButton" Content="Register" Grid.Column="1" HorizontalAlignment="Left" Margin="5,0" Click="RegisterButton_Click_1"/>
         </Grid>
     </Grid> 

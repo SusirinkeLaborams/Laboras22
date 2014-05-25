@@ -42,6 +42,8 @@ namespace Laboras22.Views.Pages.Users
         
         private async void LoginButton_Click_1(object sender, RoutedEventArgs e)
         {
+            m_LoginButton.IsEnabled = false;
+            m_RegisterButton.IsEnabled = false;
             window.Session = await m_LoginViewModel.Login(m_PasswordBox.SecurePassword);
             
             if (window.Session == null)
@@ -53,12 +55,18 @@ namespace Laboras22.Views.Pages.Users
             {
                 window.PushPage(new AssignmentListPage(window));
             }
+            m_LoginButton.IsEnabled = true;
+            m_RegisterButton.IsEnabled = true;
         }
 
         private void RegisterButton_Click_1(object sender, RoutedEventArgs e)
         {
+            m_LoginButton.IsEnabled = false;
+            m_RegisterButton.IsEnabled = false;
             var registerWindow = new RegisterWindow();
             registerWindow.ShowDialog();
+            m_LoginButton.IsEnabled = true;
+            m_RegisterButton.IsEnabled = true;
         }
     }
 }
