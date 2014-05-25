@@ -1,4 +1,5 @@
-﻿using Laboras22.Views.Pages;
+﻿using Laboras22.ViewModels.Projects;
+using Laboras22.Views.Pages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,9 +22,26 @@ namespace Laboras22.Views.Pages.Projects
     /// </summary>
     public partial class ProjectCreationPage : PageBase
     {
+        private ProjectCreationViewModel model;
         public ProjectCreationPage(MainWindow window) : base(window) 
         {
             InitializeComponent();
+        }
+        protected override async void OnInitialized(EventArgs e)
+        {
+            base.OnInitialized(e);
+            model = new ProjectCreationViewModel();
+            root.DataContext = model;
+            await model.LoadUniversities();
+        }
+
+        private async void UniversityComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            await model.LoadFaculties();
+        }
+
+        private void FacultyComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
         }
     }
 }
