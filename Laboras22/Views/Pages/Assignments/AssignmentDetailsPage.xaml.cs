@@ -1,6 +1,7 @@
 ﻿using Laboras22.ViewModels.Assignments;
 using Laboras22.ViewModels.Users;
 using Laboras22.Views.Pages.Projects;
+using Laboras22.Views.Windows;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -41,9 +42,21 @@ namespace Laboras22.Views.Pages.Assignments
 
         }
 
-        private void DeleteAssignmentButton_Click(object sender, RoutedEventArgs e)
+        private async void DeleteAssignmentButton_Click(object sender, RoutedEventArgs e)
         {
+            var result = StyledMessageDialog.Show("Do you really want to delete this assignment? If you proceed, all projects associated with this assignment will be deleted as well.",
+                "Delete assignment", MessageBoxButton.YesNo);
 
+            if (result.HasValue && result.Value)
+            {
+                var assignment = (AssignmentViewModel)DataContext;
+
+                m_EditAssignmentButton.IsEnabled = false;
+                m_DeleteAssignmentButton.IsEnabled = false;
+
+                await assignment.Delete();
+                window.PopPage();
+            }
         }
     }
 }
