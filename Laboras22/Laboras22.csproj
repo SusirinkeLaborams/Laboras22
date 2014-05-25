@@ -148,9 +148,6 @@
     <Compile Include="Views\Pages\Assignments\AssignmentListPage.xaml.cs">
       <DependentUpon>AssignmentListPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Pages\Assignments\AssignmentPage.xaml.cs">
-      <DependentUpon>AssignmentPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Views\Pages\Users\ManageUsersPage.xaml.cs">
       <DependentUpon>ManageUsersPage.xaml</DependentUpon>
     </Compile>
@@ -191,10 +188,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Pages\Assignments\AssignmentListPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\Pages\Assignments\AssignmentPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
