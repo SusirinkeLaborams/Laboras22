@@ -111,14 +111,6 @@ namespace Laboras22.ViewModels
 
         public static async Task<IEnumerable<ViewModelType>> Where(Expression<Func<ModelType, bool>> predicate)
         {
-            var predicateMethod = predicate.Compile();
-            var cached = dataCache.Where(x => predicateMethod(x.Value.model));
-
-            if (cached.Count() > 0)
-            {
-                return cached.Select(x => x.Value);
-            }
-
             EnsureDataProviderExists();
 
             var matchingModels = await dataProvider.Where(predicate).ToEnumerableAsync();
