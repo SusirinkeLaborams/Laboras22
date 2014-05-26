@@ -22,7 +22,7 @@ namespace Laboras22.Views.Pages.Users
     partial class UserDataModificationPage : PageBase
     {
         private IUserViewModel m_ViewModel;
-
+        private bool DeletedStuff = false;
         public UserDataModificationPage(MainWindow window, IUserViewModel user)
             : base(window)
         {
@@ -37,25 +37,28 @@ namespace Laboras22.Views.Pages.Users
 
         public override async void OnPop()
         {
-            var student = m_ViewModel as StudentViewModel;
-            if (student != null)
+            if (!DeletedStuff)
             {
-                await student.Revert();
-                return;
-            }
+                var student = m_ViewModel as StudentViewModel;
+                if (student != null)
+                {
+                    await student.Revert();
+                    return;
+                }
 
-            var lecturer = m_ViewModel as LecturerViewModel;
-            if (lecturer != null)
-            {
-                await lecturer.Revert();
-                return;
-            }
+                var lecturer = m_ViewModel as LecturerViewModel;
+                if (lecturer != null)
+                {
+                    await lecturer.Revert();
+                    return;
+                }
 
-            var administrator = m_ViewModel as AdministratorViewModel;
-            if (administrator != null)
-            {
-                await administrator.Revert();
-                return;
+                var administrator = m_ViewModel as AdministratorViewModel;
+                if (administrator != null)
+                {
+                    await administrator.Revert();
+                    return;
+                }
             }
         }
 
@@ -91,6 +94,39 @@ namespace Laboras22.Views.Pages.Users
             return !Validation.GetHasError(m_FirstNameTextBox) &&
                    !Validation.GetHasError(m_LastNameTextBox) &&
                    !Validation.GetHasError(m_EmailTextBox);
+        }
+
+        private async void DeleteButton_Click(object sender, RoutedEventArgs e)
+        {
+            LoginViewModel login = await LoginViewModel.Get(m_ViewModel.LoginId);
+            await login.Delete();
+            DeletedStuff = true;
+            window.PopPage();
+            /*
+            var student = m_ViewModel as StudentViewModel;
+            if (student != null)
+            {
+
+                await student.Delete();
+                window.PopPage();
+                return;
+            }
+
+            var lecturer = m_ViewModel as LecturerViewModel;
+            if (lecturer != null)
+            {
+                await lecturer.Delete();
+                window.PopPage();
+                return;
+            }
+
+            var administrator = m_ViewModel as AdministratorViewModel;
+            if (administrator != null)
+            {
+                await administrator.Delete();
+                window.PopPage();
+                return;
+            }*/
         }
     }
 }
