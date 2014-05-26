@@ -54,7 +54,7 @@ namespace Laboras22.ViewModels.Projects
                 OnPropertyChanged();
             }
         }
-        private ObservableCollection<ProjectContentViewModel> contents = new ObservableCollection<ProjectContentViewModel>();
+        private ObservableCollection<ProjectContentViewModel> contents;
         public ObservableCollection<ProjectContentViewModel> Contents 
         {
             get
@@ -109,7 +109,6 @@ namespace Laboras22.ViewModels.Projects
             p.Project = this;
             await p.Insert();
             participants.Add(p);
-            await Update();
             OnPropertyChanged("Participants");
         }
         protected override async Task RefreshFields()
