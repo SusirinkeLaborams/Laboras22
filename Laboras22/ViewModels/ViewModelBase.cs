@@ -22,7 +22,7 @@ namespace Laboras22.ViewModels
         {
         }
         
-        public async Task Insert()
+        public virtual async Task Insert()
         {
             EnsureDataProviderExists();
 
