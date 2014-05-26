@@ -13,6 +13,7 @@
                     <RowDefinition Height="37.5"/>
                     <RowDefinition Height="37.5"/>
                     <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
@@ -44,9 +45,22 @@
                         </Rectangle>
                     </Button>
                 </StackPanel>
-                
-                <TextBlock Text="Task" Grid.Column="0" Grid.Row="3" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0" Foreground="White" />
-                <Border Grid.Column="1" Grid.Row="3" BorderThickness="0" Margin="0.5" VerticalAlignment="Stretch">
+
+                <TextBlock Text="Participants" Grid.Column="0" Grid.Row="3" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0" Foreground="White" />
+                <ListView Grid.Column="1" Grid.Row="3" ItemsSource="{Binding Participants}" BorderThickness="0">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="{Binding Name}" Foreground="White" />    
+                                <TextBox Text="{Binding Grade}" Foreground="White"/>
+                            </StackPanel>
+                            
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+                <TextBlock Text="Task" Grid.Column="0" Grid.Row="4" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0" Foreground="White" />
+                <Border Grid.Column="1" Grid.Row="4" BorderThickness="0" Margin="0.5" VerticalAlignment="Stretch">
                     <TextBox Text="{Binding Task, Mode=OneWay}" AcceptsReturn="True" ScrollViewer.VerticalScrollBarVisibility="Auto" TextWrapping="Wrap" IsReadOnly="True" />
                 </Border>
             </Grid>
