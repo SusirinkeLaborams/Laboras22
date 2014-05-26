@@ -54,7 +54,7 @@ namespace Laboras22.ViewModels.Projects
                 OnPropertyChanged();
             }
         }
-        private ObservableCollection<ProjectContentViewModel> contents;
+        private ObservableCollection<ProjectContentViewModel> contents = new ObservableCollection<ProjectContentViewModel>();
         public ObservableCollection<ProjectContentViewModel> Contents 
         {
             get
@@ -78,25 +78,31 @@ namespace Laboras22.ViewModels.Projects
         {
             var lst = new List<Task>();
             lst.Add(base.Update());
-            foreach(var c in Contents)
+            if(Contents != null)
             {
-                if (String.IsNullOrEmpty(c.URL))
+                foreach(var c in Contents)
                 {
-                    if (c.Id != 0)
-                        lst.Add(c.Delete());
-                    continue;
+                    if (String.IsNullOrEmpty(c.URL))
+                    {
+                        if (c.Id != 0)
+                            lst.Add(c.Delete());
+                        continue;
+                    }
+                    if (c.Id == 0)
+                        lst.Add(c.Insert());
+                    else
+                        lst.Add(c.Update());
                 }
-                if (c.Id == 0)
-                    lst.Add(c.Insert());
-                else
-                    lst.Add(c.Update());
             }
-            foreach(var p in Participants)
+            if (Participants != null)
             {
-                if (p.Id == 0)
-                    lst.Add(p.Insert());
-                else
-                    lst.Add(p.Update());
+                foreach (var p in Participants)
+                {
+                    if (p.Id == 0)
+                        lst.Add(p.Insert());
+                    else
+                        lst.Add(p.Update());
+                }
             }
             foreach (var t in lst)
                 await t;
