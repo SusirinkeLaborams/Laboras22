@@ -37,41 +37,10 @@ namespace Laboras22.ViewModels.Projects
                 model.ProjectId = value.Id;
             }
         }
-        public string Grade 
-        {
-            get
-            {
-                return grade != null ? grade.Value.ToString() : null;
-            } 
-            set
-            {
-                var g = int.Parse(value);
-                if(grade != null)
-                    grade.Value = g;
-            }
-        }
-        private GradeViewModel grade;
-        public static new async Task<ProjectParticipantViewModel> Create(ProjectParticipant model = null)
-        {
-            var instance = await ViewModelBase<ProjectParticipant, ProjectParticipantViewModel>.Create(model);
-            if(instance.Grade == null)
-            {
-                var grade = await GradeViewModel.Create();
-                grade.Value = 0;
-                grade.Participant = instance;
-            }
-            return instance;
-        }
-        public override async Task Insert()
-        {
-            await base.Insert();
-            await grade.Insert();
-        }
         protected override async Task RefreshFields()
         {
             student = await StudentViewModel.Get(model.StudentId);
             project = await ProjectViewModel.Get(model.ProjectId);
-            grade = (await GradeViewModel.Where(x => x.ParticipantId == model.Id)).SingleOrDefault();
         }
     }
 }
