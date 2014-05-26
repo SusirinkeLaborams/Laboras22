@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="27379f19-ab72-4e2e-b803-c5539fb729da" name="ProjectManagement" linkedPackageId="bd9cfdc4-184b-418c-9b45-91af8a41defe" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="27379f19-ab72-4e2e-b803-c5539fb729da" name="ProjectManagement" linkedPackageId="bd9cfdc4-184b-418c-9b45-91af8a41defe" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
   <packagedElements>
     <useCaseModelRootHasTypes>
       <actor Id="291471d4-2d59-4530-af4c-f5ec417a2aa2" name="Student" isAbstract="false" isLeaf="false">
@@ -239,6 +239,22 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="4693685f-bebe-4abb-bc98-755017198bc8" />
+          </association>
+          <association Id="125b5f5f-27c0-498e-b812-809b87135f0e" isDerived="false" sourceEndRoleName="Administrator" targetEndRoleName="Remove users" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f975a4f5-f9de-4ce2-93d0-3f480a91f929" LastKnownName="Remove users" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bbd3e0c5-8bb0-410c-98cf-69203298fcc1" name="Administrator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6a0ebfb7-5897-4266-8205-a3d23ee3fcc0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6a165baa-c6db-4d07-b4ee-2f5944d5b564" name="Remove users" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c6df86cd-776d-416d-9560-a4b3bbfd3e74" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1cc9d4de-c74f-4ec6-86df-c22a133ef418" />
           </association>
         </targetEnds>
       </actor>
@@ -480,6 +496,11 @@
     <useCaseModelRootHasTypes>
       <useCase Id="24ad6d69-4805-4a5b-b079-443310bca6ab" name="Register other users" isAbstract="false" isLeaf="false">
         <elementDefinition Id="86f27d48-bd36-4589-be41-bcf0aa1f2455" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f975a4f5-f9de-4ce2-93d0-3f480a91f929" name="Remove users" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="11f40bd7-7d6d-418a-b0ee-5a8a14874adc" />
       </useCase>
     </useCaseModelRootHasTypes>
   </packagedElements>
