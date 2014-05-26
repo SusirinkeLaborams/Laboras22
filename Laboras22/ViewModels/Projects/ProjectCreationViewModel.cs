@@ -186,8 +186,7 @@ namespace Laboras22.ViewModels.Projects
         {
             var tmp = await ProjectViewModel.Create();
             var instance = new ProjectCreationViewModel(tmp);
-            if (tmp.Owner == null)
-                tmp.Owner = student;
+            tmp.Owner = student;
             if(assignment != null)
             {
                 tmp.Assignment = assignment;

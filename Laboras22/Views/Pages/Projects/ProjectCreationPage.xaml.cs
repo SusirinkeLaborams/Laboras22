@@ -75,6 +75,11 @@ namespace Laboras22.Views.Pages.Projects
                 return;
             CreateButton.IsEnabled = false;
             await model.ViewModel.Insert();
+            var student = window.Session.User as StudentViewModel;
+            if (student != null)
+            {
+                await model.ViewModel.AddParticipant(student);
+            }
             window.PopPage();
             window.PushPage(new ProjectPage(window, model.ViewModel.Id));
             CreateButton.IsEnabled = true;

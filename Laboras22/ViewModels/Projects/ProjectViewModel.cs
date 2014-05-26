@@ -41,8 +41,20 @@ namespace Laboras22.ViewModels.Projects
                 model.OwnerId = value.Id;
             }
         }
-        public IEnumerable<ProjectParticipantViewModel> Participants { get; private set; }
-        private ObservableCollection<ProjectContentViewModel> contents;
+        private ObservableCollection<ProjectParticipantViewModel> participants = new ObservableCollection<ProjectParticipantViewModel>();
+        public ObservableCollection<ProjectParticipantViewModel> Participants 
+        {
+            get
+            {
+                return participants;
+            }
+            private set
+            {
+                participants = value;
+                OnPropertyChanged();
+            }
+        }
+        private ObservableCollection<ProjectContentViewModel> contents = new ObservableCollection<ProjectContentViewModel>();
         public ObservableCollection<ProjectContentViewModel> Contents 
         {
             get
@@ -79,14 +91,31 @@ namespace Laboras22.ViewModels.Projects
                 else
                     lst.Add(c.Update());
             }
+            foreach(var p in Participants)
+            {
+                if (p.Id == 0)
+                    lst.Add(p.Insert());
+                else
+                    lst.Add(p.Update());
+            }
             foreach (var t in lst)
                 await t;
             OnPropertyChanged("Contents");
         }
+        public async Task AddParticipant(StudentViewModel student)
+        {
+            var p = await ProjectParticipantViewModel.Create();
+            p.Student = student;
+            p.Project = this;
+            await p.Insert();
+            participants.Add(p);
+            await Update();
+            OnPropertyChanged("Participants");
+        }
         protected override async Task RefreshFields()
         {
             Owner = await StudentViewModel.Get(model.OwnerId);
-            Participants = await ProjectParticipantViewModel.Where(p => p.ProjectId == model.Id);
+            Participants = new ObservableCollection<ProjectParticipantViewModel>(await ProjectParticipantViewModel.Where(p => p.ProjectId == model.Id));
             Contents = new ObservableCollection<ProjectContentViewModel>(await ProjectContentViewModel.Where(c => c.ProjectId == model.Id));
             Assignment = await AssignmentViewModel.Get(model.AssignmentId);
         }

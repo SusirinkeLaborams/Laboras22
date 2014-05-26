@@ -11,12 +11,36 @@ namespace Laboras22.ViewModels.Projects
     class ProjectParticipantViewModel : ViewModelBase<ProjectParticipant, ProjectParticipantViewModel>
     {
         public string Name { get { return Student.Name; } }
-        public StudentViewModel Student { get; private set; }
-        public ProjectViewModel Project { get; private set; }
+        private StudentViewModel student;
+        public StudentViewModel Student 
+        {
+            get
+            {
+                return student;
+            }
+            set
+            {
+                student = value;
+                model.StudentId = value.Id;
+            }
+        }
+        private ProjectViewModel project;
+        public ProjectViewModel Project 
+        {
+            get
+            {
+                return project;
+            }
+            set
+            {
+                project = value;
+                model.ProjectId = value.Id;
+            }
+        }
         protected override async Task RefreshFields()
         {
-            Student = await StudentViewModel.Get(model.StudentId);
-            Project = await ProjectViewModel.Get(model.ProjectId);
+            student = await StudentViewModel.Get(model.StudentId);
+            project = await ProjectViewModel.Get(model.ProjectId);
         }
     }
 }
