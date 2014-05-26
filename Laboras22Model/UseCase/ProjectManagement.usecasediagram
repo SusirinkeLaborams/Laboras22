@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="27379f19-ab72-4e2e-b803-c5539fb729da" name="ProjectManagement" linkedPackageId="bd9cfdc4-184b-418c-9b45-91af8a41defe" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="27379f19-ab72-4e2e-b803-c5539fb729da" name="ProjectManagement" linkedPackageId="bd9cfdc4-184b-418c-9b45-91af8a41defe" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
   <packagedElements>
     <useCaseModelRootHasTypes>
       <actor Id="291471d4-2d59-4530-af4c-f5ec417a2aa2" name="Student" isAbstract="false" isLeaf="false">
@@ -282,50 +282,6 @@
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="e54fabe1-0e31-44ee-811b-9faa1d349b7d" name="Add participants" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="0f1cfc6e-bb1a-4706-a15e-f6951af371d8" />
-        <extendedCases>
-          <extend Id="27c90b28-91e2-4251-bbd5-6586462bcbe8">
-            <useCaseMoniker Id="c913c0c0-4d74-45c3-aa7d-0c5b6f3c2e89" LastKnownName="Open a project" />
-            <elementDefinition Id="0e55e328-3d85-4c1b-89a3-b80c648ddf96" />
-          </extend>
-        </extendedCases>
-      </useCase>
-    </useCaseModelRootHasTypes>
-    <useCaseModelRootHasTypes>
-      <useCase Id="5ab6c58b-39d5-4043-a22d-88c08c99b581" name="Add rating" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="5bcfa6ba-42b4-45c2-b8ae-ce0cccd4de9a" />
-        <extendedCases>
-          <extend Id="71a4c291-5287-439d-8bea-73f0991a465c">
-            <useCaseMoniker Id="c913c0c0-4d74-45c3-aa7d-0c5b6f3c2e89" LastKnownName="Open a project" />
-            <elementDefinition Id="afc2a729-196b-4164-bd80-fb5375d838d0" />
-          </extend>
-        </extendedCases>
-      </useCase>
-    </useCaseModelRootHasTypes>
-    <useCaseModelRootHasTypes>
-      <useCase Id="172626df-f463-42a7-8229-96939f956bf1" name="Add comment" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="312f1366-7cd4-4302-8af3-f2c688a07f0a" />
-        <extendedCases>
-          <extend Id="75a2176b-5bce-4e9d-97e6-e735981e7da0">
-            <useCaseMoniker Id="c913c0c0-4d74-45c3-aa7d-0c5b6f3c2e89" LastKnownName="Open a project" />
-            <elementDefinition Id="35bb424d-ded5-4d94-b547-cbd5c56d794b" />
-          </extend>
-        </extendedCases>
-      </useCase>
-    </useCaseModelRootHasTypes>
-    <useCaseModelRootHasTypes>
-      <useCase Id="b106b397-d1db-404c-95a0-105096929c9d" name="Add grade" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="5b87d8ab-50c4-4f0e-89f8-bedb21546c04" />
-        <extendedCases>
-          <extend Id="826bca95-d59a-40c6-8112-5c2eb3ef3bca">
-            <useCaseMoniker Id="c913c0c0-4d74-45c3-aa7d-0c5b6f3c2e89" LastKnownName="Open a project" />
-            <elementDefinition Id="433e7d6e-cfef-4221-9dda-a67ccb55032d" />
-          </extend>
-        </extendedCases>
-      </useCase>
-    </useCaseModelRootHasTypes>
-    <useCaseModelRootHasTypes>
       <actor Id="66e2e7cb-c23d-4de4-8729-658ed3a6c69d" name="Lecturer" isAbstract="false" isLeaf="false">
         <elementDefinition Id="b267d54f-8cd9-4fc8-9b40-58b1ef14c98f" />
         <targetEnds>
@@ -501,6 +457,17 @@
     <useCaseModelRootHasTypes>
       <useCase Id="f975a4f5-f9de-4ce2-93d0-3f480a91f929" name="Remove users" isAbstract="false" isLeaf="false">
         <elementDefinition Id="11f40bd7-7d6d-418a-b0ee-5a8a14874adc" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="051eca24-65ff-4cf1-9444-4ac1ec3d52dd" name="Remove content" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c155778e-1bb4-4e35-ba57-6912dc5824f7" />
+        <extendedCases>
+          <extend Id="477efbd0-4e81-438b-b70c-b1dece61075f">
+            <useCaseMoniker Id="c913c0c0-4d74-45c3-aa7d-0c5b6f3c2e89" LastKnownName="Open a project" />
+            <elementDefinition Id="55fbb223-6763-4f11-a0d0-de79fbf07fcd" />
+          </extend>
+        </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
   </packagedElements>
